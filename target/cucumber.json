@@ -1,0 +1,213 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Steps to open fee manager landing page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1720411939,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "for url",
+            "match": {
+              "location": "GenericTestSteps.for_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 185265491,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter username and password",
+            "match": {
+              "location": "GenericTestSteps.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1659691149,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click sign in to open erp home page",
+            "match": {
+              "location": "GenericTestSteps.click_sign_in_to_open_erp_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 300661824,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click fee manager logo",
+            "match": {
+              "location": "GenericTestSteps.user_click_fee_manager_logo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 981411488,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user open daily fee collection date wise with remark",
+            "match": {
+              "location": "TestSteps.user_open_daily_fee_collection_date_wise_with_remark()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5618576,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 3930516754,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 52,
+        "name": "To test alert validation for invalid receipt range",
+        "description": "",
+        "id": "daily-fee-collection-date-wise-with-remark;to-test-alert-validation-for-invalid-receipt-range",
+        "after": [
+          {
+            "result": {
+              "duration": 63341,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 14910926,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 118512063,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "click receipt no range on daily fee collection date wise with remark",
+            "match": {
+              "location": "TestSteps.click_receipt_no_range_on_daily_fee_collection_date_wise_with_remark()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113327196,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "enter character \"5\" in receipt from on daily fee collection date wise with remark",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 17
+                }
+              ],
+              "location": "TestSteps.enter_character_in_receipt_from_on_daily_fee_collection_date_wise_with_remark(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80740045,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "enter character \"1\" in receipt to on daily fee collection date wise with remark",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 17
+                }
+              ],
+              "location": "TestSteps.enter_character_in_receipt_to_on_daily_fee_collection_date_wise_with_remark(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105001969,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "click show on daily fee collection date wise with remark",
+            "match": {
+              "location": "TestSteps.click_show_on_daily_fee_collection_date_wise_with_remark()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59105890,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "verify alert message for invalid receipt range on daily fee collection date wise with remark",
+            "match": {
+              "location": "TestSteps.verify_alert_message_for_invalid_receipt_range_on_daily_fee_collection_date_wise_with_remark()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 51,
+            "name": "@validation"
+          },
+          {
+            "line": 51,
+            "name": "@scenario5"
+          }
+        ]
+      }
+    ],
+    "name": "Daily Fee Collection Date Wise With Remark",
+    "description": "As a user I would like to run the test cases of this page\r\nSo that I don\u0027t have to do it manually",
+    "id": "daily-fee-collection-date-wise-with-remark",
+    "keyword": "Feature",
+    "uri": "featureFiles/transactionReportsFeatures/DailyFeeCollectionDateWiseWithRemark.feature"
+  }
+]

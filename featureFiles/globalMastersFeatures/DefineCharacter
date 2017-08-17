@@ -1,0 +1,85 @@
+Feature: Define Character
+  As a user I want to run test cases of this page
+  So that I don't have to do it myself
+
+  Background: Steps to open fee manager home page
+    Given for url
+    When user enter username and password
+    And click sign in to open erp home page
+    Then user click fee manager logo
+
+  @save @scenario1
+  Scenario: To test the validation messages when all fields are left blank
+    When user open define character page
+    And click save on define character page
+    Then verify blank field on define character page
+
+  @save @scenario2
+  Scenario: To test character field with numeric value
+    When user open define character page
+    And enter character as "12345"
+    And click save on define character page
+    Then verify numeric data on define character page
+
+  @save @scenario3
+  Scenario: To test character field with alphanumeric value
+    When user open define character page
+    And enter character as "abc123"
+    And click save on define character page
+    Then verify alphanumeric data on define character page
+
+  @save @scenario4
+  Scenario: To test character field with less than 100 characters
+    When user open define character page
+    And enter "99" characters in character
+    And click save on define character page
+    Then verify the saved value on define character page
+
+  @save @scenario5
+  Scenario: To test character field with 100 characters
+    When user open define character page
+    And enter "100" characters in character
+    And click save on define character page
+    Then verify the saved value on define character page
+
+  @save @scenario6
+  Scenario: To test character field with more than 100 characters
+    When user open define character page
+    And enter "101" characters in character
+    And click save on define character page
+    Then verify character length on define character page
+
+  @save @scenario7
+  Scenario: To test character field with duplicate value
+    When user open define character page
+    And enter character as "good"
+    And click save on define character page
+    Then verify duplicate value on define character page
+
+  @save @scenario8
+  Scenario: To test character field with valid data
+    When user open define character page
+    And enter character as "very good"
+    And click save on define character page
+    Then verify save message on define character page
+
+  @cancel @scenario9
+  Scenario: To test the cancel button on define character
+    When user open define character page
+    And click cancel on define character page
+    Then verify cancel on define character page
+
+  @delete @scenario10
+  Scenario: To test delete button when yes is clicked
+    When user open define character page
+    And select record on define character page
+    And delete record on define character page
+    Then verify delete message on define character page
+
+  @modify @scenario11
+  Scenario: To test modify button when yes is clicked
+    When user open define character page
+    And select record on define character page
+    And modify record on define character page
+    Then verify modify message on define character page
+

@@ -1,0 +1,84 @@
+Feature: Define Last Result
+  As a user I want to run test cases of this page
+  So that I don't have to do it myself
+
+  Background: Steps to open fee manager home page
+    Given for url
+    When user enter username and password
+    And click sign in to open erp home page
+    Then user click fee manager logo
+
+  @save @scenario1
+  Scenario: To test the validation messages when all fields are left blank
+    When user open define last result page
+    And click save on define last result page
+    Then verify blank field on define last result page
+
+  @save @scenario2
+  Scenario: To test last result field with numeric value
+    When user open define last result page
+    And enter last result as "12345"
+    And click save on define last result page
+    Then verify numeric data on define last result page
+
+  @save @scenario3
+  Scenario: To test last result field with alphanumeric value
+    When user open define last result page
+    And enter last result as "abc123"
+    And click save on define last result page
+    Then verify alphanumeric data on define last result page
+
+  @save @scenario4
+  Scenario: To test last result field with less than 100 characters
+    When user open define last result page
+    And enter "99" characters in last result
+    And click save on define last result page
+    Then verify the saved value on define last result page
+
+  @save @scenario5
+  Scenario: To test last result field with 100 characters
+    When user open define last result page
+    And enter "100" characters in last result
+    And click save on define last result page
+    Then verify the saved value on define last result page
+
+  @save @scenario6
+  Scenario: To test last result field with more than 100 characters
+    When user open define last result page
+    And enter "101" characters in last result
+    And click save on define last result page
+    Then verify character length on define last result page
+
+  @save @scenario7
+  Scenario: To test last result field with duplicate value
+    When user open define last result page
+    And enter last result as "pass"
+    And click save on define last result page
+    Then verify duplicate value on define last result page
+
+  @save @scenario8
+  Scenario: To test last result field with valid data
+    When user open define last result page
+    And enter last result as "good"
+    And click save on define last result page
+    Then verify save message on define last result page
+
+  @cancel @scenario9
+  Scenario: To test the cancel button on define last result
+    When user open define last result page
+    And click cancel on define last result page
+    Then verify cancel on define last result page
+
+  @delete @scenario10
+  Scenario: To test delete button when yes is clicked
+    When user open define last result page
+    And select record on define last result page
+    And delete record on define last result page
+    Then verify delete message on define last result page
+
+  @modify @scenario11
+  Scenario: To test modify button when yes is clicked
+    When user open define last result page
+    And select record on define last result page
+    And modify record on define last result page
+    Then verify modify message on define last result page
