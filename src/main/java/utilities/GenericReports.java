@@ -1,7 +1,10 @@
 package utilities;
 
+import cucumber.api.java.gl.E;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import webDriver.DriverMethods;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,38 +13,157 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
    @FindBy(id = "ContentPlaceHolder1_ddlSchoolSubHead")private WebElement school;
    @FindBy(id = "ContentPlaceHolder1_ddlWings")private WebElement wing;
    @FindBy(id = "ContentPlaceHolder1_ddlboard")private WebElement board;
-   @FindBy(id = "ContentPlaceHolder1_txtDateFrom_TextBox")private WebElement fromdate;
-   @FindBy(id = "ContentPlaceHolder1_txtdateTo_TextBox")private WebElement todate;
+   @FindBy(id = "ContentPlaceHolder1_txtDateFrom_TextBox")protected WebElement fromdate;
+   @FindAll({@FindBy(id = "ContentPlaceHolder1_txtdateTo_TextBox"),
+             @FindBy(id = "ContentPlaceHolder1_txtDateTo_TextBox")})
+             private WebElement todate;
    @FindBy(id = "ContentPlaceHolder1_chkReceiptNoRange")private WebElement receiptnorange;
    @FindBy(id = "ContentPlaceHolder1_txtFrom_TextBox")private WebElement receiptfrom;
    @FindBy(id = "ContentPlaceHolder1_txtTo_TextBox")private WebElement receiptto;
    @FindBy(id = "ContentPlaceHolder1_ddlUser")private WebElement user;
    @FindBy(xpath = "//input[@value='Show']")private WebElement show;
-   @FindBy(className = "datepick-clear")private WebElement clr;
+   @FindBy(className = "datepick-clear")protected WebElement clr;
    @FindBy(className = "datepick-close")private WebElement cls;
 
    protected WebElement clear;
+   protected WebElement values;
    protected WebElement close;
    protected WebElement message;
    protected File f1;
+   protected WebElement element;
 
-   public void selectFromDate(String mm, String yy, String dd) throws IOException {
+   private void getClassElements() throws IOException {
+      element= readFile.getElement(f1, "class");
+      clear= readFile.getElement(f1, "classclear");
+      values= readFile.getElement(f1, "classvalueslist");
+      close= readFile.getElement(f1, "classclose");
+      message= readFile.getElement(f1, "classmessage");
+   }
+
+   private void getEntryModeElements() throws IOException {
+      element= readFile.getElement(f1, "entrymode");
+      clear= readFile.getElement(f1, "entrymodeclear");
+      values= readFile.getElement(f1, "entrymodevalueslist");
+      close= readFile.getElement(f1, "entrymodeclose");
+      message= readFile.getElement(f1, "entrymodemessage");
+   }
+
+   private void getPayModeElements() throws IOException {
+      element= readFile.getElement(f1, "paymode");
+      clear= readFile.getElement(f1, "paymodeclear");
+      close= readFile.getElement(f1, "paymodeclose");
+      message= readFile.getElement(f1, "paymodemessage");
+   }
+
+   private void getHeadElements() throws IOException {
+      element= readFile.getElement(f1, "head");
+      clear= readFile.getElement(f1, "headclear");
+      close= readFile.getElement(f1, "headclose");
+      message= readFile.getElement(f1, "headmessage");
+   }
+
+   private void getInstallmentElements() throws IOException {
+      element= readFile.getElement(f1, "installment");
+      clear= readFile.getElement(f1, "installmentclear");
+      values= readFile.getElement(f1, "installmentvalueslist");
+      close= readFile.getElement(f1, "installmentclose");
+      message= readFile.getElement(f1, "installmentmessage");
+   }
+
+   public void validateClass() throws IOException {
+      getClassElements();
+      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "cls"));
+   }
+
+   public void validateEntryMode() throws IOException {
+      getEntryModeElements();
+      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "entrymode"));
+   }
+
+   public void validatePayMode() throws IOException {
+      getPayModeElements();
+      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "paymode"));
+   }
+
+   public void validateHead() throws IOException {
+      getHeadElements();
+      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "head"));
+   }
+
+   public void validateInstallment() throws IOException {
+      getInstallmentElements();
+      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "installment"));
+   }
+
+   public void selectSchool(int index) throws IOException {
+      ehandler.selectByIndex(readFile.getElement(f1, "school"), index);
+   }
+
+   public void selectWing(int index) throws IOException {
+      ehandler.selectByIndex(readFile.getElement(f1, "wing"), index);
+   }
+
+   public void selectClass() throws IOException {
+      getClassElements();
+      ehandler.selectValue(element, clear, values, close);
+   }
+
+   public void selectClass(int index) throws IOException {
+      ehandler.selectByIndex(readFile.getElement(f1, "class"), 1);
+   }
+
+   public void selectBoard(int index) throws IOException {
+      ehandler.selectByIndex(readFile.getElement(f1, "board"), 1);
+   }
+
+   public void selectSection(int index) throws IOException {
+      ehandler.selectByIndex(readFile.getElement(f1, "section"), 1);
+   }
+
+   public void selectInstallment() throws IOException {
+      getInstallmentElements();
+      ehandler.selectValue(element, clear, values, close);
+   }
+
+   public void selectInstallment(int index) throws IOException {
+      ehandler.selectByIndex(readFile.getElement(f1, "installment"), index);
+   }
+
+   public void selectEntryMode() throws IOException {
+      getEntryModeElements();
+      ehandler.selectValue(element, clear, values, close);
+   }
+
+   public void selectFeeType(int index) throws IOException {
+      ehandler.selectByIndex(readFile.getElement(f1, "feetype"), index);
+   }
+
+   public void selectUser(int index) throws IOException {
+      ehandler.selectByIndex(readFile.getElement(f1, "user"), index);
+   }
+
+   public void selectFromDate(String mm, String yy, String dd) throws IOException, InterruptedException {
       ehandler.selectDate(fromdate, mm, yy, dd);
    }
 
-   public void selectToDate(String mm, String yy, String dd) throws IOException {
+   public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {
       ehandler.selectDate(todate, mm, yy, dd);
    }
 
-   public void validateDateFrom() throws IOException {
-      verify.verifyValidationOnMultiSelect(fromdate, clr, cls, readFile.getElement(f1, "datefrommessage"), readFile.readProperty(file, "datefrom"));
+   public void validateDateFrom() throws IOException{
+      verify.verifyValidationOnMultiSelect(fromdate, clr, readFile.getElement(f1, "datefrommessage"), readFile.readProperty(file, "datefrom"));
    }
 
    public void validateToDate() throws IOException {
-      verify.verifyValidationOnMultiSelect(todate, clr, cls, readFile.getElement(f1, "datetomessage"), readFile.readProperty(file, "dateto"));
+      verify.verifyValidationOnMultiSelect(todate, clr, readFile.getElement(f1, "datetomessage"), readFile.readProperty(file, "dateto"));
+   }
+
+   public void validateTillDate() throws IOException {
+      verify.verifyValidationOnMultiSelect(todate, clr, readFile.getElement(f1, "tilldatemessage"), readFile.readProperty(file, "tilldate"));
    }
 
    public void clickReceiptRange(){
+      new DriverMethods().waitUntil(receiptnorange, 1000);
       ehandler.click(receiptnorange);
    }
 

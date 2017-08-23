@@ -78,6 +78,15 @@ public class ReadFile {
     return webelement;
   }
 
+//get all elements of a list or a table
+  public List<WebElement> getElements(File file, WebElement ele, String element) throws IOException {
+    String locator= readProperty(file, element+"type");
+    String value= readProperty(file, element);
+    List<WebElement>webelement= null;
+    webelement= ele.findElements(By.tagName(value));
+    return webelement;
+  }
+
   String getFileName(){
     String fname= this.getClass().getName();
     String fnm[]= fname.split("\\.");

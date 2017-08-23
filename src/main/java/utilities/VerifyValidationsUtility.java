@@ -31,7 +31,16 @@ public class VerifyValidationsUtility {
        verifyValidationMessage(exp, msgid);
     }
 
-    public void verifyMessageImage(WebElement imgicon,String url, String img){
+    public void verifyValidationOnMultiSelect(WebElement element, WebElement clear,  WebElement msgid, String exp) {
+        ehandler.click(element);
+        //Thread.sleep(5000);
+        ehandler.click(clear);
+        //Thread.sleep(2000);
+        //ehandler.click(close);
+        Assert.assertTrue(msgid.isDisplayed());
+        verifyValidationMessage(exp, msgid);
+    }
+    void verifyMessageImage(WebElement imgicon,String url, String img){
         Assert.assertEquals(url+img, imgicon.getAttribute("src"));
         System.out.println(img);
     }

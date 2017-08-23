@@ -16,9 +16,9 @@ import java.io.IOException;
 import static webDriver.AppDriver.getCurrentDriver;
 
 public class CucumberHooks {
-  DriverMethods dm= new DriverMethods();
+  private DriverMethods dm= new DriverMethods();
   private File file= new File("F:\\erpfee\\configuration\\GenericConfig.properties");
-  GenericUtility utility= new GenericUtility();
+  private GenericUtility utility= new GenericUtility();
 
   @Before
   public void before(Scenario sc) {

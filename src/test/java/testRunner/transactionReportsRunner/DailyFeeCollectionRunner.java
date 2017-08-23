@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         ,plugin= {"pretty","html:target/cucumber_html_report",
         "json:target/cucumber.json",
         "junit:target/cucumber.xml"}
-        ,tags= {"@validation"}
+        ,tags= {"@scenario1"}
 )
 public class DailyFeeCollectionRunner {
 }

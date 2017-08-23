@@ -16,10 +16,10 @@ import java.util.List;
 import static webDriver.AppDriver.driver;
 
 public class EventHandlingUtility {
-    File file= new File("F:\\erpfee\\configuration\\UIMap.properties");
-    ReadFile readFile= new ReadFile();
-    DriverMethods dm= new DriverMethods();
-    String value="";
+    private File file= new File("F:\\erpfee\\configuration\\UIMap.properties");
+    private ReadFile readFile= new ReadFile();
+    private DriverMethods dm= new DriverMethods();
+    private String value="";
 
     public void openFrame(WebElement menu, WebElement link, WebElement frame){
       moveToElement(menu);
@@ -33,11 +33,11 @@ public class EventHandlingUtility {
       new Actions(driver).moveToElement(menuItem).build().perform();
     }
 
-    public void clickMenuItem(WebElement link){
+    private void clickMenuItem(WebElement link){
         new Actions(driver).moveToElement(link).click().perform();
     }
 
-    public void switchToFrame(WebElement frame){
+    private void switchToFrame(WebElement frame){
       driver.switchTo().frame(frame);
     }
 
@@ -49,7 +49,7 @@ public class EventHandlingUtility {
       textfield.sendKeys(text);
     }
 
-    public void pressEnter(WebElement textfield){
+    void pressEnter(WebElement textfield){
         textfield.sendKeys(Keys.ENTER);
     }
 
@@ -66,7 +66,7 @@ public class EventHandlingUtility {
     }
 
 //select first record in table
-    public void selectRecord(WebElement table, WebElement select){
+    void selectRecord(WebElement table, WebElement select){
      List<WebElement> cells=table.findElements(By.tagName("td"));
      if (cells.size()>1){
          for (WebElement cell:cells) {
@@ -78,7 +78,7 @@ public class EventHandlingUtility {
     }
 
 //click particular cell of table
-    public void selectValueFromTable(WebElement table, String value) throws IOException {
+    private void selectValueFromTable(WebElement table, String value) throws IOException {
       List<WebElement> cells=readFile.getElements(file, "cell");
       for(WebElement cell: cells) {
           if (cell.getText().equals(value)){
@@ -97,7 +97,7 @@ public class EventHandlingUtility {
       new Select(element).selectByIndex(index);
     }
 
-    public void selectDate(WebElement date, String mm, String yy, String dd) throws IOException {
+    void selectDate(WebElement date, String mm, String yy, String dd) throws IOException, InterruptedException {
       click(date);
       dm.waitUntil((readFile.getElement(file,"monthpicker")),20);
       readFile.getElement(file,"monthpicker");
@@ -107,5 +107,18 @@ public class EventHandlingUtility {
       selectByVisibleText(readFile.getElement(file,"yearpicker"), yy);
       dm.waitUntil(readFile.getElement(file,"daypicker"),200);
       selectValueFromTable(readFile.getElement(file,"daypicker"), dd);
+      Thread.sleep(200);
+    }
+
+//select 1st value in multiselect list
+    public void selectValue(WebElement element, WebElement clear, WebElement values, WebElement close) throws IOException {
+        click(element);
+        click(clear);
+        List<WebElement>options= readFile.getElements(file, values, "tablelist");
+        if (options.isEmpty())
+            System.out.println("No Value Present");
+        else
+            click(options.get(0));
+        click(close);
     }
 }

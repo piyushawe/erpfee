@@ -1,15 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="9.275239">
-<testcase classname="Daily Fee Collection Date Wise With Remark" name="To test alert validation for invalid receipt range" time="9.275239">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="113.289547">
+<testcase classname="Cheque Report Date Wise" name="To test client side validations on mandatory fields" time="113.289547">
 <system-out><![CDATA[Given for url...............................................................passed
 When user enter username and password.......................................passed
 And click sign in to open erp home page.....................................passed
 Then user click fee manager logo............................................passed
-And user open daily fee collection date wise with remark....................passed
-And click receipt no range on daily fee collection date wise with remark....passed
-And enter character "5" in receipt from on daily fee collection date wise with remark.passed
-And enter character "1" in receipt to on daily fee collection date wise with remark.passed
-And click show on daily fee collection date wise with remark................passed
-Then verify alert message for invalid receipt range on daily fee collection date wise with remark.passed
+When user open cheque report date wise......................................passed
+And verify validation when no entry mode is selected on cheque report date wise.passed
+And verify validation when no date from is selected on cheque report date wise.passed
+And select from date as month "July" year "2017" and day "1" on cheque report date wise.passed
+And verify validation when no date to is selected on cheque report date wise.passed
+And select to date as month "August" year "2017" and day "1" on cheque report date wise.passed
+And verify validation when no class is selected on cheque report date wise..passed
+And verify validation when no cheque bank is selected on cheque report date wise.passed
 ]]></system-out>
 </testcase>
 </testsuite>
