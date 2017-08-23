@@ -142,11 +142,11 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
       ehandler.selectByIndex(readFile.getElement(f1, "user"), index);
    }
 
-   public void selectFromDate(String mm, String yy, String dd) throws IOException, InterruptedException {
+   public void selectFromDate(String mm, String yy, String dd) throws IOException {
       ehandler.selectDate(fromdate, mm, yy, dd);
    }
 
-   public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {
+   public void selectToDate(String mm, String yy, String dd) throws IOException {
       ehandler.selectDate(todate, mm, yy, dd);
    }
 

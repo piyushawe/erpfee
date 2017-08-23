@@ -2,56 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b68fc022-3469-4af8-ab32-3e85d41ca221" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/transactionReportPageObjects/MonthlyConsolidatedReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/transactionReportPageObjects/TotalCollectionReport.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/screenshots/qaerp/null/null[@scenario1, @validation]20170816_152318.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/screenshots/qaerp/null/null[@scenario1, @validation]20170816_153507.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/screenshots/qaerp/null/null[@scenario1, @validation]20170816_154054.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/screenshots/qaerp/null/null[@scenario1, @validation]20170816_155811.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/screenshots/qaerp/null/null[@scenario1, @validation]20170816_164103.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/screenshots/qaerp/null/null[@scenario5, @validation]20170816_174445.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/automationFramework/supportMethods/ReadFile.class" afterPath="$PROJECT_DIR$/target/classes/automationFramework/supportMethods/ReadFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineCaste.class" afterPath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineCaste.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineCategory.class" afterPath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineCategory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineCharacter.class" afterPath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineCharacter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineLanguage.class" afterPath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineLanguage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineMotherTongue.class" afterPath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineMotherTongue.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineReligion.class" afterPath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineReligion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineSection.class" afterPath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineSection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pageObjects/reportsPageObjects/ActiveInactiveStudentsDetailReport.class" afterPath="$PROJECT_DIR$/target/classes/pageObjects/reportsPageObjects/ActiveInactiveStudentsDetailReport.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/DailyFeeCollection.class" afterPath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/DailyFeeCollection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/DailyFeeCollectionDateWise.class" afterPath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/DailyFeeCollectionDateWise.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/DailyFeeCollectionDateWiseWithRemark.class" afterPath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/DailyFeeCollectionDateWiseWithRemark.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utilities/EventHandlingUtility.class" afterPath="$PROJECT_DIR$/target/classes/utilities/EventHandlingUtility.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utilities/GenericBaseClass.class" afterPath="$PROJECT_DIR$/target/classes/utilities/GenericBaseClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utilities/GenericReports.class" afterPath="$PROJECT_DIR$/target/classes/utilities/GenericReports.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utilities/GenericUtility.class" afterPath="$PROJECT_DIR$/target/classes/utilities/GenericUtility.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utilities/VerifyValidationsUtility.class" afterPath="$PROJECT_DIR$/target/classes/utilities/VerifyValidationsUtility.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/CucumberHooks.class" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/CucumberHooks.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/TestSteps.class" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/TestSteps.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testRunner/globalMastersRunner/DefineLanguageRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testRunner/globalMastersRunner/DefineLanguageRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testRunner/transactionReportsRunner/DailyFeeCollectionDateWiseWithRemarkRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testRunner/transactionReportsRunner/DailyFeeCollectionDateWiseWithRemarkRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testRunner/transactionReportsRunner/DailyFeeCollectionRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testRunner/transactionReportsRunner/DailyFeeCollectionRunner.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testRunner/transactionReportsRunner/DailyFeeCollectionDateFeeGroupWiseRunner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testRunner/transactionReportsRunner/EstimatedCollectionReportRunner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/UIMap.properties" afterPath="$PROJECT_DIR$/configuration/UIMap.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/transactionReport/DailyFeeCollection.properties" afterPath="$PROJECT_DIR$/configuration/transactionReport/DailyFeeCollection.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureFiles/transactionReportsFeatures/DailyFeeCollection.feature" afterPath="$PROJECT_DIR$/featureFiles/transactionReportsFeatures/DailyFeeCollection.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/automationFramework/supportMethods/ReadFile.java" afterPath="$PROJECT_DIR$/src/main/java/automationFramework/supportMethods/ReadFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/transactionReportPageObjects/DailyFeeCollection.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/transactionReportPageObjects/DailyFeeCollection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/transactionReportPageObjects/DailyFeeCollectionDateWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/transactionReportPageObjects/DailyFeeCollectionDateWise.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/transactionReportPageObjects/DailyFeeCollectionDateWiseWithRemark.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/transactionReportPageObjects/DailyFeeCollectionDateWiseWithRemark.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utilities/EventHandlingUtility.java" afterPath="$PROJECT_DIR$/src/main/java/utilities/EventHandlingUtility.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utilities/GenericBaseClass.java" afterPath="$PROJECT_DIR$/src/main/java/utilities/GenericBaseClass.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utilities/GenericReports.java" afterPath="$PROJECT_DIR$/src/main/java/utilities/GenericReports.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utilities/VerifyValidationsUtility.java" afterPath="$PROJECT_DIR$/src/main/java/utilities/VerifyValidationsUtility.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/CucumberHooks.java" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/CucumberHooks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/TestSteps.java" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/TestSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testRunner/globalMastersRunner/DefineLanguageRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testRunner/globalMastersRunner/DefineLanguageRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testRunner/transactionReportsRunner/DailyFeeCollectionDateWiseWithRemarkRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testRunner/transactionReportsRunner/DailyFeeCollectionDateWiseWithRemarkRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testRunner/transactionReportsRunner/DailyFeeCollectionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testRunner/transactionReportsRunner/DailyFeeCollectionRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber.json" afterPath="$PROJECT_DIR$/target/cucumber.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber.xml" afterPath="$PROJECT_DIR$/target/cucumber.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber_html_report/report.js" afterPath="$PROJECT_DIR$/target/cucumber_html_report/report.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -88,8 +43,8 @@
       <file leaf-file-name="GenericReports.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utilities/GenericReports.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+            <state relative-caret-position="266">
+              <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChequeReportDateWise.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configuration/transactionReport/ChequeReportDateWise.properties">
+      <file leaf-file-name="EstimatedCollectionReport.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configuration/transactionReport/EstimatedCollectionReport.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="42" lean-forward="true" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+            <state relative-caret-position="459">
+              <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -117,8 +72,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdvancePaymentReport.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/configuration/transactionReport/AdvancePaymentReport.properties">
+      <file leaf-file-name="EstimatedCollectionReport" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/featureFiles/transactionReportsFeatures/EstimatedCollectionReport">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -127,35 +82,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChequeReportDateWiseRunner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/transactionReportsRunner/ChequeReportDateWiseRunner.java">
+      <file leaf-file-name="EstimatedCollectionReport.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/transactionReportPageObjects/EstimatedCollectionReport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChequeReportDateWise.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/transactionReportPageObjects/ChequeReportDateWise.java">
+      <file leaf-file-name="EstimatedCollectionReportRunner.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/transactionReportsRunner/EstimatedCollectionReportRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="33" column="57" lean-forward="true" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventHandlingUtility.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utilities/EventHandlingUtility.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="116" column="50" lean-forward="false" selection-start-line="116" selection-start-column="50" selection-end-line="116" selection-end-column="50" />
+            <state relative-caret-position="272">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -240,8 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/transactionReportPageObjects/FeeCollectionWithEntryTimeConcession.java" />
-        <option value="$PROJECT_DIR$/configuration/transactionReport/FeeCollectionWithEntryTimeConcession.properties" />
         <option value="$PROJECT_DIR$/src/test/java/testRunner/transactionReportsRunner/FeeCollectionWithEntryTimeConcessionRunner.java" />
         <option value="$PROJECT_DIR$/featureFiles/transactionReportsFeatures/FeeCollectionWithEntryTimeConcession" />
         <option value="$PROJECT_DIR$/featureFiles/transactionReportsFeatures/DailyFeeCollection.feature" />
@@ -285,12 +224,14 @@
         <option value="$PROJECT_DIR$/src/test/java/testRunner/transactionReportsRunner/ReconcileInstallmentClassWiseRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/testRunner/transactionReportsRunner/AnnualStuLedReportRunner.java" />
         <option value="$PROJECT_DIR$/configuration/transactionReport/ChequeReportDateWise.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/utilities/EventHandlingUtility.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utilities/GenericReports.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/transactionReportPageObjects/ChequeReportDateWise.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/TestSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/testRunner/transactionReportsRunner/ChequeReportDateWiseRunner.java" />
         <option value="$PROJECT_DIR$/featureFiles/transactionReportsFeatures/ChequeReportDateWise" />
+        <option value="$PROJECT_DIR$/configuration/transactionReport/AdvancePaymentReport.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/utilities/EventHandlingUtility.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utilities/GenericReports.java" />
+        <option value="$PROJECT_DIR$/configuration/transactionReport/EstimatedCollectionReport.properties" />
       </list>
     </option>
   </component>
@@ -1122,6 +1063,14 @@
       <option name="presentableId" value="Default" />
       <updated>1498193453115</updated>
     </task>
+    <task id="LOCAL-00001" summary="project as on 23 aug 2017">
+      <created>1503479113263</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1503479113263</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1166,8 +1115,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1208,6 +1157,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project as on 23 aug 2017" />
+    <option name="LAST_COMMIT_MESSAGE" value="project as on 23 aug 2017" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
@@ -1222,23 +1175,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/transactionReportPageObjects/DailyFeeCollectionDateWiseWithRemark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/ElementsUtility.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/GenericObjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utilities/GenericBaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1385,14 +1321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/featureFiles/transactionReportsFeatures/EstimatedCollectionReport">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/featureFiles/transactionReportsFeatures/FeeHeadWiseCollectionClassRange">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1521,14 +1449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/EventHandlingUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="116" column="50" lean-forward="false" selection-start-line="116" selection-start-column="50" selection-end-line="116" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/transactionReportsRunner/BadDebtsReportRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1579,14 +1499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/transactionReport/ChequeReportDateWise.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="42" lean-forward="true" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/TestSteps.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -1597,13 +1509,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/GenericReports.java">
+    <entry file="file://$PROJECT_DIR$/configuration/transactionReport/ChequeReportDateWise.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1617,6 +1527,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/configuration/transactionReport/AdvancePaymentReport.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/GenericReports.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configuration/transactionReport/EstimatedCollectionReport.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/EventHandlingUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="99" column="88" lean-forward="false" selection-start-line="99" selection-start-column="88" selection-end-line="99" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/featureFiles/transactionReportsFeatures/ChequeReportDateWise">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1625,10 +1569,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/transactionReport/AdvancePaymentReport.properties">
+    <entry file="file://$PROJECT_DIR$/featureFiles/transactionReportsFeatures/EstimatedCollectionReport">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/transactionReportPageObjects/EstimatedCollectionReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/transactionReportsRunner/EstimatedCollectionReportRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>

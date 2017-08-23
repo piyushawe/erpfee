@@ -97,7 +97,7 @@ public class EventHandlingUtility {
       new Select(element).selectByIndex(index);
     }
 
-    void selectDate(WebElement date, String mm, String yy, String dd) throws IOException, InterruptedException {
+    void selectDate(WebElement date, String mm, String yy, String dd) throws IOException {
       click(date);
       dm.waitUntil((readFile.getElement(file,"monthpicker")),20);
       readFile.getElement(file,"monthpicker");
@@ -107,7 +107,6 @@ public class EventHandlingUtility {
       selectByVisibleText(readFile.getElement(file,"yearpicker"), yy);
       dm.waitUntil(readFile.getElement(file,"daypicker"),200);
       selectValueFromTable(readFile.getElement(file,"daypicker"), dd);
-      Thread.sleep(200);
     }
 
 //select 1st value in multiselect list

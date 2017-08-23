@@ -1,0 +1,23 @@
+Feature: Online Payment Status Report
+  As a user I would like to run the test cases of this page
+  So that I don't have to do it manually
+
+  Background: Steps to open fee manager landing page
+    Given for url
+    When user enter username and password
+    And click sign in to open erp home page
+    Then user click fee manager logo
+    When user open online payment status report
+
+  @validation @scenario1
+  Scenario: To test client side validations on mandatory fields
+    And verify validation when no from date is selected on online payment status report
+    And select from date as month "April" year "2017" and day "1" on online payment status report
+    And verify validation when no till date is selected on online payment status report
+
+  @validation @scenario2
+  Scenario: To test alert validation when from date is greater than to date
+    And select from date as month "August" year "2017" and day "10" on online payment status report
+    And select to date as month "August" year "2017" and day "9" on online payment status report
+    And click show on online payment status report
+    Then verify alert message for date on online payment status report

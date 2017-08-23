@@ -1,0 +1,30 @@
+Feature: Daily Fee Collection Date Fee Group Wise
+  As a user I would like to run the test cases of this page
+  So that I don't have to do it manually
+
+  Background: Steps to open fee manager landing page
+    Given for url
+    When user enter username and password
+    And click sign in to open erp home page
+    Then user click fee manager logo
+    And user open daily fee collection date fee group wise
+
+  @validation @scenario1
+  Scenario: To test client side validations on mandatory fields
+    And verify validation when no class is selected on daily fee collection date fee group wise
+    And verify validation when no entry mode is selected on daily fee collection date fee group wise
+    And verify validation when no pay mode is selected on daily fee collection date fee group wise
+    And verify validation when no fee head is selected on daily fee collection date fee group wise
+    And verify validation when no fee group is selected on daily fee collection date fee group wise
+    And verify validation when no date from is selected on daily fee collection date fee group wise
+    And select from date as month "April" year "2017" and day "1" on daily fee collection date fee group wise
+    And verify validation when no date to is selected on daily fee collection date fee group wise
+
+  @validation @scenario2
+  Scenario: To test alert validation when from date is greater than to date
+    When select from date as month "August" year "2017" and day "20" on daily fee collection date fee group wise
+    And select to date as month "August" year "2017" and day "10" on daily fee collection date fee group wise
+    And click show on daily fee collection date fee group wise
+    Then verify alert message for account on daily fee collection date fee group wise
+
+

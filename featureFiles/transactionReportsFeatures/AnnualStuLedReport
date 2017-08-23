@@ -1,0 +1,25 @@
+Feature: Annual Stu Led Report
+  As a user I would like to run the test cases of this page
+  So that I don't have to do it manually
+
+  Background: Steps to open fee manager landing page
+    Given for url
+    When user enter username and password
+    And click sign in to open erp home page
+    Then user click fee manager logo
+    When user open annual stu led report
+
+  @validation @scenario1
+  Scenario: To test client side validations on mandatory fields
+    Then verify validation when no installment is selected on annual stu led report
+
+  @verify_with_filters @scenario2
+  Scenario: To verify annual stu led report with filters
+    And select installment on annual stu led report
+    And select class with index "1" on annual stu led report
+    And select section with index "1" on annual stu led report
+    Then click show on annual stu led report
+
+  @verify_with_no_filters @scenario3
+  Scenario: To verify annual stu led report without selecting any filter
+    Then click show on annual stu led report

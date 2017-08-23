@@ -1,0 +1,29 @@
+Feature: Total Collection Report
+  As a user I would like to run the test cases of this page
+  So that I don't have to do it manually
+
+  Background: Steps to open fee manager landing page
+    Given for url
+    When user enter username and password
+    And click sign in to open erp home page
+    And user click fee manager logo
+    And user open total collection report
+
+  @validation @scenario1
+  Scenario: To test client side validations on mandatory fields
+    Then verify validation when no class is selected on total collection report
+
+  @verify_with_filters @scenario2
+  Scenario: To verify total collection report with filters
+    And select school with index "1" on total collection report
+    And select wing with index "1" on total collection report
+    And select class on total collection report
+    And select board with index "1" on total collection report
+    And select fee type with index "1" on total collection report
+    And select installment with index "1" on total collection report
+    And select user with index "1" on total collection report
+    Then click show on annual stu led report
+
+  @verify_with_no_filters @scenario3
+  Scenario: To verify total collection report without selecting any filter
+    Then click show on total collection report

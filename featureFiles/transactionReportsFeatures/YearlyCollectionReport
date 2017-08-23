@@ -1,0 +1,21 @@
+Feature: Yearly Collection Report
+  As a user I would like to run the test cases of this page
+  So that I don't have to do it manually
+
+  Background: Steps to open fee manager landing page
+    Given for url
+    When user enter username and password
+    And click sign in to open erp home page
+    Then user click fee manager logo
+    When user open yearly collection report
+
+  @validation @scenario1
+  Scenario: To test client side validations on mandatory fields
+    And select session as "Select Session" on yearly collection report
+    #And verify validation when no session is selected on yearly collection report
+    And verify validation when no class is selected on yearly collection report
+    And verify validation when no entry mode is selected on yearly collection report
+    And verify validation when no pay mode is selected on yearly collection report
+    And verify validation when no head is selected on yearly collection report
+    And verify validation when no installment is selected on yearly collection report
+    And verify validation when no bank name is selected on yearly collection report

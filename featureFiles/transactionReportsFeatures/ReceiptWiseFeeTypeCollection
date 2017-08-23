@@ -1,0 +1,16 @@
+Feature: Receipt Wise Fee Type Collection
+  As a user I would like to run the test cases of this page
+  So that I don't have to do it manually
+
+  Background: Steps to open fee manager landing page
+    Given for url
+    When user enter username and password
+    And click sign in to open erp home page
+    Then user click fee manager logo
+    When user open receipt wise fee type collection
+
+  @validation @scenario1
+  Scenario: To test client side validations on mandatory fields
+    And verify validation when no class is selected on receipt wise fee type collection
+    And verify validation when no pay mode is selected on receipt wise fee type collection
+    Then verify validation when no bank name is selected on receipt wise fee type collection

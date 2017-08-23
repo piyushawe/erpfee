@@ -1,0 +1,18 @@
+Feature: Fees Concession
+  As a user I would like to run the test cases of this page
+  So that I don't have to do it manually
+
+  Background: Steps to open fee manager landing page
+    Given for url
+    When user enter username and password
+    And click sign in to open erp home page
+    Then user click fee manager logo
+    When user open fees concession
+
+  @validation @scenario1
+  Scenario: To test client side validations on mandatory fields
+    And verify validation when no class is selected on fees concession
+    And verify validation when no head is selected on fees concession
+    And verify validation when no installment is selected on fees concession
+    And verify validation when no concession is selected on fees concession
+    Then verify validation when till date is not selected on fees concession
