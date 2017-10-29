@@ -20,7 +20,10 @@ public class ReconcileReport extends GenericReports {
     }
 
     public void openReconcileReport() throws IOException {
-        //ehandler.moveToElement(readFile.getElement(file, "transactionreportmenu"));
         ehandler.openFrame(readFile.getElement(file, "transactionreportmenu"), link, frame);
+    }
+
+    public void clickFormat1() throws IOException {
+        ehandler.click(readFile.getElement(f1, "format1"));
     }
 }

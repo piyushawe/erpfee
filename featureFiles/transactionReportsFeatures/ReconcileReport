@@ -9,8 +9,32 @@ Feature: Reconcile Report
     Then user click fee manager logo
     When user open reconcile report
 
+#validation messege verification test cases
   @validation @scenario1
   Scenario: To test client side validations on mandatory fields
     And verify validation when no class is selected on reconcile report
     Then verify validation when no installment is selected on reconcile report
 
+#test cases of all filters selection
+  @verify_with_filters @scenario2
+  Scenario: To verify reconcile report with filters
+    And select school with index "1" on reconcile report
+    And select wing with index "1" on reconcile report
+    And select class on reconcile report
+    And select board with index "1" on reconcile report
+    And select fee type with index "1" on reconcile report
+    And select installment on reconcile report
+    And select user with index "1" on reconcile report
+    And click show on reconcile report
+
+#test cases on selection of radio buttons
+  @verify_with_no_filters @scenario3
+  Scenario: To verify fee reconcile report with summary and format1
+    And select radio button "1" on reconcile report
+    And click format on reconcile report
+    And click show on reconcile report
+
+  @verify_with_no_filters @scenario4
+  Scenario: To verify fee reconcile report with consolidated
+    And select radio button "2" on reconcile report
+    And click show on reconcile report

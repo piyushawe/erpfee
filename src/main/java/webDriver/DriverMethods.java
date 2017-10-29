@@ -17,6 +17,7 @@ public class DriverMethods {
   public void getUrl(String url){
       driver.get(url);
   }
+
   public void switchToParentWindow(){
       driver.switchTo().defaultContent();
   }

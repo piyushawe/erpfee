@@ -9,6 +9,7 @@ Feature: Day Wise Total Collection
     And user click fee manager logo
     Then user open day wise total collection
 
+#test cases of all filters selection
   @validation @scenario1
   Scenario: To test client side validations on mandatory fields
     And verify validation when no class is selected on day wise total collection
@@ -18,3 +19,24 @@ Feature: Day Wise Total Collection
     And verify validation when no installment is selected on day wise total collection
     And verify validation when no month is selected on day wise total collection
     Then verify validation when till date is not selected on day wise total collection
+
+#test cases of all filters selection
+  @verify_with_filters @scenario2
+  Scenario: To verify day wise total collection with filters
+    And select school with index "1" on day wise total collection
+    And select wing with index "1" on day wise total collection
+    And select class on day wise total collection
+    And select board with index "1" on day wise total collection
+    And select entry mode on day wise total collection
+    And select pay mode on day wise total collection
+    And select fee type with index "1" on fees cheque bounce report
+    And select head on day wise total collection
+    And select installment on day wise total collection
+    And select month on day wise total collection
+    And select user with index "1" on day wise total collection
+    Then click show on day wise total collection
+
+#test cases on selection of radio buttons/ check box
+  @verify_with_no_filters @scenario3
+  Scenario: To verify day wise total collection without selecting any filter
+    Then click show on day wise total collection

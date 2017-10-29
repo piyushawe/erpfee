@@ -23,11 +23,41 @@ public class FeesConcession extends GenericReports {
         ehandler.openFrame(readFile.getElement(file, "transactionreportmenu"), link, frame);
     }
 
-    public void validateConcession() throws IOException {
-        WebElement ftype= readFile.getElement(f1, "concession");
+    public void getConcessionElements() throws IOException {
+        element= readFile.getElement(f1, "concession");
         clear= readFile.getElement(f1, "concessionclear");
+        values= readFile.getElement(f1, "concessionvalueslist");
         close= readFile.getElement(f1, "concessionclose");
         message= readFile.getElement(f1, "concessionmessage");
-        verify.verifyValidationOnMultiSelect(ftype, clear, close, message, readFile.readProperty(file, "concession"));
+    }
+
+    public void validateConcession() throws IOException {
+        getConcessionElements();
+        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "concession"));
+    }
+
+    public void selectConcession() throws IOException {
+        getConcessionElements();
+        ehandler.selectValue(element, clear, values, close);
+    }
+
+    public void validateTillDate() throws IOException {
+        verify.verifyValidationOnMultiSelect(readFile.getElement(f1, "tilldate"), clr, readFile.getElement(f1, "tilldatemessage"), readFile.readProperty(file, "tilldate"));
+    }
+
+    public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {
+        ehandler.selectDate(readFile.getElement(f1, "tilldate"), mm, yy, dd);
+    }
+
+    public void clickPaidConcession() throws IOException {
+        ehandler.click(readFile.getElement(f1, "paidconcession"));
+    }
+
+    public void clickEntryTime() throws IOException {
+        ehandler.click(readFile.getElement(f1, "entrytime"));
+    }
+
+    public void clickAssigned() throws IOException {
+        ehandler.click(readFile.getElement(f1, "assigned"));
     }
 }

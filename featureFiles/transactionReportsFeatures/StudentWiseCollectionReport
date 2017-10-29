@@ -12,3 +12,17 @@ Feature: Student Wise Collection Report
   @validation @scenario1
   Scenario: To test client side validations on mandatory fields
     Then verify validation when no class is selected on student wise collection report
+
+#test cases of all filters selection
+  @verify_with_filters @scenario2
+  Scenario: To verify student wise collection report with filters
+    And select school with index "1" on student wise collection report
+    And select class on student wise collection report
+    And select fee type with index "1" on student wise collection report
+    And click show on student wise collection report
+
+#test cases on selection of check boxes
+  @verify_with_no_filters @scenario3
+  Scenario: To verify student wise collection report head wise
+    And click head wise on student wise collection report
+    And click show on student wise collection report

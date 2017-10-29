@@ -23,4 +23,4 @@ Feature: Reconcile Installment Class Wise
 
   @verify_with_no_filters @scenario3
   Scenario: To verify reconcile installment class wise without selecting any filter
-    Then click show on bad debts report
+    Then click show on reconcile installment class wise

@@ -12,10 +12,32 @@ Feature: Yearly Collection Report
   @validation @scenario1
   Scenario: To test client side validations on mandatory fields
     And select session as "Select Session" on yearly collection report
-    #And verify validation when no session is selected on yearly collection report
+    And verify validation when no session is selected on yearly collection report
     And verify validation when no class is selected on yearly collection report
     And verify validation when no entry mode is selected on yearly collection report
     And verify validation when no pay mode is selected on yearly collection report
     And verify validation when no head is selected on yearly collection report
     And verify validation when no installment is selected on yearly collection report
     And verify validation when no bank name is selected on yearly collection report
+
+  @verify_with_filters @scenario2
+  Scenario: To verify yearly collection report with filters
+    And select session with index "2" on yearly collection report
+    And select school with index "1" on yearly collection report
+    And select wing with index "1" on yearly collection report
+    And select class on yearly collection report
+    And select board with index "1" on yearly collection report
+    And select entry mode on yearly collection report
+    And select pay mode on yearly collection report
+    And select fee type with index "1" on yearly collection report
+    And select head on yearly collection report
+    And select installment on yearly collection report
+    And select bank name on yearly collection report
+    And select user with index "1" on yearly collection report
+    Then click show on yearly collection report
+
+  @verify_with_no_filters @scenario3
+  Scenario: To verify yearly collection report without selecting any filter
+    And click month wise collection on yearly collection report
+    And click cheque clearing date on yearly collection report
+    Then click show on month wise collection report

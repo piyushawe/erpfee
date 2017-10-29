@@ -11,6 +11,7 @@ import webDriver.DriverMethods;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 
 import static webDriver.AppDriver.driver;
@@ -43,6 +44,10 @@ public class EventHandlingUtility {
 
     public void click(WebElement element){
       element.click();
+    }
+
+    public void clearValue(WebElement element){
+        element.clear();
     }
 
     public void enterText(WebElement textfield, String text){
@@ -89,35 +94,69 @@ public class EventHandlingUtility {
       }
     }
 
-    public void selectByVisibleText(WebElement element, String text){
+    public void selectByVisibleText(WebElement element, String text) throws InterruptedException {
       new Select(element).selectByVisibleText(text);
+      Thread.sleep(100);
     }
 
-    public void selectByIndex(WebElement element, int index){
+    public void selectByIndex(WebElement element, int index) throws InterruptedException {
       new Select(element).selectByIndex(index);
+      Thread.sleep(100);
     }
 
-    void selectDate(WebElement date, String mm, String yy, String dd) throws IOException {
+    public void selectDate(WebElement date, String mm, String yy, String dd) throws IOException, InterruptedException {
       click(date);
       dm.waitUntil((readFile.getElement(file,"monthpicker")),20);
       readFile.getElement(file,"monthpicker");
-      dm.waitUntil(driver.findElement(By.className(readFile.readProperty(file, "monthpicker"))),200);
+      dm.waitUntil(readFile.getElement(file,"monthpicker"),200);
       selectByVisibleText(readFile.getElement(file,"monthpicker"), mm);
       dm.waitUntil(readFile.getElement(file,"yearpicker"),20);
       selectByVisibleText(readFile.getElement(file,"yearpicker"), yy);
       dm.waitUntil(readFile.getElement(file,"daypicker"),200);
       selectValueFromTable(readFile.getElement(file,"daypicker"), dd);
+      Thread.sleep(500);
     }
 
 //select 1st value in multiselect list
     public void selectValue(WebElement element, WebElement clear, WebElement values, WebElement close) throws IOException {
         click(element);
         click(clear);
-        List<WebElement>options= readFile.getElements(file, values, "tablelist");
+        List<WebElement> options = readFile.getElements(file, values, "tablelist");
         if (options.isEmpty())
             System.out.println("No Value Present");
         else
             click(options.get(0));
         click(close);
     }
+
+    void selectValue(WebElement element, WebElement clear, WebElement values, WebElement close, WebElement div) throws IOException, InterruptedException {
+        click(element);
+        click(clear);
+        if (!div.getAttribute("style").contains("block")) {
+            click(element);
+        }
+        List<WebElement> options = readFile.getElements(file, values, "tablelist");
+        if (options.isEmpty())
+            System.out.println("No Value Present");
+        else
+            click(options.get(0));
+        click(close);
+    }
+
+    public void getList(List<WebElement>elements){
+        HashMap<String, Integer> radioList= new HashMap<String, Integer>();
+        for (WebElement emt: elements){
+            String id= emt.getAttribute("id");
+
+            System.out.println(emt.getText());
+        }
+    }
+
+    public void clickRadioButton(List<WebElement>elements, String value){
+        for (WebElement element: elements){
+            if (element.getAttribute("value").equals(value))
+                element.click();
+        }
+    }
+
 }

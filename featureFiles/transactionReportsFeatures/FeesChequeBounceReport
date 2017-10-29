@@ -1,0 +1,40 @@
+Feature: Fees Cheque Bounce Report
+  As a user I would like to run the test cases of this page
+  So that I don't have to do it manually
+
+  Background: Steps to open fee manager landing page
+    Given for url
+    When user enter username and password
+    And click sign in to open erp home page
+    And user click fee manager logo
+    Then user open fees cheque bounce report
+
+  @validation @scenario1
+  Scenario: To test client side validations on mandatory fields
+    And verify validation when no date from is selected on fees cheque bounce report
+    #And select from date as month "August" year "2017" and day "1" on fees cheque bounce report
+    And verify validation when no date to is selected on fees cheque bounce report
+
+  @validation @scenario2
+  Scenario: To test alert validation when from date is greater than to date
+    When select from date as month "August" year "2017" and day "10" on fees cheque bounce report
+    And select to date as month "August" year "2017" and day "9" on fees cheque bounce report
+    Then verify alert message for date on fees cheque bounce report
+
+  @verify_with_filters @scenario3
+  Scenario: To verify fees cheque bounce report with filters
+    And select school with index "1" on fees cheque bounce report
+    And select from date as month "August" year "2017" and day "10" on fees cheque bounce report
+    And select to date as month "March" year "2018" and day "31" on fees cheque bounce report
+    And select class with index "1" on fees cheque bounce report
+    And select section with index "1" on fees cheque bounce report
+    And select bank name with index "1" on fees cheque bounce report
+    And select user with index "1" on fees cheque bounce report
+    And select report filter with index "1" on fees cheque bounce report
+    Then click show on fees cheque bounce report
+
+  @verify_with_no_filters @scenario4
+  Scenario: To verify fees cheque bounce report without selecting any filter
+    And select from date as month "August" year "2017" and day "10" on fees cheque bounce report
+    And click head wise on fees cheque bounce report
+    Then click show on fees cheque bounce report

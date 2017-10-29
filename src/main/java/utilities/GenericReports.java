@@ -1,8 +1,6 @@
 package utilities;
 
-import cucumber.api.java.gl.E;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import webDriver.DriverMethods;
 
@@ -10,27 +8,23 @@ import java.io.File;
 import java.io.IOException;
 
 public abstract class GenericReports extends GenericBaseClass implements GenericObjects {
-   @FindBy(id = "ContentPlaceHolder1_ddlSchoolSubHead")private WebElement school;
-   @FindBy(id = "ContentPlaceHolder1_ddlWings")private WebElement wing;
-   @FindBy(id = "ContentPlaceHolder1_ddlboard")private WebElement board;
-   @FindBy(id = "ContentPlaceHolder1_txtDateFrom_TextBox")protected WebElement fromdate;
-   @FindAll({@FindBy(id = "ContentPlaceHolder1_txtdateTo_TextBox"),
-             @FindBy(id = "ContentPlaceHolder1_txtDateTo_TextBox")})
-             private WebElement todate;
-   @FindBy(id = "ContentPlaceHolder1_chkReceiptNoRange")private WebElement receiptnorange;
-   @FindBy(id = "ContentPlaceHolder1_txtFrom_TextBox")private WebElement receiptfrom;
-   @FindBy(id = "ContentPlaceHolder1_txtTo_TextBox")private WebElement receiptto;
-   @FindBy(id = "ContentPlaceHolder1_ddlUser")private WebElement user;
-   @FindBy(xpath = "//input[@value='Show']")private WebElement show;
-   @FindBy(className = "datepick-clear")protected WebElement clr;
-   @FindBy(className = "datepick-close")private WebElement cls;
 
+   @FindBy(id = "ContentPlaceHolder1_txtDateFrom_TextBox") protected WebElement fromdate;
+   @FindBy(id = "ContentPlaceHolder1_txtdateTo_TextBox") private WebElement todate;
+   @FindBy(id = "ContentPlaceHolder1_chkReceiptNoRange") private WebElement receiptnorange;
+   @FindBy(id = "ContentPlaceHolder1_txtFrom_TextBox") private WebElement receiptfrom;
+   @FindBy(id = "ContentPlaceHolder1_txtTo_TextBox") private WebElement receiptto;
+   @FindBy(xpath = "//input[@value='Show']") private WebElement show;
+   @FindBy(className = "datepick-clear") protected WebElement clr;
+   @FindBy(className = "datepick-close") private WebElement cls;
+   //@FindBy(xpath = "/html/body/div[4]")private WebElement div;
+
+   protected WebElement element;
    protected WebElement clear;
    protected WebElement values;
    protected WebElement close;
    protected WebElement message;
    protected File f1;
-   protected WebElement element;
 
    private void getClassElements() throws IOException {
       element= readFile.getElement(f1, "class");
@@ -51,6 +45,7 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
    private void getPayModeElements() throws IOException {
       element= readFile.getElement(f1, "paymode");
       clear= readFile.getElement(f1, "paymodeclear");
+      values= readFile.getElement(f1, "paymodevalueslist");
       close= readFile.getElement(f1, "paymodeclose");
       message= readFile.getElement(f1, "paymodemessage");
    }
@@ -58,6 +53,7 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
    private void getHeadElements() throws IOException {
       element= readFile.getElement(f1, "head");
       clear= readFile.getElement(f1, "headclear");
+      values= readFile.getElement(f1, "headvalueslist");
       close= readFile.getElement(f1, "headclose");
       message= readFile.getElement(f1, "headmessage");
    }
@@ -95,11 +91,11 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
       verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "installment"));
    }
 
-   public void selectSchool(int index) throws IOException {
+   public void selectSchool(int index) throws IOException, InterruptedException {
       ehandler.selectByIndex(readFile.getElement(f1, "school"), index);
    }
 
-   public void selectWing(int index) throws IOException {
+   public void selectWing(int index) throws IOException, InterruptedException {
       ehandler.selectByIndex(readFile.getElement(f1, "wing"), index);
    }
 
@@ -108,15 +104,15 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
       ehandler.selectValue(element, clear, values, close);
    }
 
-   public void selectClass(int index) throws IOException {
+   public void selectClass(int index) throws IOException, InterruptedException {
       ehandler.selectByIndex(readFile.getElement(f1, "class"), 1);
    }
 
-   public void selectBoard(int index) throws IOException {
+   public void selectBoard(int index) throws IOException, InterruptedException {
       ehandler.selectByIndex(readFile.getElement(f1, "board"), 1);
    }
 
-   public void selectSection(int index) throws IOException {
+   public void selectSection(int index) throws IOException, InterruptedException {
       ehandler.selectByIndex(readFile.getElement(f1, "section"), 1);
    }
 
@@ -125,28 +121,42 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
       ehandler.selectValue(element, clear, values, close);
    }
 
-   public void selectInstallment(int index) throws IOException {
+   public void selectInstallment(int index) throws IOException, InterruptedException {
       ehandler.selectByIndex(readFile.getElement(f1, "installment"), index);
    }
 
-   public void selectEntryMode() throws IOException {
+   public void selectInstallment(String inst) throws IOException, InterruptedException {
+      ehandler.selectByVisibleText(readFile.getElement(f1, "installment"), inst);
+   }
+
+   public void selectEntryMode() throws IOException, InterruptedException {
       getEntryModeElements();
       ehandler.selectValue(element, clear, values, close);
    }
 
-   public void selectFeeType(int index) throws IOException {
+   public void selectPayMode() throws IOException {
+      getPayModeElements();
+      ehandler.selectValue(element, clear, values, close);
+   }
+
+   public void selectHead() throws IOException {
+      getHeadElements();
+      ehandler.selectValue(element, clear, values, close);
+   }
+
+   public void selectFeeType(int index) throws IOException, InterruptedException {
       ehandler.selectByIndex(readFile.getElement(f1, "feetype"), index);
    }
 
-   public void selectUser(int index) throws IOException {
+   public void selectUser(int index) throws IOException, InterruptedException {
       ehandler.selectByIndex(readFile.getElement(f1, "user"), index);
    }
 
-   public void selectFromDate(String mm, String yy, String dd) throws IOException {
+   public void selectFromDate(String mm, String yy, String dd) throws IOException, InterruptedException {
       ehandler.selectDate(fromdate, mm, yy, dd);
    }
 
-   public void selectToDate(String mm, String yy, String dd) throws IOException {
+   public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {
       ehandler.selectDate(todate, mm, yy, dd);
    }
 
@@ -165,6 +175,22 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
    public void clickReceiptRange(){
       new DriverMethods().waitUntil(receiptnorange, 1000);
       ehandler.click(receiptnorange);
+   }
+
+   public void clickButton(String value) throws IOException {
+      ehandler.clickRadioButton(readFile.getElements(f1, "radiobuttongroup"), value);
+   }
+
+   public void clickSettlementDate() throws IOException {
+      ehandler.click(readFile.getElement(f1, "settlementdate"));
+   }
+
+   public void clickChequeClearanceDate() throws IOException {
+      ehandler.click(readFile.getElement(f1, "chequeclearancedate"));
+   }
+
+   public void clickDateRange() throws IOException {
+      ehandler.click(readFile.getElement(f1, "daterange"));
    }
 
    public void enterReceiptFrom(String rfrom){
@@ -190,6 +216,7 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
    public void pressEnterReceiptTo(){
       ehandler.pressEnter(receiptto);
    }
+
    public void validateReceiptFromMessage() throws IOException {
       verify.verifyValidationMessage(readFile.readProperty(file, "receiptnomessage"), readFile.getElement(file, "receiptfrom"));
    }
@@ -221,6 +248,7 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
    public void validateInvalidReceiptRangeAlertMessage() throws IOException {
       verify.verifyValidationMessage(readFile.readProperty(file, "invalidreceiptrangemessage"), readFile.getElement(file, "popupmessage"));
    }
+
    public void clickShow(){
       ehandler.click(show);
    }

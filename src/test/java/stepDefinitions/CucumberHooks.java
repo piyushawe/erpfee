@@ -21,7 +21,7 @@ public class CucumberHooks {
   private GenericUtility utility= new GenericUtility();
 
   @Before
-  public void before(Scenario sc) {
+  public void getScenario(Scenario sc) {
       scenario= sc.getSourceTagNames();
       System.out.println("Scenario is: "+scenario);
   }

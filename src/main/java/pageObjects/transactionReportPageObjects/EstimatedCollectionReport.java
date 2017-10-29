@@ -24,4 +24,11 @@ public class EstimatedCollectionReport extends GenericReports {
         ehandler.openFrame(readFile.getElement(file, "collectionsubmenu"), link, frame);
     }
 
+    public void selectReportType(int index) throws IOException, InterruptedException {
+        ehandler.selectByIndex(readFile.getElement(f1, "reporttype"), index);
+    }
+
+    public void validateTillDate() throws IOException {
+        verify.verifyValidationOnMultiSelect(readFile.getElement(f1, "tilldate"), clr, readFile.getElement(f1, "tilldatemessage"), readFile.readProperty(file, "tilldate"));
+    }
 }

@@ -14,3 +14,44 @@ Feature: Receipt Wise Fee Type Collection
     And verify validation when no class is selected on receipt wise fee type collection
     And verify validation when no pay mode is selected on receipt wise fee type collection
     Then verify validation when no bank name is selected on receipt wise fee type collection
+
+#test cases of all filters selection
+  @verify_with_filters @scenario3
+  Scenario: To verify receipt wise fee type collection with filters
+    And select school with index "1" on receipt wise fee type collection
+    And select wing with index "1" on receipt wise fee type collection
+    And select class on receipt wise fee type collection
+    And select board with index "1" on receipt wise fee type collection
+    And select fee type with index "1" on receipt wise fee type collection
+    And select installment with index "1" on receipt wise fee type collection
+    And select pay mode on receipt wise fee type collection
+    And select user with index "1" on receipt wise fee type collection
+    And select bank name on receipt wise fee type collection
+    And select newold student with index "1" on receipt wise fee type collection
+    And select student status with index "1" on receipt wise fee type collection
+    Then click show on receipt wise fee type collection
+
+#test cases on selection of radio buttons/ check box
+  @verify_with_no_filters @scenario4
+  Scenario: To verify receipt wise fee type collection with settlement date for all students student wise
+    And select from date as month "April" year "2017" and day "1" on receipt wise fee type collection
+    And select settlement date on receipt wise fee type collection
+    And select radio button "1" on receipt wise fee type collection
+    And select student wise on receipt wise fee type collection
+    Then click show on receipt wise fee type collection
+
+  @verify_with_no_filters @scenario5
+  Scenario: To verify receipt wise fee type collection with cheque clearance date for active students head wise
+    And select from date as month "April" year "2017" and day "1" on receipt wise fee type collection
+    And select cheque clearance date on receipt wise fee type collection
+    And select radio button "2" on receipt wise fee type collection
+    And select head wise on receipt wise fee type collection
+    Then click show on receipt wise fee type collection
+
+  @verify_with_no_filters @scenario6
+  Scenario: To verify receipt wise fee type collection with remark for inactive students date wise
+    And select from date as month "April" year "2017" and day "1" on receipt wise fee type collection
+    And select show remark on receipt wise fee type collection
+    And select radio button "3" on receipt wise fee type collection
+    And select date wise on receipt wise fee type collection
+    Then click show on receipt wise fee type collection

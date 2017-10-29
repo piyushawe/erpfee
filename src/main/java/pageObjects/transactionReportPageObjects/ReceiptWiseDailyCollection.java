@@ -24,11 +24,29 @@ public class ReceiptWiseDailyCollection extends GenericReports {
         ehandler.openFrame(readFile.getElement(file, "collectionsubmenu"), link, frame);
     }
 
-    public void validateBankName() throws IOException {
-        WebElement bname= readFile.getElement(f1, "bankname");
+    private void getBankNameElements() throws IOException {
+        element= readFile.getElement(f1, "bankname");
         clear= readFile.getElement(f1, "banknameclear");
+        values= readFile.getElement(f1, "banknamevalueslist");
         close= readFile.getElement(f1, "banknameclose");
         message= readFile.getElement(f1, "banknamemessage");
-        verify.verifyValidationOnMultiSelect(bname, clear, close, message, readFile.readProperty(file, "bankname"));
+    }
+
+    public void validateBankName() throws IOException {
+        getBankNameElements();
+        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "bankname"));
+    }
+
+    public void selectBankName() throws IOException {
+        getBankNameElements();
+        ehandler.selectValue(element, clear, values, close);
+    }
+
+    public void selectOrderBy(int index) throws IOException, InterruptedException {
+        ehandler.selectByIndex(readFile.getElement(f1, "orderby"), index);
+    }
+
+    public void clickAmalgamatedReport() throws IOException {
+        ehandler.click(readFile.getElement(f1, "amalgamatedreport"));
     }
 }

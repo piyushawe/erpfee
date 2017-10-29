@@ -24,3 +24,31 @@ Feature: Receipt Wise Daily Collection
     And select to date as month "August" year "2017" and day "22" on receipt wise daily collection
     And click show on receipt wise daily collection
     Then verify alert message for date on receipt wise daily collection
+
+#test cases of all filters selection
+  @verify_with_filters @scenario3
+  Scenario: To verify receipt wise daily collection with filters
+    And select school with index "1" on receipt wise daily collection
+    And select wing with index "1" on receipt wise daily collection
+    And select class on receipt wise daily collection
+    And select board with index "1" on receipt wise daily collection
+    And select fee type with index "1" on receipt wise daily collection
+    And select pay mode on receipt wise daily collection
+    And select bank name on receipt wise daily collection
+    And select order by with index "1" on receipt wise daily collection
+    And select user with index "1" on receipt wise daily collection
+    Then click show on receipt wise daily collection
+
+#test cases on selection of radio buttons
+  @verify_with_no_filters @scenario4
+  Scenario: To verify receipt wise daily collection without head and amalgamated report
+    And select from date as month "April" year "2017" and day "1" on receipt wise daily collection
+    And select radio button "1" on receipt wise daily collection
+    And click amalgamated report on receipt wise daily collection
+    Then click show on receipt wise daily collection
+
+  @verify_with_no_filters @scenario5
+  Scenario: To verify receipt wise daily collection with head
+    And select from date as month "April" year "2017" and day "1" on receipt wise daily collection
+    And select radio button "2" on receipt wise daily collection
+    Then click show on receipt wise daily collection

@@ -82,4 +82,3 @@ Feature: Define Mother Tongue
    And select record on define mother tongue page
    And modify record on define mother tongue page
    Then verify modify message on define mother tongue page
-

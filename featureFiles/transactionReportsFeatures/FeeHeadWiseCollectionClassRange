@@ -25,3 +25,26 @@ Feature: Fee Head Wise Collection Class Range
     And select to date as month "August" year "2017" and day "9" on fee head wise collection class range
     And click show on fee head wise collection class range
     Then verify alert message for date on fee head wise collection class range
+
+#test cases of all filters selection
+  @verify_with_filters @scenario3
+  Scenario: To verify fee head wise collection class range with filters
+    And select school with index "1" on fee head wise collection class range
+    And select wing with index "1" on fee head wise collection class range
+    And select class on fee head wise collection class range
+    And select board with index "1" on fee head wise collection class range
+    And select entry mode on fee head wise collection class range
+    And select fee type with index "1" on fee head wise collection class range
+    And select pay mode on fee head wise collection class range
+    And select head on fee head wise collection class range
+    And select from date as month "April" year "2017" and day "1" on fee head wise collection class range
+    And select user with index "1" on fee head wise collection class range
+    Then click show on fee head wise collection class range
+
+#test cases on selection of check box
+  @verify_with_no_filters @scenario4
+  Scenario: To verify fee head wise collection class range without selecting any filter
+    And select from date as month "April" year "2017" and day "1" on fee head wise collection class range
+    And click settlement date on fee head wise collection class range
+    And click cheque clearance date on fee head wise collection class range
+    Then click show on fee head wise collection class range

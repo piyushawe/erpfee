@@ -15,6 +15,27 @@ Feature: Month Wise Collection Report
     And verify validation when no entry mode is selected on month wise collection report
     And verify validation when no head is selected on month wise collection report
     And select installment "Please Select" on month wise collection report
-    And verify validation when no installment is selected on month wise collection report
     And verify validation when no month is selected on month wise collection report
     And verify validation when no bank name is selected on month wise collection report
+    And click show on month wise collection report
+    And verify validation when no installment is selected on month wise collection report
+
+  @verify_with_filters @scenario2
+  Scenario: To verify month wise collection report with filters
+    And select school with index "1" on month wise collection report
+    And select wing with index "1" on month wise collection report
+    And select class on month wise collection report
+    And select board with index "1" on month wise collection report
+    And select entry mode on month wise collection report
+    And select fee type with index "1" on month wise collection report
+    And select head on month wise collection report
+    And select installment with index "1" on month wise collection report
+    And select month on month wise collection report
+    And select bank name on month wise collection report
+    And select user with index "1" on month wise collection report
+    Then click show on month wise collection report
+
+  @verify_with_no_filters @scenario3
+  Scenario: To verify month wise collection report without selecting any filter
+    And select installment with index "1" on month wise collection report
+    Then click show on month wise collection report

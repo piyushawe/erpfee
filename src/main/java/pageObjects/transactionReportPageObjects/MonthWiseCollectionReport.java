@@ -12,6 +12,7 @@ import java.io.IOException;
 public class MonthWiseCollectionReport extends GenericReports {
     @FindBy(linkText = "Month Wise Collection Report")WebElement link;
     @FindBy(id = "Month Wise Collection Report")WebElement frame;
+    private WebElement element;
 
     public MonthWiseCollectionReport(WebDriver d) throws IOException {
         f1= new File("F:\\erpfee\\configuration\\transactionReport\\MonthWiseCollectionReport.properties");
@@ -24,26 +25,42 @@ public class MonthWiseCollectionReport extends GenericReports {
         ehandler.openFrame(readFile.getElement(file, "collectionsubmenu"), link, frame);
     }
 
-    public void selectInstallment(String inst) throws IOException {
-        ehandler.selectByVisibleText(readFile.getElement(f1, "installment"), inst);
+    public void validateInstallment() throws IOException {
+        verify.verifyValidationMessage(readFile.readProperty(file, "Installment"), readFile.getElement(f1, "installmentmessage"));
     }
 
-    public void validateInstallment() throws IOException {
-        verify.verifyValidationMessage(readFile.readProperty(file, "installment"), readFile.getElement(f1, "installmentmessage"));
-    }
-    public void validateMonth() throws IOException {
-        WebElement month= readFile.getElement(f1, "month");
+    private void getMonthElements() throws IOException {
+        element= readFile.getElement(f1, "month");
         clear= readFile.getElement(f1, "monthclear");
+        values= readFile.getElement(f1, "monthvalueslist");
         close= readFile.getElement(f1, "monthclose");
         message= readFile.getElement(f1, "monthmessage");
-        verify.verifyValidationOnMultiSelect(month, clear, close, message, readFile.readProperty(file, "month"));
+    }
+
+    private void getBankNameElements() throws IOException {
+        element= readFile.getElement(f1, "bankname");
+        clear= readFile.getElement(f1, "banknameclear");
+        values= readFile.getElement(f1, "banknamevalueslist");
+        close= readFile.getElement(f1, "banknameclose");
+        message= readFile.getElement(f1, "banknamemessage");
+    }
+    public void validateMonth() throws IOException {
+        getMonthElements();
+        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "month"));
+    }
+
+    public void selectMonth() throws IOException {
+        getMonthElements();
+        ehandler.selectValue(element, clear, values, close);
     }
 
     public void validateBankName() throws IOException {
-        WebElement bname= readFile.getElement(f1, "bankname");
-        clear= readFile.getElement(f1, "banknameclear");
-        close= readFile.getElement(f1, "banknameclose");
-        message= readFile.getElement(f1, "banknamemessage");
-        verify.verifyValidationOnMultiSelect(bname, clear, close, message, readFile.readProperty(file, "bankname"));
+        getBankNameElements();
+        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "bankname"));
+    }
+
+    public void selectBankName() throws IOException {
+        getBankNameElements();
+        ehandler.selectValue(element, clear, values, close);
     }
 }

@@ -20,11 +20,11 @@ Feature: Daily Fee Collection Date Wise
     And select from date as month "April" year "2017" and day "1" on daily fee collection date wise
     And verify validation when no date to is selected on daily fee collection date wise
     And click receipt no range on daily fee collection date wise
-    And enter character "a" in receipt from on daily fee collection date wise
+    And enter value "a" in receipt from on daily fee collection date wise
     Then verify numeric validation for receipt from on daily fee collection date wise
     And enter "101" digits in receipt from on daily fee collection date wise
     Then verify length validation on receipt from on daily fee collection date wise
-    And enter character "a" in receipt to on daily fee collection date wise
+    And enter value "a" in receipt to on daily fee collection date wise
     Then verify numeric validation for receipt to on daily fee collection date wise
     And enter "101" digits in receipt to on daily fee collection date wise
     Then verify length validation on receipt to on daily fee collection date wise
@@ -45,14 +45,43 @@ Feature: Daily Fee Collection Date Wise
   @validation @scenario4
   Scenario: To test alert validation when receipt to is left blank
     And click receipt no range on daily fee collection date wise
-    And enter character "1" in receipt from on daily fee collection date wise
+    And enter value "1" in receipt from on daily fee collection date wise
     And click show on daily fee collection date wise
     Then verify alert message for blank receipt to on daily fee collection date wise
 
   @validation @scenario5
   Scenario: To test alert validation for invalid receipt range
     And click receipt no range on daily fee collection date wise
-    And enter character "5" in receipt from on daily fee collection date wise
-    And enter character "1" in receipt to on daily fee collection date wise
+    And enter value "5" in receipt from on daily fee collection date wise
+    And enter value "1" in receipt to on daily fee collection date wise
     And click show on daily fee collection date wise
     Then verify alert message for invalid receipt range on daily fee collection date wise
+
+#test cases of all filters selection
+  @verify_with_filters @scenario6
+  Scenario: To verify daily fee collection date wise with filters
+    And select school with index "1" on daily fee collection date wise
+    And select wing with index "1" on daily fee collection date wise
+    And select class on daily fee collection date wise
+    And select board with index "1" on daily fee collection date wise
+    And select entry mode on daily fee collection date wise
+    And select fee type with index "1" on daily fee collection date wise
+    And select pay mode on daily fee collection date wise
+    And select bank name on daily fee collection date wise
+    And select head on daily fee collection date wise
+    And select cheque details on daily fee collection date wise
+    And select other details on daily fee collection date wise
+    And select user with index "1" on daily fee collection date wise
+    And select from date as month "April" year "2017" and day "1" on daily fee collection date wise
+    Then click show on daily fee collection date wise
+
+#test cases on selection of radio buttons/ check box
+  @verify_with_no_filters @scenario7
+  Scenario: To verify daily fee collection date wise with settlement date, cheque clearance date and receipt range
+    And select from date as month "April" year "2017" and day "1" on daily fee collection date wise
+    And click settlement date on daily fee collection date wise
+    And click cheque clearance date on daily fee collection date wise
+    And click receipt no range on daily fee collection date wise
+    And enter value "1" in receipt from on daily fee collection date wise
+    And enter value "100" in receipt to on daily fee collection date wise
+    Then click show on daily fee collection date wise with remark

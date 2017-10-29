@@ -20,7 +20,7 @@ public class GenericUtility extends GenericBaseClass implements GenericObjects{
     FileUtils.copyFile(f, new File("F:/erpfee/src/main/resources/screenshots/"+ school+"/"+page+"/"+page+scenario+timestamp+".png"));
   }
 
-  String getTimeStamp(){
+  private String getTimeStamp(){
     return new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
   }
 

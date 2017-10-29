@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         ,plugin= {"pretty","html:target/cucumber_html_report",
         "json:target/cucumber.json",
         "junit:target/cucumber.xml"}
-        ,tags= {"@scenario1"}
+        ,tags= {"@verify_with_filters, @verify_with_no_filters"}
 )
 public class DailyFeeCollectionDateWiseWithRemarkRunner {
 

@@ -89,8 +89,8 @@ public class ReadFile {
 
   String getFileName(){
     String fname= this.getClass().getName();
-    String fnm[]= fname.split("\\.");
-    System.out.println(fnm[0]);
-    return fnm[0];
+    //String fnm[]= fname.split("\\.");
+    System.out.println(fname);
+    return fname;
   }
  }

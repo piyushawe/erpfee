@@ -24,11 +24,21 @@ public class DailyFeeCollectionDateFeeGroupWise extends GenericReports {
      ehandler.openFrame(readFile.getElement(file, "collectionsubmenu"), link, frame);
   }
 
+  private void getFeeGroupElements() throws IOException {
+      element= readFile.getElement(f1, "feegroup");
+      clear= readFile.getElement(f1, "feegroupclear");
+      values= readFile.getElement(f1, "feegroupvalueslist");
+      close= readFile.getElement(f1, "feegroupclose");
+      message= readFile.getElement(f1, "feegroupmessage");
+  }
+
   public void validateFeeGroup() throws IOException {
-     WebElement fgroup= readFile.getElement(f1, "feegroup");
-     clear= readFile.getElement(f1, "feegroupclear");
-     close= readFile.getElement(f1, "feegroupclose");
-     message= readFile.getElement(f1, "feegroupmessage");
-     verify.verifyValidationOnMultiSelect(fgroup, clear, close, message, readFile.readProperty(file, "feegroup"));
+     getFeeGroupElements();
+     verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "feegroup"));
+  }
+
+  public void selectFeeGroup() throws IOException {
+     getFeeGroupElements();
+     ehandler.selectValue(element, clear, values, close);
   }
 }

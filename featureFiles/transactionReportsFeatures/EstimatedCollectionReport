@@ -9,8 +9,27 @@ Feature: Estimated Collection Report
     And user click fee manager logo
     Then user open estimated collection report
 
+#test cases of all filters selection
   @validation @scenario1
   Scenario: To test client side validations on mandatory fields
     And verify validation when no class is selected on estimated collection report
     And verify validation when no installment is selected on estimated collection report
     Then verify validation when till date is not selected on estimated collection report
+
+#test cases of all filters selection
+  @verify_with_filters @scenario2
+  Scenario: To verify estimated collection report with filters
+    And select school with index "1" on estimated collection report
+    And select wing with index "1" on estimated collection report
+    And select class on estimated collection report
+    And select board with index "1" on estimated collection report
+    And select fee type with index "1" on estimated collection report
+    And select installment on estimated collection report
+    And select user with index "1" on estimated collection report
+    And select report type with index "1" on estimated collection report
+    Then click show on estimated collection report
+
+#test cases on selection of radio buttons/ check box
+  @verify_with_no_filters @scenario3
+  Scenario: To verify estimated collection report without selecting any filter
+    Then click show on estimated collection report

@@ -24,11 +24,29 @@ public class DailyFeeCollection extends GenericReports{
      ehandler.openFrame(readFile.getElement(file, "collectionsubmenu"), link, frame);
   }
 
-  public void validateFeeType() throws IOException {
-      WebElement ftype= readFile.getElement(f1, "feetype");
+  private void getFeeTypeElements() throws IOException {
+      element= readFile.getElement(f1, "feetype");
       clear= readFile.getElement(f1, "feetypeclear");
+      values= readFile.getElement(f1, "feetypevalueslist");
       close= readFile.getElement(f1, "feetypeclose");
       message= readFile.getElement(f1, "feetypemessage");
-      verify.verifyValidationOnMultiSelect(ftype, clear, close, message, readFile.readProperty(file, "feetype"));
+  }
+
+  public void validateFeeType() throws IOException {
+      getFeeTypeElements();
+      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "feetype"));
+  }
+
+  public void selectFeeType() throws IOException {
+      getFeeTypeElements();
+      ehandler.selectValue(element, clear, values, close);
+  }
+
+  public void clickSettlementdate() throws IOException {
+      ehandler.click(readFile.getElement(f1, "settlementdate"));
+  }
+
+  public void clickChequeClearancedate() throws IOException {
+      ehandler.click(readFile.getElement(f1, "chequeclearancedate"));
   }
 }

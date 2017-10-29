@@ -24,11 +24,45 @@ public class DailyFeeCollectionDateWise extends GenericReports{
       ehandler.openFrame(readFile.getElement(file, "collectionsubmenu"), link, frame);
   }
 
-  public void validateBankName() throws IOException {
-      WebElement ftype= readFile.getElement(f1, "bankname");
+  private void getBankNameElements() throws IOException {
+      element= readFile.getElement(f1, "bankname");
       clear= readFile.getElement(f1, "banknameclear");
+      values= readFile.getElement(f1, "banknamevalueslist");
       close= readFile.getElement(f1, "banknameclose");
       message= readFile.getElement(f1, "banknamemessage");
-      verify.verifyValidationOnMultiSelect(ftype, clear, close, message, readFile.readProperty(file, "bankname"));
+  }
+
+  private void getChequeDetails() throws IOException {
+      element= readFile.getElement(f1, "chequedetails");
+      clear= readFile.getElement(f1, "chequedetailsclear");
+      values= readFile.getElement(f1, "chequedetailsvalueslist");
+      close= readFile.getElement(f1, "chequedetailsclose");
+  }
+
+  private void getOtherDetails() throws IOException {
+      element= readFile.getElement(f1, "otherdetails");
+      clear= readFile.getElement(f1, "otherdetailsclear");
+      values= readFile.getElement(f1, "otherdetailsvalueslist");
+      close= readFile.getElement(f1, "otherdetailsclose");
+  }
+
+  public void validateBankName() throws IOException {
+      getBankNameElements();
+      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "bankname"));
+  }
+
+  public void selectBankName() throws IOException {
+      getBankNameElements();
+      ehandler.selectValue(element, clear, values, close);
+  }
+
+  public void selectChequeDetails() throws IOException {
+      getChequeDetails();
+      ehandler.selectValue(element, clear, values, close);
+  }
+
+  public void selectOtherDetails() throws IOException {
+      getOtherDetails();
+      ehandler.selectValue(element, clear, values, close);
   }
 }

@@ -9,6 +9,7 @@ Feature: Fees Concession
     Then user click fee manager logo
     When user open fees concession
 
+#validation messege verification test cases
   @validation @scenario1
   Scenario: To test client side validations on mandatory fields
     And verify validation when no class is selected on fees concession
@@ -16,3 +17,30 @@ Feature: Fees Concession
     And verify validation when no installment is selected on fees concession
     And verify validation when no concession is selected on fees concession
     Then verify validation when till date is not selected on fees concession
+
+#test cases of all filters selection
+  @verify_with_filters @scenario2
+  Scenario: To verify fees concession with filters
+    And select school with index "1" on fees concession
+    And select wing with index "1" on fees concession
+    And select class on fees concession
+    And select board with index "1" on fees concession
+    And select fee type with index "1" on fees concession
+    And select head on fees concession
+    And select installment on fees concession
+    And select concession on fees concession
+    And click show on fees concession
+
+#test cases on selection of radio buttons
+  @verify_with_no_filters @scenario3
+  Scenario: To verify fees concession with consolidated
+    And select radio button "2" on fees concession
+    And click paid concession on fees concession
+    And click entry time on fees concession
+    And click assigned on fees concession
+    And click show on fees concession
+
+  @verify_with_no_filters @scenario4
+  Scenario: To verify fees concession with separated
+    And select radio button "1" on fees concession
+    And click show on fees concession

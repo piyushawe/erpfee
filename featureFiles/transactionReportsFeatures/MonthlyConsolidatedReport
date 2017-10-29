@@ -9,6 +9,7 @@ Feature: Monthly Consolidated Report
     Then user click fee manager logo
     When user open monthly consolidated report
 
+#validation messege verification test cases
   @validation @scenario1
   Scenario: To test client side validations on mandatory fields
     And verify validation when no class is selected on monthly consolidated report
@@ -19,3 +20,56 @@ Feature: Monthly Consolidated Report
     And verify validation when no month is selected on monthly consolidated report
     And verify validation when no bank name is selected on monthly consolidated report
     And verify validation when no cheque bank is selected on monthly consolidated report
+
+  @validation @scenario2
+  Scenario: To test alert validation when from date is greater than to date
+    And select radio button "5" on monthly consolidated report
+    When select from date as month "August" year "2017" and day "10" on monthly consolidated report
+    And select to date as month "August" year "2017" and day "9" on monthly consolidated report
+    Then verify alert message for date on monthly consolidated report
+
+#test cases of all filters selection
+  @verify_with_filters @scenario3
+  Scenario: To verify monthly consolidated report with filters
+    And select school with index "1" on monthly consolidated report
+    And select wing with index "1" on monthly consolidated report
+    And select class on monthly consolidated report
+    And select board with index "1" on monthly consolidated report
+    And select entry mode on monthly consolidated report
+    And select fee type with index "1" on monthly consolidated report
+    And select pay mode on monthly consolidated report
+    And select head on monthly consolidated report
+    And select installment on monthly consolidated report
+    And select month on monthly consolidated report
+    And select bank name on monthly consolidated report
+    And select cheque bank on monthly consolidated report
+    And select user with index "1" on monthly consolidated report
+    Then click show on monthly consolidated report
+
+#test cases on selection of radio buttons/ check box
+  @verify_with_no_filters @scenario4
+  Scenario: To verify monthly consolidated report headwise and cheque clearing date
+    And click cheque clearing date on monthly consolidated report
+    And select radio button "1" on monthly consolidated report
+    Then click show on monthly consolidated report
+
+  @verify_with_no_filters @scenario5
+  Scenario: To verify monthly consolidated report without head
+    And select radio button "2" on monthly consolidated report
+    Then click show on monthly consolidated report
+
+  @verify_with_no_filters @scenario6
+  Scenario: To verify monthly consolidated report class wise
+    And select radio button "3" on monthly consolidated report
+    Then click show on monthly consolidated report
+
+  @verify_with_no_filters @scenario7
+  Scenario: To verify monthly consolidated report month wise
+    And select radio button "4" on monthly consolidated report
+    Then click show on monthly consolidated report
+
+  @verify_with_no_filters @scenario8
+  Scenario: To verify monthly consolidated report class wise date range
+    And select radio button "5" on monthly consolidated report
+    And select from date as month "April" year "2017" and day "1" on monthly consolidated report
+    Then click show on monthly consolidated report

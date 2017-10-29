@@ -23,4 +23,8 @@ public class StudentWiseCollectionReport extends GenericReports {
         ehandler.moveToElement(readFile.getElement(file, "transactionreportmenu"));
         ehandler.openFrame(readFile.getElement(file, "collectionsubmenu"), link, frame);
     }
+
+    public void clickHeadWise() throws IOException {
+        ehandler.click(readFile.getElement(f1, "headwise"));
+    }
 }

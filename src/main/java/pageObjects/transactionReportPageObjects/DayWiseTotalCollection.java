@@ -24,12 +24,24 @@ public class DayWiseTotalCollection extends GenericReports {
         ehandler.openFrame(readFile.getElement(file, "collectionsubmenu"), link, frame);
     }
 
-    public void validateMonth() throws IOException {
-        WebElement month= readFile.getElement(f1, "month");
+    public void getMonthElements() throws IOException {
+        element= readFile.getElement(f1, "month");
         clear= readFile.getElement(f1, "monthclear");
+        values= readFile.getElement(f1, "monthvalueslist");
         close= readFile.getElement(f1, "monthclose");
         message= readFile.getElement(f1, "monthmessage");
-        System.out.println(message);
-        verify.verifyValidationOnMultiSelect(month, clear, close, message, readFile.readProperty(file, "month"));
+    }
+    public void validateMonth() throws IOException {
+        getMonthElements();
+        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "month"));
+    }
+
+    public void selectMonth() throws IOException {
+        getMonthElements();
+        ehandler.selectValue(element, clear, values, close);
+    }
+
+    public void validateTillDate() throws IOException {
+        verify.verifyValidationOnMultiSelect(readFile.getElement(f1, "tilldate"), clr, readFile.getElement(f1, "tilldatemessage"), readFile.readProperty(file, "tilldate"));
     }
 }
