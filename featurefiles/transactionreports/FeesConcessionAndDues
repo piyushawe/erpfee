@@ -1,0 +1,34 @@
+Feature: Fees Concession And Dues
+  As a user I would like to run the test cases of this page
+  So that I don't have to do it manually
+
+  Background: Steps to open fee manager landing page
+    Given for url
+    When user enter username and password
+    And click sign in to open erp home page
+    Then user click fee manager logo
+    When user open fees concession and dues
+
+#validation messege verification test cases
+  @validation @scenario1
+  Scenario: To test client side validations on mandatory fields
+    And verify validation when no class is selected on fees concession and dues
+    And verify validation when no fee type is selected on fees concession and dues
+    And verify validation when no head is selected on fees concession and dues
+    Then verify validation when no installment is selected on fees concession and dues
+
+#test cases of all filters selection
+  @verify_with_filters @scenario2
+  Scenario: To verify fees concession and dues with filters
+    And select school with index "1" on fees concession and dues
+    And select class on fees concession and dues
+    And select fee type on fees concession and dues
+    And select head on fees concession and dues
+    And select installment on fees concession and dues
+    And select show by with index "1" on fees concession and dues
+    And click show on fees concession and dues
+
+#test cases on selection of radio buttons
+  @verify_with_no_filters @scenario3
+  Scenario: To verify fees concession and dues without any filter
+    And click show on fees concession and dues

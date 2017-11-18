@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features= {"featureFiles/transactionReportsFeatures/YearlyCollectionReport"}
+        features= {"featurefiles/transactionreports/YearlyCollectionReport"}
         ,glue= {"stepdefinitions"}
         ,monochrome=true
         ,plugin= {"pretty","html:target/cucumber_html_report",

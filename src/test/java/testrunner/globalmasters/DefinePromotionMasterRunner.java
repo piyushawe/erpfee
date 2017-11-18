@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features= {"featureFiles/globalMastersFeatures/DefinePromotionMaster.feature"}
+        features= {"featurefiles/globalmasters/DefinePromotionMaster.feature"}
         ,glue= {"stepdefinitions"}
         ,monochrome=true
         ,plugin= {"pretty","html:target/cucumber_html_report",
