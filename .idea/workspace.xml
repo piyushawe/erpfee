@@ -1,359 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b68fc022-3469-4af8-ab32-3e85d41ca221" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ActiveInactiveStudentDetailsReport/ActiveInactiveStudentDetailsReport[@verify_with_filters, @scenario1]20170911_120315.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ActiveInactiveStudentsDetailReport/ActiveInactiveStudentsDetailReport[@verify_with_filters, @scenario1]20170911_114751.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ActiveInactiveStudentsDetailReport/ActiveInactiveStudentsDetailReport[@verify_with_filters, @scenario1]20170911_114919.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/AdvancePaymentReport/AdvancePaymentReport[@scenario1, @validation]20170831_171416.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/AdvancePaymentReport/AdvancePaymentReport[@scenario1, @validation]20170901_092132.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ChequeReportdateWise/ChequeReportdateWise[@scenario1, @validation]20170831_170113.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ChequeReportdateWise/ChequeReportdateWise[@scenario1, @validation]20170831_170220.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ChequeReportdateWise/ChequeReportdateWise[@scenario1, @validation]20170831_172610.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ChequeReportdateWise/ChequeReportdateWise[@scenario1, @validation]20170831_172730.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ChequeReportdateWise/ChequeReportdateWise[@scenario2, @validation]20170831_170322.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ChequeReportdateWise/ChequeReportdateWise[@scenario2, @validation]20170831_170707.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ChequeReportdateWise/ChequeReportdateWise[@scenario2, @validation]20170831_170810.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ChequeReportdateWise/ChequeReportdateWise[@scenario2, @validation]20170831_171926.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ChequeReportdateWise/ChequeReportdateWise[@verify_with_filters, @scenario3]20170831_170413.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ChequeReportdateWise/ChequeReportdateWise[@verify_with_filters, @scenario3]20170831_170854.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ChequeReportdateWise/ChequeReportdateWise[@verify_with_filters, @scenario3]20170831_170954.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ChequeReportdateWise/ChequeReportdateWise[@verify_with_filters, @scenario3]20170831_171822.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ChequeReportdateWise/ChequeReportdateWise[@verify_with_filters, @scenario3]20170831_172628.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario1, @validation]20170826_132124.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario1, @validation]20170826_132351.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario1, @validation]20170826_132442.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario1, @validation]20170826_132720.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario1, @validation]20170830_170737.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario1, @validation]20170830_170824.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario11, @verify_with_no_filters]20170828_151717.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario11, @verify_with_no_filters]20170831_093026.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario6, @validation]20170826_133117.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario6, @validation]20170826_133254.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario6, @validation]20170826_150249.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170828_111806.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170831_092707.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170831_092809.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170831_093124.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170831_093213.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170831_095413.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170831_100643.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170831_100858.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170831_101059.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170831_101314.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170831_101455.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170831_101611.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170831_101736.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170831_113831.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170831_152833.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_105259.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_105833.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_110140.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_110510.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_111004.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_111246.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_113030.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_113212.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_113449.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_113733.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_114209.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_114335.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_115159.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_115302.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_115404.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_115845.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_120125.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20170901_120538.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@verify_with_no_filters, @scenario10]20170828_150842.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@verify_with_no_filters, @scenario10]20170828_151221.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@verify_with_no_filters, @scenario10]20170830_153605.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@verify_with_no_filters, @scenario9]20170828_150729.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@verify_with_no_filters, @scenario9]20170828_150759.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@verify_with_no_filters, @scenario9]20170830_153350.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@verify_with_no_filters, @scenario9]20170831_111403.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionAccountWise/DailyFeeCollectionAccountWise[@verify_with_filters, @scenario6]20170904_112416.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateClassWise/DailyFeeCollectionDateClassWise[@scenario1, @validation]20170826_160509.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateFeeGroupWise/DailyFeeCollectionDateFeeGroupWise[@verify_with_filters, @scenario3]20170901_111358.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateFeeGroupWise/DailyFeeCollectionDateFeeGroupWise[@verify_with_filters, @scenario3]20170901_111550.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateFeeGroupWise/DailyFeeCollectionDateFeeGroupWise[@verify_with_filters, @scenario3]20170901_112448.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateFeeGroupWise/DailyFeeCollectionDateFeeGroupWise[@verify_with_filters, @scenario3]20170901_112736.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateFeeGroupWise/DailyFeeCollectionDateFeeGroupWise[@verify_with_filters, @scenario3]20170901_123720.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateFeeGroupWise/DailyFeeCollectionDateFeeGroupWise[@verify_with_filters, @scenario3]20170901_123935.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateFeeGroupWise/DailyFeeCollectionDateFeeGroupWise[@verify_with_filters, @scenario3]20170901_124055.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWise/DailyFeeCollectionDateWise[@scenario1, @validation]20170826_160628.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWise/DailyFeeCollectionDateWise[@scenario1, @validation]20170830_155154.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWise/DailyFeeCollectionDateWise[@scenario1, @validation]20170830_155304.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWise/DailyFeeCollectionDateWise[@scenario1, @validation]20170830_155356.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWise/DailyFeeCollectionDateWise[@scenario1, @validation]20170831_160942.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWise/DailyFeeCollectionDateWise[@scenario4, @validation]20170830_155436.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWiseWithRemark/DailyFeeCollectionDateWiseWithRemark[@scenario1, @validation]20170826_150617.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWiseWithRemark/DailyFeeCollectionDateWiseWithRemark[@scenario1, @validation]20170826_152437.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWiseWithRemark/DailyFeeCollectionDateWiseWithRemark[@scenario1, @validation]20170826_152645.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWiseWithRemark/DailyFeeCollectionDateWiseWithRemark[@scenario1, @validation]20170826_152736.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWiseWithRemark/DailyFeeCollectionDateWiseWithRemark[@scenario1, @validation]20170826_153412.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWiseWithRemark/DailyFeeCollectionDateWiseWithRemark[@scenario1, @validation]20170826_154303.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWiseWithRemark/DailyFeeCollectionDateWiseWithRemark[@scenario1, @validation]20170826_154419.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWiseWithRemark/DailyFeeCollectionDateWiseWithRemark[@scenario1, @validation]20170826_154610.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWiseWithRemark/DailyFeeCollectionDateWiseWithRemark[@scenario1, @validation]20170826_160225.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWiseWithRemark/DailyFeeCollectionDateWiseWithRemark[@scenario1, @validation]20170826_160840.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWiseWithRemark/DailyFeeCollectionDateWiseWithRemark[@scenario1, @validation]20170826_170730.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollectionDateWiseWithRemark/DailyFeeCollectionDateWiseWithRemark[@scenario1, @validation]20170826_173351.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DayWiseTotalCollection/DayWiseTotalCollection[@scenario1, @validation]20170830_174915.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DayWiseTotalCollection/DayWiseTotalCollection[@verify_with_filters, @scenario2]20170830_163934.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DayWiseTotalCollection/DayWiseTotalCollection[@verify_with_filters, @scenario2]20170830_164036.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DayWiseTotalCollection/DayWiseTotalCollection[@verify_with_filters, @scenario2]20170830_164319.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DayWiseTotalCollection/DayWiseTotalCollection[@verify_with_filters, @scenario2]20170830_164412.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DayWiseTotalCollection/DayWiseTotalCollection[@verify_with_filters, @scenario2]20170830_174242.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DefineCaste/DefineCaste[@save, @scenario2]20171005_120239.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DefineCaste/DefineCaste[@save, @scenario2]20171023_104555.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DefineCaste/DefineCaste[@save, @scenario2]20171023_104820.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DefineCaste/DefineCaste[@save, @scenario2]20171023_105502.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DefineCaste/DefineCaste[@save, @scenario2]20171031_165744.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DefineCaste/DefineCaste[@save, @scenario2]20171107_154642.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DefineLanguage/DefineLanguage[@save, @scenario2]20171005_120436.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DefineLanguage/DefineLanguage[@save, @scenario2]20171023_105008.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/EstimatedCollectionReport/EstimatedCollectionReport[@scenario1, @validation]20170831_162009.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeeCollectionWithEntryTimeConcession/FeeCollectionWithEntryTimeConcession[@scenario5, @verify_with_filters]20170901_153247.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeeDefaulterInstallmentWise/FeeDefaulterInstallmentWise[@verify_with_filters, @scenario1]20170904_171147.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeeDefaulterList/FeeDefaulterList[@verify_with_filters, @scenario1]20170907_130820.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeeDefaulterList/FeeDefaulterList[@verify_with_filters, @scenario1]20170907_130955.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeeDefaulterReportConsolidated/FeeDefaulterReportConsolidated[@verify_with_filters, @scenario1]20170904_160317.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeeDefaulterReportConsolidated/FeeDefaulterReportConsolidated[@verify_with_filters, @scenario1]20170904_163005.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeeDefaulterReportWithReceiving/FeeDefaulterReportWithReceiving[@verify_with_filters, @scenario1]20170905_095152.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeeDefaulterSlip/FeeDefaulterSlip[@scenario2, @verify_with_no_filters]20170905_102903.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeeDefaulterSlip/FeeDefaulterSlip[@verify_with_filters, @scenario1]20170905_101714.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeeDefaulterSlip/FeeDefaulterSlip[@verify_with_filters, @scenario1]20170905_101908.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeeHeadWiseCollectionClassRange/FeeHeadWiseCollectionClassRange[@verify_with_filters, @scenario3]20170901_150302.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/Fees Concession/Fees Concession[@scenario1, @validation]20170907_175439.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/Fees Concession/Fees Concession[@scenario1, @validation]20170908_095821.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/Fees Concession/Fees Concession[@scenario1, @validation]20170908_100014.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/Fees Concession/Fees Concession[@verify_with_filters, @scenario2]20170908_111338.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/Fees Concession/Fees Concession[@verify_with_filters, @scenario2]20170908_111902.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeesChequeBounceReport/FeesChequeBounceReport[@scenario1, @validation]20170901_094742.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeesChequeBounceReport/FeesChequeBounceReport[@scenario2, @validation]20170901_094750.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeesChequeBounceReport/FeesChequeBounceReport[@verify_with_filters, @scenario3]20170831_174245.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeesChequeBounceReport/FeesChequeBounceReport[@verify_with_filters, @scenario3]20170901_093834.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeesChequeBounceReport/FeesChequeBounceReport[@verify_with_filters, @scenario3]20170901_094800.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeesConcessionAndDues/FeesConcessionAndDues[@scenario1, @validation]20170907_153626.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeesConcessionAndDues/FeesConcessionAndDues[@scenario1, @validation]20170907_153809.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeesConcessionInstallHeadWise/FeesConcessionInstallHeadWise[@verify_with_filters, @scenario1]20170908_135205.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeesConcessionInstallHeadWise/FeesConcessionInstallHeadWise[@verify_with_filters, @scenario1]20170908_135228.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeesConcessionInstallHeadWise/FeesConcessionInstallHeadWise[@verify_with_filters, @scenario1]20170908_135326.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/FeesConcessionInstallHeadWise/FeesConcessionInstallHeadWise[@verify_with_filters, @scenario1]20170908_150200.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/MidYearStudentDetails/MidYearStudentDetails[@verify_with_filters, @scenario1]20170911_112226.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/MonthWiseCollectionReport/MonthWiseCollectionReport[@scenario1, @validation]20170831_163028.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/MonthlyConsolidatedReport/MonthlyConsolidatedReport[@scenario2, @validation]20170904_104933.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/MonthlyConsolidatedReport/MonthlyConsolidatedReport[@scenario2, @validation]20170904_105241.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/MonthlyConsolidatedReport/MonthlyConsolidatedReport[@scenario7, @verify_with_no_filters]20170904_103622.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/MonthlyConsolidatedReport/MonthlyConsolidatedReport[@verify_with_filters, @scenario2]20170826_121310.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/MonthlyConsolidatedReport/MonthlyConsolidatedReport[@verify_with_filters, @scenario2]20170826_121729.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/MonthlyConsolidatedReport/MonthlyConsolidatedReport[@verify_with_filters, @scenario2]20170826_121929.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ReceiptWiseDailyCollection/ReceiptWiseDailyCollection[@verify_with_filters, @scenario3]20170901_163757.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ReceiptWiseFeeTypeCollection/ReceiptWiseFeeTypeCollection[@scenario5, @verify_with_no_filters]20170904_124151.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ReconcileInstallmentClassWise/ReconcileInstallmentClassWise[@scenario3, @verify_with_no_filters]20170831_165327.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/ReconcileInstallmentClassWise/ReconcileInstallmentClassWise[@verify_with_filters, @scenario2]20170831_165538.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/StudentHealthEntryReport/StudentHealthEntryReport[@verify_with_filters, @scenario1]20170911_163427.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/StudentWiseCollectionReport/StudentWiseCollectionReport[@verify_with_filters, @scenario2]20170901_165850.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/TransportDetail/TransportDetail[@scenario2, @verify_with_no_filters]20171016_162910.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/TransportDetail/TransportDetail[@verify_with_filters, @scenario1]20170912_175104.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/UnpaidStudentReport/UnpaidStudentReport[@scenario3, @verify_with_no_filters]20170907_120052.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/UnpaidStudentReport/UnpaidStudentReport[@scenario3, @verify_with_no_filters]20170907_120301.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/UnpaidStudentReport/UnpaidStudentReport[@scenario3, @verify_with_no_filters]20170907_120457.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/YearlyCollectionReport/YearlyCollectionReport[@scenario1, @validation]20170901_174333.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@save, @scenario2]20171023_104037.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@save, @scenario2]20171023_104440.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@save, @scenario2]20171031_165635.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario1, @save]20171113_150811.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario1, @save]20171113_151002.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario1, @save]20171114_113344.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario1, @validation]20170826_154353.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario1, @validation]20170826_160427.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario1, @validation]20170831_164500.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario1, @validation]20170831_170347.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario1, @validation]20170901_094629.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario11, @verify_with_no_filters]20170830_153716.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario3, @verify_with_no_filters]20171023_155022.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario3, @verify_with_no_filters]20171024_133109.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario3, @verify_with_no_filters]20171107_121859.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario3, @verify_with_no_filters]20171118_151439.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario4, @verify_with_no_filters]20170901_093900.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario7, @verify_with_filters]20170831_114033.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario7, @verify_with_filters]20170901_111222.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario7, @verify_with_filters]20170901_113146.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario7, @verify_with_no_filters]20170904_113001.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@verify_with_filters, @scenario1]20170904_174506.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@verify_with_filters, @scenario1]20170908_161550.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@verify_with_filters, @scenario1]20170911_115221.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@verify_with_filters, @scenario1]20170911_120200.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@verify_with_filters, @scenario2]20170830_163954.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@verify_with_filters, @scenario2]20170830_164008.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@verify_with_filters, @scenario2]20170904_094632.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@verify_with_no_filters, @scenario8]20170828_150545.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@verify_with_no_filters, @scenario9]20170830_154033.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/reports/ActiveInactiveStudentDetailsReport.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/reports/ClassSectionTransferReport.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/reports/ClassWiseMarkList.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/reports/ClassWiseSibling.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/reports/ClassWiseStudentDetails.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/reports/GroupWiseStudentDetails.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/reports/MidYearStudentDetails.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/reports/OpeningDuesReport.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/reports/RefundAmount.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/reports/SmsReport.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/reports/StaffWardListReport.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/reports/StudentHealthEntryReport.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/reports/StudentRegisterDateWiseReport.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/reports/TransportDetail.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/transactionreport/AmountWithoutStructureReport.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/transactionreport/CancelledFeesReceiptReport.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/transactionreport/ChequeClearingStatusReport.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/transactionreport/FeeDefaulterInstallmentWise.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/transactionreport/FeeDefaulterList.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/transactionreport/FeeDefaulterReportConsolidated.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/transactionreport/FeeDefaulterReportWithReceiving.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/transactionreport/FeeDefaulterSlip.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/transactionreport/FeesConcessionAndDues.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/transactionreport/FeesConcessionInstallHeadWise.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/transactionreport/UnpaidStudentReport.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/reports/ActiveInactiveStudentDetailsReport" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/reports/ClassSectionTransferReport" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/reports/ClassWiseMarkList" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/reports/ClassWiseSibling" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/reports/ClassWiseStudentDetails" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/reports/GroupWiseStudentDetails" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/reports/MidYearStudentDetails" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/reports/OpeningDuesReport" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/reports/RefundAmount" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/reports/SmsReport" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/reports/StaffWardListReport" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/reports/StudentHealthEntryReport" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/reports/StudentRegisterDateWiseReport" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/reports/TransportDetail" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/transactionreports/AmountWithoutStructureReport" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/transactionreports/CancelledFeesReceiptReport" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/transactionreports/ChequeClearingStatusReport" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/transactionreports/FeeDefaulterInstallmentWise" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/transactionreports/FeeDefaulterList" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/transactionreports/FeeDefaulterReportConsolidated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/transactionreports/FeeDefaulterReportWithReceiving" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/transactionreports/FeeDefaulterSlip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/transactionreports/FeesConcessionAndDues" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/transactionreports/FeesConcessionInstallHeadWise" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/featurefiles/transactionreports/UnpaidStudentReport" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/ClassSectionTransferReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/ClassWiseMarkList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/ClassWiseSibling.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/ClassWiseStudentDetails.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/GroupWiseStudentDetails.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/MidYearStudentDetails.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/OpeningDuesReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/RefundAmount.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/SmsReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/StaffWardListReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/StudentHealthEntryReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/StudentRegisterDateWiseReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/TransportDetail.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/AmountWithoutStructureReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/CancelledFeesReceiptReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/ChequeClearingStatusReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeeDefaulterInstallmentWise.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeeDefaulterList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeeDefaulterReportConsolidated.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeeDefaulterReportWithReceiving.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeeDefaulterSlip.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeesConcessionAndDues.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeesConcessionInstallHeadWise.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/UnpaidStudentReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/TestSteps1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/reports/ActiveInactiveStudentDetailsReportRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/reports/ClassSectionTransferReportRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/reports/ClassWiseMarkListRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/reports/ClassWiseSiblingRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/reports/ClassWiseStudentDetailsRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/reports/GroupWiseStudentDetailsRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/reports/MidYearStudentDetailsRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/reports/OpeningDuesReportRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/reports/RefundAmountRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/reports/SmsReportRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/reports/StaffWardListReportRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/reports/StudentHealthEntryReportRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/reports/StudentRegisterDateWiseReportRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/reports/TransportDetailRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/AmountWithoutStructureReportRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/CancelledFeesReceiptReportRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ChequeClearingStatusReportRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeDefaulterInstallmentWiseRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeDefaulterListRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeDefaulterReportConsolidatedRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeDefaulterReportWithReceivingRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeDefaulterSlipRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeesConcessionAndDuesRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeesConcessionInstallHeadWiseRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/UnpaidStudentReportRunner.java" />
+    <list default="true" id="b68fc022-3469-4af8-ab32-3e85d41ca221" name="Default" comment="project as on 18 Nov 2017">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/UIMap.properties" afterPath="$PROJECT_DIR$/configuration/UIMap.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineCategoryRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineCategoryRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineCharacterRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineCharacterRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineLanguageRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineLanguageRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineLastResultRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineLastResultRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineMoralRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineMoralRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineMotherTongueRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineMotherTongueRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefinePromotionMasterRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefinePromotionMasterRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineReligionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineReligionRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineSectionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineSectionRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineWingRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineWingRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/TermMasterRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/TermMasterRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/AdvancePaymentReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/AdvancePaymentReportRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/AnnualStuLedReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/AnnualStuLedReportRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/AnnualStudentledger3Runner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/AnnualStudentledger3Runner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/BadDebtsReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/BadDebtsReportRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ChequeReportDateWiseRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ChequeReportDateWiseRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionAccountWiseRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionAccountWiseRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionDateClassWiseRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionDateClassWiseRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionDateFeeGroupWiseRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionDateFeeGroupWiseRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionDateWiseRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionDateWiseRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionDateWiseWithRemarkRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionDateWiseWithRemarkRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DayWiseTotalCollectionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DayWiseTotalCollectionRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/EstimatedCollectionReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/EstimatedCollectionReportRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeCollectionWithEntryTimeConcessionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeCollectionWithEntryTimeConcessionRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeHeadWiseCollectionClassRangeRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeHeadWiseCollectionClassRangeRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeesChequeBounceReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeesChequeBounceReportRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeesConcessionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeesConcessionRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/MonthWiseCollectionReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/MonthWiseCollectionReportRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/MonthlyConsolidatedReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/MonthlyConsolidatedReportRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/OnlinePaymentStatusReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/OnlinePaymentStatusReportRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReceiptWiseDailyCollectionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReceiptWiseDailyCollectionRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReceiptWiseFeeTypeCollectionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReceiptWiseFeeTypeCollectionRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReconcileInstallmentClassWiseRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReconcileInstallmentClassWiseRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReconcileReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReconcileReportRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/StudentWiseCollectionReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/StudentWiseCollectionReportRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/TotalCollectionReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/TotalCollectionReportRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/YearlyCollectionReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/YearlyCollectionReportRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber.json" afterPath="$PROJECT_DIR$/target/cucumber.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber.xml" afterPath="$PROJECT_DIR$/target/cucumber.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber_html_report/report.js" afterPath="$PROJECT_DIR$/target/cucumber_html_report/report.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -378,8 +27,8 @@
       <file leaf-file-name="TermMasterRunner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/globalmasters/TermMasterRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="119">
+              <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -918,7 +567,7 @@
     <property name="ToolWindowMessages.ShowToolbar" value="false" />
     <property name="SONARLINT_ANALYSIS_RESULTS_SCOPE" value="VCS changed files" />
     <property name="SONARLINT_ISSUES_SPLIT_PROPORTION" value="0.4473684" />
-    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -1357,7 +1006,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510997583323</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="project as on 18 Nov 2017">
+      <created>1510999205054</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1510999205054</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1403,7 +1059,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1412,9 +1068,9 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19152543" sideWeight="0.14750378" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4118644" sideWeight="0.6860817" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14067796" sideWeight="0.8524962" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4118644" sideWeight="0.3139183" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14542484" sideWeight="0.49394855" order="10" side_tool="false" content_ui="tabs" />
@@ -1446,6 +1102,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="project as on 23 aug 2017" />
     <MESSAGE value="project as on 25 aug 2017" />
     <MESSAGE value="project as on 29 oct 2017" />
@@ -1868,8 +1526,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/globalmasters/TermMasterRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="119">
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding />
         </state>
       </provider>
