@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
 
-import static webDriver.AppDriver.driver;
+import static webdriver.AppDriver.driver;
 
 public class ReadFile {
   private Properties properties = new Properties();

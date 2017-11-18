@@ -1,7 +1,7 @@
 package utilities;
 
 import automationFramework.supportMethods.ReadFile;
-import webDriver.DriverMethods;
+import webdriver.DriverMethods;
 
 import java.io.File;
 

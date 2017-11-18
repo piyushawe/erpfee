@@ -7,14 +7,14 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import webDriver.DriverMethods;
+import webdriver.DriverMethods;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-import static webDriver.AppDriver.driver;
+import static webdriver.AppDriver.driver;
 
 public class EventHandlingUtility {
     private File file= new File("F:\\erpfee\\configuration\\UIMap.properties");
@@ -158,5 +158,4 @@ public class EventHandlingUtility {
                 element.click();
         }
     }
-
 }

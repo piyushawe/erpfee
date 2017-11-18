@@ -3,13 +3,14 @@ package utilities;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import supportclasses.GenericBaseClass;
 
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import static webDriver.AppDriver.driver;
+import static webdriver.AppDriver.driver;
 
 public class GenericUtility extends GenericBaseClass implements GenericObjects{
 

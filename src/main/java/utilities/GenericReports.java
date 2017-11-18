@@ -2,7 +2,8 @@ package utilities;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import webDriver.DriverMethods;
+import supportclasses.GenericBaseClass;
+import webdriver.DriverMethods;
 
 import java.io.File;
 import java.io.IOException;
