@@ -26,7 +26,7 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
    protected WebElement close;
    protected WebElement message;
    protected File f1;
-
+   protected String path= "F:\\erpfee\\configuration\\";
    private void getClassElements() throws IOException {
       element= readFile.getElement(f1, "class");
       clear= readFile.getElement(f1, "classclear");

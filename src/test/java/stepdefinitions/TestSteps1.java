@@ -2,7 +2,7 @@ package stepdefinitions;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import pageobjects.reportsPageObjects.*;
+import pageobjects.reports.*;
 
 import static webdriver.AppDriver.driver;
 public class TestSteps1 {

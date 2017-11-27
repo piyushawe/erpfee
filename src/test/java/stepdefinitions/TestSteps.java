@@ -3,8 +3,9 @@ package stepdefinitions;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-import pageobjects.globalMastersPageObjects.*;
-import pageobjects.transactionReportPageObjects.*;
+import org.openqa.selenium.By;
+import pageobjects.globalmasters.*;
+import pageobjects.transactionreport.*;
 
 import static webdriver.AppDriver.driver;
 
@@ -1274,7 +1275,9 @@ public class TestSteps {
 
     @When("^select entry mode on daily fee collection$")
     public void select_entry_mode_on_daily_fee_collection() throws Throwable {
-        new DailyFeeCollection(driver).selectEntryMode();
+        //new DailyFeeCollection(driver).selectEntryMode();
+        driver.findElement(By.xpath("//*[@id=\"MainLeftPanel\"]/div/div/div[5]/div/div/button")).click();
+
     }
 
     @When("^select fee type on daily fee collection$")
@@ -1299,12 +1302,12 @@ public class TestSteps {
 
     @When("^select with settlement date on daily fee collection$")
     public void select_with_settlement_date_on_daily_fee_collection() throws Throwable {
-        new DailyFeeCollection(driver).clickSettlementdate();
+        new DailyFeeCollection(driver).clickSettlementDate();
     }
 
     @When("^select with cheque clearance date on daily fee collection$")
     public void select_with_cheque_clearance_date_on_daily_fee_collection() throws Throwable {
-        new DailyFeeCollection(driver).clickChequeClearancedate();
+        new DailyFeeCollection(driver).clickChequeClearanceDate();
     }
 
     @When("^select user with index \"([^\"]*)\" on daily fee collection$")
