@@ -20,7 +20,7 @@ public class DefineLastResult extends BaseClass {
    }
 
    public void openDefineLastResult() throws IOException {
-      ehandler.openFrame(readFile.getElement(file, "globalmastersmenu"), link, frame);
+      ehandler.openFrame(readFile.getElement(fileUI, "globalmastersmenu"), link, frame);
    }
 
    public void enterLastResultName(String mname) throws IOException {

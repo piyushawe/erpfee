@@ -20,7 +20,7 @@ public class DefineReligion extends BaseClass {
     }
 
     public void openDefineReligion() throws IOException {
-        ehandler.openFrame(readFile.getElement(file,"globalmastersmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI,"globalmastersmenu"), link, frame);
     }
 
     public void enterReligionName(String pname) throws IOException {

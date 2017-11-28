@@ -21,8 +21,8 @@ public class DailyFeeCollectionDateWiseWithRemark extends GenericReports {
   }
 
   public void openDailyFeeCollectionDateWiseWithRemark() throws IOException {
-     ehandler.moveToElement(readFile.getElement(file, "transactionreportmenu"));
-     ehandler.openFrame(readFile.getElement(file, "collectionsubmenu"), link, frame);
+     ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
+     ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
   }
 
   private void getBankNameElements() throws IOException {
@@ -49,7 +49,7 @@ public class DailyFeeCollectionDateWiseWithRemark extends GenericReports {
 
   public void validateBankName() throws IOException {
       getBankNameElements();
-      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "bankname"));
+      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "bankname"));
   }
 
   public void selectBankName() throws IOException {

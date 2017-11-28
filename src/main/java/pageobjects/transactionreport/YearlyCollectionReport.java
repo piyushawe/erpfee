@@ -20,8 +20,8 @@ public class YearlyCollectionReport extends GenericReports {
     }
 
     public void openYearlyCollectionReport() throws IOException {
-        ehandler.moveToElement(readFile.getElement(file, "transactionreportmenu"));
-        ehandler.openFrame(readFile.getElement(file, "collectionsubmenu"), link, frame);
+        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
+        ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
     }
 
     public void selectSession(String sess) throws IOException, InterruptedException {
@@ -46,7 +46,7 @@ public class YearlyCollectionReport extends GenericReports {
 
     public void validateBankName() throws IOException {
         getBankNameElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "bankname"));
+        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "bankname"));
     }
 
     public void selectBankName() throws IOException {

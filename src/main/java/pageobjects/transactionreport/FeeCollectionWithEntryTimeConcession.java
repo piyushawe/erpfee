@@ -20,11 +20,11 @@ public class FeeCollectionWithEntryTimeConcession extends GenericReports {
     }
 
     public void openFeeCollectionWithEntryTimeConcession() throws IOException {
-        ehandler.moveToElement(readFile.getElement(file, "transactionreportmenu"));
-        ehandler.openFrame(readFile.getElement(file, "collectionsubmenu"), link, frame);
+        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
+        ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
     }
 
     public void validateCollectionDate() throws IOException{
-        verify.verifyValidationOnMultiSelect(fromdate, clr, readFile.getElement(f1, "collectiondatemessage"), readFile.readProperty(file, "collectiondate"));
+        verify.verifyValidationOnMultiSelect(fromdate, clr, readFile.getElement(f1, "collectiondatemessage"), readFile.readProperty(fileUI, "collectiondate"));
     }
 }

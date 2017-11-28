@@ -8,7 +8,7 @@ import supportclasses.GenericBaseClass;
 import java.io.File;
 import java.io.IOException;
 
-public abstract class BaseClass extends GenericBaseClass implements GenericObjects {
+public abstract class BaseClass extends GenericBaseClass {
 
     @FindBy(xpath = "//input[@value='Save']") private WebElement save;
     @FindBy(xpath = "//input[@value='View']") private WebElement view;
@@ -27,7 +27,7 @@ public abstract class BaseClass extends GenericBaseClass implements GenericObjec
     }
 
     public void selectRecord() throws IOException {
-        ehandler.selectRecord(table, readFile.getElement(file, "select"));
+        ehandler.selectRecord(table, readFile.getElement(fileUI, "select"));
     }
 
     public void clickModify() throws IOException {
@@ -35,11 +35,11 @@ public abstract class BaseClass extends GenericBaseClass implements GenericObjec
     }
 
     public void clickYes() throws IOException {
-        ehandler.click(readFile.getElement(file,"yes"));
+        ehandler.click(readFile.getElement(fileUI,"yes"));
     }
 
     public void clickNo() throws IOException {
-        ehandler.click(readFile.getElement(file,"no"));
+        ehandler.click(readFile.getElement(fileUI,"no"));
     }
 
     public void clickDelete() throws IOException {
@@ -51,27 +51,27 @@ public abstract class BaseClass extends GenericBaseClass implements GenericObjec
     }
 
     protected String getMessage() throws IOException {
-        return readFile.readProperty(file, "message");
+        return readFile.readProperty(fileUI, "message");
     }
 
     public void verifyModifyMessage() throws IOException {
-        dmethods.switchToParentWindow();
-        verify.verifyValidationMessage(readFile.readProperty(f1, "modifymessage"),readFile.getElement(file, "servermessage"));
+        dm.switchToParentWindow();
+        verify.verifyValidationMessage(readFile.readProperty(f1, "modifymessage"),readFile.getElement(fileUI, "servermessage"));
     }
 
     public void verifyDuplicateValue() throws IOException {
-        dmethods.switchToParentWindow();
-        verify.verifyValidationMessage(readFile.readProperty(f1, "duplicatevaluemessage"), readFile.getElement(file, "servermessage"));
+        dm.switchToParentWindow();
+        verify.verifyValidationMessage(readFile.readProperty(f1, "duplicatevaluemessage"), readFile.getElement(fileUI, "servermessage"));
     }
 
     public void verifySaveMessage() throws IOException {
-        dmethods.switchToParentWindow();
-        verify.verifyValidationMessage(readFile.readProperty(f1, "savemessage"),readFile.getElement(file, "servermessage"));
+        dm.switchToParentWindow();
+        verify.verifyValidationMessage(readFile.readProperty(f1, "savemessage"),readFile.getElement(fileUI, "servermessage"));
     }
 
     public void verifyDeleteMessage() throws IOException {
-        dmethods.switchToParentWindow();
-        verify.verifyValidationMessage(readFile.readProperty(f1, "deletemessage"), readFile.getElement(file, "servermessage"));
+        dm.switchToParentWindow();
+        verify.verifyValidationMessage(readFile.readProperty(f1, "deletemessage"), readFile.getElement(fileUI, "servermessage"));
     }
 
     public void validateNumericValue() throws IOException {
@@ -83,14 +83,14 @@ public abstract class BaseClass extends GenericBaseClass implements GenericObjec
     }
 
     public void verifySuccessMessageImage() throws IOException {
-        verify.verifyMessageImage(readFile.getElement(file, "messageimage"), readFile.readProperty(file, "url"), readFile.readProperty(file, "successimage"));
+        verify.verifyMessageImage(readFile.getElement(fileUI, "messageimage"), readFile.readProperty(fileUI, "url"), readFile.readProperty(fileUI, "successimage"));
     }
 
     public void verifyWarningMessageImage() throws IOException {
-        verify.verifyMessageImage(readFile.getElement(file, "messageimage"), readFile.readProperty(file, "url"), readFile.readProperty(file, "warningimage"));
+        verify.verifyMessageImage(readFile.getElement(fileUI, "messageimage"), readFile.readProperty(fileUI, "url"), readFile.readProperty(fileUI, "warningimage"));
     }
 
     public void verifyErrorMessageImage() throws IOException {
-        verify.verifyMessageImage(readFile.getElement(file, "messageimage"), readFile.readProperty(file, "url"), readFile.readProperty(file, "errorimage"));
+        verify.verifyMessageImage(readFile.getElement(fileUI, "messageimage"), readFile.readProperty(fileUI, "url"), readFile.readProperty(fileUI, "errorimage"));
     }
 }

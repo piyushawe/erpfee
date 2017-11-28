@@ -20,6 +20,6 @@ public class MidYearStudentDetails extends GenericReports {
     }
 
     public void openMidYearStudentDetails() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "reportsmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "reportsmenu"), link, frame);
     }
 }

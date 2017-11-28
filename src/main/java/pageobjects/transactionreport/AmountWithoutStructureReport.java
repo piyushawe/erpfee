@@ -20,7 +20,7 @@ public class AmountWithoutStructureReport extends GenericReports {
     }
 
     public void openAmountWithoutStructureReport() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "transactionreportmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
     }
 
     public void selectYear(int index) throws IOException, InterruptedException {

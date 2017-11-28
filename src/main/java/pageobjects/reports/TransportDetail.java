@@ -20,8 +20,8 @@ public class TransportDetail extends GenericReports {
     }
 
     public void openTransportDetail() throws IOException {
-        ehandler.moveToElement(readFile.getElement(file, "reportsmenu"));
-        ehandler.openFrame(readFile.getElement(file, "transportreportsubmenu"), link, frame);
+        ehandler.moveToElement(readFile.getElement(fileUI, "reportsmenu"));
+        ehandler.openFrame(readFile.getElement(fileUI, "transportreportsubmenu"), link, frame);
     }
 
     public void selectRoute(int index) throws IOException, InterruptedException {

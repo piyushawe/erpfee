@@ -20,7 +20,7 @@ public class ClassSectionTransferReport extends GenericReports {
     }
 
     public void openClassSectionTransferReport() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "reportsmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "reportsmenu"), link, frame);
     }
 
     public void selectOldAcademicYear(int index) throws IOException, InterruptedException {

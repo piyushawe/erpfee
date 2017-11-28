@@ -20,8 +20,8 @@ public class FeeDefaulterInstallmentWise extends GenericReports {
     }
 
     public void openFeeDefaulterInstallmentWise() throws IOException {
-        ehandler.moveToElement(readFile.getElement(file, "transactionreportmenu"));
-        ehandler.openFrame(readFile.getElement(file, "feedefaultersubmenu"), link, frame);
+        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
+        ehandler.openFrame(readFile.getElement(fileUI, "feedefaultersubmenu"), link, frame);
     }
 
     public void selectRoute(int index) throws IOException, InterruptedException {

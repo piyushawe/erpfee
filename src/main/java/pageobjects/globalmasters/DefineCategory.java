@@ -20,7 +20,7 @@ public class DefineCategory extends BaseClass {
     }
 
     public void openDefineCategory() throws IOException {
-        ehandler.openFrame(readFile.getElement(file,"globalmastersmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI,"globalmastersmenu"), link, frame);
     }
 
     public void enterCategoryName(String pname) throws IOException {

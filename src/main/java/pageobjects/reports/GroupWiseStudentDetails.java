@@ -20,7 +20,7 @@ public class GroupWiseStudentDetails extends GenericReports {
     }
 
     public void openGroupWiseStudentDetails() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "reportsmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "reportsmenu"), link, frame);
     }
 
     public void selectGroup(int index) throws IOException, InterruptedException {

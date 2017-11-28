@@ -20,7 +20,7 @@ public class DefineLanguage extends BaseClass{
   }
 
   public void openDefineLanguage() throws IOException {
-     ehandler.openFrame(readFile.getElement(file,"globalmastersmenu"), link, frame);
+     ehandler.openFrame(readFile.getElement(fileUI,"globalmastersmenu"), link, frame);
   }
 
   public void enterLanguageName(String pname) throws IOException {

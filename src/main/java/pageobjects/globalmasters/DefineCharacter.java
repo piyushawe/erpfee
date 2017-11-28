@@ -20,7 +20,7 @@ public class DefineCharacter extends BaseClass {
   }
 
   public void openDefineCharacter() throws IOException {
-     ehandler.openFrame(readFile.getElement(file,"globalmastersmenu"), link, frame);
+     ehandler.openFrame(readFile.getElement(fileUI,"globalmastersmenu"), link, frame);
   }
 
   public void enterCharacterName(String pname) throws IOException {

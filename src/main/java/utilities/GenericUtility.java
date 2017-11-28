@@ -12,10 +12,10 @@ import java.util.Calendar;
 
 import static webdriver.AppDriver.driver;
 
-public class GenericUtility extends GenericBaseClass implements GenericObjects{
+public class GenericUtility extends GenericBaseClass {
 
   public void takeScreenshot() throws IOException {
-    String school= readFile.readProperty(file, "schoolname");
+    String school= readFile.readProperty(fileUI, "schoolname");
     String timestamp= getTimeStamp();
     File f= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
     FileUtils.copyFile(f, new File("F:/erpfee/src/main/resources/screenshots/"+ school+"/"+page+"/"+page+scenario+timestamp+".png"));

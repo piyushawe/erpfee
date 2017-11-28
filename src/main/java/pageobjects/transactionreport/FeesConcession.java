@@ -20,7 +20,7 @@ public class FeesConcession extends GenericReports {
     }
 
     public void openFeesConcession() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "transactionreportmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
     }
 
     public void getConcessionElements() throws IOException {
@@ -33,7 +33,7 @@ public class FeesConcession extends GenericReports {
 
     public void validateConcession() throws IOException {
         getConcessionElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "concession"));
+        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "concession"));
     }
 
     public void selectConcession() throws IOException {
@@ -42,7 +42,7 @@ public class FeesConcession extends GenericReports {
     }
 
     public void validateTillDate() throws IOException {
-        verify.verifyValidationOnMultiSelect(readFile.getElement(f1, "tilldate"), clr, readFile.getElement(f1, "tilldatemessage"), readFile.readProperty(file, "tilldate"));
+        verify.verifyValidationOnMultiSelect(readFile.getElement(f1, "tilldate"), clr, readFile.getElement(f1, "tilldatemessage"), readFile.readProperty(fileUI, "tilldate"));
     }
 
     public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {

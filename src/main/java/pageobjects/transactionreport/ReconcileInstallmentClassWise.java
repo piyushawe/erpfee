@@ -20,6 +20,6 @@ public class ReconcileInstallmentClassWise extends GenericReports {
     }
 
     public void openReconcileInstallmentClassWise() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "transactionreportmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
     }
 }

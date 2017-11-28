@@ -20,7 +20,7 @@ public class ChequeClearingStatusReport extends GenericReports {
     }
 
     public void openChequeClearingStatusReport() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "transactionreportmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
     }
 
     private void getChequeDetailsElements() throws IOException {
@@ -40,7 +40,7 @@ public class ChequeClearingStatusReport extends GenericReports {
 
     public void validateBankName() throws IOException {
         getBankNameElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "bankname"));
+        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "bankname"));
     }
 
     public void selectBankName() throws IOException {

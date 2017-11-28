@@ -20,7 +20,7 @@ public class ClassWiseMarkList extends GenericReports {
     }
 
     public void openClassWiseMarkList() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "reportsmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "reportsmenu"), link, frame);
     }
 
     public void selectOrderBy(int index) throws IOException, InterruptedException {

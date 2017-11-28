@@ -20,6 +20,6 @@ public class DailyFeeCollectionDateClassWise extends GenericReports {
     }
 
     public void openDailyFeeCollectionDateClassWise() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "transactionreportmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
     }
 }

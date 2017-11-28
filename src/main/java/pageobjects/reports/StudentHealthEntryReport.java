@@ -20,6 +20,6 @@ public class StudentHealthEntryReport extends GenericReports {
     }
 
     public void openStudentHealthEntryReport() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "reportsmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "reportsmenu"), link, frame);
     }
 }

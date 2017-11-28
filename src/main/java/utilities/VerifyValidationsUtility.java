@@ -3,9 +3,8 @@ package utilities;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
-import static utilities.GenericObjects.ehandler;
-
 public class VerifyValidationsUtility {
+    EventHandlingUtility ehandler= new EventHandlingUtility();
 
     public void validateBlankField(WebElement we, String expected, WebElement msgid){
        if(we.getAttribute("value").equals(""))

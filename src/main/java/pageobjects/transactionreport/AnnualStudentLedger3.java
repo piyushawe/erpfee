@@ -20,8 +20,8 @@ public class AnnualStudentLedger3 extends GenericReports {
     }
 
     public void openAnnualStudentLedger3() throws IOException {
-        ehandler.moveToElement(readFile.getElement(file, "transactionreportmenu"));
-        ehandler.openFrame(readFile.getElement(file, "ledgerreportssubmenu"), link, frame);
+        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
+        ehandler.openFrame(readFile.getElement(fileUI, "ledgerreportssubmenu"), link, frame);
     }
 
 }

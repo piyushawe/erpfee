@@ -21,7 +21,7 @@ public class DefineSection extends BaseClass {
 
     public void openDefineSection() throws IOException {
 
-        ehandler.openFrame(readFile.getElement(file,"globalmastersmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI,"globalmastersmenu"), link, frame);
     }
 
     public void enterSectionName(String section) throws IOException {

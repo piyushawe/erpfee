@@ -25,7 +25,7 @@ public class DefineCaste extends BaseClass {
 
     public void openDefineCaste() throws IOException {
         //System.out.println(link.isDisplayed());
-        ehandler.openFrame(readFile.getElement(file, "globalmastersmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "globalmastersmenu"), link, frame);
     }
 
     public void enterCasteName(String cname) throws IOException {

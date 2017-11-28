@@ -20,8 +20,8 @@ public class FeeDefaulterList extends GenericReports {
     }
 
     public void openFeeDefaulterList() throws IOException {
-        ehandler.moveToElement(readFile.getElement(file, "transactionreportmenu"));
-        ehandler.openFrame(readFile.getElement(file, "feedefaultersubmenu"), link, frame);
+        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
+        ehandler.openFrame(readFile.getElement(fileUI, "feedefaultersubmenu"), link, frame);
     }
 
     public void selectClass(int index) throws IOException, InterruptedException {

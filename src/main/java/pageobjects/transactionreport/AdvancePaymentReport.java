@@ -21,14 +21,14 @@ public class AdvancePaymentReport extends GenericReports {
     }
 
     public void openAdvancePaymentReport() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "transactionreportmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
     }
 
     public void validateInstallment() throws IOException {
-        verify.verifyValidationMessage(readFile.readProperty(file, "Installment"), readFile.getElement(f1, "installmentmessage"));
+        verify.verifyValidationMessage(readFile.readProperty(fileUI, "Installment"), readFile.getElement(f1, "installmentmessage"));
     }
 
     public void validateTillDate() throws IOException {
-        verify.verifyValidationOnMultiSelect(readFile.getElement(f1, "tilldate"), clr, readFile.getElement(f1, "tilldatemessage"), readFile.readProperty(file, "tilldate"));
+        verify.verifyValidationOnMultiSelect(readFile.getElement(f1, "tilldate"), clr, readFile.getElement(f1, "tilldatemessage"), readFile.readProperty(fileUI, "tilldate"));
     }
 }

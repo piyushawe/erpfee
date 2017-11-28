@@ -20,8 +20,8 @@ public class DailyFeeCollectionDateFeeGroupWise extends GenericReports {
   }
 
   public void openDailyFeeCollectionDateFeeGroupWise() throws IOException {
-     ehandler.moveToElement(readFile.getElement(file, "transactionreportmenu"));
-     ehandler.openFrame(readFile.getElement(file, "collectionsubmenu"), link, frame);
+     ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
+     ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
   }
 
   private void getFeeGroupElements() throws IOException {
@@ -34,7 +34,7 @@ public class DailyFeeCollectionDateFeeGroupWise extends GenericReports {
 
   public void validateFeeGroup() throws IOException {
      getFeeGroupElements();
-     verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "feegroup"));
+     verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "feegroup"));
   }
 
   public void selectFeeGroup() throws IOException {

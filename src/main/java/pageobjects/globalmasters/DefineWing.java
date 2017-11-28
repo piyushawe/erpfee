@@ -20,7 +20,7 @@ public class DefineWing extends BaseClass {
     }
 
     public void openDefineWing() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "globalmastersmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "globalmastersmenu"), link, frame);
     }
 
     public void enterWingName(String mname) throws IOException {

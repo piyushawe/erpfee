@@ -20,7 +20,7 @@ public class StaffWardListReport extends GenericReports {
     }
 
     public void openStaffWardListReport() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "reportsmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "reportsmenu"), link, frame);
     }
 
     public void selectStaffType(int index) throws IOException, InterruptedException {

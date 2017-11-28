@@ -20,8 +20,8 @@ public class FeeDefaulterReportWithReceiving extends GenericReports {
     }
 
     public void openFeeDefaulterReportWithReceiving() throws IOException {
-        ehandler.moveToElement(readFile.getElement(file, "transactionreportmenu"));
-        ehandler.openFrame(readFile.getElement(file, "feedefaultersubmenu"), link, frame);
+        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
+        ehandler.openFrame(readFile.getElement(fileUI, "feedefaultersubmenu"), link, frame);
     }
 
     public void clickWithFine() throws IOException {

@@ -20,7 +20,7 @@ public class FeesConcessionAndDues extends GenericReports {
     }
 
     public void openFeesConcessionAndDues() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "transactionreportmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
     }
 
     private void getFeeTypeElements() throws IOException {
@@ -33,7 +33,7 @@ public class FeesConcessionAndDues extends GenericReports {
 
     public void validateFeeType() throws IOException {
         getFeeTypeElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "feetype"));
+        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "feetype"));
     }
 
     public void selectFeeType() throws IOException {

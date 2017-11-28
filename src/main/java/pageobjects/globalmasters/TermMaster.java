@@ -21,7 +21,7 @@ public class TermMaster extends BaseClass{
   }
 
   public void openTermMaster() throws IOException {
-     ehandler.openFrame(readFile.getElement(file, "globalmastersmenu"), link, frame);
+     ehandler.openFrame(readFile.getElement(fileUI, "globalmastersmenu"), link, frame);
   }
 
   public void enterTermName(String mname) throws IOException {

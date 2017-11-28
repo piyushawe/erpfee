@@ -21,7 +21,7 @@ public class DefineMotherTongue extends BaseClass{
   }
 
   public void openDefineMotherTongue() throws IOException {
-     ehandler.openFrame(readFile.getElement(file, "globalmastersmenu"), link, frame);
+     ehandler.openFrame(readFile.getElement(fileUI, "globalmastersmenu"), link, frame);
   }
 
   public void enterMotherTongue(String mtongue) throws IOException {

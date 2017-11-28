@@ -21,7 +21,7 @@ public class ActiveInactiveStudentsDetailReport extends GenericReports{
   }
 
   public void openActiveInactiveStudentsDetailReport() throws IOException {
-      ehandler.openFrame(readFile.getElement(file, "reportsmenu"), link, frame);
+      ehandler.openFrame(readFile.getElement(fileUI, "reportsmenu"), link, frame);
   }
 
   public void selectFromDate(String mm, String yy, String dd) throws IOException, InterruptedException {

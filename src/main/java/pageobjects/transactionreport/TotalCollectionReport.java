@@ -20,7 +20,7 @@ public class TotalCollectionReport extends GenericReports {
     }
 
     public void openTotalCollectionReport() throws IOException {
-        ehandler.moveToElement(readFile.getElement(file, "transactionreportmenu"));
-        ehandler.openFrame(readFile.getElement(file, "collectionsubmenu"), link, frame);
+        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
+        ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
     }
 }

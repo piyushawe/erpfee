@@ -20,8 +20,8 @@ public class StudentWiseCollectionReport extends GenericReports {
     }
 
     public void openStudentWiseCollectionReport() throws IOException {
-        ehandler.moveToElement(readFile.getElement(file, "transactionreportmenu"));
-        ehandler.openFrame(readFile.getElement(file, "collectionsubmenu"), link, frame);
+        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
+        ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
     }
 
     public void clickHeadWise() throws IOException {

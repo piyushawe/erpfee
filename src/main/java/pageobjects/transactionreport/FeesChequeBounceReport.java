@@ -20,7 +20,7 @@ public class FeesChequeBounceReport extends GenericReports {
     }
 
     public void openFeesChequeBounceReport() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "transactionreportmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
     }
 
     public void selectBankName(int index) throws IOException, InterruptedException {

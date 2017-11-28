@@ -2,295 +2,98 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b68fc022-3469-4af8-ab32-3e85d41ca221" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20171127_115722.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20171127_120730.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20171127_122349.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/DailyFeeCollection/DailyFeeCollection[@scenario7, @verify_with_filters]20171127_123241.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario11, @verify_with_no_filters]20171127_105529.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario11, @verify_with_no_filters]20171127_105941.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@scenario11, @verify_with_no_filters]20171127_110450.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/null/null[@verify_with_no_filters, @scenario8]20171127_121559.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/pageobjects.transactionreport.DailyFeeCollection/pageobjects.transactionreport.DailyFeeCollection[@scenario11, @verify_with_no_filters]20171127_111041.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineCaste.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineCategory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineCharacter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineLanguage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineLastResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineMoral.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineMotherTongue.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefinePromotionMaster.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineReligion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineSection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/DefineWing.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/globalMastersPageObjects/TermMaster.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/reportsPageObjects/ActiveInactiveStudentsDetailReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/AnnualStuLedReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/BadDebtsReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/ChequeReportDateWise.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/DailyFeeCollection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/DailyFeeCollectionAccountWise.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/DailyFeeCollectionDateClassWise.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/DailyFeeCollectionDateFeeGroupWise.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/DailyFeeCollectionDateWise.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/DailyFeeCollectionDateWiseWithRemark.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/DayWiseTotalCollection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/EstimatedCollectionReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/FeeCollectionWithEntryTimeConcession.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/FeeHeadWiseCollectionClassRange.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/FeesConcession.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/MonthWiseCollectionReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/MonthlyConsolidatedReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/OnlinePaymentStatusReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/ReceiptWiseDailyCollection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/ReceiptWiseFeeTypeCollection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/ReconcileInstallmentClassWise.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/ReconcileReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/StudentWiseCollectionReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/TotalCollectionReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageObjects/transactionReportPageObjects/YearlyCollectionReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/reportsPageObjects/ClassSectionTransferReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/reportsPageObjects/ClassWiseMarkList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/reportsPageObjects/ClassWiseSibling.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/reportsPageObjects/ClassWiseStudentDetails.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/reportsPageObjects/GroupWiseStudentDetails.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/reportsPageObjects/MidYearStudentDetails.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/reportsPageObjects/OpeningDuesReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/reportsPageObjects/RefundAmount.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/reportsPageObjects/SmsReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/reportsPageObjects/StaffWardListReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/reportsPageObjects/StudentHealthEntryReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/reportsPageObjects/StudentRegisterDateWiseReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/reportsPageObjects/TransportDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/transactionReportPageObjects/AdvancePaymentReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/transactionReportPageObjects/AmountWithoutStructureReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/transactionReportPageObjects/AnnualStudentLedger3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/transactionReportPageObjects/CancelledFeesReceiptReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/transactionReportPageObjects/ChequeClearingStatusReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/transactionReportPageObjects/FeeDefaulterInstallmentWise.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/transactionReportPageObjects/FeeDefaulterList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/transactionReportPageObjects/FeeDefaulterReportConsolidated.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/transactionReportPageObjects/FeeDefaulterReportWithReceiving.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/transactionReportPageObjects/FeeDefaulterSlip.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/transactionReportPageObjects/FeesChequeBounceReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/transactionReportPageObjects/FeesConcessionAndDues.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/transactionReportPageObjects/FeesConcessionInstallHeadWise.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pageobjects/transactionReportPageObjects/UnpaidStudentReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/AdvancePaymentReportRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/AmountWithoutStructureReportRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/AnnualStuLedReportRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/AnnualStudentledger3Runner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/BadDebtsReportRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/CancelledFeesReceiptReportRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/ChequeClearingStatusReportRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/ChequeReportDateWiseRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/DailyFeeCollectionAccountWiseRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/DailyFeeCollectionDateClassWiseRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/DailyFeeCollectionDateFeeGroupWiseRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/DailyFeeCollectionDateWiseRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/DailyFeeCollectionDateWiseWithRemarkRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/DailyFeeCollectionRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/DayWiseTotalCollectionRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/EstimatedCollectionReportRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/FeeCollectionWithEntryTimeConcessionRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/FeeDefaulterInstallmentWiseRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/FeeDefaulterListRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/FeeDefaulterReportConsolidatedRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/FeeDefaulterReportWithReceivingRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/FeeDefaulterSlipRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/FeeHeadWiseCollectionClassRangeRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/FeesChequeBounceReportRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/FeesConcessionAndDuesRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/FeesConcessionInstallHeadWiseRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/FeesConcessionRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/MonthWiseCollectionReportRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/MonthlyConsolidatedReportRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/OnlinePaymentStatusReportRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/ReceiptWiseDailyCollectionRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/ReceiptWiseFeeTypeCollectionRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/ReconcileInstallmentClassWiseRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/ReconcileReportRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/StudentWiseCollectionReportRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/TotalCollectionReportRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/UnpaidStudentReportRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/transactionreports/YearlyCollectionReportRunner.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/pageobjects.transactionreport.DailyFeeCollection/pageobjects.transactionreport.DailyFeeCollection[@scenario7, @verify_with_filters]20171127_145745.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/pageobjects.transactionreport.DailyFeeCollection/pageobjects.transactionreport.DailyFeeCollection[@scenario7, @verify_with_filters]20171127_145940.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/pageobjects.transactionreport.DailyFeeCollection/pageobjects.transactionreport.DailyFeeCollection[@scenario7, @verify_with_filters]20171127_150307.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/screenshots/qaerp/pageobjects.transactionreport/pageobjects.transactionreport[@scenario7, @verify_with_filters]20171127_151009.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/MessageBundle.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/automationFramework/supportMethods/BrowserFactory.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/utilities/GenericObjects.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/utilities/GenericObjects.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/supportclasses/GenericBaseClass.class" afterPath="$PROJECT_DIR$/target/classes/supportclasses/GenericBaseClass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utilities/BaseClass.class" afterPath="$PROJECT_DIR$/target/classes/utilities/BaseClass.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utilities/GenericReports.class" afterPath="$PROJECT_DIR$/target/classes/utilities/GenericReports.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/TestSteps.class" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/TestSteps.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TestSteps1.class" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TestSteps1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineCategoryRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineCategoryRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineCharacterRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineCharacterRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineLanguageRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineLanguageRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineLastResultRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineLastResultRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineMoralRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineMoralRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineMotherTongueRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineMotherTongueRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefinePromotionMasterRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefinePromotionMasterRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineReligionRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineReligionRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineSectionRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineSectionRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineWingRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/DefineWingRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/TermMasterRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/globalmasters/TermMasterRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/reports/ActiveInactiveStudentDetailsReportRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/reports/ActiveInactiveStudentDetailsReportRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/reports/ClassSectionTransferReportRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/reports/ClassSectionTransferReportRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/reports/ClassWiseMarkListRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/reports/ClassWiseMarkListRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/reports/ClassWiseSiblingRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/reports/ClassWiseSiblingRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/reports/ClassWiseStudentDetailsRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/reports/ClassWiseStudentDetailsRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/reports/GroupWiseStudentDetailsRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/reports/GroupWiseStudentDetailsRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/reports/MidYearStudentDetailsRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/reports/MidYearStudentDetailsRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/reports/OpeningDuesReportRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/reports/OpeningDuesReportRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/reports/RefundAmountRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/reports/RefundAmountRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/reports/SmsReportRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/reports/SmsReportRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/reports/StaffWardListReportRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/reports/StaffWardListReportRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/reports/StudentHealthEntryReportRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/reports/StudentHealthEntryReportRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/reports/StudentRegisterDateWiseReportRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/reports/StudentRegisterDateWiseReportRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/testrunner/reports/TransportDetailRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/testrunner/reports/TransportDetailRunner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utilities/GenericUtility.class" afterPath="$PROJECT_DIR$/target/classes/utilities/GenericUtility.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utilities/VerifyValidationsUtility.class" afterPath="$PROJECT_DIR$/target/classes/utilities/VerifyValidationsUtility.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/webDriver/AppDriver.class" afterPath="$PROJECT_DIR$/target/classes/webDriver/AppDriver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/CucumberHooks.class" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/CucumberHooks.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/UIMap.properties" afterPath="$PROJECT_DIR$/configuration/UIMap.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/transactionreport/DailyFeeCollection.properties" afterPath="$PROJECT_DIR$/configuration/transactionreport/DailyFeeCollection.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/transactionreport/DailyFeeCollectionDateWiseWithRemark.properties" afterPath="$PROJECT_DIR$/configuration/transactionreport/DailyFeeCollectionDateWiseWithRemark.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/GenericConfig.properties" afterPath="$PROJECT_DIR$/configuration/GenericConfig.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineCaste.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineCaste.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineCategory.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineCategory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineCharacter.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineCharacter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineLanguage.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineLanguage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineLastResult.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineLastResult.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineMoral.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineMoral.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineMotherTongue.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineMotherTongue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefinePromotionMaster.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefinePromotionMaster.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineReligion.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineReligion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineSection.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineSection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineWing.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineWing.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/TermMaster.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/TermMaster.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reports/ActiveInactiveStudentsDetailReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/ActiveInactiveStudentsDetailReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reports/ClassSectionTransferReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/ClassSectionTransferReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reports/ClassWiseMarkList.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/ClassWiseMarkList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reports/ClassWiseSibling.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/ClassWiseSibling.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reports/ClassWiseStudentDetails.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/ClassWiseStudentDetails.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reports/GroupWiseStudentDetails.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/GroupWiseStudentDetails.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reports/MidYearStudentDetails.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/MidYearStudentDetails.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reports/OpeningDuesReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/OpeningDuesReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reports/RefundAmount.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/RefundAmount.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reports/SmsReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/SmsReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reports/StaffWardListReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/StaffWardListReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reports/StudentHealthEntryReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/StudentHealthEntryReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reports/StudentRegisterDateWiseReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/StudentRegisterDateWiseReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reports/TransportDetail.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/TransportDetail.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AdvancePaymentReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AdvancePaymentReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AmountWithoutStructureReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AmountWithoutStructureReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AnnualStuLedReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AnnualStuLedReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AnnualStudentLedger3.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AnnualStudentLedger3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/BadDebtsReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/BadDebtsReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/CancelledFeesReceiptReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/CancelledFeesReceiptReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ChequeClearingStatusReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ChequeClearingStatusReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ChequeReportDateWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ChequeReportDateWise.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollection.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionAccountWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionAccountWise.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateClassWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateClassWise.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateFeeGroupWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateFeeGroupWise.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateWise.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateWiseWithRemark.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateWiseWithRemark.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DayWiseTotalCollection.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DayWiseTotalCollection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/EstimatedCollectionReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/EstimatedCollectionReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeCollectionWithEntryTimeConcession.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeCollectionWithEntryTimeConcession.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterInstallmentWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterInstallmentWise.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterList.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterReportConsolidated.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterReportConsolidated.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterReportWithReceiving.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterReportWithReceiving.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterSlip.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterSlip.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeHeadWiseCollectionClassRange.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeHeadWiseCollectionClassRange.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesChequeBounceReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesChequeBounceReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesConcession.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesConcession.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesConcessionAndDues.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesConcessionAndDues.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesConcessionInstallHeadWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesConcessionInstallHeadWise.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/MonthWiseCollectionReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/MonthWiseCollectionReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/MonthlyConsolidatedReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/MonthlyConsolidatedReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/OnlinePaymentStatusReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/OnlinePaymentStatusReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReceiptWiseDailyCollection.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReceiptWiseDailyCollection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReceiptWiseFeeTypeCollection.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReceiptWiseFeeTypeCollection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReconcileInstallmentClassWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReconcileInstallmentClassWise.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReconcileReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReconcileReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/StudentWiseCollectionReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/StudentWiseCollectionReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/TotalCollectionReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/TotalCollectionReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/UnpaidStudentReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/UnpaidStudentReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/YearlyCollectionReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/YearlyCollectionReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/supportclasses/GenericBaseClass.java" afterPath="$PROJECT_DIR$/src/main/java/supportclasses/GenericBaseClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utilities/BaseClass.java" afterPath="$PROJECT_DIR$/src/main/java/utilities/BaseClass.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utilities/GenericReports.java" afterPath="$PROJECT_DIR$/src/main/java/utilities/GenericReports.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TestSteps.java" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/TestSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TestSteps1.java" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/TestSteps1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utilities/GenericUtility.java" afterPath="$PROJECT_DIR$/src/main/java/utilities/GenericUtility.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utilities/VerifyValidationsUtility.java" afterPath="$PROJECT_DIR$/src/main/java/utilities/VerifyValidationsUtility.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/webdriver/AppDriver.java" afterPath="$PROJECT_DIR$/src/main/java/webdriver/AppDriver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/CucumberHooks.java" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/CucumberHooks.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/DailyFeeCollectionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/DailyFeeCollectionRunner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber.json" afterPath="$PROJECT_DIR$/target/cucumber.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber.xml" afterPath="$PROJECT_DIR$/target/cucumber.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber_html_report/report.js" afterPath="$PROJECT_DIR$/target/cucumber_html_report/report.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/AdvancePaymentReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/AdvancePaymentReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/AmountWithoutStructureReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/AmountWithoutStructureReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/AnnualStuLedReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/AnnualStuLedReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/AnnualStudentLedger3" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/AnnualStudentLedger3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/BadDebtsReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/BadDebtsReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/CancelledFeesReceiptReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/CancelledFeesReceiptReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/ChequeClearingStatusReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/ChequeClearingStatusReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/ChequeReportDateWise" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/ChequeReportDateWise" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/DailyFeeCollection.feature" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/DailyFeeCollection.feature" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/DailyFeeCollectionAccountWise.feature" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/DailyFeeCollectionAccountWise.feature" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/DailyFeeCollectionDateClassWise" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/DailyFeeCollectionDateClassWise" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/DailyFeeCollectionDateFeeGroupWise" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/DailyFeeCollectionDateFeeGroupWise" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/DailyFeeCollectionDateWise" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/DailyFeeCollectionDateWise" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/DailyFeeCollectionDateWiseWithRemark.feature" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/DailyFeeCollectionDateWiseWithRemark.feature" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/DayWiseTotalCollection" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/DayWiseTotalCollection" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/EstimatedCollectionReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/EstimatedCollectionReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/FeeCollectionWithEntryTimeConcession" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/FeeCollectionWithEntryTimeConcession" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/FeeDefaulterInstallmentWise" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/FeeDefaulterInstallmentWise" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/FeeDefaulterList" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/FeeDefaulterList" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/FeeDefaulterReportConsolidated" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/FeeDefaulterReportConsolidated" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/FeeDefaulterReportWithReceiving" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/FeeDefaulterReportWithReceiving" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/FeeDefaulterSlip" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/FeeDefaulterSlip" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/FeeHeadWiseCollectionClassRange" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/FeeHeadWiseCollectionClassRange" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/FeesChequeBounceReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/FeesChequeBounceReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/FeesConcession" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/FeesConcession" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/FeesConcessionAndDues" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/FeesConcessionAndDues" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/FeesConcessionInstallHeadWise" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/FeesConcessionInstallHeadWise" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/MonthWiseCollectionReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/MonthWiseCollectionReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/MonthlyConsolidatedReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/MonthlyConsolidatedReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/OnlinePaymentStatusReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/OnlinePaymentStatusReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/ReceiptWiseDailyCollection" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/ReceiptWiseDailyCollection" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/ReceiptWiseFeeTypeCollection" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/ReceiptWiseFeeTypeCollection" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/ReconcileInstallmentClassWise" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/ReconcileInstallmentClassWise" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/ReconcileReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/ReconcileReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/StudentWiseCollectionReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/StudentWiseCollectionReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/TotalCollectionReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/TotalCollectionReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/UnpaidStudentReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/UnpaidStudentReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featurefiles/transactionreports/YearlyCollectionReport" afterPath="$PROJECT_DIR$/featurefiles/transactionreport/YearlyCollectionReport" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalMastersPageObjects/DefineCaste.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineCaste.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalMastersPageObjects/DefineCategory.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineCategory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalMastersPageObjects/DefineCharacter.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineCharacter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalMastersPageObjects/DefineLanguage.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineLanguage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalMastersPageObjects/DefineLastResult.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineLastResult.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalMastersPageObjects/DefineMoral.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineMoral.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalMastersPageObjects/DefineMotherTongue.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineMotherTongue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalMastersPageObjects/DefinePromotionMaster.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefinePromotionMaster.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalMastersPageObjects/DefineReligion.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineReligion.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalMastersPageObjects/DefineSection.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineSection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalMastersPageObjects/DefineWing.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineWing.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/globalMastersPageObjects/TermMaster.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/TermMaster.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/ActiveInactiveStudentsDetailReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/ActiveInactiveStudentsDetailReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/ClassSectionTransferReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/ClassSectionTransferReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/ClassWiseMarkList.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/ClassWiseMarkList.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/ClassWiseSibling.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/ClassWiseSibling.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/ClassWiseStudentDetails.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/ClassWiseStudentDetails.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/GroupWiseStudentDetails.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/GroupWiseStudentDetails.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/MidYearStudentDetails.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/MidYearStudentDetails.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/OpeningDuesReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/OpeningDuesReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/RefundAmount.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/RefundAmount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/SmsReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/SmsReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/StaffWardListReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/StaffWardListReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/StudentHealthEntryReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/StudentHealthEntryReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/StudentRegisterDateWiseReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/StudentRegisterDateWiseReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/reportsPageObjects/TransportDetail.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/reports/TransportDetail.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/AdvancePaymentReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AdvancePaymentReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/AmountWithoutStructureReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AmountWithoutStructureReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/AnnualStuLedReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AnnualStuLedReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/AnnualStudentLedger3.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AnnualStudentLedger3.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/BadDebtsReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/BadDebtsReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/CancelledFeesReceiptReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/CancelledFeesReceiptReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/ChequeClearingStatusReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ChequeClearingStatusReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/ChequeReportDateWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ChequeReportDateWise.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/DailyFeeCollection.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/DailyFeeCollectionAccountWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionAccountWise.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/DailyFeeCollectionDateClassWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateClassWise.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/DailyFeeCollectionDateFeeGroupWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateFeeGroupWise.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/DailyFeeCollectionDateWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateWise.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/DailyFeeCollectionDateWiseWithRemark.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateWiseWithRemark.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/DayWiseTotalCollection.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DayWiseTotalCollection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/EstimatedCollectionReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/EstimatedCollectionReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeeCollectionWithEntryTimeConcession.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeCollectionWithEntryTimeConcession.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeeDefaulterInstallmentWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterInstallmentWise.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeeDefaulterList.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterList.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeeDefaulterReportConsolidated.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterReportConsolidated.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeeDefaulterReportWithReceiving.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterReportWithReceiving.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeeDefaulterSlip.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterSlip.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeeHeadWiseCollectionClassRange.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeHeadWiseCollectionClassRange.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeesChequeBounceReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesChequeBounceReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeesConcession.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesConcession.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeesConcessionAndDues.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesConcessionAndDues.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/FeesConcessionInstallHeadWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesConcessionInstallHeadWise.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/MonthWiseCollectionReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/MonthWiseCollectionReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/MonthlyConsolidatedReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/MonthlyConsolidatedReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/OnlinePaymentStatusReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/OnlinePaymentStatusReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/ReceiptWiseDailyCollection.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReceiptWiseDailyCollection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/ReceiptWiseFeeTypeCollection.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReceiptWiseFeeTypeCollection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/ReconcileInstallmentClassWise.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReconcileInstallmentClassWise.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/ReconcileReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReconcileReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/StudentWiseCollectionReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/StudentWiseCollectionReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/TotalCollectionReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/TotalCollectionReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/UnpaidStudentReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/UnpaidStudentReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/YearlyCollectionReport.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/YearlyCollectionReport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/AdvancePaymentReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/AdvancePaymentReportRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/AmountWithoutStructureReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/AmountWithoutStructureReportRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/AnnualStuLedReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/AnnualStuLedReportRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/AnnualStudentledger3Runner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/AnnualStudentledger3Runner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/BadDebtsReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/BadDebtsReportRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/CancelledFeesReceiptReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/CancelledFeesReceiptReportRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ChequeClearingStatusReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/ChequeClearingStatusReportRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ChequeReportDateWiseRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/ChequeReportDateWiseRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionAccountWiseRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/DailyFeeCollectionAccountWiseRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionDateClassWiseRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/DailyFeeCollectionDateClassWiseRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionDateFeeGroupWiseRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/DailyFeeCollectionDateFeeGroupWiseRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionDateWiseRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/DailyFeeCollectionDateWiseRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionDateWiseWithRemarkRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/DailyFeeCollectionDateWiseWithRemarkRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/DailyFeeCollectionRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DayWiseTotalCollectionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/DayWiseTotalCollectionRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/EstimatedCollectionReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/EstimatedCollectionReportRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeCollectionWithEntryTimeConcessionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/FeeCollectionWithEntryTimeConcessionRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeDefaulterInstallmentWiseRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/FeeDefaulterInstallmentWiseRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeDefaulterListRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/FeeDefaulterListRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeDefaulterReportConsolidatedRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/FeeDefaulterReportConsolidatedRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeDefaulterReportWithReceivingRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/FeeDefaulterReportWithReceivingRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeDefaulterSlipRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/FeeDefaulterSlipRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeeHeadWiseCollectionClassRangeRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/FeeHeadWiseCollectionClassRangeRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeesChequeBounceReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/FeesChequeBounceReportRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeesConcessionAndDuesRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/FeesConcessionAndDuesRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeesConcessionInstallHeadWiseRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/FeesConcessionInstallHeadWiseRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeesConcessionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/FeesConcessionRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/MonthWiseCollectionReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/MonthWiseCollectionReportRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/MonthlyConsolidatedReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/MonthlyConsolidatedReportRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/OnlinePaymentStatusReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/OnlinePaymentStatusReportRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReceiptWiseDailyCollectionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/ReceiptWiseDailyCollectionRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReceiptWiseFeeTypeCollectionRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/ReceiptWiseFeeTypeCollectionRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReconcileInstallmentClassWiseRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/ReconcileInstallmentClassWiseRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReconcileReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/ReconcileReportRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/StudentWiseCollectionReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/StudentWiseCollectionReportRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/TotalCollectionReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/TotalCollectionReportRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/UnpaidStudentReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/UnpaidStudentReportRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/YearlyCollectionReportRunner.java" afterPath="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/YearlyCollectionReportRunner.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -312,71 +115,97 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GenericReports.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utilities/GenericReports.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DailyFeeCollection.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configuration/transactionreport/DailyFeeCollection.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DailyFeeCollection.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DailyFeeCollectionAccountWise.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionAccountWise.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DailyFeeCollection.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/featurefiles/transactionreport/DailyFeeCollection.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="70" column="39" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DailyFeeCollectionRunner.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DailyFeeCollectionRunner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/transactionreport/DailyFeeCollectionRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefinitions/TestSteps.java">
+      <file leaf-file-name="BrowserFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/automationFramework/supportMethods/BrowserFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="1279" column="0" lean-forward="false" selection-start-line="1279" selection-start-column="0" selection-end-line="1279" selection-end-column="0" />
+            <state relative-caret-position="83">
+              <caret line="19" column="137" lean-forward="false" selection-start-line="19" selection-start-column="121" selection-end-line="19" selection-end-column="137" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CucumberHooks.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefinitions/CucumberHooks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenericConfig.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configuration/GenericConfig.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppDriver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/webdriver/AppDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenericBaseClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/supportclasses/GenericBaseClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DailyFeeCollection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="19" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadFile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/automationFramework/supportMethods/ReadFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdvancePaymentReportRunner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/transactionreport/AdvancePaymentReportRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -469,57 +298,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeesConcessionInstallHeadWiseRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/FeesConcessionRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/MonthlyConsolidatedReportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/MonthWiseCollectionReportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/OnlinePaymentStatusReportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReceiptWiseDailyCollectionRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReceiptWiseFeeTypeCollectionRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReconcileInstallmentClassWiseRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/ReconcileReportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/StudentWiseCollectionReportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/TotalCollectionReportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/UnpaidStudentReportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/YearlyCollectionReportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineCharacterRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineLanguageRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineLastResultRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineMoralRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineMotherTongueRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefinePromotionMasterRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineReligionRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineSectionRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineWingRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/globalmasters/TermMasterRunner.java" />
-        <option value="$PROJECT_DIR$/configuration/UIMap.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/reports/ActiveInactiveStudentDetailsReportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/reports/ClassSectionTransferReportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/reports/ClassWiseMarkListRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/reports/ClassWiseSiblingRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/reports/ClassWiseStudentDetailsRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/reports/GroupWiseStudentDetailsRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/reports/MidYearStudentDetailsRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/reports/OpeningDuesReportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/reports/RefundAmountRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/reports/SmsReportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/reports/StaffWardListReportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/reports/StudentHealthEntryReportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/reports/StudentRegisterDateWiseReportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/reports/TransportDetailRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageobjects/globalMastersPageObjects/DefineCaste.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionReportPageObjects/DailyFeeCollection.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionDateWiseWithRemarkRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utilities/GenericReports.java" />
-        <option value="$PROJECT_DIR$/featurefiles/transactionreport/DailyFeeCollection.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreports/DailyFeeCollectionRunner.java" />
-        <option value="$PROJECT_DIR$/configuration/transactionreport/DailyFeeCollection.properties" />
-        <option value="$PROJECT_DIR$/configuration/transactionreport/DailyFeeCollectionDateWiseWithRemark.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/reports/OpeningDuesReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/reports/StaffWardListReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/reports/SmsReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/reports/StudentHealthEntryReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/reports/StudentRegisterDateWiseReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AdvancePaymentReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AmountWithoutStructureReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AnnualStudentLedger3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/AnnualStuLedReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/BadDebtsReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/CancelledFeesReceiptReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ChequeClearingStatusReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionAccountWise.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateClassWise.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateFeeGroupWise.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateWise.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateWiseWithRemark.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrunner/transactionreport/DailyFeeCollectionDateWiseWithRemarkRunner.java" />
-        <option value="$PROJECT_DIR$/featurefiles/transactionreport/DailyFeeCollectionDateWiseWithRemark.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/stepdefinitions/TestSteps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DayWiseTotalCollection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/EstimatedCollectionReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeCollectionWithEntryTimeConcession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterInstallmentWise.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterReportConsolidated.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterReportWithReceiving.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterSlip.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeHeadWiseCollectionClassRange.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesChequeBounceReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesConcession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesConcessionAndDues.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesConcessionInstallHeadWise.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/MonthlyConsolidatedReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/OnlinePaymentStatusReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReceiptWiseDailyCollection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReceiptWiseFeeTypeCollection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReconcileInstallmentClassWise.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReconcileReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/StudentWiseCollectionReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/TotalCollectionReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/UnpaidStudentReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/YearlyCollectionReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineLastResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineCharacter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineMotherTongue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/reports/ClassWiseSibling.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/reports/TransportDetail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ChequeReportDateWise.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/MonthWiseCollectionReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineSection.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefinitions/CucumberHooks.java" />
+        <option value="$PROJECT_DIR$/configuration/GenericConfig.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/supportclasses/GenericBaseClass.java" />
       </list>
     </option>
   </component>
@@ -582,8 +411,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -932,31 +759,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="erpfee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="erpfee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="configuration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transactionreport" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="tasks.servers" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -966,10 +777,16 @@
     <property name="last_opened_file_path" value="D:/Test" />
     <property name="ToolWindowMessages.ShowToolbar" value="false" />
     <property name="SONARLINT_ANALYSIS_RESULTS_SCOPE" value="VCS changed files" />
-    <property name="SONARLINT_ISSUES_SPLIT_PROPORTION" value="0.4473684" />
+    <property name="SONARLINT_ISSUES_SPLIT_PROPORTION" value="0.47860262" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\erpfee\configuration" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="automationFramework.supportMethods" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pageObjects.globalMastersPageObjects" />
     </key>
@@ -1427,38 +1244,45 @@
       <option name="project" value="LOCAL" />
       <updated>1511007661811</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="project as on 27 Nov 2017">
+      <created>1511773786642</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1511773786642</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DailyFeeCollectionDateWiseWithRemarkRunner - 2017.11.27 at 12h 16m 00s.xml">
-      <configuration name="DailyFeeCollectionDateWiseWithRemarkRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DailyFeeCollectionDateWiseWithRemarkRunner - 2017.11.27 at 12h 16m 42s.xml">
-      <configuration name="DailyFeeCollectionDateWiseWithRemarkRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DailyFeeCollectionDateWiseWithRemarkRunner - 2017.11.27 at 12h 18m 32s.xml">
-      <configuration name="DailyFeeCollectionDateWiseWithRemarkRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DailyFeeCollectionDateWiseWithRemarkRunner - 2017.11.27 at 12h 23m 15s.xml">
-      <configuration name="DailyFeeCollectionDateWiseWithRemarkRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DailyFeeCollectionRunner - 2017.11.27 at 12h 01m 38s.xml">
+    <history-entry file="DailyFeeCollectionRunner - 2017.11.27 at 14h 57m 45s.xml">
       <configuration name="DailyFeeCollectionRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DailyFeeCollectionRunner - 2017.11.27 at 12h 04m 12s.xml">
+    <history-entry file="DailyFeeCollectionRunner - 2017.11.27 at 14h 59m 41s.xml">
       <configuration name="DailyFeeCollectionRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DailyFeeCollectionRunner - 2017.11.27 at 12h 06m 12s.xml">
+    <history-entry file="DailyFeeCollectionRunner - 2017.11.27 at 15h 03m 08s.xml">
       <configuration name="DailyFeeCollectionRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DailyFeeCollectionRunner - 2017.11.27 at 12h 07m 30s.xml">
+    <history-entry file="DailyFeeCollectionRunner - 2017.11.27 at 15h 10m 09s.xml">
       <configuration name="DailyFeeCollectionRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DailyFeeCollectionRunner - 2017.11.27 at 12h 23m 50s.xml">
+    <history-entry file="DailyFeeCollectionRunner - 2017.11.27 at 15h 33m 32s.xml">
       <configuration name="DailyFeeCollectionRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DailyFeeCollectionRunner - 2017.11.27 at 12h 32m 41s.xml">
+    <history-entry file="DailyFeeCollectionRunner - 2017.11.28 at 09h 54m 39s.xml">
+      <configuration name="DailyFeeCollectionRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DailyFeeCollectionRunner - 2017.11.28 at 09h 56m 26s.xml">
+      <configuration name="DailyFeeCollectionRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DailyFeeCollectionRunner - 2017.11.28 at 10h 01m 24s.xml">
+      <configuration name="DailyFeeCollectionRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DailyFeeCollectionRunner - 2017.11.28 at 10h 04m 23s.xml">
+      <configuration name="DailyFeeCollectionRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DailyFeeCollectionRunner - 2017.11.28 at 10h 05m 23s.xml">
       <configuration name="DailyFeeCollectionRunner" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1482,23 +1306,22 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.033898305" sideWeight="0.11043873" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36101696" sideWeight="0.12102874" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36101696" sideWeight="0.8789713" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.033898305" sideWeight="0.8895613" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.042372882" sideWeight="0.7246596" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24054463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.042372882" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32542372" sideWeight="0.8895613" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27836612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43050846" sideWeight="0.88426626" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="top" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24915254" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39661017" sideWeight="0.8895613" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1507,6 +1330,7 @@
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32542372" sideWeight="0.8895613" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -1522,7 +1346,8 @@
     <MESSAGE value="project as on 25 aug 2017" />
     <MESSAGE value="project as on 29 oct 2017" />
     <MESSAGE value="project as on 18 Nov 2017" />
-    <option name="LAST_COMMIT_MESSAGE" value="project as on 18 Nov 2017" />
+    <MESSAGE value="project as on 27 Nov 2017" />
+    <option name="LAST_COMMIT_MESSAGE" value="project as on 27 Nov 2017" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1538,387 +1363,392 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineCategoryRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/BadDebtsReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="255">
+          <caret line="22" column="53" lean-forward="false" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineCharacterRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/CancelledFeesReceiptReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="255">
+          <caret line="22" column="53" lean-forward="false" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineLanguageRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ChequeClearingStatusReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="595">
+          <caret line="42" column="105" lean-forward="false" selection-start-line="42" selection-start-column="105" selection-end-line="42" selection-end-column="105" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineLastResultRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionAccountWise.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="612">
+          <caret line="43" column="105" lean-forward="false" selection-start-line="43" selection-start-column="105" selection-end-line="43" selection-end-column="105" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineMoralRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateClassWise.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="255">
+          <caret line="22" column="53" lean-forward="false" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineMotherTongueRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateFeeGroupWise.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="493">
+          <caret line="36" column="57" lean-forward="true" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefinePromotionMasterRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateWise.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="228">
+          <caret line="50" column="103" lean-forward="false" selection-start-line="50" selection-start-column="103" selection-end-line="50" selection-end-column="103" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineReligionRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateWiseWithRemark.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="748">
+          <caret line="51" column="103" lean-forward="false" selection-start-line="51" selection-start-column="103" selection-end-line="51" selection-end-column="103" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineSectionRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DayWiseTotalCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="629">
+          <caret line="44" column="159" lean-forward="false" selection-start-line="44" selection-start-column="159" selection-end-line="44" selection-end-column="159" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineWingRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/EstimatedCollectionReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="408">
+          <caret line="31" column="159" lean-forward="false" selection-start-line="31" selection-start-column="159" selection-end-line="31" selection-end-column="159" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/globalmasters/TermMasterRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeCollectionWithEntryTimeConcession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="27" column="138" lean-forward="false" selection-start-line="27" selection-start-column="138" selection-end-line="27" selection-end-column="138" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/reports/ActiveInactiveStudentDetailsReportRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterInstallmentWise.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/reports/ClassSectionTransferReportRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterReportConsolidated.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterReportWithReceiving.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeDefaulterSlip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeeHeadWiseCollectionClassRange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesChequeBounceReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="53" lean-forward="false" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesConcession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="44" column="159" lean-forward="false" selection-start-line="44" selection-start-column="159" selection-end-line="44" selection-end-column="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesConcessionAndDues.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="35" column="105" lean-forward="false" selection-start-line="35" selection-start-column="105" selection-end-line="35" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/FeesConcessionInstallHeadWise.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="53" lean-forward="false" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/MonthlyConsolidatedReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="62" column="105" lean-forward="false" selection-start-line="62" selection-start-column="105" selection-end-line="62" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/OnlinePaymentStatusReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="73" lean-forward="true" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReceiptWiseDailyCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="36" column="105" lean-forward="false" selection-start-line="36" selection-start-column="105" selection-end-line="36" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReceiptWiseFeeTypeCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/reports/ClassWiseMarkListRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/reports/ClassWiseSiblingRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/reports/ClassWiseStudentDetailsRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/reports/GroupWiseStudentDetailsRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/reports/MidYearStudentDetailsRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/reports/OpeningDuesReportRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/reports/RefundAmountRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/reports/SmsReportRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/reports/StaffWardListReportRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/reports/StudentHealthEntryReportRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/reports/StudentRegisterDateWiseReportRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/reports/TransportDetailRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReconcileInstallmentClassWise.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <caret line="22" column="53" lean-forward="false" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/BaseClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featurefiles/globalmasters/DefineCaste">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/globalmasters/DefineCaste.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/globalmasters/DefineCasteRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ReconcileReport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <caret line="22" column="53" lean-forward="false" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/StudentWiseCollectionReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/TotalCollectionReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/UnpaidStudentReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefinitions/CucumberHooks.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/YearlyCollectionReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="34" column="3" lean-forward="false" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="697">
+          <caret line="48" column="105" lean-forward="false" selection-start-line="48" selection-start-column="105" selection-end-line="48" selection-end-column="105" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webdriver/AppDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/transactionreport/AdvancePaymentReportRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webdriver/DriverMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefinitions/GenericTestSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineCaste.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="45" column="1" lean-forward="false" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/GenericObjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/UIMap.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/transactionreport/DailyFeeCollectionDateWiseWithRemark.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featurefiles/transactionreport/DailyFeeCollectionDateWiseWithRemark.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="60" column="77" lean-forward="true" selection-start-line="60" selection-start-column="77" selection-end-line="60" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featurefiles/transactionreport/DailyFeeCollection.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="70" column="39" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefinitions/TestSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="1279" column="0" lean-forward="false" selection-start-line="1279" selection-start-column="0" selection-end-line="1279" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/automationFramework/supportMethods/ReadFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/GenericConfig.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/EventHandlingUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="121" column="23" lean-forward="true" selection-start-line="121" selection-start-column="23" selection-end-line="121" selection-end-column="23" />
-          <folding>
-            <element signature="e#1385#1386#0" expanded="true" />
-            <element signature="e#1414#1415#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/transactionreport/DailyFeeCollectionDateWiseWithRemarkRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionDateWiseWithRemark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/transactionreport/DailyFeeCollectionRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/transactionreport/DailyFeeCollection.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollectionAccountWise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/GenericReports.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="56" />
+        <state relative-caret-position="238">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/DailyFeeCollection.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="19" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/automationFramework/supportMethods/ReadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineCharacter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineLastResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineMotherTongue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/reports/ClassWiseSibling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="53" lean-forward="false" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/reports/TransportDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/ChequeReportDateWise.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="35" column="105" lean-forward="false" selection-start-line="35" selection-start-column="105" selection-end-line="35" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/transactionreport/MonthWiseCollectionReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/globalmasters/DefineSection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/GenericReports.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="115" column="33" lean-forward="false" selection-start-line="115" selection-start-column="33" selection-end-line="115" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featurefiles/transactionreport/DailyFeeCollection.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="47" lean-forward="false" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/VerifyValidationsUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefinitions/CucumberHooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/automationFramework/supportMethods/BrowserFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="19" column="137" lean-forward="false" selection-start-line="19" selection-start-column="121" selection-end-line="19" selection-end-column="137" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configuration/GenericConfig.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webdriver/AppDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/supportclasses/GenericBaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testrunner/transactionreport/DailyFeeCollectionRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
           <folding />
         </state>
       </provider>

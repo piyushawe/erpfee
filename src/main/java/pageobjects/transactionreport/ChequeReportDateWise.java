@@ -20,7 +20,7 @@ public class ChequeReportDateWise extends GenericReports {
     }
 
     public void openChequeReportDateWise() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "transactionreportmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
     }
 
     private void getChequeBankElements() throws IOException {
@@ -33,7 +33,7 @@ public class ChequeReportDateWise extends GenericReports {
 
     public void validateChequeBank() throws IOException {
         getChequeBankElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "chequebank"));
+        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "chequebank"));
     }
 
     public void selectChequeBank() throws IOException {

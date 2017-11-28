@@ -20,7 +20,7 @@ public class FeesConcessionInstallHeadWise extends GenericReports {
     }
 
     public void openFeesConcessionInstallHeadWise() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "transactionreportmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
     }
 
     private void getConcessionTypeElements() throws IOException {

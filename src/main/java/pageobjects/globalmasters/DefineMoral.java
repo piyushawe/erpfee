@@ -21,7 +21,7 @@ public class DefineMoral extends BaseClass {
   }
 
   public void openDefineMoral() throws IOException {
-     ehandler.openFrame(readFile.getElement(file, "globalmastersmenu"), link, frame);
+     ehandler.openFrame(readFile.getElement(fileUI, "globalmastersmenu"), link, frame);
   }
 
   public void enterMoralName(String mname) throws IOException {

@@ -20,8 +20,8 @@ public class EstimatedCollectionReport extends GenericReports {
     }
 
     public void openEstimatedCollectionReport() throws IOException {
-        ehandler.moveToElement(readFile.getElement(file, "transactionreportmenu"));
-        ehandler.openFrame(readFile.getElement(file, "collectionsubmenu"), link, frame);
+        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
+        ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
     }
 
     public void selectReportType(int index) throws IOException, InterruptedException {
@@ -29,6 +29,6 @@ public class EstimatedCollectionReport extends GenericReports {
     }
 
     public void validateTillDate() throws IOException {
-        verify.verifyValidationOnMultiSelect(readFile.getElement(f1, "tilldate"), clr, readFile.getElement(f1, "tilldatemessage"), readFile.readProperty(file, "tilldate"));
+        verify.verifyValidationOnMultiSelect(readFile.getElement(f1, "tilldate"), clr, readFile.getElement(f1, "tilldatemessage"), readFile.readProperty(fileUI, "tilldate"));
     }
 }

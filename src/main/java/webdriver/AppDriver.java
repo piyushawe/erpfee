@@ -1,18 +1,20 @@
 package webdriver;
 
+import automationFramework.supportMethods.BrowserFactory;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.concurrent.TimeUnit;
+import java.io.IOException;
 
 public class AppDriver {
   public static WebDriver driver;
 
-    public static WebDriver getCurrentDriver() {
-      if (driver == null) {
-          driver = new ChromeDriver();
-          driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-      }
-      return driver;
+  private AppDriver(){
+
+  }
+  public static WebDriver getCurrentDriver() throws IOException {
+     BrowserFactory bfactory = new BrowserFactory();
+     if (driver == null)
+         driver = bfactory.getBrowser("chrome");
+     return driver;
   }
 }

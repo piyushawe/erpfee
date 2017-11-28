@@ -20,7 +20,7 @@ public class CancelledFeesReceiptReport extends GenericReports {
     }
 
     public void openCancelledFeesReceiptReport() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "transactionreportmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
     }
 
     public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {

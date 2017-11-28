@@ -8,7 +8,7 @@ import webdriver.DriverMethods;
 import java.io.File;
 import java.io.IOException;
 
-public abstract class GenericReports extends GenericBaseClass implements GenericObjects {
+public abstract class GenericReports extends GenericBaseClass {
 
    @FindBy(id = "ContentPlaceHolder1_txtDateFrom_TextBox") protected WebElement fromdate;
    @FindBy(id = "ContentPlaceHolder1_txtdateTo_TextBox") private WebElement todate;
@@ -18,7 +18,6 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
    @FindBy(xpath = "//input[@value='Show']") private WebElement show;
    @FindBy(className = "datepick-clear") protected WebElement clr;
    @FindBy(className = "datepick-close") private WebElement cls;
-   //@FindBy(xpath = "/html/body/div[4]")private WebElement div;
 
    protected WebElement element;
    protected WebElement clear;
@@ -27,6 +26,7 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
    protected WebElement message;
    protected File f1;
    protected String path= "F:\\erpfee\\configuration\\";
+
    private void getClassElements() throws IOException {
       element= readFile.getElement(f1, "class");
       clear= readFile.getElement(f1, "classclear");
@@ -69,27 +69,27 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
 
    public void validateClass() throws IOException {
       getClassElements();
-      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "cls"));
+      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "cls"));
    }
 
    public void validateEntryMode() throws IOException {
       getEntryModeElements();
-      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "entrymode"));
+      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "entrymode"));
    }
 
    public void validatePayMode() throws IOException {
       getPayModeElements();
-      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "paymode"));
+      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "paymode"));
    }
 
    public void validateHead() throws IOException {
       getHeadElements();
-      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "head"));
+      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "head"));
    }
 
    public void validateInstallment() throws IOException {
       getInstallmentElements();
-      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(file, "installment"));
+      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "installment"));
    }
 
    public void selectSchool(int index) throws IOException, InterruptedException {
@@ -162,15 +162,15 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
    }
 
    public void validateDateFrom() throws IOException{
-      verify.verifyValidationOnMultiSelect(fromdate, clr, readFile.getElement(f1, "datefrommessage"), readFile.readProperty(file, "datefrom"));
+      verify.verifyValidationOnMultiSelect(fromdate, clr, readFile.getElement(f1, "datefrommessage"), readFile.readProperty(fileUI, "datefrom"));
    }
 
    public void validateToDate() throws IOException {
-      verify.verifyValidationOnMultiSelect(todate, clr, readFile.getElement(f1, "datetomessage"), readFile.readProperty(file, "dateto"));
+      verify.verifyValidationOnMultiSelect(todate, clr, readFile.getElement(f1, "datetomessage"), readFile.readProperty(fileUI, "dateto"));
    }
 
    public void validateTillDate() throws IOException {
-      verify.verifyValidationOnMultiSelect(todate, clr, readFile.getElement(f1, "tilldatemessage"), readFile.readProperty(file, "tilldate"));
+      verify.verifyValidationOnMultiSelect(todate, clr, readFile.getElement(f1, "tilldatemessage"), readFile.readProperty(fileUI, "tilldate"));
    }
 
    public void clickReceiptRange(){
@@ -219,35 +219,35 @@ public abstract class GenericReports extends GenericBaseClass implements Generic
    }
 
    public void validateReceiptFromMessage() throws IOException {
-      verify.verifyValidationMessage(readFile.readProperty(file, "receiptnomessage"), readFile.getElement(file, "receiptfrom"));
+      verify.verifyValidationMessage(readFile.readProperty(fileUI, "receiptnomessage"), readFile.getElement(fileUI, "receiptfrom"));
    }
 
    public void validateReceiptToMessage() throws IOException {
-      verify.verifyValidationMessage(readFile.readProperty(file, "receiptnomessage"), readFile.getElement(file, "receiptto"));
+      verify.verifyValidationMessage(readFile.readProperty(fileUI, "receiptnomessage"), readFile.getElement(fileUI, "receiptto"));
    }
 
    public void validateReceiptFromLength() throws IOException {
-      verify.verifyValidationMessage(readFile.readProperty(file, "receiptnolengthmessage"), readFile.getElement(file, "receiptfromlength"));
+      verify.verifyValidationMessage(readFile.readProperty(fileUI, "receiptnolengthmessage"), readFile.getElement(fileUI, "receiptfromlength"));
    }
 
    public void validateReceiptToLength() throws IOException {
-      verify.verifyValidationMessage(readFile.readProperty(file, "receiptnolengthmessage"), readFile.getElement(file, "receipttolength"));
+      verify.verifyValidationMessage(readFile.readProperty(fileUI, "receiptnolengthmessage"), readFile.getElement(fileUI, "receipttolength"));
    }
 
    public void validateDateAlertMessage() throws IOException {
-      verify.verifyValidationMessage(readFile.readProperty(file, "datemessage"), readFile.getElement(file, "popupmessage"));
+      verify.verifyValidationMessage(readFile.readProperty(fileUI, "datemessage"), readFile.getElement(fileUI, "popupmessage"));
    }
 
    public void validateBlankReceiptFromAlertMessage() throws IOException {
-      verify.verifyValidationMessage(readFile.readProperty(file, "receiptfromblankmessage"), readFile.getElement(file, "popupmessage"));
+      verify.verifyValidationMessage(readFile.readProperty(fileUI, "receiptfromblankmessage"), readFile.getElement(fileUI, "popupmessage"));
    }
 
    public void validateBlankReceiptToAlertMessage() throws IOException {
-      verify.verifyValidationMessage(readFile.readProperty(file, "receipttoblankmessage"), readFile.getElement(file, "popupmessage"));
+      verify.verifyValidationMessage(readFile.readProperty(fileUI, "receipttoblankmessage"), readFile.getElement(fileUI, "popupmessage"));
    }
 
    public void validateInvalidReceiptRangeAlertMessage() throws IOException {
-      verify.verifyValidationMessage(readFile.readProperty(file, "invalidreceiptrangemessage"), readFile.getElement(file, "popupmessage"));
+      verify.verifyValidationMessage(readFile.readProperty(fileUI, "invalidreceiptrangemessage"), readFile.getElement(fileUI, "popupmessage"));
    }
 
    public void clickShow(){

@@ -20,7 +20,7 @@ public class DefinePromotionMaster extends BaseClass {
     }
 
     public void openDefinePromotionMaster() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "globalmastersmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "globalmastersmenu"), link, frame);
     }
 
     public void enterPromotionName(String pname) throws IOException {

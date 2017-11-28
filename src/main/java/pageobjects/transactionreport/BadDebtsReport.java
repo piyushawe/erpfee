@@ -20,6 +20,6 @@ public class BadDebtsReport extends GenericReports {
     }
 
     public void openBadDebtsReport() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "transactionreportmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
     }
 }

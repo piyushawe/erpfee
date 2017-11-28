@@ -20,6 +20,6 @@ public class OpeningDuesReport extends GenericReports {
     }
 
     public void openOpeningDuesReport() throws IOException {
-        ehandler.openFrame(readFile.getElement(file, "reportsmenu"), link, frame);
+        ehandler.openFrame(readFile.getElement(fileUI, "reportsmenu"), link, frame);
     }
 }
