@@ -50,6 +50,6 @@ public class FeeDefaulterList extends GenericReports {
     }
 
     public void clickButtonhead(String value) throws IOException {
-        ehandler.clickRadioButton(readFile.getElements(f1, "radiobuttongrouphead"), value);
+        ehandler.clickRadioButton(readFile.getElements("radiobuttongrouphead"), value);
     }
 }

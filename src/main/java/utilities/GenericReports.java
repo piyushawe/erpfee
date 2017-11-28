@@ -27,12 +27,14 @@ public abstract class GenericReports extends GenericBaseClass {
    protected File f1;
    protected String path= "F:\\erpfee\\configuration\\";
 
+   protected GetterMethods gm = new GetterMethods();
+
    private void getClassElements() throws IOException {
-      element= readFile.getElement(f1, "class");
-      clear= readFile.getElement(f1, "classclear");
-      values= readFile.getElement(f1, "classvalueslist");
-      close= readFile.getElement(f1, "classclose");
-      message= readFile.getElement(f1, "classmessage");
+      element= readFile.getElement("class");
+      clear= readFile.getElement("classclear");
+      values= readFile.getElement("classvalueslist");
+      close= readFile.getElement("classclose");
+      message= readFile.getElement("classmessage");
    }
 
    private void getEntryModeElements() throws IOException {
@@ -179,11 +181,11 @@ public abstract class GenericReports extends GenericBaseClass {
    }
 
    public void clickButton(String value) throws IOException {
-      ehandler.clickRadioButton(readFile.getElements(f1, "radiobuttongroup"), value);
+      ehandler.clickRadioButton(readFile.getElements("radiobuttongroup"), value);
    }
 
    public void clickSettlementDate() throws IOException {
-      ehandler.click(readFile.getElement(f1, "settlementdate"));
+      ehandler.click(readFile.getElement("settlementdate"));
    }
 
    public void clickChequeClearanceDate() throws IOException {

@@ -15,8 +15,11 @@ public class DailyFeeCollection extends GenericReports{
 
   public DailyFeeCollection(WebDriver d) {
      page =  this.getClass().getSimpleName();
-     f1= new File(path+"\\transactionreport\\"+page+".properties");
+     pack = gm.getPackage(this.getClass().getPackage().getName());
+     file = gm.getFilePath(page, pack);
+     //f1= new File(path+"\\transactionreport\\"+page+".properties");
      PageFactory.initElements(d, this);
+      System.out.println(page);
   }
 
   public void openDailyFeeCollection() throws IOException {
@@ -25,11 +28,11 @@ public class DailyFeeCollection extends GenericReports{
   }
 
   private void getFeeTypeElements() throws IOException {
-      element= readFile.getElement(f1, "feetype");
-      clear= readFile.getElement(f1, "feetypeclear");
-      values= readFile.getElement(f1, "feetypevalueslist");
-      close= readFile.getElement(f1, "feetypeclose");
-      message= readFile.getElement(f1, "feetypemessage");
+      element= readFile.getElement("feetype");
+      clear= readFile.getElement("feetypeclear");
+      values= readFile.getElement("feetypevalueslist");
+      close= readFile.getElement("feetypeclose");
+      message= readFile.getElement("feetypemessage");
   }
 
   public void validateFeeType() throws IOException {
@@ -44,11 +47,11 @@ public class DailyFeeCollection extends GenericReports{
 
   @Override
   public void clickSettlementDate() throws IOException {
-      ehandler.click(readFile.getElement(f1, "settlementdate"));
+      ehandler.click(readFile.getElement("settlementdate"));
   }
 
   @Override
   public void clickChequeClearanceDate() throws IOException {
-      ehandler.click(readFile.getElement(f1, "chequeclearancedate"));
+      ehandler.click(readFile.getElement("chequeclearancedate"));
   }
 }

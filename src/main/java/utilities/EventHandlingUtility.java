@@ -14,10 +14,11 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
+import static supportclasses.GenericBaseClass.file;
 import static webdriver.AppDriver.driver;
 
 public class EventHandlingUtility {
-    private File file= new File("F:\\erpfee\\configuration\\UIMap.properties");
+    private File fileUI= new File("configuration\\UIMap.properties");
     private ReadFile readFile= new ReadFile();
     private DriverMethods dm= new DriverMethods();
     private String value="";
@@ -84,7 +85,7 @@ public class EventHandlingUtility {
 
 //click particular cell of table
     private void selectValueFromTable(WebElement table, String value) throws IOException {
-      List<WebElement> cells=readFile.getElements(file, "cell");
+      List<WebElement> cells=readFile.getElements(fileUI, "cell");
       for(WebElement cell: cells) {
           if (cell.getText().equals(value)){
             //System.out.println("cell value"+cell.getText());
@@ -106,14 +107,14 @@ public class EventHandlingUtility {
 
     public void selectDate(WebElement date, String mm, String yy, String dd) throws IOException, InterruptedException {
       click(date);
-      dm.waitUntil((readFile.getElement(file,"monthpicker")),20);
-      readFile.getElement(file,"monthpicker");
-      dm.waitUntil(readFile.getElement(file,"monthpicker"),200);
-      selectByVisibleText(readFile.getElement(file,"monthpicker"), mm);
-      dm.waitUntil(readFile.getElement(file,"yearpicker"),20);
-      selectByVisibleText(readFile.getElement(file,"yearpicker"), yy);
-      dm.waitUntil(readFile.getElement(file,"daypicker"),200);
-      selectValueFromTable(readFile.getElement(file,"daypicker"), dd);
+      dm.waitUntil((readFile.getElement(fileUI,"monthpicker")),20);
+      readFile.getElement(fileUI,"monthpicker");
+      dm.waitUntil(readFile.getElement(fileUI,"monthpicker"),200);
+      selectByVisibleText(readFile.getElement(fileUI,"monthpicker"), mm);
+      dm.waitUntil(readFile.getElement(fileUI,"yearpicker"),20);
+      selectByVisibleText(readFile.getElement(fileUI,"yearpicker"), yy);
+      dm.waitUntil(readFile.getElement(fileUI,"daypicker"),200);
+      selectValueFromTable(readFile.getElement(fileUI,"daypicker"), dd);
       Thread.sleep(500);
     }
 
@@ -121,7 +122,7 @@ public class EventHandlingUtility {
     public void selectValue(WebElement element, WebElement clear, WebElement values, WebElement close) throws IOException {
         click(element);
         click(clear);
-        List<WebElement> options = readFile.getElements(file, values, "tablelist");
+        List<WebElement> options = readFile.getElements(fileUI, values, "tablelist");
         if (options.isEmpty())
             System.out.println("No Value Present");
         else

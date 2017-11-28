@@ -79,14 +79,14 @@ public class MonthlyConsolidatedReport extends GenericReports {
     }
 
     public void getCollectionList() throws IOException {
-        ehandler.getList(readFile.getElements(f1, "radiobuttongroup"));
+        ehandler.getList(readFile.getElements("radiobuttongroup"));
     }
 
     public void clickButton(String value) throws IOException {
-        ehandler.clickRadioButton(readFile.getElements(f1, "radiobuttongroup"), value);
+        ehandler.clickRadioButton(readFile.getElements("radiobuttongroup"), value);
     }
 
     public void clickCollectionBase(String value) throws IOException {
-        ehandler.clickRadioButton(readFile.getElements(f1, "radiobuttongroup"), value);
+        ehandler.clickRadioButton(readFile.getElements("radiobuttongroup"), value);
     }
 }

@@ -11,7 +11,7 @@ import webdriver.DriverMethods;
 import java.io.File;
 
 public class GenericTestSteps {
-    private File file= new File("F:\\erpfee\\configuration\\UIMap.properties");
+    private File file= new File("configuration\\UIMap.properties");
     ReadFile readfile= new ReadFile ();
     DriverMethods dm= new DriverMethods();
     EventHandlingUtility event= new EventHandlingUtility();

@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="94.750849">
-<testcase classname="Daily Fee Collection" name="To verify daily fee collection with head(one line data) with cheque clearance date" time="94.750849">
-<system-out><![CDATA[Given for url...............................................................passed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="10.368103">
+<testcase classname="Daily Fee Collection" name="To verify daily fee collection with head(one line data) with cheque clearance date" time="10.368103">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at automationFramework.supportMethods.ReadFile.getElements(ReadFile.java:86)&#13;&#10;&#9;at utilities.GenericReports.clickButton(GenericReports.java:184)&#13;&#10;&#9;at stepdefinitions.TestSteps.select_radio_button_on_daily_fee_collection(TestSteps.java:1300)&#13;&#10;&#9;at ✽.And select radio button &quot;3&quot; on daily fee collection(featurefiles/transactionreport/DailyFeeCollection.feature:101)&#13;&#10;"><![CDATA[Given for url...............................................................passed
 When user enter username and password.......................................passed
 And click sign in to open erp home page.....................................passed
 Then user click fee manager logo............................................passed
 When user open daily fee collection report..................................passed
 And select from date as month "April" year "2017" and day "1" on daily fee collection.passed
-And select radio button "3" on daily fee collection.........................passed
-And select with cheque clearance date on daily fee collection...............passed
-Then click show on daily fee collection.....................................passed
-]]></system-out>
+And select radio button "3" on daily fee collection.........................failed
+And select with cheque clearance date on daily fee collection...............skipped
+Then click show on daily fee collection.....................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at automationFramework.supportMethods.ReadFile.getElements(ReadFile.java:86)
+	at utilities.GenericReports.clickButton(GenericReports.java:184)
+	at stepdefinitions.TestSteps.select_radio_button_on_daily_fee_collection(TestSteps.java:1300)
+	at ✽.And select radio button "3" on daily fee collection(featurefiles/transactionreport/DailyFeeCollection.feature:101)
+]]></failure>
 </testcase>
 </testsuite>

@@ -7,11 +7,11 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 6887428,
+  "duration": 8578275,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4687756112,
+  "duration": 4741174080,
   "status": "passed"
 });
 formatter.background({
@@ -50,35 +50,35 @@ formatter.match({
   "location": "GenericTestSteps.for_url()"
 });
 formatter.result({
-  "duration": 1783788634,
+  "duration": 1018808103,
   "status": "passed"
 });
 formatter.match({
   "location": "GenericTestSteps.user_enter_username_and_password()"
 });
 formatter.result({
-  "duration": 188322953,
+  "duration": 173158118,
   "status": "passed"
 });
 formatter.match({
   "location": "GenericTestSteps.click_sign_in_to_open_erp_home_page()"
 });
 formatter.result({
-  "duration": 693834773,
+  "duration": 678622139,
   "status": "passed"
 });
 formatter.match({
   "location": "GenericTestSteps.user_click_fee_manager_logo()"
 });
 formatter.result({
-  "duration": 332422321,
+  "duration": 342253043,
   "status": "passed"
 });
 formatter.match({
   "location": "TestSteps.user_open_daily_fee_collection_report()"
 });
 formatter.result({
-  "duration": 1036232972,
+  "duration": 991518788,
   "status": "passed"
 });
 formatter.scenario({
@@ -137,7 +137,7 @@ formatter.match({
   "location": "TestSteps.select_from_date_as_month_year_and_day_on_daily_fee_collection(String,String,String)"
 });
 formatter.result({
-  "duration": 2074340068,
+  "duration": 2026419551,
   "status": "passed"
 });
 formatter.match({
@@ -150,29 +150,28 @@ formatter.match({
   "location": "TestSteps.select_radio_button_on_daily_fee_collection(String)"
 });
 formatter.result({
-  "duration": 140562548,
-  "status": "passed"
+  "duration": 1467688,
+  "error_message": "java.lang.NullPointerException\r\n\tat automationFramework.supportMethods.ReadFile.getElements(ReadFile.java:86)\r\n\tat utilities.GenericReports.clickButton(GenericReports.java:184)\r\n\tat stepdefinitions.TestSteps.select_radio_button_on_daily_fee_collection(TestSteps.java:1300)\r\n\tat ✽.And select radio button \"3\" on daily fee collection(featurefiles/transactionreport/DailyFeeCollection.feature:101)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "TestSteps.select_with_cheque_clearance_date_on_daily_fee_collection()"
 });
 formatter.result({
-  "duration": 86690052,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TestSteps.click_show_on_daily_fee_collection()"
 });
 formatter.result({
-  "duration": 83709793128,
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 367715739,
   "status": "passed"
 });
 formatter.after({
-  "duration": 194714,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 10023090,
+  "duration": 18387004,
   "status": "passed"
 });
 });
