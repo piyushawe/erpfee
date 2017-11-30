@@ -63,7 +63,7 @@ Feature: Daily Fee Collection Date Wise With Remark
     And select wing with index "1" on daily fee collection date wise with remark
     And select class on daily fee collection date wise with remark
     And select board with index "1" on daily fee collection date wise with remark
-    And select entry mode on daily fee collection date wise with remark
+    #And select entry mode on daily fee collection date wise with remark
     And select fee type with index "1" on daily fee collection date wise with remark
     And select pay mode on daily fee collection date wise with remark
     And select bank name on daily fee collection date wise with remark

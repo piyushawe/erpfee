@@ -9,7 +9,7 @@ Feature: Monthly Consolidated Report
     Then user click fee manager logo
     When user open monthly consolidated report
 
-#validation messege verification test cases
+#validation message verification test cases
   @validation @scenario1
   Scenario: To test client side validations on mandatory fields
     And verify validation when no class is selected on monthly consolidated report

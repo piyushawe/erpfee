@@ -47,6 +47,13 @@ public class EventHandlingUtility {
       element.click();
     }
 
+    public boolean isElementDisplayed(WebElement element){
+        if (element.isDisplayed())
+            return true;
+        else
+            return false;
+    }
+
     public void clearValue(WebElement element){
         element.clear();
     }

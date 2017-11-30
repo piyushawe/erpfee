@@ -5,6 +5,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+import org.openqa.selenium.By;
 import utilities.EventHandlingUtility;
 import webdriver.DriverMethods;
 
@@ -34,7 +35,14 @@ public class GenericTestSteps {
 
     @Then("^user click fee manager logo$")
     public void user_click_fee_manager_logo() throws Throwable {
-        event.click(readfile.getElement(file,"feemanagerlogo"));
-        dm.waitImplicitly(50);
+        try {
+            if (event.isElementDisplayed(readfile.getElement(file,"feemanagerlogo")))
+                event.click(readfile.getElement(file,"feemanagerlogo"));
+        }
+        catch (Exception e){
+            if (event.isElementDisplayed(readfile.getElement(file,"feemanagerlogoo")))
+                event.click(readfile.getElement(file,"feemanagerlogoo"));
+            dm.switchToWindow(1);
+        }
     }
 }

@@ -6,39 +6,41 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class DailyFeeCollectionDateFeeGroupWise extends GenericReports {
-  @FindBy(linkText = "Daily Fee Collection Date/Fee Group Wise")private WebElement link;
-  @FindBy(id = "Daily Fee Collection Date/Fee Group Wise ")private WebElement frame;
+    @FindBy(linkText = "Daily Fee Collection Date/Fee Group Wise")
+    private WebElement link;
+    @FindBy(id = "Daily Fee Collection Date/Fee Group Wise ")
+    private WebElement frame;
 
-  public DailyFeeCollectionDateFeeGroupWise(WebDriver d) throws IOException {
-     f1= new File("F:\\erpfee\\configuration\\transactionReport\\DailyFeeCollectionDateFeeGroupWise.properties");
-     PageFactory.initElements(d, this);
-     page= readFile.readProperty(f1, "page");
-  }
+    public DailyFeeCollectionDateFeeGroupWise(WebDriver d) {
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
+        PageFactory.initElements(d, this);
+    }
 
-  public void openDailyFeeCollectionDateFeeGroupWise() throws IOException {
-     ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
-     ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
-  }
+    public void openDailyFeeCollectionDateFeeGroupWise() throws IOException {
+        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
+        ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
+    }
 
-  private void getFeeGroupElements() throws IOException {
-      element= readFile.getElement(f1, "feegroup");
-      clear= readFile.getElement(f1, "feegroupclear");
-      values= readFile.getElement(f1, "feegroupvalueslist");
-      close= readFile.getElement(f1, "feegroupclose");
-      message= readFile.getElement(f1, "feegroupmessage");
-  }
+    private void getFeeGroupElements() throws IOException {
+        element = readFile.getElement("feegroup");
+        clear = readFile.getElement("feegroupclear");
+        values = readFile.getElement("feegroupvalueslist");
+        close = readFile.getElement("feegroupclose");
+        message = readFile.getElement("feegroupmessage");
+    }
 
-  public void validateFeeGroup() throws IOException {
-     getFeeGroupElements();
-     verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "feegroup"));
-  }
+    public void validateFeeGroup() throws IOException {
+        getFeeGroupElements();
+        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "feegroup"));
+    }
 
-  public void selectFeeGroup() throws IOException {
-     getFeeGroupElements();
-     ehandler.selectValue(element, clear, values, close);
-  }
+    public void selectFeeGroup() throws IOException {
+        getFeeGroupElements();
+        ehandler.selectValue(element, clear, values, close);
+    }
 }

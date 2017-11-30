@@ -6,17 +6,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class FeeCollectionWithEntryTimeConcession extends GenericReports {
-    @FindBy(linkText = "Fee Collection with entry time concession")WebElement link;
-    @FindBy(id = "Fee Collection with entry time concession")WebElement frame;
+    @FindBy(linkText = "Fee Collection With Entry Time Concession")WebElement link;
+    @FindBy(id = "Fee Collection With Entry Time Concession")WebElement frame;
 
-    public FeeCollectionWithEntryTimeConcession(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\FeeCollectionWithEntryTimeConcession.properties");
+    public FeeCollectionWithEntryTimeConcession(WebDriver d) {
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openFeeCollectionWithEntryTimeConcession() throws IOException {
@@ -25,6 +25,6 @@ public class FeeCollectionWithEntryTimeConcession extends GenericReports {
     }
 
     public void validateCollectionDate() throws IOException{
-        verify.verifyValidationOnMultiSelect(fromdate, clr, readFile.getElement(f1, "collectiondatemessage"), readFile.readProperty(fileUI, "collectiondate"));
+        verify.verifyValidationOnMultiSelect(fromdate, clr, readFile.getElement("collectiondatemessage"), readFile.readProperty(fileUI, "collectiondate"));
     }
 }

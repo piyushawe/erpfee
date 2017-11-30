@@ -9,7 +9,7 @@ Feature: Daily Fee Collection
     Then user click fee manager logo
     When user open daily fee collection report
 
-#validation messege verification test cases
+#validation message verification test cases
   @validation @scenario1
   Scenario: To test client side validations on mandatory fields
     And verify validation when no class is selected on daily fee collection
@@ -68,8 +68,8 @@ Feature: Daily Fee Collection
     And select wing with index "1" on daily fee collection
     And select class on daily fee collection
     And select board with index "1" on daily fee collection
-    And select entry mode on daily fee collection
-    And select fee type on daily fee collection
+    #And select entry mode on daily fee collection
+    #And select fee type on daily fee collection
     And select pay mode on daily fee collection
     And select head on daily fee collection
     And select from date as month "April" year "2017" and day "1" on daily fee collection

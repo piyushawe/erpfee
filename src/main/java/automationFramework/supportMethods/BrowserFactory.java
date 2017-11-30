@@ -29,7 +29,7 @@ public class BrowserFactory extends GenericBaseClass {
                 driver = new InternetExplorerDriver();
                 break;
             default:
-                logger.info(readFile.readProperty(fileMsg, "browsernotdefined"));
+                logger.info(page + ":"+ readFile.readProperty(fileMsg, "browsernotdefined"));
         }
         return driver;
     }

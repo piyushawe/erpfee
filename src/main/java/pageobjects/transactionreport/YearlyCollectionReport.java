@@ -6,17 +6,19 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class YearlyCollectionReport extends GenericReports {
-    @FindBy(linkText = "Yearly Collection Report")private WebElement link;
-    @FindBy(id = "Yearly Collection Report")private WebElement frame;
+    @FindBy(linkText = "Yearly Collection Report")
+    private WebElement link;
+    @FindBy(id = "Yearly Collection Report")
+    private WebElement frame;
 
-    public YearlyCollectionReport(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\YearlyCollectionReport.properties");
+    public YearlyCollectionReport(WebDriver d) {
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openYearlyCollectionReport() throws IOException {
@@ -25,23 +27,23 @@ public class YearlyCollectionReport extends GenericReports {
     }
 
     public void selectSession(String sess) throws IOException, InterruptedException {
-        ehandler.selectByVisibleText(readFile.getElement(f1, "session"), sess);
+        ehandler.selectByVisibleText(readFile.getElement("session"), sess);
     }
 
     public void selectSession(int sess) throws IOException, InterruptedException {
-        ehandler.selectByIndex(readFile.getElement(f1, "session"), sess);
+        ehandler.selectByIndex(readFile.getElement("session"), sess);
     }
 
     public void validateSession() throws IOException {
-        verify.verifyValidationMessage(readFile.readProperty(f1, "sessionmessage"), readFile.getElement(f1, "sessionmsg"));
+        verify.verifyValidationMessage(readFile.readProperty(file, "sessionmessage"), readFile.getElement("sessionmsg"));
     }
 
     private void getBankNameElements() throws IOException {
-        element= readFile.getElement(f1, "bankname");
-        clear= readFile.getElement(f1, "banknameclear");
-        values= readFile.getElement(f1, "banknamevalueslist");
-        close= readFile.getElement(f1, "banknameclose");
-        message= readFile.getElement(f1, "banknamemessage");
+        element = readFile.getElement("bankname");
+        clear = readFile.getElement("banknameclear");
+        values = readFile.getElement("banknamevalueslist");
+        close = readFile.getElement("banknameclose");
+        message = readFile.getElement("banknamemessage");
     }
 
     public void validateBankName() throws IOException {
@@ -55,6 +57,6 @@ public class YearlyCollectionReport extends GenericReports {
     }
 
     public void clickMonthWiseCollection() throws IOException {
-        ehandler.click(readFile.getElement(f1, "monthwisecollection"));
+        ehandler.click(readFile.getElement("monthwisecollection"));
     }
 }

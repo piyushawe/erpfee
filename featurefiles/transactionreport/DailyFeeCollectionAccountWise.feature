@@ -9,7 +9,7 @@ Feature: Daily Fee Collection Account Wise
     Then user click fee manager logo
     And user open daily fee collection account wise
 
-#validation messege verification test cases
+#validation message verification test cases
   @validation @scenario1
   Scenario: To test client side validations on mandatory fields
     And verify validation when no class is selected on daily fee collection account wise
@@ -71,6 +71,7 @@ Feature: Daily Fee Collection Account Wise
     And select head on daily fee collection account wise
     And select bank name on daily fee collection account wise
     And select cheque details on daily fee collection account wise
+    And select from date as month "April" year "2017" and day "1" on daily fee collection account wise
     And select user with index "1" on daily fee collection account wise
     Then click show on daily fee collection account wise
 

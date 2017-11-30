@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1018808103,
+              "duration": 1467033243,
               "status": "passed"
             },
             "line": 6,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 173158118,
+              "duration": 176525908,
               "status": "passed"
             },
             "line": 7,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 678622139,
+              "duration": 1907941868,
               "status": "passed"
             },
             "line": 8,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 342253043,
+              "duration": 880704973,
               "status": "passed"
             },
             "line": 9,
@@ -59,23 +59,29 @@
           },
           {
             "result": {
-              "duration": 991518788,
+              "duration": 1495772726,
               "status": "passed"
             },
             "line": 10,
-            "name": "user open daily fee collection report",
+            "name": "user open fee collection with entry time concession",
             "match": {
-              "location": "TestSteps.user_open_daily_fee_collection_report()"
+              "location": "TestSteps.user_open_fee_collection_with_entry_time_concession()"
             },
             "keyword": "When "
           }
         ]
       },
       {
+        "comments": [
+          {
+            "line": 62,
+            "value": "#test cases on selection of radio buttons"
+          }
+        ],
         "before": [
           {
             "result": {
-              "duration": 8578275,
+              "duration": 7958671,
               "status": "passed"
             },
             "match": {
@@ -84,7 +90,7 @@
           },
           {
             "result": {
-              "duration": 4741174080,
+              "duration": 4380992500,
               "status": "passed"
             },
             "match": {
@@ -92,14 +98,14 @@
             }
           }
         ],
-        "line": 99,
-        "name": "To verify daily fee collection with head(one line data) with cheque clearance date",
+        "line": 64,
+        "name": "To verify fee collection with entry time concession without head",
         "description": "",
-        "id": "daily-fee-collection;to-verify-daily-fee-collection-with-head(one-line-data)-with-cheque-clearance-date",
+        "id": "fee-collection-with-entry-time-concession;to-verify-fee-collection-with-entry-time-concession-without-head",
         "after": [
           {
             "result": {
-              "duration": 367715739,
+              "duration": 4610986,
               "status": "passed"
             },
             "match": {
@@ -108,7 +114,7 @@
           },
           {
             "result": {
-              "duration": 18387004,
+              "duration": 5780447,
               "status": "passed"
             },
             "match": {
@@ -121,88 +127,99 @@
         "steps": [
           {
             "result": {
-              "duration": 2026419551,
+              "duration": 132412759,
               "status": "passed"
             },
-            "line": 100,
-            "name": "select from date as month \"April\" year \"2017\" and day \"1\" on daily fee collection",
+            "line": 65,
+            "name": "click receipt no range on fee collection with entry time concession",
             "match": {
-              "arguments": [
-                {
-                  "val": "April",
-                  "offset": 27
-                },
-                {
-                  "val": "2017",
-                  "offset": 40
-                },
-                {
-                  "val": "1",
-                  "offset": 55
-                }
-              ],
-              "location": "TestSteps.select_from_date_as_month_year_and_day_on_daily_fee_collection(String,String,String)"
+              "location": "TestSteps.click_receipt_no_range_on_fee_collection_with_entry_time_concession()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1467688,
-              "error_message": "java.lang.NullPointerException\r\n\tat automationFramework.supportMethods.ReadFile.getElements(ReadFile.java:86)\r\n\tat utilities.GenericReports.clickButton(GenericReports.java:184)\r\n\tat stepdefinitions.TestSteps.select_radio_button_on_daily_fee_collection(TestSteps.java:1300)\r\n\tat ✽.And select radio button \"3\" on daily fee collection(featurefiles/transactionreport/DailyFeeCollection.feature:101)\r\n",
-              "status": "failed"
+              "duration": 102097376,
+              "status": "passed"
             },
-            "line": 101,
-            "name": "select radio button \"3\" on daily fee collection",
+            "line": 66,
+            "name": "enter value \"1\" in receipt from on fee collection with entry time concession",
             "match": {
               "arguments": [
                 {
-                  "val": "3",
+                  "val": "1",
+                  "offset": 13
+                }
+              ],
+              "location": "TestSteps.enter_value_in_receipt_from_on_fee_collection_with_entry_time_concession(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 86870040,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "enter value \"100\" in receipt to on fee collection with entry time concession",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 13
+                }
+              ],
+              "location": "TestSteps.enter_value_in_receipt_to_on_fee_collection_with_entry_time_concession(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100222368,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "select radio button \"2\" on fee collection with entry time concession",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
                   "offset": 21
                 }
               ],
-              "location": "TestSteps.select_radio_button_on_daily_fee_collection(String)"
+              "location": "TestSteps.select_radio_button_on_fee_collection_with_entry_time_concession(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2939666586,
+              "status": "passed"
             },
-            "line": 102,
-            "name": "select with cheque clearance date on daily fee collection",
+            "line": 69,
+            "name": "click show on fee head wise collection class range",
             "match": {
-              "location": "TestSteps.select_with_cheque_clearance_date_on_daily_fee_collection()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 103,
-            "name": "click show on daily fee collection",
-            "match": {
-              "location": "TestSteps.click_show_on_daily_fee_collection()"
+              "location": "TestSteps.click_show_on_fee_head_wise_collection_class_range()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 98,
+            "line": 63,
             "name": "@verify_with_no_filters"
           },
           {
-            "line": 98,
-            "name": "@scenario10"
+            "line": 63,
+            "name": "@scenario6"
           }
         ]
       }
     ],
-    "name": "Daily Fee Collection",
+    "name": "Fee Collection With Entry Time Concession",
     "description": "As a user I would like to run the test cases of this page\r\nSo that I don\u0027t have to do it manually",
-    "id": "daily-fee-collection",
+    "id": "fee-collection-with-entry-time-concession",
     "keyword": "Feature",
-    "uri": "featurefiles/transactionreport/DailyFeeCollection.feature"
+    "uri": "featurefiles/transactionreport/FeeCollectionWithEntryTimeConcession"
   }
 ]
