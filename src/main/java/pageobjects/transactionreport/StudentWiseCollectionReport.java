@@ -6,17 +6,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class StudentWiseCollectionReport extends GenericReports {
     @FindBy(linkText = "Student Wise Collection Report")private WebElement link;
     @FindBy(id = "Student Wise Collection Report")private WebElement frame;
 
-    public StudentWiseCollectionReport(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\StudentWiseCollectionReport.properties");
+    public StudentWiseCollectionReport(WebDriver d) {
+        page =  this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openStudentWiseCollectionReport() throws IOException {
@@ -25,6 +25,6 @@ public class StudentWiseCollectionReport extends GenericReports {
     }
 
     public void clickHeadWise() throws IOException {
-        ehandler.click(readFile.getElement(f1, "headwise"));
+        ehandler.click(readFile.getElement("headwise"));
     }
 }

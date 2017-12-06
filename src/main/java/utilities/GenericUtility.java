@@ -14,15 +14,14 @@ import static webdriver.AppDriver.driver;
 
 public class GenericUtility extends GenericBaseClass {
 
-  public void takeScreenshot() throws IOException {
-    String school= readFile.readProperty(fileUI, "schoolname");
-    String timestamp= getTimeStamp();
-    File f= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-    FileUtils.copyFile(f, new File("F:/erpfee/src/main/resources/screenshots/"+ school+"/"+page+"/"+page+scenario+timestamp+".png"));
-  }
+    public void takeScreenshot() throws IOException {
+        String school = readFile.readProperty(fileUI, "schoolname");
+        String timestamp = getTimeStamp();
+        File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(f, new File(readFile.readProperty(fileConfig, "screenshotpath") + school + "/" + page + "/" + page + scenario + timestamp + ".png"));
+    }
 
-  private String getTimeStamp(){
-    return new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
-  }
-
+    private String getTimeStamp() {
+        return new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+    }
 }

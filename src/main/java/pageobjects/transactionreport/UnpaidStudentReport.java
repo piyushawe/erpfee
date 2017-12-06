@@ -46,6 +46,6 @@ public class UnpaidStudentReport extends GenericReports {
     }
 
     public void clickButtonhead(String value) throws IOException {
-        ehandler.clickRadioButton(readFile.getElements(f1, "radiobuttongroup1"), value);
+        ehandler.clickRadioButton(readFile.getElements("radiobuttongroup1"), value);
     }
 }

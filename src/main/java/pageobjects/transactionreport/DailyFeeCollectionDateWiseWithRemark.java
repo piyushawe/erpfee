@@ -6,72 +6,74 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class DailyFeeCollectionDateWiseWithRemark extends GenericReports {
 
-  @FindBy(linkText = "Daily Fee Collection Date Wise With Remark")WebElement link;
-  @FindBy(id = "Daily Fee Collection Date Wise With Remark")WebElement frame;
+    @FindBy(linkText = "Daily Fee Collection Date Wise With Remark")
+    WebElement link;
+    @FindBy(id = "Daily Fee Collection Date Wise With Remark")
+    WebElement frame;
 
-  public DailyFeeCollectionDateWiseWithRemark(WebDriver d) throws IOException {
-     page =  this.getClass().getSimpleName();
-     f1= new File(path+"\\transactionreport\\"+page+".properties");
-     PageFactory.initElements(d, this);
-  }
+    public DailyFeeCollectionDateWiseWithRemark(WebDriver d) {
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
+        PageFactory.initElements(d, this);
+    }
 
-  public void openDailyFeeCollectionDateWiseWithRemark() throws IOException {
-     ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
-     ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
-  }
+    public void openDailyFeeCollectionDateWiseWithRemark() throws IOException {
+        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
+        ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
+    }
 
-  private void getBankNameElements() throws IOException {
-      element= readFile.getElement(f1, "bankname");
-      clear= readFile.getElement(f1, "banknameclear");
-      values= readFile.getElement(f1, "banknamevalueslist");
-      close= readFile.getElement(f1, "banknameclose");
-      message= readFile.getElement(f1, "banknamemessage");
-  }
+    private void getBankNameElements() throws IOException {
+        element = readFile.getElement("bankname");
+        clear = readFile.getElement("banknameclear");
+        values = readFile.getElement("banknamevalueslist");
+        close = readFile.getElement("banknameclose");
+        message = readFile.getElement("banknamemessage");
+    }
 
-  private void getChequeDetailsElements() throws IOException {
-      element= readFile.getElement(f1, "chequedetails");
-      clear= readFile.getElement(f1, "chequedetailsclear");
-      values= readFile.getElement(f1, "chequedetailsvalueslist");
-      close= readFile.getElement(f1, "chequedetailsclose");
-  }
+    private void getChequeDetailsElements() throws IOException {
+        element = readFile.getElement("chequedetails");
+        clear = readFile.getElement("chequedetailsclear");
+        values = readFile.getElement("chequedetailsvalueslist");
+        close = readFile.getElement("chequedetailsclose");
+    }
 
-  private void getOtherDetailsElements() throws IOException {
-      element= readFile.getElement(f1, "otherdetails");
-      clear= readFile.getElement(f1, "otherdetailsclear");
-      values= readFile.getElement(f1, "otherdetailsvalueslist");
-      close= readFile.getElement(f1, "otherdetailsclose");
-  }
+    private void getOtherDetailsElements() throws IOException {
+        element = readFile.getElement("otherdetails");
+        clear = readFile.getElement("otherdetailsclear");
+        values = readFile.getElement("otherdetailsvalueslist");
+        close = readFile.getElement("otherdetailsclose");
+    }
 
-  public void validateBankName() throws IOException {
-      getBankNameElements();
-      verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "bankname"));
-  }
+    public void validateBankName() throws IOException {
+        getBankNameElements();
+        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "bankname"));
+    }
 
-  public void selectBankName() throws IOException {
-      getBankNameElements();
-      ehandler.selectValue(element, clear, values, close);
-  }
+    public void selectBankName() throws IOException {
+        getBankNameElements();
+        ehandler.selectValue(element, clear, values, close);
+    }
 
-  public void selectChequeDetails() throws IOException {
-      getChequeDetailsElements();
-      ehandler.selectValue(element, clear, values, close);
-  }
+    public void selectChequeDetails() throws IOException {
+        getChequeDetailsElements();
+        ehandler.selectValue(element, clear, values, close);
+    }
 
-  public void selectOtherDetails() throws IOException {
-      getOtherDetailsElements();
-      ehandler.selectValue(element, clear, values, close);
-  }
+    public void selectOtherDetails() throws IOException {
+        getOtherDetailsElements();
+        ehandler.selectValue(element, clear, values, close);
+    }
 
-  public void selectNewOld(int newold) throws IOException, InterruptedException {
-      ehandler.selectByIndex(readFile.getElement(f1, "newold"), newold);
-  }
+    public void selectNewOld(int newold) throws IOException, InterruptedException {
+        ehandler.selectByIndex(readFile.getElement("newold"), newold);
+    }
 
-  public void selectStudentStatus(int status) throws IOException, InterruptedException {
-      ehandler.selectByIndex(readFile.getElement(f1, "studentstatus"), status);
-  }
+    public void selectStudentStatus(int status) throws IOException, InterruptedException {
+        ehandler.selectByIndex(readFile.getElement("studentstatus"), status);
+    }
 }

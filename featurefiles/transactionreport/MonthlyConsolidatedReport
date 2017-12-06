@@ -9,7 +9,7 @@ Feature: Monthly Consolidated Report
     Then user click fee manager logo
     When user open monthly consolidated report
 
-#validation messege verification test cases
+#validation message verification test cases
   @validation @scenario1
   Scenario: To test client side validations on mandatory fields
     And verify validation when no class is selected on monthly consolidated report
@@ -72,4 +72,9 @@ Feature: Monthly Consolidated Report
   Scenario: To verify monthly consolidated report class wise date range
     And select radio button "5" on monthly consolidated report
     And select from date as month "April" year "2017" and day "1" on monthly consolidated report
+    Then click show on monthly consolidated report
+
+  @verify_with_no_filters @scenario9
+  Scenario: To verify monthly consolidated report head wise with cheque bounce
+    And select radio button "6" on monthly consolidated report
     Then click show on monthly consolidated report

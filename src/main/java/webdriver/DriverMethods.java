@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 import static webdriver.AppDriver.driver;
@@ -20,6 +21,11 @@ public class DriverMethods {
 
   public void switchToParentWindow(){
       driver.switchTo().defaultContent();
+  }
+
+  public void switchToWindow(int win){
+      ArrayList<String>windows = new ArrayList<String>(driver.getWindowHandles());
+      driver.switchTo().window(windows.get(win));
   }
 
   public void waitImplicitly(int time){

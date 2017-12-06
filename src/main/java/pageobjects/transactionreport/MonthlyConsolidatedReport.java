@@ -6,17 +6,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class MonthlyConsolidatedReport extends GenericReports {
     @FindBy(linkText = "Monthly Consolidated Report")WebElement link;
     @FindBy(id = "Monthly Consolidated Report")WebElement frame;
 
-    public MonthlyConsolidatedReport(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\MonthlyConsolidatedReport.properties");
+    public MonthlyConsolidatedReport(WebDriver d) {
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openMonthlyConsolidatedReport() throws IOException {
@@ -25,27 +25,27 @@ public class MonthlyConsolidatedReport extends GenericReports {
     }
 
     private void getMonthElements() throws IOException {
-        element= readFile.getElement(f1, "month");
-        clear= readFile.getElement(f1, "monthclear");
-        values= readFile.getElement(f1, "monthvalueslist");
-        close= readFile.getElement(f1, "monthclose");
-        message= readFile.getElement(f1, "monthmessage");
+        element= readFile.getElement("month");
+        clear= readFile.getElement("monthclear");
+        values= readFile.getElement("monthvalueslist");
+        close= readFile.getElement("monthclose");
+        message= readFile.getElement("monthmessage");
     }
 
     private void getBankNameElements() throws IOException {
-        element= readFile.getElement(f1, "bankname");
-        clear= readFile.getElement(f1, "banknameclear");
-        values= readFile.getElement(f1, "banknamevalueslist");
-        close= readFile.getElement(f1, "banknameclose");
-        message= readFile.getElement(f1, "banknamemessage");
+        element= readFile.getElement("bankname");
+        clear= readFile.getElement("banknameclear");
+        values= readFile.getElement("banknamevalueslist");
+        close= readFile.getElement("banknameclose");
+        message= readFile.getElement("banknamemessage");
     }
 
     private void getChequeBankElements() throws IOException {
-        element= readFile.getElement(f1, "chequebank");
-        clear= readFile.getElement(f1, "chequebankclear");
-        values= readFile.getElement(f1, "chequebankvalueslist");
-        close= readFile.getElement(f1, "chequebankclose");
-        message= readFile.getElement(f1, "chequebankmessage");
+        element= readFile.getElement("chequebank");
+        clear= readFile.getElement("chequebankclear");
+        values= readFile.getElement("chequebankvalueslist");
+        close= readFile.getElement("chequebankclose");
+        message= readFile.getElement("chequebankmessage");
     }
 
     public void validateMonth() throws IOException {
@@ -79,14 +79,15 @@ public class MonthlyConsolidatedReport extends GenericReports {
     }
 
     public void getCollectionList() throws IOException {
-        ehandler.getList(readFile.getElements(f1, "radiobuttongroup"));
+        ehandler.getList(readFile.getElements("radiobuttongroup"));
     }
 
+    @Override
     public void clickButton(String value) throws IOException {
-        ehandler.clickRadioButton(readFile.getElements(f1, "radiobuttongroup"), value);
+        ehandler.clickRadioButton(readFile.getElements("radiobuttongroup"), value);
     }
 
     public void clickCollectionBase(String value) throws IOException {
-        ehandler.clickRadioButton(readFile.getElements(f1, "radiobuttongroup"), value);
+        ehandler.clickRadioButton(readFile.getElements("radiobuttongroup"), value);
     }
 }

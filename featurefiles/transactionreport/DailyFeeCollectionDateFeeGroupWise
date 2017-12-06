@@ -45,9 +45,11 @@
 
 #test cases on selection of radio buttons
   @verify_with_no_filters @scenario4
-  Scenario: To verify daily fee collection date fee group wise with full details
+  Scenario: To verify daily fee collection date fee group wise with full details, settlement date and cheque clearance date
     And select from date as month "April" year "2017" and day "1" on daily fee collection date fee group wise
     And select radio button "1" on daily fee collection date fee group wise
+    And select with settlement date on daily fee collection date fee group wise
+    And select with cheque clearance date on daily fee collection date fee group wise
     Then click show on daily fee collection date fee group wise
 
   @verify_with_no_filters @scenario5

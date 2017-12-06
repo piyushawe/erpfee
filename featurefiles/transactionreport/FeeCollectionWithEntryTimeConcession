@@ -49,13 +49,14 @@ Feature: Fee Collection With Entry Time Concession
 
 #test cases of all filters selection
   @verify_with_filters @scenario5
-  Scenario: To verify fee collection with entry time concession with filters
+  Scenario: To verify fee collection with entry time concession with filters head wise
     And select school with index "1" on fee collection with entry time concession
     And select entry mode on fee collection with entry time concession
     And select pay mode on fee collection with entry time concession
     And select fee type with index "1" on fee collection with entry time concession
     And select from date as month "April" year "2017" and day "1" on fee collection with entry time concession
     And select head on fee collection with entry time concession
+    And select radio button "1" on fee collection with entry time concession
     Then click show on fee collection with entry time concession
 
 #test cases on selection of radio buttons

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="94.750849">
-<testcase classname="Daily Fee Collection" name="To verify daily fee collection with head(one line data) with cheque clearance date" time="94.750849">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="110.984319">
+<testcase classname="Receipt Wise Daily Collection" name="To verify receipt wise daily collection with head" time="110.984319">
 <system-out><![CDATA[Given for url...............................................................passed
 When user enter username and password.......................................passed
 And click sign in to open erp home page.....................................passed
 Then user click fee manager logo............................................passed
-When user open daily fee collection report..................................passed
-And select from date as month "April" year "2017" and day "1" on daily fee collection.passed
-And select radio button "3" on daily fee collection.........................passed
-And select with cheque clearance date on daily fee collection...............passed
-Then click show on daily fee collection.....................................passed
+When user open receipt wise daily collection................................passed
+And select from date as month "April" year "2017" and day "1" on receipt wise daily collection.passed
+And select radio button "2" on receipt wise daily collection................passed
+Then click show on receipt wise daily collection............................passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1783788634,
+              "duration": 792127074,
               "status": "passed"
             },
             "line": 6,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 188322953,
+              "duration": 172144534,
               "status": "passed"
             },
             "line": 7,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 693834773,
+              "duration": 756903649,
               "status": "passed"
             },
             "line": 8,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 332422321,
+              "duration": 430973190,
               "status": "passed"
             },
             "line": 9,
@@ -59,13 +59,13 @@
           },
           {
             "result": {
-              "duration": 1036232972,
+              "duration": 1026379447,
               "status": "passed"
             },
             "line": 10,
-            "name": "user open daily fee collection report",
+            "name": "user open receipt wise daily collection",
             "match": {
-              "location": "TestSteps.user_open_daily_fee_collection_report()"
+              "location": "TestSteps.user_open_receipt_wise_daily_collection()"
             },
             "keyword": "When "
           }
@@ -75,7 +75,7 @@
         "before": [
           {
             "result": {
-              "duration": 6887428,
+              "duration": 6226179,
               "status": "passed"
             },
             "match": {
@@ -84,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 4687756112,
+              "duration": 4191619232,
               "status": "passed"
             },
             "match": {
@@ -92,14 +92,14 @@
             }
           }
         ],
-        "line": 99,
-        "name": "To verify daily fee collection with head(one line data) with cheque clearance date",
+        "line": 51,
+        "name": "To verify receipt wise daily collection with head",
         "description": "",
-        "id": "daily-fee-collection;to-verify-daily-fee-collection-with-head(one-line-data)-with-cheque-clearance-date",
+        "id": "receipt-wise-daily-collection;to-verify-receipt-wise-daily-collection-with-head",
         "after": [
           {
             "result": {
-              "duration": 194714,
+              "duration": 3613366,
               "status": "passed"
             },
             "match": {
@@ -108,7 +108,7 @@
           },
           {
             "result": {
-              "duration": 10023090,
+              "duration": 7059875,
               "status": "passed"
             },
             "match": {
@@ -121,11 +121,11 @@
         "steps": [
           {
             "result": {
-              "duration": 2074340068,
+              "duration": 2128224340,
               "status": "passed"
             },
-            "line": 100,
-            "name": "select from date as month \"April\" year \"2017\" and day \"1\" on daily fee collection",
+            "line": 52,
+            "name": "select from date as month \"April\" year \"2017\" and day \"1\" on receipt wise daily collection",
             "match": {
               "arguments": [
                 {
@@ -141,69 +141,57 @@
                   "offset": 55
                 }
               ],
-              "location": "TestSteps.select_from_date_as_month_year_and_day_on_daily_fee_collection(String,String,String)"
+              "location": "TestSteps.select_from_date_as_month_year_and_day_on_receipt_wise_daily_collection(String,String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 140562548,
+              "duration": 110209708,
               "status": "passed"
             },
-            "line": 101,
-            "name": "select radio button \"3\" on daily fee collection",
+            "line": 53,
+            "name": "select radio button \"2\" on receipt wise daily collection",
             "match": {
               "arguments": [
                 {
-                  "val": "3",
+                  "val": "2",
                   "offset": 21
                 }
               ],
-              "location": "TestSteps.select_radio_button_on_daily_fee_collection(String)"
+              "location": "TestSteps.select_radio_button_on_receipt_wise_daily_collection(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 86690052,
+              "duration": 101358838127,
               "status": "passed"
             },
-            "line": 102,
-            "name": "select with cheque clearance date on daily fee collection",
+            "line": 54,
+            "name": "click show on receipt wise daily collection",
             "match": {
-              "location": "TestSteps.select_with_cheque_clearance_date_on_daily_fee_collection()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 83709793128,
-              "status": "passed"
-            },
-            "line": 103,
-            "name": "click show on daily fee collection",
-            "match": {
-              "location": "TestSteps.click_show_on_daily_fee_collection()"
+              "location": "TestSteps.click_show_on_receipt_wise_daily_collection()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 98,
+            "line": 50,
             "name": "@verify_with_no_filters"
           },
           {
-            "line": 98,
-            "name": "@scenario10"
+            "line": 50,
+            "name": "@scenario5"
           }
         ]
       }
     ],
-    "name": "Daily Fee Collection",
+    "name": "Receipt Wise Daily Collection",
     "description": "As a user I would like to run the test cases of this page\r\nSo that I don\u0027t have to do it manually",
-    "id": "daily-fee-collection",
+    "id": "receipt-wise-daily-collection",
     "keyword": "Feature",
-    "uri": "featurefiles/transactionreport/DailyFeeCollection.feature"
+    "uri": "featurefiles/transactionreport/ReceiptWiseDailyCollection"
   }
 ]

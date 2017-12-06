@@ -1275,8 +1275,9 @@ public class TestSteps {
 
     @When("^select entry mode on daily fee collection$")
     public void select_entry_mode_on_daily_fee_collection() throws Throwable {
-        //new DailyFeeCollection(driver).selectEntryMode();
-        driver.findElement(By.xpath("//*[@id=\"MainLeftPanel\"]/div/div/div[5]/div/div/button")).click();
+        new DailyFeeCollection(driver).selectEntryMode();
+        new DailyFeeCollection(driver).selectEntryMode();
+        //driver.findElement(By.xpath("//*[@id=\"MainLeftPanel\"]/div/div/div[5]/div/div/button")).click();
 
     }
 
@@ -2024,6 +2025,16 @@ public class TestSteps {
     @Then("^select radio button \"([^\"]*)\" on daily fee collection date fee group wise$")
     public void select_radio_button_on_daily_fee_collection_date_fee_group_wise(String arg1) throws Throwable {
         new DailyFeeCollectionDateFeeGroupWise(driver).clickButton(arg1);
+    }
+
+    @Then("^select with settlement date on daily fee collection date fee group wise$")
+    public void select_with_settlement_date_on_daily_fee_collection_date_fee_group_wise() throws Throwable {
+        new DailyFeeCollectionDateFeeGroupWise(driver).clickSettlementDate();
+    }
+
+    @Then("^select with cheque clearance date on daily fee collection date fee group wise$")
+    public void select_with_cheque_clearance_date_on_daily_fee_collection_date_fee_group_wise() throws Throwable {
+        new DailyFeeCollectionDateFeeGroupWise(driver).clickChequeClearanceDate();
     }
 
 //day wise total collection

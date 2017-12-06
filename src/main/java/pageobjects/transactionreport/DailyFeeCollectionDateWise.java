@@ -6,17 +6,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class DailyFeeCollectionDateWise extends GenericReports{
   @FindBy(linkText = "Daily Fee Collection Date Wise")private WebElement link;
   @FindBy(id = "Daily Fee Collection Date Wise")private WebElement frame;
 
-  public DailyFeeCollectionDateWise(WebDriver d) throws IOException {
-      f1= new File("F:\\erpfee\\configuration\\transactionReport\\DailyFeeCollectionDateWise.properties");
+  public DailyFeeCollectionDateWise(WebDriver d) {
+      page =  this.getClass().getSimpleName();
+      pack = gm.getPackage(this.getClass().getPackage().getName());
+      file = gm.getFilePath(page, pack);
       PageFactory.initElements(d, this);
-      page= readFile.readProperty(f1, "page");
   }
 
   public void openDailyFeeCollectionDateWise() throws IOException {
@@ -25,25 +25,25 @@ public class DailyFeeCollectionDateWise extends GenericReports{
   }
 
   private void getBankNameElements() throws IOException {
-      element= readFile.getElement(f1, "bankname");
-      clear= readFile.getElement(f1, "banknameclear");
-      values= readFile.getElement(f1, "banknamevalueslist");
-      close= readFile.getElement(f1, "banknameclose");
-      message= readFile.getElement(f1, "banknamemessage");
+      element= readFile.getElement("bankname");
+      clear= readFile.getElement("banknameclear");
+      values= readFile.getElement("banknamevalueslist");
+      close= readFile.getElement("banknameclose");
+      message= readFile.getElement("banknamemessage");
   }
 
   private void getChequeDetails() throws IOException {
-      element= readFile.getElement(f1, "chequedetails");
-      clear= readFile.getElement(f1, "chequedetailsclear");
-      values= readFile.getElement(f1, "chequedetailsvalueslist");
-      close= readFile.getElement(f1, "chequedetailsclose");
+      element= readFile.getElement("chequedetails");
+      clear= readFile.getElement("chequedetailsclear");
+      values= readFile.getElement("chequedetailsvalueslist");
+      close= readFile.getElement("chequedetailsclose");
   }
 
   private void getOtherDetails() throws IOException {
-      element= readFile.getElement(f1, "otherdetails");
-      clear= readFile.getElement(f1, "otherdetailsclear");
-      values= readFile.getElement(f1, "otherdetailsvalueslist");
-      close= readFile.getElement(f1, "otherdetailsclose");
+      element= readFile.getElement("otherdetails");
+      clear= readFile.getElement("otherdetailsclear");
+      values= readFile.getElement("otherdetailsvalueslist");
+      close= readFile.getElement("otherdetailsclose");
   }
 
   public void validateBankName() throws IOException {

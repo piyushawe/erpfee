@@ -6,17 +6,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class DayWiseTotalCollection extends GenericReports {
     @FindBy(linkText = "Day Wise Total Collection")private WebElement link;
     @FindBy(id = "Day Wise Total Collection")private WebElement frame;
 
-    public DayWiseTotalCollection(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\DayWiseTotalCollection.properties");
+    public DayWiseTotalCollection(WebDriver d) {
+        page =  this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openDailyFeeCollectionDateWise() throws IOException {
@@ -25,11 +25,11 @@ public class DayWiseTotalCollection extends GenericReports {
     }
 
     public void getMonthElements() throws IOException {
-        element= readFile.getElement(f1, "month");
-        clear= readFile.getElement(f1, "monthclear");
-        values= readFile.getElement(f1, "monthvalueslist");
-        close= readFile.getElement(f1, "monthclose");
-        message= readFile.getElement(f1, "monthmessage");
+        element= readFile.getElement("month");
+        clear= readFile.getElement("monthclear");
+        values= readFile.getElement("monthvalueslist");
+        close= readFile.getElement("monthclose");
+        message= readFile.getElement("monthmessage");
     }
     public void validateMonth() throws IOException {
         getMonthElements();
@@ -41,7 +41,8 @@ public class DayWiseTotalCollection extends GenericReports {
         ehandler.selectValue(element, clear, values, close);
     }
 
+    @Override
     public void validateTillDate() throws IOException {
-        verify.verifyValidationOnMultiSelect(readFile.getElement(f1, "tilldate"), clr, readFile.getElement(f1, "tilldatemessage"), readFile.readProperty(fileUI, "tilldate"));
+        verify.verifyValidationOnMultiSelect(readFile.getElement("tilldate"), clr, readFile.getElement("tilldatemessage"), readFile.readProperty(fileUI, "tilldate"));
     }
 }
