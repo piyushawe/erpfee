@@ -73,3 +73,8 @@ Feature: Monthly Consolidated Report
     And select radio button "5" on monthly consolidated report
     And select from date as month "April" year "2017" and day "1" on monthly consolidated report
     Then click show on monthly consolidated report
+
+  @verify_with_no_filters @scenario9
+  Scenario: To verify monthly consolidated report head wise with cheque bounce
+    And select radio button "6" on monthly consolidated report
+    Then click show on monthly consolidated report

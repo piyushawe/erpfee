@@ -6,17 +6,19 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class ReceiptWiseDailyCollection extends GenericReports {
-    @FindBy(linkText = "Receipt wise Daily Collection")WebElement link;
-    @FindBy(id = "Receipt wise Daily Collection")WebElement frame;
+    @FindBy(linkText = "Receipt wise Daily Collection")
+    WebElement link;
+    @FindBy(id = "Receipt wise Daily Collection")
+    WebElement frame;
 
-    public ReceiptWiseDailyCollection(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\ReceiptWiseDailyCollection.properties");
+    public ReceiptWiseDailyCollection(WebDriver d) {
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openReceiptWiseDailyCollection() throws IOException {
@@ -25,11 +27,11 @@ public class ReceiptWiseDailyCollection extends GenericReports {
     }
 
     private void getBankNameElements() throws IOException {
-        element= readFile.getElement(f1, "bankname");
-        clear= readFile.getElement(f1, "banknameclear");
-        values= readFile.getElement(f1, "banknamevalueslist");
-        close= readFile.getElement(f1, "banknameclose");
-        message= readFile.getElement(f1, "banknamemessage");
+        element = readFile.getElement("bankname");
+        clear = readFile.getElement("banknameclear");
+        values = readFile.getElement("banknamevalueslist");
+        close = readFile.getElement("banknameclose");
+        message = readFile.getElement("banknamemessage");
     }
 
     public void validateBankName() throws IOException {
@@ -43,10 +45,10 @@ public class ReceiptWiseDailyCollection extends GenericReports {
     }
 
     public void selectOrderBy(int index) throws IOException, InterruptedException {
-        ehandler.selectByIndex(readFile.getElement(f1, "orderby"), index);
+        ehandler.selectByIndex(readFile.getElement("orderby"), index);
     }
 
     public void clickAmalgamatedReport() throws IOException {
-        ehandler.click(readFile.getElement(f1, "amalgamatedreport"));
+        ehandler.click(readFile.getElement("amalgamatedreport"));
     }
 }

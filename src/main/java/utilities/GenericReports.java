@@ -8,7 +8,7 @@ import webdriver.DriverMethods;
 import java.io.File;
 import java.io.IOException;
 
-public class GenericReports extends GenericBaseClass {
+public abstract class GenericReports extends GenericBaseClass {
 
     @FindBy(id = "ContentPlaceHolder1_txtDateFrom_TextBox")
     protected WebElement fromdate;
@@ -263,5 +263,4 @@ public class GenericReports extends GenericBaseClass {
     public void clickShow() {
         ehandler.click(show);
     }
-
 }
