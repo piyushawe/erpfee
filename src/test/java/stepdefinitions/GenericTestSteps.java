@@ -18,7 +18,7 @@ public class GenericTestSteps {
     ReadFile readfile = new ReadFile();
     DriverMethods dm = new DriverMethods();
     EventHandlingUtility event = new EventHandlingUtility();
-    UIMap uimap = new UIMap();
+    //UIMap uimap = new UIMap();
 
     public GenericTestSteps() throws IOException {
     }
@@ -30,8 +30,8 @@ public class GenericTestSteps {
 
     @When("^user enter username and password$")
     public void user_enter_username_and_password() throws Throwable {
-        event.enterText(uimap.username, readfile.readProperty(file, "login"));
-        //event.enterText(readfile.getElement(file, "username"), readfile.readProperty(file, "login"));
+        //event.enterText(new UIMap(driver).username, readfile.readProperty(file, "login"));
+        event.enterText(readfile.getElement(file, "username"), readfile.readProperty(file, "login"));
         event.enterText(readfile.getElement(file, "password"), readfile.readProperty(file, "pwd"));
     }
 
