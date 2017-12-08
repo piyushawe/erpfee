@@ -1,17 +1,17 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("featurefiles/transactionreport/ReceiptWiseDailyCollection");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("featurefiles/transactionreport/DailyFeeCollection.feature");
 formatter.feature({
   "line": 1,
-  "name": "Receipt Wise Daily Collection",
+  "name": "Daily Fee Collection",
   "description": "As a user I would like to run the test cases of this page\r\nSo that I don\u0027t have to do it manually",
-  "id": "receipt-wise-daily-collection",
+  "id": "daily-fee-collection",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 6226179,
+  "duration": 7219088,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4191619232,
+  "duration": 4515544001,
   "status": "passed"
 });
 formatter.background({
@@ -43,76 +43,182 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "user open receipt wise daily collection",
+  "name": "user open daily fee collection report",
   "keyword": "When "
 });
 formatter.match({
   "location": "GenericTestSteps.for_url()"
 });
 formatter.result({
-  "duration": 792127074,
+  "duration": 6325705560,
   "status": "passed"
 });
 formatter.match({
   "location": "GenericTestSteps.user_enter_username_and_password()"
 });
 formatter.result({
-  "duration": 172144534,
+  "duration": 168857690,
   "status": "passed"
 });
 formatter.match({
   "location": "GenericTestSteps.click_sign_in_to_open_erp_home_page()"
 });
 formatter.result({
-  "duration": 756903649,
+  "duration": 15887488321,
   "status": "passed"
 });
 formatter.match({
   "location": "GenericTestSteps.user_click_fee_manager_logo()"
 });
 formatter.result({
-  "duration": 430973190,
+  "duration": 3852155316,
   "status": "passed"
 });
 formatter.match({
-  "location": "TestSteps.user_open_receipt_wise_daily_collection()"
+  "location": "TestSteps.user_open_daily_fee_collection_report()"
 });
 formatter.result({
-  "duration": 1026379447,
+  "duration": 7949588667,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 51,
-  "name": "To verify receipt wise daily collection with head",
+  "comments": [
+    {
+      "line": 64,
+      "value": "#test cases of all filters selection"
+    }
+  ],
+  "line": 66,
+  "name": "To verify daily fee collection with filters",
   "description": "",
-  "id": "receipt-wise-daily-collection;to-verify-receipt-wise-daily-collection-with-head",
+  "id": "daily-fee-collection;to-verify-daily-fee-collection-with-filters",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 50,
-      "name": "@verify_with_no_filters"
+      "line": 65,
+      "name": "@verify_with_filters"
     },
     {
-      "line": 50,
-      "name": "@scenario5"
+      "line": 65,
+      "name": "@scenario7"
     }
   ]
 });
 formatter.step({
-  "line": 52,
-  "name": "select from date as month \"April\" year \"2017\" and day \"1\" on receipt wise daily collection",
+  "line": 67,
+  "name": "select school with index \"1\" on daily fee collection",
   "keyword": "And "
 });
 formatter.step({
-  "line": 53,
-  "name": "select radio button \"2\" on receipt wise daily collection",
+  "line": 68,
+  "name": "select wing with index \"1\" on daily fee collection",
   "keyword": "And "
 });
 formatter.step({
-  "line": 54,
-  "name": "click show on receipt wise daily collection",
+  "line": 69,
+  "name": "select class on daily fee collection",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 70,
+  "name": "select board with index \"1\" on daily fee collection",
+  "keyword": "And "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 71,
+      "value": "#And select entry mode on daily fee collection"
+    },
+    {
+      "line": 72,
+      "value": "#And select fee type on daily fee collection"
+    }
+  ],
+  "line": 73,
+  "name": "select pay mode on daily fee collection",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 74,
+  "name": "select head on daily fee collection",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 75,
+  "name": "select from date as month \"April\" year \"2017\" and day \"1\" on daily fee collection",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 76,
+  "name": "select user with index \"1\" on daily fee collection",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 77,
+  "name": "click show on daily fee collection",
   "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 26
+    }
+  ],
+  "location": "TestSteps.select_school_with_index_on_daily_fee_collection(int)"
+});
+formatter.result({
+  "duration": 1275512694,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 24
+    }
+  ],
+  "location": "TestSteps.select_wing_with_index_on_daily_fee_collection(int)"
+});
+formatter.result({
+  "duration": 447957935,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TestSteps.select_class_on_daily_fee_collection()"
+});
+formatter.result({
+  "duration": 462704897,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 25
+    }
+  ],
+  "location": "TestSteps.select_board_with_index_on_daily_fee_collection(int)"
+});
+formatter.result({
+  "duration": 209442114,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TestSteps.select_pay_mode_on_daily_fee_collection()"
+});
+formatter.result({
+  "duration": 454178819,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TestSteps.select_head_on_daily_fee_collection()"
+});
+formatter.result({
+  "duration": 396962458,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -129,38 +235,87 @@ formatter.match({
       "offset": 55
     }
   ],
-  "location": "TestSteps.select_from_date_as_month_year_and_day_on_receipt_wise_daily_collection(String,String,String)"
+  "location": "TestSteps.select_from_date_as_month_year_and_day_on_daily_fee_collection(String,String,String)"
 });
 formatter.result({
-  "duration": 2128224340,
+  "duration": 2022421166,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "2",
-      "offset": 21
+      "val": "1",
+      "offset": 24
     }
   ],
-  "location": "TestSteps.select_radio_button_on_receipt_wise_daily_collection(String)"
+  "location": "TestSteps.select_user_with_index_on_daily_fee_collection(int)"
 });
 formatter.result({
-  "duration": 110209708,
+  "duration": 229531401,
   "status": "passed"
 });
 formatter.match({
-  "location": "TestSteps.click_show_on_receipt_wise_daily_collection()"
+  "location": "TestSteps.click_show_on_daily_fee_collection()"
 });
 formatter.result({
-  "duration": 101358838127,
+  "duration": 40947448863,
   "status": "passed"
 });
 formatter.after({
-  "duration": 3613366,
+  "duration": 5425019,
   "status": "passed"
 });
 formatter.after({
-  "duration": 7059875,
+  "duration": 5606244,
   "status": "passed"
 });
+formatter.before({
+  "duration": 121990,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 2428063,
+  "status": "passed"
+});
+formatter.background({
+  "line": 5,
+  "name": "Steps to open fee manager landing page",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 6,
+  "name": "for url",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "user enter username and password",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "click sign in to open erp home page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "user click fee manager logo",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user open daily fee collection report",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "GenericTestSteps.for_url()"
+});
+formatter.result({
+  "duration": 3299789509,
+  "status": "passed"
+});
+formatter.match({
+  "location": "GenericTestSteps.user_enter_username_and_password()"
 });

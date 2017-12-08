@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         "json:target/cucumber.json",
         "junit:target/cucumber.xml"}
         //,tags= {"@verify_with_filters, @verify_with_no_filters"}
-        ,tags= {"@scenario11"}
+        ,tags= {"@scenario7, @scenario8"}
 )
 public class DailyFeeCollectionRunner {
 }

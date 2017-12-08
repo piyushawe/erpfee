@@ -32,7 +32,7 @@ public class DefineMotherTongue extends BaseClass{
       ehandler.enterText(readFile.getElement(f1,"mothertongue"), n);
   }
 
-  public void verifyCharactersSaved(){
+  public void verifyCharactersSaved() throws IOException {
       ehandler.verifyString();
   }
 

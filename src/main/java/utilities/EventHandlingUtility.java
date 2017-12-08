@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import static supportclasses.GenericBaseClass.file;
-import static webdriver.AppDriver.driver;
+import static webdriver.AppDriver.getCurrentDriver;
 
 public class EventHandlingUtility {
     private File fileUI= new File("configuration\\UIMap.properties");
@@ -23,24 +23,22 @@ public class EventHandlingUtility {
     private DriverMethods dm= new DriverMethods();
     private String value="";
 
-    public void openFrame(WebElement menu, WebElement link, WebElement frame){
+    public void openFrame(WebElement menu, WebElement link, WebElement frame) throws IOException {
       moveToElement(menu);
-      //moveToElement(link);
       clickMenuItem(link);
-      //System.out.println("Size: "+driver.findElements(By.tagName("iframe")).size());
       switchToFrame(frame);
     }
 
-    public void moveToElement(WebElement menuItem){
-      new Actions(driver).moveToElement(menuItem).build().perform();
+    public void moveToElement(WebElement menuItem) throws IOException {
+      new Actions(getCurrentDriver()).moveToElement(menuItem).build().perform();
     }
 
-    private void clickMenuItem(WebElement link){
-        new Actions(driver).moveToElement(link).click().perform();
+    private void clickMenuItem(WebElement link) throws IOException {
+        new Actions(getCurrentDriver()).moveToElement(link).click().perform();
     }
 
-    private void switchToFrame(WebElement frame){
-      driver.switchTo().frame(frame);
+    private void switchToFrame(WebElement frame) throws IOException {
+        getCurrentDriver().switchTo().frame(frame);
     }
 
     public void click(WebElement element){
@@ -73,8 +71,8 @@ public class EventHandlingUtility {
       }
     }
 
-    public void verifyString(){
-      Assert.assertTrue(driver.getPageSource().contains(value));
+    public void verifyString() throws IOException {
+      Assert.assertTrue(getCurrentDriver().getPageSource().contains(value));
          System.out.println("Value Saved");
     }
 

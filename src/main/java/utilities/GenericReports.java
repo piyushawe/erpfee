@@ -183,7 +183,7 @@ public abstract class GenericReports extends GenericBaseClass {
         verify.verifyValidationOnMultiSelect(todate, clr, readFile.getElement("tilldatemessage"), readFile.readProperty(fileUI, "tilldate"));
     }
 
-    public void clickReceiptRange() {
+    public void clickReceiptRange() throws IOException {
         new DriverMethods().waitUntil(receiptnorange, 1000);
         ehandler.click(receiptnorange);
     }

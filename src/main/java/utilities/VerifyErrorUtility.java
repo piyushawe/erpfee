@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 
-import static webdriver.AppDriver.driver;
+import static webdriver.AppDriver.getCurrentDriver;
 
 public class VerifyErrorUtility extends GenericBaseClass {
     private GenericUtility utility = new GenericUtility();
@@ -21,7 +21,7 @@ public class VerifyErrorUtility extends GenericBaseClass {
 
     public void verifyPageError() throws IOException {
         try {
-            Assert.assertFalse(driver.getPageSource().contains(readFile.readProperty(fileMsg, "pagenotfounderror")));
+            Assert.assertFalse(getCurrentDriver().getPageSource().contains(readFile.readProperty(fileMsg, "pagenotfounderror")));
             dm.switchToParentWindow();
             try {
                 //dr.findElement(By.id("defaultSpeechbubbleHeader"));

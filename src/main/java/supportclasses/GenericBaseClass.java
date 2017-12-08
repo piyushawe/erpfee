@@ -20,7 +20,6 @@ public abstract class GenericBaseClass {
     protected ReadFile readFile = new ReadFile();
     protected EventHandlingUtility ehandler= new EventHandlingUtility();
     protected VerifyValidationsUtility verify= new VerifyValidationsUtility();
-    protected Logger logger = Logger.getLogger(Log.class.getName());
 
     protected File fileConfig= new File("configuration\\GenericConfig.properties");
     protected File fileUI= new File("configuration\\UIMap.properties");

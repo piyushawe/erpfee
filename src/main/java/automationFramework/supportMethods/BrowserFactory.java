@@ -4,13 +4,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.picocontainer.annotations.Inject;
 import supportclasses.GenericBaseClass;
+import supportclasses.LogManager;
 
 import java.io.IOException;
 
 import static webdriver.AppDriver.driver;
 
 public class BrowserFactory extends GenericBaseClass {
+    @Inject
+    LogManager lm;
 
     public WebDriver getBrowser(String browser) throws IOException {
         char browserName = getBrowserName(browser);
@@ -29,7 +33,8 @@ public class BrowserFactory extends GenericBaseClass {
                 driver = new InternetExplorerDriver();
                 break;
             default:
-                logger.info(page + ":"+ readFile.readProperty(fileMsg, "browsernotdefined"));
+                lm.logger.info(page + ":" + readFile.readProperty(fileMsg, "browsernotdefined"));
+
         }
         return driver;
     }
