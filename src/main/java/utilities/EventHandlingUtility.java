@@ -1,26 +1,20 @@
 package utilities;
 
-import automationFramework.supportMethods.ReadFile;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import webdriver.DriverMethods;
+import supportclasses.GenericBaseClass;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-import static supportclasses.GenericBaseClass.file;
 import static webdriver.AppDriver.getCurrentDriver;
 
-public class EventHandlingUtility {
-    private File fileUI= new File("configuration\\UIMap.properties");
-    private ReadFile readFile= new ReadFile();
-    private DriverMethods dm= new DriverMethods();
+public class EventHandlingUtility extends GenericBaseClass {
     private String value="";
 
     public void openFrame(WebElement menu, WebElement link, WebElement frame) throws IOException {

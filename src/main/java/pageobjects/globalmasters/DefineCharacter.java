@@ -14,9 +14,10 @@ public class DefineCharacter extends BaseClass {
   @FindBy(id = "Define Character") private WebElement frame;
 
   public DefineCharacter(WebDriver d) throws IOException {
-     f1= new File("F:\\erpfee\\configuration\\globalMasters\\DefineCharacter.properties");
-     PageFactory.initElements(d, this);
-     page= readFile.readProperty(f1,"page");
+      page = this.getClass().getSimpleName();
+      pack = gm.getPackage(this.getClass().getPackage().getName());
+      file = gm.getFilePath(page, pack);
+      PageFactory.initElements(d, this);
   }
 
   public void openDefineCharacter() throws IOException {
@@ -24,18 +25,18 @@ public class DefineCharacter extends BaseClass {
   }
 
   public void enterCharacterName(String pname) throws IOException {
-     ehandler.enterText(readFile.getElement(f1,"charactername"), pname);
+     ehandler.enterText(readFile.getElement("charactername"), pname);
   }
 
   public void enterCharacterName(int n) throws IOException {
-     ehandler.enterText(readFile.getElement(f1,"charactername"), n);
+     ehandler.enterText(readFile.getElement("charactername"), n);
   }
 
   public void validateBlank() throws IOException {
-     verify.validateBlankField(readFile.getElement(f1,"charactername"),readFile.readProperty(f1,"blankvalidationmessage"), readFile.getElement(f1,"blankvalidation"));
+     verify.validateBlankField(readFile.getElement("charactername"),readFile.readProperty(file,"blankvalidationmessage"), readFile.getElement("blankvalidation"));
   }
 
   public void verifyCancel() throws IOException {
-     verify.verifyCancel(readFile.getElement(f1,"charactername"));
+     verify.verifyCancel(readFile.getElement("charactername"));
   }
 }

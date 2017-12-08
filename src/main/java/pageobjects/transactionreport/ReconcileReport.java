@@ -14,9 +14,10 @@ public class ReconcileReport extends GenericReports {
     @FindBy(id = "Reconcile Report")WebElement frame;
 
     public ReconcileReport(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\ReconcileReport.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openReconcileReport() throws IOException {

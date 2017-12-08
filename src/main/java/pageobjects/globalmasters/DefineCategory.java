@@ -14,9 +14,10 @@ public class DefineCategory extends BaseClass {
     @FindBy(id = "Define Category") private WebElement frame;
 
     public DefineCategory(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\globalMasters\\DefineCategory.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1,"page");
     }
 
     public void openDefineCategory() throws IOException {
@@ -24,18 +25,18 @@ public class DefineCategory extends BaseClass {
     }
 
     public void enterCategoryName(String pname) throws IOException {
-        ehandler.enterText(readFile.getElement(f1,"categoryname"), pname);
+        ehandler.enterText(readFile.getElement("categoryname"), pname);
     }
 
     public void enterCategoryName(int n) throws IOException {
-        ehandler.enterText(readFile.getElement(f1,"categoryname"), n);
+        ehandler.enterText(readFile.getElement("categoryname"), n);
     }
 
     public void validateBlank() throws IOException {
-        verify.validateBlankField(readFile.getElement(f1,"categoryname"),readFile.readProperty(f1,"blankvalidationmessage"), readFile.getElement(f1,"blankvalidation"));
+        verify.validateBlankField(readFile.getElement("categoryname"),readFile.readProperty(file,"blankvalidationmessage"), readFile.getElement("blankvalidation"));
     }
 
     public void verifyCancel() throws IOException {
-        verify.verifyCancel(readFile.getElement(f1,"categoryname"));
+        verify.verifyCancel(readFile.getElement("categoryname"));
     }
 }

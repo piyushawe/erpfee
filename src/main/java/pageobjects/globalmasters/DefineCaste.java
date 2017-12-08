@@ -16,31 +16,29 @@ public class DefineCaste extends BaseClass {
     private WebElement frame;
 
     public DefineCaste(WebDriver d) throws IOException {
-        f1 = new File("F:\\erpfee\\configuration\\globalMasters\\DefineCaste.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        //page = readFile.readProperty(f1, "page");
-        page = this.getClass().getName();
-        System.out.println(page);
-}
+    }
 
     public void openDefineCaste() throws IOException {
-        //System.out.println(link.isDisplayed());
         ehandler.openFrame(readFile.getElement(fileUI, "globalmastersmenu"), link, frame);
     }
 
     public void enterCasteName(String cname) throws IOException {
-        ehandler.enterText(readFile.getElement(f1, "castename"), cname);
+        ehandler.enterText(readFile.getElement("castename"), cname);
     }
 
     public void enterCasteName(int n) throws IOException {
-        ehandler.enterText(readFile.getElement(f1, "castename"), n);
+        ehandler.enterText(readFile.getElement("castename"), n);
     }
 
     public void validateBlank() throws IOException {
-        verify.validateBlankField(readFile.getElement(f1, "castename"), readFile.readProperty(f1, "blankvalidationmessage"), readFile.getElement(f1, "blankvalidation"));
+        verify.validateBlankField(readFile.getElement("castename"), readFile.readProperty(file, "blankvalidationmessage"), readFile.getElement("blankvalidation"));
     }
 
     public void verifyCancel() throws IOException {
-        verify.verifyCancel(readFile.getElement(f1, "castename"));
+        verify.verifyCancel(readFile.getElement("castename"));
     }
 }

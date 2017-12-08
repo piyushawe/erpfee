@@ -14,9 +14,10 @@ public class DefineWing extends BaseClass {
     @FindBy(id = "Define Wing")private WebElement frame;
 
     public DefineWing(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\globalMasters\\DefineWing.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        readFile.readProperty(f1, "page");
     }
 
     public void openDefineWing() throws IOException {
@@ -24,18 +25,18 @@ public class DefineWing extends BaseClass {
     }
 
     public void enterWingName(String mname) throws IOException {
-        ehandler.enterText(readFile.getElement(f1, "wingname"), mname);
+        ehandler.enterText(readFile.getElement("wingname"), mname);
     }
 
     public void enterWingName(int n) throws IOException {
-        ehandler.enterText(readFile.getElement(f1, "wingname"), n);
+        ehandler.enterText(readFile.getElement("wingname"), n);
     }
 
     public void validateBlank() throws IOException {
-        verify.validateBlankField(readFile.getElement(f1, "wingname"),readFile.readProperty(f1, "blankvalidationmessage"), readFile.getElement(f1, "blankvalidation"));
+        verify.validateBlankField(readFile.getElement("wingname"),readFile.readProperty(file, "blankvalidationmessage"), readFile.getElement("blankvalidation"));
     }
 
     public void verifyCancel() throws IOException {
-        verify.verifyCancel(readFile.getElement(f1, "wingname"));
+        verify.verifyCancel(readFile.getElement("wingname"));
     }
 }

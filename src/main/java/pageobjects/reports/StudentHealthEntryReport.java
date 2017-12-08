@@ -14,9 +14,10 @@ public class StudentHealthEntryReport extends GenericReports {
     @FindBy(id="Student Health Entry Report")private WebElement frame;
 
     public StudentHealthEntryReport(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\reports\\StudentHealthEntryReport.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openStudentHealthEntryReport() throws IOException {

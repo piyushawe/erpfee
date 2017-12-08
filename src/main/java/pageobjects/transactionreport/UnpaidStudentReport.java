@@ -14,9 +14,10 @@ public class UnpaidStudentReport extends GenericReports {
     @FindBy(id = "Unpaid Student Report")WebElement frame;
 
     public UnpaidStudentReport(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\UnpaidStudentReport.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openUnpaidStudentReport() throws IOException {

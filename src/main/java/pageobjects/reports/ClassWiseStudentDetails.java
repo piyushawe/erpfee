@@ -14,9 +14,10 @@ public class ClassWiseStudentDetails extends GenericReports {
     @FindBy(id="Class Wise Student Details")private WebElement frame;
 
     public ClassWiseStudentDetails(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\reports\\ClassWiseStudentDetails.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openClassWiseStudentDetails() throws IOException {

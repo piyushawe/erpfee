@@ -11,4 +11,8 @@ public class GetterMethods {
     public File getFilePath(String page, String pack) {
         return new File("configuration\\" + pack + "\\" + page + ".properties");
     }
+
+    public File getFilePath(String page) {
+        return new File("configuration\\" + page + ".properties");
+    }
 }

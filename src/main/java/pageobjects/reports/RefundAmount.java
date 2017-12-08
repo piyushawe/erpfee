@@ -14,9 +14,10 @@ public class RefundAmount extends GenericReports {
     @FindBy(id="Refund Amount")private WebElement frame;
 
     public RefundAmount(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\reports\\RefundAmount.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openRefundAmount() throws IOException {

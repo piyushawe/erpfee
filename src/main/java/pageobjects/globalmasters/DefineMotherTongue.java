@@ -15,9 +15,10 @@ public class DefineMotherTongue extends BaseClass{
   @FindBy(id = "Define Mother Tongue")private WebElement frame;
 
   public DefineMotherTongue(WebDriver d) throws IOException {
-     f1= new File("F:\\erpfee\\configuration\\globalMasters\\DefineMotherTongue.properties");
-     PageFactory.initElements(d, this);
-     page= readFile.readProperty(f1, "page");
+      page = this.getClass().getSimpleName();
+      pack = gm.getPackage(this.getClass().getPackage().getName());
+      file = gm.getFilePath(page, pack);
+      PageFactory.initElements(d, this);
   }
 
   public void openDefineMotherTongue() throws IOException {
@@ -25,11 +26,11 @@ public class DefineMotherTongue extends BaseClass{
   }
 
   public void enterMotherTongue(String mtongue) throws IOException {
-     ehandler.enterText(readFile.getElement(f1,"mothertongue"), mtongue);
+     ehandler.enterText(readFile.getElement("mothertongue"), mtongue);
   }
 
   public void enterMotherTongue(int n) throws IOException {
-      ehandler.enterText(readFile.getElement(f1,"mothertongue"), n);
+      ehandler.enterText(readFile.getElement("mothertongue"), n);
   }
 
   public void verifyCharactersSaved() throws IOException {
@@ -37,10 +38,10 @@ public class DefineMotherTongue extends BaseClass{
   }
 
   public void validateBlank() throws IOException {
-      verify.validateBlankField(readFile.getElement(f1, "mothertongue"),readFile.readProperty(f1, "blankvalidationmessage"), readFile.getElement(f1, "blankvalidation"));
+      verify.validateBlankField(readFile.getElement("mothertongue"),readFile.readProperty(file, "blankvalidationmessage"), readFile.getElement("blankvalidation"));
   }
 
   public void verifyCancel() throws IOException {
-      verify.verifyCancel(readFile.getElement(f1, "mothertongue"));
+      verify.verifyCancel(readFile.getElement("mothertongue"));
   }
 }

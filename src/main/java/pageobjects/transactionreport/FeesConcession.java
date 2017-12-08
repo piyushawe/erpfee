@@ -14,9 +14,10 @@ public class FeesConcession extends GenericReports {
     @FindBy(id = "Fees Concession")WebElement frame;
 
     public FeesConcession(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\FeesConcession.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openFeesConcession() throws IOException {

@@ -14,9 +14,10 @@ public class DefinePromotionMaster extends BaseClass {
     @FindBy(id = "Define Promotion Master ")private WebElement frame;
 
     public DefinePromotionMaster(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\globalMasters\\DefinePromotionMaster.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        readFile.readProperty(f1, "page");
     }
 
     public void openDefinePromotionMaster() throws IOException {
@@ -24,18 +25,18 @@ public class DefinePromotionMaster extends BaseClass {
     }
 
     public void enterPromotionName(String pname) throws IOException {
-        ehandler.enterText(readFile.getElement(f1, "promotionname"), pname);
+        ehandler.enterText(readFile.getElement("promotionname"), pname);
     }
 
     public void enterPromotionNameNTimes(int n) throws IOException {
-        ehandler.enterText(readFile.getElement(f1, "promotionname"), n);
+        ehandler.enterText(readFile.getElement("promotionname"), n);
     }
 
     public void validateBlank() throws IOException {
-        verify.validateBlankField(readFile.getElement(f1, "promotionname"),readFile.readProperty(f1, "blankvalidationmessage"), readFile.getElement(f1, "blankvalidation"));
+        verify.validateBlankField(readFile.getElement("promotionname"),readFile.readProperty(file, "blankvalidationmessage"), readFile.getElement("blankvalidation"));
     }
 
     public void verifyCancel() throws IOException {
-        verify.verifyCancel(readFile.getElement(f1, "promotionname"));
+        verify.verifyCancel(readFile.getElement("promotionname"));
     }
 }

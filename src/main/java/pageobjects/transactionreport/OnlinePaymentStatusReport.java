@@ -14,9 +14,10 @@ public class OnlinePaymentStatusReport extends GenericReports {
     @FindBy(id = "Online Payment Status Report")WebElement frame;
 
     public OnlinePaymentStatusReport(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\OnlinePaymentStatusReport.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openOnlinePaymentStatusReport() throws IOException {

@@ -14,9 +14,10 @@ public class SmsReport extends GenericReports {
     @FindBy(id="Sms Report")private WebElement frame;
 
     public SmsReport(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\reports\\SmsReport.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openSmsReport() throws IOException {

@@ -14,9 +14,10 @@ public class DefineLanguage extends BaseClass{
   @FindBy(id = "Define Language")private WebElement frame;
 
   public DefineLanguage(WebDriver d) throws IOException {
-     f1= new File("F:\\erpfee\\configuration\\globalMasters\\DefineLanguage.properties");
-     PageFactory.initElements(d, this);
-     page= readFile.readProperty(f1,"page");
+      page = this.getClass().getSimpleName();
+      pack = gm.getPackage(this.getClass().getPackage().getName());
+      file = gm.getFilePath(page, pack);
+      PageFactory.initElements(d, this);
   }
 
   public void openDefineLanguage() throws IOException {
@@ -24,18 +25,18 @@ public class DefineLanguage extends BaseClass{
   }
 
   public void enterLanguageName(String pname) throws IOException {
-     ehandler.enterText(readFile.getElement(f1,"languagename"), pname);
+     ehandler.enterText(readFile.getElement("languagename"), pname);
   }
 
   public void enterLanguageName(int n) throws IOException {
-     ehandler.enterText(readFile.getElement(f1,"languagename"), n);
+     ehandler.enterText(readFile.getElement("languagename"), n);
   }
 
   public void validateBlank() throws IOException {
-     verify.validateBlankField(readFile.getElement(f1,"languagename"),readFile.readProperty(f1,"blankvalidationmessage"), readFile.getElement(f1,"blankvalidation"));
+     verify.validateBlankField(readFile.getElement("languagename"),readFile.readProperty(file,"blankvalidationmessage"), readFile.getElement("blankvalidation"));
   }
 
   public void verifyCancel() throws IOException {
-     verify.verifyCancel(readFile.getElement(f1,"languagename"));
+     verify.verifyCancel(readFile.getElement("languagename"));
   }
 }

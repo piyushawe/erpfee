@@ -14,9 +14,10 @@ public class DefineReligion extends BaseClass {
     @FindBy(id = "Define Religion") private WebElement frame;
 
     public DefineReligion(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\globalMasters\\DefineReligion.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1,"page");
     }
 
     public void openDefineReligion() throws IOException {
@@ -24,18 +25,18 @@ public class DefineReligion extends BaseClass {
     }
 
     public void enterReligionName(String pname) throws IOException {
-        ehandler.enterText(readFile.getElement(f1,"religionname"), pname);
+        ehandler.enterText(readFile.getElement("religionname"), pname);
     }
 
     public void enterReligionName(int n) throws IOException {
-        ehandler.enterText(readFile.getElement(f1,"religionname"), n);
+        ehandler.enterText(readFile.getElement("religionname"), n);
     }
 
     public void validateBlank() throws IOException {
-        verify.validateBlankField(readFile.getElement(f1,"religionname"),readFile.readProperty(f1,"blankvalidationmessage"), readFile.getElement(f1,"blankvalidation"));
+        verify.validateBlankField(readFile.getElement("religionname"),readFile.readProperty(file, "blankvalidationmessage"), readFile.getElement("blankvalidation"));
     }
 
     public void verifyCancel() throws IOException {
-        verify.verifyCancel(readFile.getElement(f1,"religionname"));
+        verify.verifyCancel(readFile.getElement("religionname"));
     }
 }

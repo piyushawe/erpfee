@@ -14,9 +14,10 @@ public class OpeningDuesReport extends GenericReports {
     @FindBy(id="Opening Dues Report")private WebElement frame;
 
     public OpeningDuesReport(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\reports\\OpeningDuesReport.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openOpeningDuesReport() throws IOException {

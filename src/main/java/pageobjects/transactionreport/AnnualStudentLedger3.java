@@ -14,9 +14,10 @@ public class AnnualStudentLedger3 extends GenericReports {
     @FindBy(id = "Annual Student Ledger 3")private WebElement frame;
 
     public AnnualStudentLedger3(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\AnnualStudentLedger3.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openAnnualStudentLedger3() throws IOException {

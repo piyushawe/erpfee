@@ -1,7 +1,9 @@
 package utilities;
 
 import org.junit.Assert;
+import org.picocontainer.annotations.Inject;
 import supportclasses.GenericBaseClass;
+import supportclasses.LogManager;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,6 +12,8 @@ import java.util.Date;
 import static webdriver.AppDriver.getCurrentDriver;
 
 public class VerifyErrorUtility extends GenericBaseClass {
+    @Inject
+    LogManager lm;
     private GenericUtility utility = new GenericUtility();
 
     ExcelUtility exc = new ExcelUtility();
@@ -31,7 +35,7 @@ public class VerifyErrorUtility extends GenericBaseClass {
                 utility.takeScreenshot();
             }
             catch (Exception e){
-                logger.info(readFile.readProperty(fileMsg, "noerrorfound"));
+                lm.logger.info(readFile.readProperty(fileMsg, "noerrorfound"));
             }
         }
         catch (Exception e){

@@ -14,9 +14,10 @@ public class StaffWardListReport extends GenericReports {
     @FindBy(id="Staff Ward List Report")private WebElement frame;
 
     public StaffWardListReport(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\reports\\StaffWardListReport.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openStaffWardListReport() throws IOException {

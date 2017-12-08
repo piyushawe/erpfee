@@ -14,9 +14,10 @@ public class ChequeReportDateWise extends GenericReports {
     @FindBy(id = "Cheque Report Date Wise")WebElement frame;
 
     public ChequeReportDateWise(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\ChequeReportDateWise.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openChequeReportDateWise() throws IOException {

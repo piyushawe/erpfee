@@ -15,9 +15,10 @@ public class TermMaster extends BaseClass{
   @FindBy(id = "Term Master")private WebElement frame;
 
   public TermMaster(WebDriver d) throws IOException {
-     f1= new File("F:\\erpfee\\configuration\\globalMasters\\TermMaster.properties");
-     PageFactory.initElements(d, this);
-     readFile.readProperty(f1, "page");
+      page = this.getClass().getSimpleName();
+      pack = gm.getPackage(this.getClass().getPackage().getName());
+      file = gm.getFilePath(page, pack);
+      PageFactory.initElements(d, this);
   }
 
   public void openTermMaster() throws IOException {
@@ -25,18 +26,18 @@ public class TermMaster extends BaseClass{
   }
 
   public void enterTermName(String mname) throws IOException {
-     ehandler.enterText(readFile.getElement(f1, "termname"), mname);
+     ehandler.enterText(readFile.getElement("termname"), mname);
   }
 
   public void enterTermName(int n) throws IOException {
-     ehandler.enterText(readFile.getElement(f1, "termname"), n);
+     ehandler.enterText(readFile.getElement("termname"), n);
   }
 
   public void validateBlank() throws IOException {
-     verify.validateBlankField(readFile.getElement(f1, "termname"),readFile.readProperty(f1, "blankvalidationmessage"), readFile.getElement(f1, "blankvalidation"));
+     verify.validateBlankField(readFile.getElement("termname"),readFile.readProperty(file, "blankvalidationmessage"), readFile.getElement("blankvalidation"));
   }
 
   public void verifyCancel() throws IOException {
-     verify.verifyCancel(readFile.getElement(f1, "termname"));
+     verify.verifyCancel(readFile.getElement("termname"));
   }
 }

@@ -1,6 +1,7 @@
 package stepdefinitions;
 
 import automationFramework.supportMethods.ReadFile;
+import automationFramework.supportMethods.UIMap;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -8,12 +9,19 @@ import utilities.EventHandlingUtility;
 import webdriver.DriverMethods;
 
 import java.io.File;
+import java.io.IOException;
+
+import static webdriver.AppDriver.driver;
 
 public class GenericTestSteps {
     private File file = new File("configuration\\UIMap.properties");
     ReadFile readfile = new ReadFile();
     DriverMethods dm = new DriverMethods();
     EventHandlingUtility event = new EventHandlingUtility();
+    UIMap uimap = new UIMap();
+
+    public GenericTestSteps() throws IOException {
+    }
 
     @Given("^for url$")
     public void for_url() throws Throwable {
@@ -22,7 +30,8 @@ public class GenericTestSteps {
 
     @When("^user enter username and password$")
     public void user_enter_username_and_password() throws Throwable {
-        event.enterText(readfile.getElement(file, "username"), readfile.readProperty(file, "login"));
+        event.enterText(uimap.username, readfile.readProperty(file, "login"));
+        //event.enterText(readfile.getElement(file, "username"), readfile.readProperty(file, "login"));
         event.enterText(readfile.getElement(file, "password"), readfile.readProperty(file, "pwd"));
     }
 

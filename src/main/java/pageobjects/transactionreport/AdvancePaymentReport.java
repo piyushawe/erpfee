@@ -14,20 +14,22 @@ public class AdvancePaymentReport extends GenericReports {
     @FindBy(id = "Advance Payment Report") private WebElement frame;
 
     public AdvancePaymentReport(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\AdvancePaymentReport.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
-        //System.out.println(this.getClass().getSimpleName());
     }
 
     public void openAdvancePaymentReport() throws IOException {
         ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
     }
 
+    @Override
     public void validateInstallment() throws IOException {
         verify.verifyValidationMessage(readFile.readProperty(fileUI, "Installment"), readFile.getElement(f1, "installmentmessage"));
     }
 
+    @Override
     public void validateTillDate() throws IOException {
         verify.verifyValidationOnMultiSelect(readFile.getElement(f1, "tilldate"), clr, readFile.getElement(f1, "tilldatemessage"), readFile.readProperty(fileUI, "tilldate"));
     }

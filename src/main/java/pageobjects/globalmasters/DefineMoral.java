@@ -15,9 +15,10 @@ public class DefineMoral extends BaseClass {
   @FindBy(id = "Define Moral")private WebElement frame;
 
   public DefineMoral(WebDriver d) throws IOException {
-     f1= new File("F:\\erpfee\\configuration\\globalMasters\\DefineMoral.properties");
-     PageFactory.initElements(d, this);
-     readFile.readProperty(f1, "page");
+      page = this.getClass().getSimpleName();
+      pack = gm.getPackage(this.getClass().getPackage().getName());
+      file = gm.getFilePath(page, pack);
+      PageFactory.initElements(d, this);
   }
 
   public void openDefineMoral() throws IOException {
@@ -25,19 +26,18 @@ public class DefineMoral extends BaseClass {
   }
 
   public void enterMoralName(String mname) throws IOException {
-     ehandler.enterText(readFile.getElement(f1, "moralname"), mname);
+     ehandler.enterText(readFile.getElement("moralname"), mname);
   }
 
   public void enterMoralName(int n) throws IOException {
-     ehandler.enterText(readFile.getElement(f1, "moralname"), n);
+     ehandler.enterText(readFile.getElement("moralname"), n);
   }
 
   public void validateBlank() throws IOException {
-    verify.validateBlankField(readFile.getElement(f1, "moralname"),readFile.readProperty(f1, "blankvalidationmessage"), readFile.getElement(f1, "blankvalidation"));
+    verify.validateBlankField(readFile.getElement("moralname"),readFile.readProperty(file, "blankvalidationmessage"), readFile.getElement("blankvalidation"));
   }
 
   public void verifyCancel() throws IOException {
-     verify.verifyCancel(readFile.getElement(f1, "moralname"));
+     verify.verifyCancel(readFile.getElement("moralname"));
   }
 }
-

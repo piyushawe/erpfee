@@ -14,9 +14,10 @@ public class MidYearStudentDetails extends GenericReports {
     @FindBy(id="Mid Year Student Details")private WebElement frame;
 
     public MidYearStudentDetails(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\reports\\MidYearStudentDetails.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openMidYearStudentDetails() throws IOException {

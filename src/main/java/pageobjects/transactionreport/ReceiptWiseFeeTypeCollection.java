@@ -14,9 +14,10 @@ public class ReceiptWiseFeeTypeCollection extends GenericReports {
     @FindBy(id = "Receipt wise Fee Type  Collection")WebElement frame;
 
     public ReceiptWiseFeeTypeCollection(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\ReceiptWiseFeeTypeCollection.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openReceiptWiseFeeTypeCollection() throws IOException {

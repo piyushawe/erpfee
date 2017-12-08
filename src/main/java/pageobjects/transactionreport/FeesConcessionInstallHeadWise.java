@@ -14,9 +14,10 @@ public class FeesConcessionInstallHeadWise extends GenericReports {
     @FindBy(id = "Fees Concession Install/Head Wise")WebElement frame;
 
     public FeesConcessionInstallHeadWise(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\FeesConcessionInstallHeadWise.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openFeesConcessionInstallHeadWise() throws IOException {

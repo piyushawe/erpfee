@@ -14,9 +14,10 @@ public class StudentRegisterDateWiseReport extends GenericReports {
     @FindBy(id="Student Register Date Wise Report")private WebElement frame;
 
     public StudentRegisterDateWiseReport(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\reports\\StudentRegisterDateWiseReport.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openStudentRegisterDateWiseReport() throws IOException {

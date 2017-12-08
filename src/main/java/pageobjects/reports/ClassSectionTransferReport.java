@@ -14,9 +14,10 @@ public class ClassSectionTransferReport extends GenericReports {
     @FindBy(id="Class Section Transfer Report")private WebElement frame;
 
     public ClassSectionTransferReport(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\reports\\ClassSectionTransferReport.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openClassSectionTransferReport() throws IOException {

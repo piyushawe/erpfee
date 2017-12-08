@@ -14,9 +14,10 @@ public class ReconcileInstallmentClassWise extends GenericReports {
     @FindBy(id = "Reconcile Installment Class Wise")WebElement frame;
 
     public ReconcileInstallmentClassWise(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\ReconcileInstallmentClassWise.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openReconcileInstallmentClassWise() throws IOException {

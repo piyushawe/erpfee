@@ -14,9 +14,10 @@ public class DailyFeeCollectionDateClassWise extends GenericReports {
     @FindBy(id = "Daily Fee Collection Date/Class Wise")WebElement frame;
 
     public DailyFeeCollectionDateClassWise(WebDriver d) throws IOException {
-        f1= new File("F:\\erpfee\\configuration\\transactionReport\\DailyFeeCollectionDateClassWise.properties");
+        page = this.getClass().getSimpleName();
+        pack = gm.getPackage(this.getClass().getPackage().getName());
+        file = gm.getFilePath(page, pack);
         PageFactory.initElements(d, this);
-        page= readFile.readProperty(f1, "page");
     }
 
     public void openDailyFeeCollectionDateClassWise() throws IOException {
