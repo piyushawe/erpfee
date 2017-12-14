@@ -9,19 +9,12 @@ import utilities.EventHandlingUtility;
 import webdriver.DriverMethods;
 
 import java.io.File;
-import java.io.IOException;
-
-import static webdriver.AppDriver.driver;
 
 public class GenericTestSteps {
     private File file = new File("configuration\\UIMap.properties");
     ReadFile readfile = new ReadFile();
     DriverMethods dm = new DriverMethods();
     EventHandlingUtility event = new EventHandlingUtility();
-    //UIMap uimap = new UIMap();
-
-    public GenericTestSteps() throws IOException {
-    }
 
     @Given("^for url$")
     public void for_url() throws Throwable {
@@ -30,24 +23,23 @@ public class GenericTestSteps {
 
     @When("^user enter username and password$")
     public void user_enter_username_and_password() throws Throwable {
-        //event.enterText(new UIMap(driver).username, readfile.readProperty(file, "login"));
-        event.enterText(readfile.getElement(file, "username"), readfile.readProperty(file, "login"));
-        event.enterText(readfile.getElement(file, "password"), readfile.readProperty(file, "pwd"));
+        event.enterText(new UIMap().getUsername(), readfile.readProperty(file, "login"));
+        event.enterText(new UIMap().getPassword(), readfile.readProperty(file, "pwd"));
     }
 
     @When("^click sign in to open erp home page$")
     public void click_sign_in_to_open_erp_home_page() throws Throwable {
-        event.click(readfile.getElement(file, "signin"));
+        event.click(new UIMap().getSignIn());
     }
 
     @Then("^user click fee manager logo$")
     public void user_click_fee_manager_logo() throws Throwable {
         try {
-            if (event.isElementDisplayed(readfile.getElement(file, "feemanagerlogo")))
-                event.click(readfile.getElement(file, "feemanagerlogo"));
+            if (event.isElementDisplayed(new UIMap().getFeeLogo()))
+                event.click(new UIMap().getFeeLogo());
         } catch (Exception e) {
-            if (event.isElementDisplayed(readfile.getElement(file, "feemanagerlogoo")))
-                event.click(readfile.getElement(file, "feemanagerlogoo"));
+            if (event.isElementDisplayed(new UIMap().getFeeLogoo()))
+                event.click(new UIMap().getFeeLogoo());
             dm.switchToWindow(1);
         }
     }

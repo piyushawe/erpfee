@@ -1,12 +1,12 @@
 package pageobjects.transactionreport;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class ReconcileInstallmentClassWise extends GenericReports {
@@ -21,6 +21,7 @@ public class ReconcileInstallmentClassWise extends GenericReports {
     }
 
     public void openReconcileInstallmentClassWise() throws IOException {
-        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
+        ehandler.moveToElement(new UIMap().getTransactionReportMenu());
+        ehandler.openFrame(new UIMap().getReconcileReportsSubMenu(), link, frame);
     }
 }

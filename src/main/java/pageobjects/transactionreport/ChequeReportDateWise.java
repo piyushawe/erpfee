@@ -1,12 +1,12 @@
 package pageobjects.transactionreport;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class ChequeReportDateWise extends GenericReports {
@@ -21,15 +21,16 @@ public class ChequeReportDateWise extends GenericReports {
     }
 
     public void openChequeReportDateWise() throws IOException {
-        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
+        ehandler.moveToElement(new UIMap().getTransactionReportMenu());
+        ehandler.openFrame(new UIMap().getChequeReportsSubmenu(), link, frame);
     }
 
     private void getChequeBankElements() throws IOException {
-        element= readFile.getElement(f1, "chequebank");
-        clear= readFile.getElement(f1, "chequebankclear");
-        values= readFile.getElement(f1, "chequebankvalueslist");
-        close= readFile.getElement(f1, "chequebankclose");
-        message= readFile.getElement(f1, "chequebankmessage");
+        element= readFile.getElement("chequebank");
+        clear= readFile.getElement("chequebankclear");
+        values= readFile.getElement("chequebankvalueslist");
+        close= readFile.getElement("chequebankclose");
+        message= readFile.getElement("chequebankmessage");
     }
 
     public void validateChequeBank() throws IOException {

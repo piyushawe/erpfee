@@ -1,5 +1,6 @@
 package pageobjects.transactionreport;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,9 +20,9 @@ public class DayWiseTotalCollection extends GenericReports {
         PageFactory.initElements(d, this);
     }
 
-    public void openDailyFeeCollectionDateWise() throws IOException {
-        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
-        ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
+    public void openDayWiseTotalCollection() throws IOException {
+        ehandler.moveToElement(new UIMap().getTransactionReportMenu());
+        ehandler.openFrame(new UIMap().getCollectionsSubMenu(), link, frame);
     }
 
     public void getMonthElements() throws IOException {

@@ -1,12 +1,12 @@
 package pageobjects.reports;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class ClassWiseSibling extends GenericReports {
@@ -21,6 +21,6 @@ public class ClassWiseSibling extends GenericReports {
     }
 
     public void openClassWiseSibling() throws IOException {
-        ehandler.openFrame(readFile.getElement(fileUI, "reportsmenu"), link, frame);
+        ehandler.openFrame(new UIMap().getReportsMenu(), link, frame);
     }
 }

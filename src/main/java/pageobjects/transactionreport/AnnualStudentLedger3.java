@@ -1,12 +1,12 @@
 package pageobjects.transactionreport;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class AnnualStudentLedger3 extends GenericReports {
@@ -21,8 +21,7 @@ public class AnnualStudentLedger3 extends GenericReports {
     }
 
     public void openAnnualStudentLedger3() throws IOException {
-        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
-        ehandler.openFrame(readFile.getElement(fileUI, "ledgerreportssubmenu"), link, frame);
+        ehandler.moveToElement(new UIMap().getTransactionReportMenu());
+        ehandler.openFrame(new UIMap().getFeeLedgerReportsSubmenu(), link, frame);
     }
-
 }

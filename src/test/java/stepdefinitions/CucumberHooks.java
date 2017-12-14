@@ -16,7 +16,7 @@ public class CucumberHooks extends GenericBaseClass {
     @Before
     public void getScenario(Scenario sc) {
         scenario = sc.getSourceTagNames();
-        System.out.println("Scenario is: " + scenario);
+        //System.out.println("Scenario is: " + scenario);
     }
 
     @Before

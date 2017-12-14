@@ -1,12 +1,12 @@
 package pageobjects.transactionreport;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class AmountWithoutStructureReport extends GenericReports {
@@ -21,17 +21,19 @@ public class AmountWithoutStructureReport extends GenericReports {
     }
 
     public void openAmountWithoutStructureReport() throws IOException {
-        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
+        ehandler.moveToElement(new UIMap().getTransactionReportMenu());
+        ehandler.openFrame(new UIMap().getAmountWithoutStructureReportsSubMenu(), link, frame);
     }
 
     public void selectYear(int index) throws IOException, InterruptedException {
-        ehandler.selectByIndex(readFile.getElement(f1, "year"), index);
+        ehandler.selectByIndex(readFile.getElement("year"), index);
     }
+
     public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {
-        ehandler.selectDate(readFile.getElement(f1, "todate"), mm, yy, dd);
+        ehandler.selectDate(readFile.getElement("todate"), mm, yy, dd);
     }
 
     public void clickCancelledFee() throws IOException {
-        ehandler.click(readFile.getElement(f1, "cancelledfee"));
+        ehandler.click(readFile.getElement("cancelledfee"));
     }
 }

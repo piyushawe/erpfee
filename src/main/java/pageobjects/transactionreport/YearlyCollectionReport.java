@@ -1,5 +1,6 @@
 package pageobjects.transactionreport;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,8 +23,8 @@ public class YearlyCollectionReport extends GenericReports {
     }
 
     public void openYearlyCollectionReport() throws IOException {
-        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
-        ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
+        ehandler.moveToElement(new UIMap().getTransactionReportMenu());
+        ehandler.openFrame(new UIMap().getCollectionsSubMenu(), link, frame);
     }
 
     public void selectSession(String sess) throws IOException, InterruptedException {

@@ -1,12 +1,12 @@
 package pageobjects.reports;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class ClassWiseStudentDetails extends GenericReports {
@@ -21,14 +21,14 @@ public class ClassWiseStudentDetails extends GenericReports {
     }
 
     public void openClassWiseStudentDetails() throws IOException {
-        ehandler.openFrame(readFile.getElement(fileUI, "reportsmenu"), link, frame);
+        ehandler.openFrame(new UIMap().getReportsMenu(), link, frame);
     }
 
     public void selectDayScholarBoarding() throws IOException {
-        ehandler.click(readFile.getElement(f1, "dayscholarboarding"));
+        ehandler.click(readFile.getElement("dayscholarboarding"));
     }
 
     public void selectShowRollNo() throws IOException {
-        ehandler.click(readFile.getElement(f1, "rollno"));
+        ehandler.click(readFile.getElement("rollno"));
     }
 }

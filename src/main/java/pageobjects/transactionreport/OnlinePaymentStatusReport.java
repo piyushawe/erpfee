@@ -1,12 +1,12 @@
 package pageobjects.transactionreport;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class OnlinePaymentStatusReport extends GenericReports {
@@ -21,6 +21,6 @@ public class OnlinePaymentStatusReport extends GenericReports {
     }
 
     public void openOnlinePaymentStatusReport() throws IOException {
-        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
+        ehandler.openFrame(new UIMap().getTransactionReportMenu(), link, frame);
     }
 }

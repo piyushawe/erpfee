@@ -1,20 +1,26 @@
 package utilities;
 
+import automationFramework.supportMethods.ReadFile;
+import automationFramework.supportMethods.UIMap;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import supportclasses.GenericBaseClass;
+import webdriver.DriverMethods;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
 import static webdriver.AppDriver.getCurrentDriver;
 
-public class EventHandlingUtility extends GenericBaseClass {
+public class EventHandlingUtility {
+    private File fileUI= new File("configuration\\UIMap.properties");
+    private ReadFile readFile= new ReadFile();
+    private DriverMethods dm= new DriverMethods();
     private String value="";
 
     public void openFrame(WebElement menu, WebElement link, WebElement frame) throws IOException {
@@ -84,10 +90,9 @@ public class EventHandlingUtility extends GenericBaseClass {
 
 //click particular cell of table
     private void selectValueFromTable(WebElement table, String value) throws IOException {
-      List<WebElement> cells=readFile.getElements(fileUI, "cell");
+      List<WebElement> cells = new UIMap().getCell();
       for(WebElement cell: cells) {
           if (cell.getText().equals(value)){
-            //System.out.println("cell value"+cell.getText());
             cell.click();
             break;
           }
@@ -106,14 +111,12 @@ public class EventHandlingUtility extends GenericBaseClass {
 
     public void selectDate(WebElement date, String mm, String yy, String dd) throws IOException, InterruptedException {
       click(date);
-      dm.waitUntil((readFile.getElement(fileUI,"monthpicker")),20);
-      readFile.getElement(fileUI,"monthpicker");
-      dm.waitUntil(readFile.getElement(fileUI,"monthpicker"),200);
-      selectByVisibleText(readFile.getElement(fileUI,"monthpicker"), mm);
-      dm.waitUntil(readFile.getElement(fileUI,"yearpicker"),20);
-      selectByVisibleText(readFile.getElement(fileUI,"yearpicker"), yy);
-      dm.waitUntil(readFile.getElement(fileUI,"daypicker"),200);
-      selectValueFromTable(readFile.getElement(fileUI,"daypicker"), dd);
+      dm.waitUntil(new UIMap().getMonthPicker(),200);
+      selectByVisibleText(new UIMap().getMonthPicker(), mm);
+      dm.waitUntil(new UIMap().getYearPicker(),20);
+      selectByVisibleText(new UIMap().getYearPicker(), yy);
+      dm.waitUntil(new UIMap().getDayPicker(),200);
+      selectValueFromTable(new UIMap().getDayPicker(), dd);
       Thread.sleep(500);
     }
 
@@ -135,7 +138,7 @@ public class EventHandlingUtility extends GenericBaseClass {
         if (!div.getAttribute("style").contains("block")) {
             click(element);
         }
-        List<WebElement> options = readFile.getElements(file, values, "tablelist");
+        List<WebElement> options = readFile.getElements(fileUI, values, "tablelist");
         if (options.isEmpty())
             System.out.println("No Value Present");
         else
@@ -147,7 +150,6 @@ public class EventHandlingUtility extends GenericBaseClass {
         HashMap<String, Integer> radioList= new HashMap<String, Integer>();
         for (WebElement emt: elements){
             String id= emt.getAttribute("id");
-
             System.out.println(emt.getText());
         }
     }

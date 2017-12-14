@@ -1724,7 +1724,7 @@ public class TestSteps {
 //daily fee collection account wise
     @Then("^user open daily fee collection account wise$")
     public void user_open_daily_fee_collection_account_wise() throws Throwable {
-        new DailyFeeCollectionAccountWise(driver).openDailyFeeCollectionDateWise();
+        new DailyFeeCollectionAccountWise(driver).openDailyFeeCollectionAccountWise();
     }
 
     @Then("^verify validation when no class is selected on daily fee collection account wise$")
@@ -2040,7 +2040,7 @@ public class TestSteps {
 //day wise total collection
     @Then("^user open day wise total collection$")
     public void user_open_day_wise_total_collection() throws Throwable {
-        new DayWiseTotalCollection(driver).openDailyFeeCollectionDateWise();
+        new DayWiseTotalCollection(driver).openDayWiseTotalCollection();
     }
 
     @Then("^verify validation when no class is selected on day wise total collection$")

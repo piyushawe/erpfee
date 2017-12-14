@@ -1,11 +1,11 @@
 package utilities;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import supportclasses.GenericBaseClass;
 import webdriver.DriverMethods;
 
-import java.io.File;
 import java.io.IOException;
 
 public abstract class GenericReports extends GenericBaseClass {
@@ -32,7 +32,7 @@ public abstract class GenericReports extends GenericBaseClass {
     protected WebElement values;
     protected WebElement close;
     protected WebElement message;
-    protected File f1;
+    //protected File f1;
 
     private void getClassElements() throws IOException {
         element = readFile.getElement("class");
@@ -226,35 +226,35 @@ public abstract class GenericReports extends GenericBaseClass {
     }
 
     public void validateReceiptFromMessage() throws IOException {
-        verify.verifyValidationMessage(readFile.readProperty(fileUI, "receiptnomessage"), readFile.getElement(fileUI, "receiptfrom"));
+        verify.verifyValidationMessage(readFile.readProperty(fileUI, "receiptnomessage"), new UIMap().getReceiptFrom());
     }
 
     public void validateReceiptToMessage() throws IOException {
-        verify.verifyValidationMessage(readFile.readProperty(fileUI, "receiptnomessage"), readFile.getElement(fileUI, "receiptto"));
+        verify.verifyValidationMessage(readFile.readProperty(fileUI, "receiptnomessage"), new UIMap().getReceiptTo());
     }
 
     public void validateReceiptFromLength() throws IOException {
-        verify.verifyValidationMessage(readFile.readProperty(fileUI, "receiptnolengthmessage"), readFile.getElement(fileUI, "receiptfromlength"));
+        verify.verifyValidationMessage(readFile.readProperty(fileUI, "receiptnolengthmessage"), new UIMap().getReceiptFromLength());
     }
 
     public void validateReceiptToLength() throws IOException {
-        verify.verifyValidationMessage(readFile.readProperty(fileUI, "receiptnolengthmessage"), readFile.getElement(fileUI, "receipttolength"));
+        verify.verifyValidationMessage(readFile.readProperty(fileUI, "receiptnolengthmessage"), new UIMap().getReceiptToLength());
     }
 
     public void validateDateAlertMessage() throws IOException {
-        verify.verifyValidationMessage(readFile.readProperty(fileUI, "datemessage"), readFile.getElement(fileUI, "popupmessage"));
+        verify.verifyValidationMessage(readFile.readProperty(fileUI, "datemessage"), new UIMap().getPopUpMessage());
     }
 
     public void validateBlankReceiptFromAlertMessage() throws IOException {
-        verify.verifyValidationMessage(readFile.readProperty(fileUI, "receiptfromblankmessage"), readFile.getElement(fileUI, "popupmessage"));
+        verify.verifyValidationMessage(readFile.readProperty(fileUI, "receiptfromblankmessage"), new UIMap().getPopUpMessage());
     }
 
     public void validateBlankReceiptToAlertMessage() throws IOException {
-        verify.verifyValidationMessage(readFile.readProperty(fileUI, "receipttoblankmessage"), readFile.getElement(fileUI, "popupmessage"));
+        verify.verifyValidationMessage(readFile.readProperty(fileUI, "receipttoblankmessage"), new UIMap().getPopUpMessage());
     }
 
     public void validateInvalidReceiptRangeAlertMessage() throws IOException {
-        verify.verifyValidationMessage(readFile.readProperty(fileUI, "invalidreceiptrangemessage"), readFile.getElement(fileUI, "popupmessage"));
+        verify.verifyValidationMessage(readFile.readProperty(fileUI, "invalidreceiptrangemessage"), new UIMap().getPopUpMessage());
     }
 
     public void clickShow() {

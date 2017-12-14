@@ -1,12 +1,12 @@
 package pageobjects.globalmasters;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.BaseClass;
 
-import java.io.File;
 import java.io.IOException;
 
 public class DefineSection extends BaseClass {
@@ -22,7 +22,7 @@ public class DefineSection extends BaseClass {
 
     public void openDefineSection() throws IOException {
 
-        ehandler.openFrame(readFile.getElement(fileUI,"globalmastersmenu"), link, frame);
+        ehandler.openFrame(new UIMap().getGlobalMastersMenu(), link, frame);
     }
 
     public void enterSectionName(String section) throws IOException {
@@ -34,7 +34,7 @@ public class DefineSection extends BaseClass {
     }
 
     public void enterSectionName(int section) throws IOException {
-        ehandler.enterText(readFile.getElement(file, "sectionname"), section);
+        ehandler.enterText(readFile.getElement("sectionname"), section);
     }
 
     public void enterOrderNo(int orderno) throws IOException {

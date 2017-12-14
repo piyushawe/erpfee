@@ -1,12 +1,12 @@
 package pageobjects.transactionreport;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class ReceiptWiseFeeTypeCollection extends GenericReports {
@@ -21,16 +21,16 @@ public class ReceiptWiseFeeTypeCollection extends GenericReports {
     }
 
     public void openReceiptWiseFeeTypeCollection() throws IOException {
-        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
-        ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
+        ehandler.moveToElement(new UIMap().getTransactionReportMenu());
+        ehandler.openFrame(new UIMap().getCollectionsSubMenu(), link, frame);
     }
 
     private void getBankNameElements() throws IOException {
-        element= readFile.getElement(f1, "bankname");
-        clear= readFile.getElement(f1, "banknameclear");
-        values= readFile.getElement(f1, "banknamevalueslist");
-        close= readFile.getElement(f1, "banknameclose");
-        message= readFile.getElement(f1, "banknamemessage");
+        element= readFile.getElement("bankname");
+        clear= readFile.getElement("banknameclear");
+        values= readFile.getElement("banknamevalueslist");
+        close= readFile.getElement("banknameclose");
+        message= readFile.getElement("banknamemessage");
     }
 
     public void validateBankName() throws IOException {
@@ -44,26 +44,26 @@ public class ReceiptWiseFeeTypeCollection extends GenericReports {
     }
 
     public void selectNewOldStudent(int index) throws IOException, InterruptedException {
-        ehandler.selectByIndex(readFile.getElement(f1, "newoldstudent"), index);
+        ehandler.selectByIndex(readFile.getElement("newoldstudent"), index);
     }
 
     public void selectStudentStatus(int index) throws IOException, InterruptedException {
-        ehandler.selectByIndex(readFile.getElement(f1, "studentstatus"), index);
+        ehandler.selectByIndex(readFile.getElement("studentstatus"), index);
     }
 
     public void clickShowRemark() throws IOException {
-        ehandler.click(readFile.getElement(f1, "showremark"));
+        ehandler.click(readFile.getElement("showremark"));
     }
 
     public void selectStudentWise() throws IOException {
-        ehandler.click(readFile.getElement(f1, "studentwise"));
+        ehandler.click(readFile.getElement("studentwise"));
     }
 
     public void selectHeadWise() throws IOException {
-        ehandler.click(readFile.getElement(f1, "headwise"));
+        ehandler.click(readFile.getElement("headwise"));
     }
 
     public void selectDateWise() throws IOException {
-        ehandler.click(readFile.getElement(f1, "datewise"));
+        ehandler.click(readFile.getElement("datewise"));
     }
 }

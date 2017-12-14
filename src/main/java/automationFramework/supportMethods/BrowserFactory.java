@@ -34,7 +34,6 @@ public class BrowserFactory extends GenericBaseClass {
                 break;
             default:
                 lm.logger.info(page + ":" + readFile.readProperty(fileMsg, "browsernotdefined"));
-
         }
         return driver;
     }

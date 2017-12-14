@@ -1,12 +1,12 @@
 package pageobjects.transactionreport;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenericReports;
 
-import java.io.File;
 import java.io.IOException;
 
 public class ChequeClearingStatusReport extends GenericReports {
@@ -21,22 +21,23 @@ public class ChequeClearingStatusReport extends GenericReports {
     }
 
     public void openChequeClearingStatusReport() throws IOException {
-        ehandler.openFrame(readFile.getElement(fileUI, "transactionreportmenu"), link, frame);
+        ehandler.moveToElement(new UIMap().getTransactionReportMenu());
+        ehandler.openFrame(new UIMap().getChequeReportsSubmenu(), link, frame);
     }
 
     private void getChequeDetailsElements() throws IOException {
-        element= readFile.getElement(f1, "chequedetails");
-        clear= readFile.getElement(f1, "chequedetailsclear");
-        values= readFile.getElement(f1, "chequedetailsvalueslist");
-        close= readFile.getElement(f1, "chequedetailsclose");
+        element= readFile.getElement("chequedetails");
+        clear= readFile.getElement("chequedetailsclear");
+        values= readFile.getElement("chequedetailsvalueslist");
+        close= readFile.getElement("chequedetailsclose");
     }
 
     private void getBankNameElements() throws IOException {
-        element= readFile.getElement(f1, "bankname");
-        clear= readFile.getElement(f1, "banknameclear");
-        values= readFile.getElement(f1, "banknamevalueslist");
-        close= readFile.getElement(f1, "banknameclose");
-        message= readFile.getElement(f1, "banknamemessage");
+        element= readFile.getElement("bankname");
+        clear= readFile.getElement("banknameclear");
+        values= readFile.getElement("banknamevalueslist");
+        close= readFile.getElement("banknameclose");
+        message= readFile.getElement("banknamemessage");
     }
 
     public void validateBankName() throws IOException {
@@ -55,6 +56,6 @@ public class ChequeClearingStatusReport extends GenericReports {
     }
 
     public void selectClearingStatus(int index) throws IOException, InterruptedException {
-        ehandler.selectByIndex(readFile.getElement(f1,"clearingstatus"), index);
+        ehandler.selectByIndex(readFile.getElement("clearingstatus"), index);
     }
 }
