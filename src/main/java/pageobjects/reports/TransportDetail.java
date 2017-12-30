@@ -13,7 +13,7 @@ public class TransportDetail extends GenericReports {
     @FindBy(linkText = "Transport Detail")private WebElement link;
     @FindBy(id="Transport Detail")private WebElement frame;
 
-    public TransportDetail(WebDriver d) throws IOException {
+    public TransportDetail(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

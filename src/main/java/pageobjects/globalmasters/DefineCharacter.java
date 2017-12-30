@@ -13,7 +13,7 @@ public class DefineCharacter extends BaseClass {
   @FindBy(linkText = "Define Character") private WebElement link;
   @FindBy(id = "Define Character") private WebElement frame;
 
-  public DefineCharacter(WebDriver d) throws IOException {
+  public DefineCharacter(WebDriver d) {
       page = this.getClass().getSimpleName();
       pack = gm.getPackage(this.getClass().getPackage().getName());
       file = gm.getFilePath(page, pack);

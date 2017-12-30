@@ -14,7 +14,7 @@ public class DefineMoral extends BaseClass {
   @FindBy(linkText = "Define Moral")private WebElement link;
   @FindBy(id = "Define Moral")private WebElement frame;
 
-  public DefineMoral(WebDriver d) throws IOException {
+  public DefineMoral(WebDriver d) {
       page = this.getClass().getSimpleName();
       pack = gm.getPackage(this.getClass().getPackage().getName());
       file = gm.getFilePath(page, pack);

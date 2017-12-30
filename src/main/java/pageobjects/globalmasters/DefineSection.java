@@ -13,7 +13,7 @@ public class DefineSection extends BaseClass {
     @FindBy(xpath = "//*[contains(text(),'Define Section')]")private WebElement link;
     @FindBy(id = "Define Section")private WebElement frame;
 
-    public DefineSection(WebDriver d) throws IOException {
+    public DefineSection(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

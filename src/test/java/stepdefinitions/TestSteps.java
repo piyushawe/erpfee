@@ -2638,6 +2638,11 @@ public class TestSteps {
         new MonthlyConsolidatedReport(driver).clickShow();
     }
 
+    @When("^click settlement date on monthly consolidated report$")
+    public void click_settlement_date_on_monthly_consolidated_report() throws Throwable {
+        new MonthlyConsolidatedReport(driver).clickSettlementDate();
+    }
+
     @When("^click cheque clearing date on monthly consolidated report$")
     public void click_cheque_clearing_date_on_monthly_consolidated_report() throws Throwable {
         new MonthlyConsolidatedReport(driver).clickChequeClearanceDate();
@@ -3182,9 +3187,19 @@ public class TestSteps {
         new ReconcileReport(driver).clickButton(arg1);
     }
 
-    @When("^click format on reconcile report$")
-    public void click_format_on_reconcile_report() throws Throwable {
+    @When("^click format one on reconcile report$")
+    public void click_format_one_on_reconcile_report() throws Throwable {
         new ReconcileReport(driver).clickFormat1();
+    }
+
+    @When("^click format two on reconcile report$")
+    public void click_format_two_on_reconcile_report() throws Throwable {
+        new ReconcileReport(driver).clickFormat2();
+    }
+
+    @When("^click format three on reconcile report$")
+    public void click_format_three_on_reconcile_report() throws Throwable {
+        new ReconcileReport(driver).clickFormat3();
     }
 
 //reconcile installment class wise
@@ -3325,6 +3340,11 @@ public class TestSteps {
     @Then("^select installment on bad debts report$")
     public void select_installment_on_bad_debts_report() throws Throwable {
         new BadDebtsReport(driver).selectInstallment();
+    }
+
+    @When("^select student status with index \"([^\"]*)\" on bad debts report$")
+    public void select_student_status_with_index_on_bad_debts_report(int arg1) throws Throwable {
+        new BadDebtsReport(driver).selectStudentStatus(arg1);
     }
 
     @Then("^click show on bad debts report$")

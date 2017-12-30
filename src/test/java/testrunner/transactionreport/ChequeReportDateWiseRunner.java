@@ -6,13 +6,13 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features= {"featurefiles/transactionreport/ChequeReportDateWise"}
+        features= {"featurefiles/transactionreport/ChequeReportDateWise.feature"}
         ,glue= {"stepdefinitions"}
         ,monochrome=true
         ,plugin= {"pretty","html:target/cucumber_html_report",
         "json:target/cucumber.json",
         "junit:target/cucumber.xml"}
-        ,tags= {"@scenario4"}
+        ,tags= {"@scenario3"}
 )
 public class ChequeReportDateWiseRunner {
 }

@@ -13,7 +13,7 @@ public class ClassWiseStudentDetails extends GenericReports {
     @FindBy(linkText = "Class Wise Student Details")private WebElement link;
     @FindBy(id="Class Wise Student Details")private WebElement frame;
 
-    public ClassWiseStudentDetails(WebDriver d) throws IOException {
+    public ClassWiseStudentDetails(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

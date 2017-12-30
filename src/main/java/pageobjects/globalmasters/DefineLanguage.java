@@ -13,7 +13,7 @@ public class DefineLanguage extends BaseClass{
   @FindBy(linkText = "Define Language")private WebElement link;
   @FindBy(id = "Define Language")private WebElement frame;
 
-  public DefineLanguage(WebDriver d) throws IOException {
+  public DefineLanguage(WebDriver d) {
       page = this.getClass().getSimpleName();
       pack = gm.getPackage(this.getClass().getPackage().getName());
       file = gm.getFilePath(page, pack);

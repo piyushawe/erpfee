@@ -24,7 +24,7 @@ Feature: Fees Cheque Bounce Report
   @verify_with_filters @scenario3
   Scenario: To verify fees cheque bounce report with filters
     And select school with index "1" on fees cheque bounce report
-    And select from date as month "August" year "2017" and day "10" on fees cheque bounce report
+    And select from date as month "April" year "2017" and day "1" on fees cheque bounce report
     And select to date as month "March" year "2018" and day "31" on fees cheque bounce report
     And select class with index "1" on fees cheque bounce report
     And select section with index "1" on fees cheque bounce report
@@ -35,6 +35,6 @@ Feature: Fees Cheque Bounce Report
 
   @verify_with_no_filters @scenario4
   Scenario: To verify fees cheque bounce report without selecting any filter
-    And select from date as month "August" year "2017" and day "10" on fees cheque bounce report
+    And select from date as month "April" year "2017" and day "1" on fees cheque bounce report
     And click head wise on fees cheque bounce report
     Then click show on fees cheque bounce report

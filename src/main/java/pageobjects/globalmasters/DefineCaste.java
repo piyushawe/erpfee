@@ -15,7 +15,7 @@ public class DefineCaste extends BaseClass {
     @FindBy(id = "Define Caste")
     private WebElement frame;
 
-    public DefineCaste(WebDriver d) throws IOException {
+    public DefineCaste(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

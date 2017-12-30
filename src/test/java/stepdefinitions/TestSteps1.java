@@ -3,6 +3,8 @@ package stepdefinitions;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pageobjects.reports.*;
+import pageobjects.transactionreport.AmountWithoutStructureForStaff;
+import pageobjects.transactionreport.StudentAmountFeeTypeWise;
 
 import static webdriver.AppDriver.driver;
 public class TestSteps1 {
@@ -404,4 +406,92 @@ public class TestSteps1 {
     public void click_show_on_transport_detail() throws Throwable {
         new TransportDetail(driver).clickShow();
     }
+
+//amount without structure for staff
+    @Then("^user open amount without structure for staff report$")
+    public void user_open_amount_without_structure_for_staff_report() throws Throwable {
+        new AmountWithoutStructureForStaff(driver).openAmountWithoutStructureForStaff();
+    }
+
+    @Then("^select year with index \"([^\"]*)\" on amount without structure for staff$")
+    public void select_year_with_index_on_amount_without_structure_for_staff(int arg1) throws Throwable {
+        new AmountWithoutStructureForStaff(driver).selectYear(arg1);
+    }
+
+    @Then("^select school with index \"([^\"]*)\" on amount without structure for staff$")
+    public void select_school_with_index_on_amount_without_structure_for_staff(int arg1) throws Throwable {
+       new AmountWithoutStructureForStaff(driver).selectSchool(arg1);
+    }
+
+    @Then("^select staff type with index \"([^\"]*)\" on amount without structure for staff$")
+    public void select_staff_type_with_index_on_amount_without_structure_for_staff(int arg1) throws Throwable {
+        new AmountWithoutStructureForStaff(driver).selectStaffType(arg1);
+    }
+
+    @Then("^select designation with index \"([^\"]*)\" on amount without structure for staff$")
+    public void select_designation_with_index_on_amount_without_structure_for_staff(int arg1) throws Throwable {
+        new AmountWithoutStructureForStaff(driver).selectDesignation(arg1);
+    }
+
+    @Then("^select department with index \"([^\"]*)\" on amount without structure for staff$")
+    public void select_department_with_index_on_amount_without_structure_for_staff(int arg1) throws Throwable {
+        new AmountWithoutStructureForStaff(driver).selectDepartment(arg1);
+    }
+
+    @Then("^select from date as month \"([^\"]*)\" year \"([^\"]*)\" and day \"([^\"]*)\" on amount without structure for staff$")
+    public void select_from_date_as_month_year_and_day_on_amount_without_structure_for_staff(String arg1, String arg2, String arg3) throws Throwable {
+        new AmountWithoutStructureForStaff(driver).selectFromDate(arg1, arg2, arg3);
+    }
+
+    @Then("^select user with index \"([^\"]*)\" on amount without structure for staff$")
+    public void select_user_with_index_on_amount_without_structure_for_staff(int arg1) throws Throwable {
+        new AmountWithoutStructureForStaff(driver).selectUser(arg1);
+    }
+
+    @Then("^click cancelled fee on amount without structure for staff$")
+    public void click_cancelled_fee_on_amount_without_structure_for_staff() throws Throwable {
+        new AmountWithoutStructureForStaff(driver).clickCancelledFee();
+    }
+
+    @Then("^click show on amount without structure for staff$")
+    public void click_show_on_amount_without_structure_for_staff() throws Throwable {
+        new AmountWithoutStructureForStaff(driver).clickShow();
+    }
+
+//student amount fee type wise
+    @When("^user open student amount fee type wise$")
+    public void user_open_student_amount_fee_type_wise() throws Throwable {
+        new StudentAmountFeeTypeWise(driver).openStudentAmountFeeTypeWise();
+    }
+
+    @When("^select class with index \"([^\"]*)\" on student amount fee type wise$")
+    public void select_class_with_index_on_student_amount_fee_type_wise(int arg1) throws Throwable {
+        new StudentAmountFeeTypeWise(driver).selectClass(arg1);
+    }
+
+    @When("^select section with index \"([^\"]*)\" on student amount fee type wise$")
+    public void select_section_with_index_on_student_amount_fee_type_wise(int arg1) throws Throwable {
+        new StudentAmountFeeTypeWise(driver).selectSection(arg1);
+    }
+
+    @When("^select fee type with index \"([^\"]*)\" on student amount fee type wise$")
+    public void select_fee_type_with_index_on_student_amount_fee_type_wise(int arg1) throws Throwable {
+        new StudentAmountFeeTypeWise(driver).selectFeeType(arg1);
+    }
+
+    @When("^select concession on student amount fee type wise$")
+    public void select_concession_on_student_amount_fee_type_wise() throws Throwable {
+        new StudentAmountFeeTypeWise(driver).selectConcession();
+    }
+
+    @When("^select installment on student amount fee type wise$")
+    public void select_installment_on_student_amount_fee_type_wise() throws Throwable {
+        new StudentAmountFeeTypeWise(driver).selectInstallment();
+    }
+
+    @Then("^click show on student amount fee type wise$")
+    public void click_show_on_student_amount_fee_type_wise() throws Throwable {
+        new StudentAmountFeeTypeWise(driver).clickShow();
+    }
+
 }

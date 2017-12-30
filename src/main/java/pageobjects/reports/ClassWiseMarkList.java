@@ -13,7 +13,7 @@ public class ClassWiseMarkList extends GenericReports {
     @FindBy(linkText = "Class Wise Mark List")private WebElement link;
     @FindBy(id="Class Wise Mark List")private WebElement frame;
 
-    public ClassWiseMarkList(WebDriver d) throws IOException {
+    public ClassWiseMarkList(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

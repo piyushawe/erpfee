@@ -20,7 +20,7 @@ public class ExcelUtility extends GenericBaseClass {
 
     public void prepareErrorLog(ArrayList<String> list) throws IOException {
         ArrayList<String> lst = new ArrayList<String>(Arrays.asList("Date", "Scenario", "Page", "Error Message"));
-        File file = new File("E:/testreports/" + readFile.readProperty(fileUI, "schoolname") + "/" + readFile.readProperty(fileUI, "errorlogexcelname"));
+        File file = new File("E:/testreports/" + readFile.readProperty(fileUI, "schoolname") + File.separator + readFile.readProperty(fileUI, "errorlogexcelname"));
         createFile(file);
         fis = new FileInputStream(file);
         workbook = new HSSFWorkbook();

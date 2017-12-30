@@ -13,7 +13,7 @@ public class DefineWing extends BaseClass {
     @FindBy(linkText = "Define Wing")private WebElement link;
     @FindBy(id = "Define Wing")private WebElement frame;
 
-    public DefineWing(WebDriver d) throws IOException {
+    public DefineWing(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

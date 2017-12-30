@@ -13,7 +13,7 @@ public class ClassWiseSibling extends GenericReports {
     @FindBy(linkText = "Class Wise Sibling")private WebElement link;
     @FindBy(id="Class Wise Sibling")private WebElement frame;
 
-    public ClassWiseSibling(WebDriver d) throws IOException {
+    public ClassWiseSibling(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

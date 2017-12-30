@@ -118,7 +118,7 @@ public class UIMap extends GenericBaseClass {
     }
 
     public WebElement getTransportReportSubMenu() throws IOException {
-        return readFile.getElement("transactionreportmenu");
+        return readFile.getElement("transportreportsubmenu");
     }
 
     public WebElement getMonthPicker() throws IOException {

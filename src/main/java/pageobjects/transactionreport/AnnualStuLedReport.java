@@ -13,7 +13,7 @@ public class AnnualStuLedReport extends GenericReports {
     @FindBy(linkText = "Annual Stu Led Report")WebElement link;
     @FindBy(id = "Annual Stu Led Report")WebElement frame;
 
-    public AnnualStuLedReport(WebDriver d) throws IOException {
+    public AnnualStuLedReport(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

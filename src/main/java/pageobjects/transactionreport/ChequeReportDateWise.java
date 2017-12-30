@@ -13,7 +13,7 @@ public class ChequeReportDateWise extends GenericReports {
     @FindBy(linkText = "Cheque Report Date Wise")WebElement link;
     @FindBy(id = "Cheque Report Date Wise")WebElement frame;
 
-    public ChequeReportDateWise(WebDriver d) throws IOException {
+    public ChequeReportDateWise(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

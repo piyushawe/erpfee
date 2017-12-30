@@ -13,7 +13,7 @@ public class OnlinePaymentStatusReport extends GenericReports {
     @FindBy(xpath = "//*[contains(text(), 'Online Payment Status Report')]")WebElement link;
     @FindBy(id = "Online Payment Status Report")WebElement frame;
 
-    public OnlinePaymentStatusReport(WebDriver d) throws IOException {
+    public OnlinePaymentStatusReport(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

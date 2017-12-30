@@ -8,7 +8,7 @@ import webdriver.DriverMethods;
 
 import java.io.IOException;
 
-public abstract class GenericReports extends GenericBaseClass {
+ public abstract class GenericReports extends GenericBaseClass {
 
     @FindBy(id = "ContentPlaceHolder1_txtDateFrom_TextBox")
     protected WebElement fromdate;
@@ -32,7 +32,8 @@ public abstract class GenericReports extends GenericBaseClass {
     protected WebElement values;
     protected WebElement close;
     protected WebElement message;
-    //protected File f1;
+
+    private static final String INSTALLMENT = "installment";
 
     private void getClassElements() throws IOException {
         element = readFile.getElement("class");
@@ -67,7 +68,7 @@ public abstract class GenericReports extends GenericBaseClass {
     }
 
     private void getInstallmentElements() throws IOException {
-        element = readFile.getElement("installment");
+        element = readFile.getElement(INSTALLMENT);
         clear = readFile.getElement("installmentclear");
         values = readFile.getElement("installmentvalueslist");
         close = readFile.getElement("installmentclose");
@@ -96,7 +97,7 @@ public abstract class GenericReports extends GenericBaseClass {
 
     public void validateInstallment() throws IOException {
         getInstallmentElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "installment"));
+        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, INSTALLMENT));
     }
 
     public void selectSchool(int index) throws IOException, InterruptedException {
@@ -130,11 +131,11 @@ public abstract class GenericReports extends GenericBaseClass {
     }
 
     public void selectInstallment(int index) throws IOException, InterruptedException {
-        ehandler.selectByIndex(readFile.getElement("installment"), index);
+        ehandler.selectByIndex(readFile.getElement(INSTALLMENT), index);
     }
 
     public void selectInstallment(String inst) throws IOException, InterruptedException {
-        ehandler.selectByVisibleText(readFile.getElement("installment"), inst);
+        ehandler.selectByVisibleText(readFile.getElement(INSTALLMENT), inst);
     }
 
     public void selectEntryMode() throws IOException {

@@ -13,7 +13,7 @@ public class FeesChequeBounceReport extends GenericReports {
     @FindBy(linkText = "Fees Cheque Bounce Report")WebElement link;
     @FindBy(id = "Fees Cheque Bounce Report")WebElement frame;
 
-    public FeesChequeBounceReport(WebDriver d) throws IOException {
+    public FeesChequeBounceReport(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);
@@ -21,7 +21,8 @@ public class FeesChequeBounceReport extends GenericReports {
     }
 
     public void openFeesChequeBounceReport() throws IOException {
-        ehandler.openFrame(new UIMap().getTransactionReportMenu(), link, frame);
+        ehandler.moveToElement(new UIMap().getTransactionReportMenu());
+        ehandler.openFrame(new UIMap().getCancelledReceiptReportsSubmenu(), link, frame);
     }
 
     public void selectBankName(int index) throws IOException, InterruptedException {
@@ -32,6 +33,7 @@ public class FeesChequeBounceReport extends GenericReports {
         ehandler.selectByIndex(readFile.getElement("reportfilter"), index);
     }
 
+    @Override
     public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {
         ehandler.selectDate(readFile.getElement("todate"), mm, yy, dd);
     }

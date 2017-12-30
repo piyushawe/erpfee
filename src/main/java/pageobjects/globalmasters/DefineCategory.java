@@ -13,7 +13,7 @@ public class DefineCategory extends BaseClass {
     @FindBy(linkText = "Define Category") private WebElement link;
     @FindBy(id = "Define Category") private WebElement frame;
 
-    public DefineCategory(WebDriver d) throws IOException {
+    public DefineCategory(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

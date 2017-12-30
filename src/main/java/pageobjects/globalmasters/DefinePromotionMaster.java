@@ -13,7 +13,7 @@ public class DefinePromotionMaster extends BaseClass {
     @FindBy(linkText = "Define Promotion Master")private WebElement link;
     @FindBy(id = "Define Promotion Master ")private WebElement frame;
 
-    public DefinePromotionMaster(WebDriver d) throws IOException {
+    public DefinePromotionMaster(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

@@ -4,7 +4,7 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import supportclasses.GenericBaseClass;
-import utilities.VerifyErrorUtility;
+import utilities.GenericUtility;
 
 import java.io.IOException;
 
@@ -12,7 +12,7 @@ import static webdriver.AppDriver.driver;
 import static webdriver.AppDriver.getCurrentDriver;
 
 public class CucumberHooks extends GenericBaseClass {
-
+    GenericUtility utility = new GenericUtility();
     @Before
     public void getScenario(Scenario sc) {
         scenario = sc.getSourceTagNames();
@@ -27,10 +27,10 @@ public class CucumberHooks extends GenericBaseClass {
 
     @After
     public void afterScenario(Scenario scenario) throws IOException {
-        VerifyErrorUtility errorUtility = new VerifyErrorUtility();
+        //VerifyErrorUtility errorUtility = new VerifyErrorUtility();
         if (scenario.isFailed()) {
-            errorUtility.verifyPageError();
-            //utility.takeScreenshot();
+            //errorUtility.verifyPageError();
+            utility.takeScreenshot();
         }
     }
 

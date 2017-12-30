@@ -10,10 +10,12 @@ import utilities.GenericReports;
 import java.io.IOException;
 
 public class FeesConcessionAndDues extends GenericReports {
-    @FindBy(linkText = "Fees Concession And Dues")WebElement link;
-    @FindBy(id = "Fees Concession And Dues")WebElement frame;
+    @FindBy(linkText = "Fees Concession And Dues")
+    WebElement link;
+    @FindBy(id = "Fees Concession And Dues")
+    WebElement frame;
 
-    public FeesConcessionAndDues(WebDriver d) throws IOException {
+    public FeesConcessionAndDues(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);
@@ -26,11 +28,11 @@ public class FeesConcessionAndDues extends GenericReports {
     }
 
     private void getFeeTypeElements() throws IOException {
-        element= readFile.getElement("feetype");
-        clear= readFile.getElement("feetypeclear");
-        values= readFile.getElement("feetypevalueslist");
-        close= readFile.getElement("feetypeclose");
-        message= readFile.getElement("feetypemessage");
+        element = readFile.getElement("feetype");
+        clear = readFile.getElement("feetypeclear");
+        values = readFile.getElement("feetypevalueslist");
+        close = readFile.getElement("feetypeclose");
+        message = readFile.getElement("feetypemessage");
     }
 
     public void validateFeeType() throws IOException {

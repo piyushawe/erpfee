@@ -13,7 +13,7 @@ public class ReconcileInstallmentClassWise extends GenericReports {
     @FindBy(linkText = "Reconcile Installment Class Wise")WebElement link;
     @FindBy(id = "Reconcile Installment Class Wise")WebElement frame;
 
-    public ReconcileInstallmentClassWise(WebDriver d) throws IOException {
+    public ReconcileInstallmentClassWise(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

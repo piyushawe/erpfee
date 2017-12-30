@@ -13,7 +13,7 @@ public class RefundAmount extends GenericReports {
     @FindBy(linkText = "Refund Amount")private WebElement link;
     @FindBy(id="Refund Amount")private WebElement frame;
 
-    public RefundAmount(WebDriver d) throws IOException {
+    public RefundAmount(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);
@@ -24,10 +24,12 @@ public class RefundAmount extends GenericReports {
         ehandler.openFrame(new UIMap().getReportsMenu(), link, frame);
     }
 
+    @Override
     public void selectFromDate(String mm, String yy, String dd) throws IOException, InterruptedException {
         ehandler.selectDate(readFile.getElement("fromdate"), mm, yy, dd);
     }
 
+    @Override
     public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {
         ehandler.selectDate(readFile.getElement("todate"), mm, yy, dd);
     }

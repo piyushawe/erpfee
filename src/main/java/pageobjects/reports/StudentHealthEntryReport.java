@@ -13,7 +13,7 @@ public class StudentHealthEntryReport extends GenericReports {
     @FindBy(linkText = "Student Health Entry Report")private WebElement link;
     @FindBy(id="Student Health Entry Report")private WebElement frame;
 
-    public StudentHealthEntryReport(WebDriver d) throws IOException {
+    public StudentHealthEntryReport(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

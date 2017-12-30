@@ -18,7 +18,7 @@ public class GenericUtility extends GenericBaseClass {
         String school = readFile.readProperty(fileUI, "schoolname");
         String timestamp = getTimeStamp();
         File f = ((TakesScreenshot) getCurrentDriver()).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(f, new File(readFile.readProperty(fileConfig, "screenshotpath") + school + "/" + page + "/" + page + scenario + timestamp + ".png"));
+        FileUtils.copyFile(f, new File(readFile.readProperty(fileConfig, "screenshotpath") + school + File.separator + page + File.separator + page + scenario + timestamp + ".png"));
     }
 
     private String getTimeStamp() {

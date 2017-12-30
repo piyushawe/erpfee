@@ -13,7 +13,7 @@ public class ReconcileReport extends GenericReports {
     @FindBy(linkText = "Reconcile Report")WebElement link;
     @FindBy(id = "Reconcile Report")WebElement frame;
 
-    public ReconcileReport(WebDriver d) throws IOException {
+    public ReconcileReport(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);
@@ -27,5 +27,13 @@ public class ReconcileReport extends GenericReports {
 
     public void clickFormat1() throws IOException {
         ehandler.click(readFile.getElement("format1"));
+    }
+
+    public void clickFormat2() throws IOException {
+        ehandler.click(readFile.getElement("format2"));
+    }
+
+    public void clickFormat3() throws IOException {
+        ehandler.click(readFile.getElement("format3"));
     }
 }

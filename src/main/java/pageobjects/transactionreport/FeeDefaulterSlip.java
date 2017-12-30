@@ -13,7 +13,7 @@ public class FeeDefaulterSlip extends GenericReports {
     @FindBy(linkText = "Fee Defaulter Slip")WebElement link;
     @FindBy(id = "Fee Defaulter Slip")WebElement frame;
 
-    public FeeDefaulterSlip(WebDriver d) throws IOException {
+    public FeeDefaulterSlip(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);
@@ -29,6 +29,7 @@ public class FeeDefaulterSlip extends GenericReports {
         ehandler.click(readFile.getElement("withfine"));
     }
 
+    @Override
     public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {
         ehandler.selectDate(readFile.getElement("tilldate"), mm, yy, dd);
     }

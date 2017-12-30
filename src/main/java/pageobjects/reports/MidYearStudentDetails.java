@@ -13,7 +13,7 @@ public class MidYearStudentDetails extends GenericReports {
     @FindBy(xpath = "//*[contains(text(), 'Mid Year Student Details')]")private WebElement link;
     @FindBy(id="Mid Year Student Details")private WebElement frame;
 
-    public MidYearStudentDetails(WebDriver d) throws IOException {
+    public MidYearStudentDetails(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

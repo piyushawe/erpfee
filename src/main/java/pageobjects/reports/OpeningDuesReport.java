@@ -13,7 +13,7 @@ public class OpeningDuesReport extends GenericReports {
     @FindBy(linkText = "Opening Dues Report")private WebElement link;
     @FindBy(id="Opening Dues Report")private WebElement frame;
 
-    public OpeningDuesReport(WebDriver d) throws IOException {
+    public OpeningDuesReport(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

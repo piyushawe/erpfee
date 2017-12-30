@@ -13,7 +13,7 @@ public class FeeDefaulterInstallmentWise extends GenericReports {
     @FindBy(linkText = "Fee Defaulter Installment Wise")WebElement link;
     @FindBy(id = "Fee Defaulter Installment Wise")WebElement frame;
 
-    public FeeDefaulterInstallmentWise(WebDriver d) throws IOException {
+    public FeeDefaulterInstallmentWise(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);
@@ -37,6 +37,7 @@ public class FeeDefaulterInstallmentWise extends GenericReports {
         ehandler.click(readFile.getElement("withfine"));
     }
 
+    @Override
     public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {
         ehandler.selectDate(readFile.getElement("tilldate"), mm, yy, dd);
     }

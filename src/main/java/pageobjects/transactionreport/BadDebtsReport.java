@@ -13,7 +13,7 @@ public class BadDebtsReport extends GenericReports {
     @FindBy(xpath = "//*[contains(text(), 'Bad Debts Report')]")WebElement link;
     @FindBy(id = "Bad Debts Report")WebElement frame;
 
-    public BadDebtsReport(WebDriver d) throws IOException {
+    public BadDebtsReport(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);
@@ -22,5 +22,9 @@ public class BadDebtsReport extends GenericReports {
 
     public void openBadDebtsReport() throws IOException {
         ehandler.openFrame(new UIMap().getTransactionReportMenu(), link, frame);
+    }
+
+    public void selectStudentStatus(int index) throws IOException, InterruptedException {
+        ehandler.selectByIndex(readFile.getElement("studentstatus"), index);
     }
 }

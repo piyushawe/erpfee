@@ -13,7 +13,7 @@ public class FeeDefaulterReportWithReceiving extends GenericReports {
     @FindBy(linkText = "Fee Defaulter Report With Receiving")WebElement link;
     @FindBy(id = "Fee Defaulter Report With Receiving")WebElement frame;
 
-    public FeeDefaulterReportWithReceiving(WebDriver d) throws IOException {
+    public FeeDefaulterReportWithReceiving(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);
@@ -29,6 +29,7 @@ public class FeeDefaulterReportWithReceiving extends GenericReports {
         ehandler.click(readFile.getElement("withfine"));
     }
 
+    @Override
     public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {
         ehandler.selectDate(readFile.getElement("tilldate"), mm, yy, dd);
     }

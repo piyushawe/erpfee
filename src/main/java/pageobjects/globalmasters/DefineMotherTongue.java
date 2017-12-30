@@ -14,7 +14,7 @@ public class DefineMotherTongue extends BaseClass{
   @FindBy(linkText = "Define Mother Tongue")private WebElement link;
   @FindBy(id = "Define Mother Tongue")private WebElement frame;
 
-  public DefineMotherTongue(WebDriver d) throws IOException {
+  public DefineMotherTongue(WebDriver d) {
       page = this.getClass().getSimpleName();
       pack = gm.getPackage(this.getClass().getPackage().getName());
       file = gm.getFilePath(page, pack);

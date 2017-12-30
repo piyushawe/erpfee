@@ -10,6 +10,7 @@ import java.io.File;
 import java.util.Collection;
 
 public abstract class GenericBaseClass {
+
     protected static Collection<String> scenario = null;
     protected static String page = null;
     protected static String pack = null;
@@ -20,7 +21,6 @@ public abstract class GenericBaseClass {
     protected EventHandlingUtility ehandler = new EventHandlingUtility();
     protected VerifyValidationsUtility verify = new VerifyValidationsUtility();
     protected GetterMethods gm = new GetterMethods();
-
     protected File fileConfig = new File("configuration\\GenericConfig.properties");
     protected File fileUI = new File("configuration\\UIMap.properties");
     protected File fileMsg = new File("configuration\\MessageBundle.properties");

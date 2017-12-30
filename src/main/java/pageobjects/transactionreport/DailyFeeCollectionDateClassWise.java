@@ -13,7 +13,7 @@ public class DailyFeeCollectionDateClassWise extends GenericReports {
     @FindBy(linkText = "Daily Fee Collection Date/Class Wise")WebElement link;
     @FindBy(id = "Daily Fee Collection Date/Class Wise")WebElement frame;
 
-    public DailyFeeCollectionDateClassWise(WebDriver d) throws IOException {
+    public DailyFeeCollectionDateClassWise(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

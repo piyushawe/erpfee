@@ -18,19 +18,19 @@ import java.util.List;
 import static webdriver.AppDriver.getCurrentDriver;
 
 public class EventHandlingUtility {
-    private File fileUI= new File("configuration\\UIMap.properties");
-    private ReadFile readFile= new ReadFile();
-    private DriverMethods dm= new DriverMethods();
-    private String value="";
+    private File fileUI = new File("configuration\\UIMap.properties");
+    private ReadFile readFile = new ReadFile();
+    private DriverMethods dm = new DriverMethods();
+    private StringBuilder value = new StringBuilder();
 
     public void openFrame(WebElement menu, WebElement link, WebElement frame) throws IOException {
-      moveToElement(menu);
-      clickMenuItem(link);
-      switchToFrame(frame);
+        moveToElement(menu);
+        clickMenuItem(link);
+        switchToFrame(frame);
     }
 
     public void moveToElement(WebElement menuItem) throws IOException {
-      new Actions(getCurrentDriver()).moveToElement(menuItem).build().perform();
+        new Actions(getCurrentDriver()).moveToElement(menuItem).build().perform();
     }
 
     private void clickMenuItem(WebElement link) throws IOException {
@@ -41,86 +41,86 @@ public class EventHandlingUtility {
         getCurrentDriver().switchTo().frame(frame);
     }
 
-    public void click(WebElement element){
-      element.click();
+    public void click(WebElement element) {
+        element.click();
     }
 
-    public boolean isElementDisplayed(WebElement element){
+    public boolean isElementDisplayed(WebElement element) {
         if (element.isDisplayed())
             return true;
         else
             return false;
     }
 
-    public void clearValue(WebElement element){
+    public void clearValue(WebElement element) {
         element.clear();
     }
 
-    public void enterText(WebElement textfield, String text){
-      textfield.sendKeys(text);
+    public void enterText(WebElement textfield, String text) {
+        textfield.sendKeys(text);
     }
 
-    void pressEnter(WebElement textfield){
+    void pressEnter(WebElement textfield) {
         textfield.sendKeys(Keys.ENTER);
     }
 
     public void enterText(WebElement textfield, int n) {
-      for (int i=0; i<n; i++) {
-          textfield.sendKeys("a");
-          value= value+"a";
-      }
+        for (int i = 0; i < n; i++) {
+            textfield.sendKeys("a");
+            value.append("a");
+        }
     }
 
     public void verifyString() throws IOException {
-      Assert.assertTrue(getCurrentDriver().getPageSource().contains(value));
-         System.out.println("Value Saved");
+        Assert.assertTrue(getCurrentDriver().getPageSource().contains(value));
+        System.out.println("Value Saved");
     }
 
-//select first record in table
-    void selectRecord(WebElement table, WebElement select){
-     List<WebElement> cells=table.findElements(By.tagName("td"));
-     if (cells.size()>1){
-         for (WebElement cell:cells) {
-             select.click();
-             break;
-         }
-     }else
-         System.out.println("No Record Found");
+    //select first record in table
+    void selectRecord(WebElement table, WebElement select) {
+        List<WebElement> cells = table.findElements(By.tagName("td"));
+        if (cells.size() > 1) {
+            for (WebElement cell : cells) {
+                select.click();
+                break;
+            }
+        } else
+            System.out.println("No Record Found");
     }
 
-//click particular cell of table
+    //click particular cell of table
     private void selectValueFromTable(WebElement table, String value) throws IOException {
-      List<WebElement> cells = new UIMap().getCell();
-      for(WebElement cell: cells) {
-          if (cell.getText().equals(value)){
-            cell.click();
-            break;
-          }
-      }
+        List<WebElement> cells = new UIMap().getCell();
+        for (WebElement cell : cells) {
+            if (cell.getText().equals(value)) {
+                cell.click();
+                break;
+            }
+        }
     }
 
     public void selectByVisibleText(WebElement element, String text) throws InterruptedException {
-      new Select(element).selectByVisibleText(text);
-      Thread.sleep(100);
+        new Select(element).selectByVisibleText(text);
+        Thread.sleep(100);
     }
 
     public void selectByIndex(WebElement element, int index) throws InterruptedException {
-      new Select(element).selectByIndex(index);
-      Thread.sleep(100);
+        new Select(element).selectByIndex(index);
+        Thread.sleep(100);
     }
 
     public void selectDate(WebElement date, String mm, String yy, String dd) throws IOException, InterruptedException {
-      click(date);
-      dm.waitUntil(new UIMap().getMonthPicker(),200);
-      selectByVisibleText(new UIMap().getMonthPicker(), mm);
-      dm.waitUntil(new UIMap().getYearPicker(),20);
-      selectByVisibleText(new UIMap().getYearPicker(), yy);
-      dm.waitUntil(new UIMap().getDayPicker(),200);
-      selectValueFromTable(new UIMap().getDayPicker(), dd);
-      Thread.sleep(500);
+        click(date);
+        dm.waitUntil(new UIMap().getMonthPicker(), 200);
+        selectByVisibleText(new UIMap().getMonthPicker(), mm);
+        dm.waitUntil(new UIMap().getYearPicker(), 20);
+        selectByVisibleText(new UIMap().getYearPicker(), yy);
+        dm.waitUntil(new UIMap().getDayPicker(), 200);
+        selectValueFromTable(new UIMap().getDayPicker(), dd);
+        Thread.sleep(500);
     }
 
-//select 1st value in multiselect list
+    //select 1st value in multiselect list
     public void selectValue(WebElement element, WebElement clear, WebElement values, WebElement close) throws IOException {
         click(element);
         click(clear);
@@ -132,7 +132,7 @@ public class EventHandlingUtility {
         click(close);
     }
 
-    void selectValue(WebElement element, WebElement clear, WebElement values, WebElement close, WebElement div) throws IOException, InterruptedException {
+    void selectValue(WebElement element, WebElement clear, WebElement values, WebElement close, WebElement div) throws IOException {
         click(element);
         click(clear);
         if (!div.getAttribute("style").contains("block")) {
@@ -146,16 +146,16 @@ public class EventHandlingUtility {
         click(close);
     }
 
-    public void getList(List<WebElement>elements){
-        HashMap<String, Integer> radioList= new HashMap<String, Integer>();
-        for (WebElement emt: elements){
-            String id= emt.getAttribute("id");
+    public void getList(List<WebElement> elements) {
+        HashMap<String, Integer> radioList = new HashMap<String, Integer>();
+        for (WebElement emt : elements) {
+            String id = emt.getAttribute("id");
             System.out.println(emt.getText());
         }
     }
 
-    public void clickRadioButton(List<WebElement>elements, String value){
-        for (WebElement element: elements){
+    public void clickRadioButton(List<WebElement> elements, String value) {
+        for (WebElement element : elements) {
             if (element.getAttribute("value").equals(value))
                 element.click();
         }

@@ -13,7 +13,7 @@ public class StaffWardListReport extends GenericReports {
     @FindBy(linkText = "Staff Ward List Report")private WebElement link;
     @FindBy(id="Staff Ward List Report")private WebElement frame;
 
-    public StaffWardListReport(WebDriver d) throws IOException {
+    public StaffWardListReport(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

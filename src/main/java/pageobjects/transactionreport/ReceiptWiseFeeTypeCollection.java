@@ -13,7 +13,7 @@ public class ReceiptWiseFeeTypeCollection extends GenericReports {
     @FindBy(linkText = "Receipt wise Fee Type Collection")WebElement link;
     @FindBy(id = "Receipt wise Fee Type  Collection")WebElement frame;
 
-    public ReceiptWiseFeeTypeCollection(WebDriver d) throws IOException {
+    public ReceiptWiseFeeTypeCollection(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

@@ -13,7 +13,7 @@ public class FeesConcessionInstallHeadWise extends GenericReports {
     @FindBy(linkText = "Fees Concession Install/Head Wise")WebElement link;
     @FindBy(id = "Fees Concession Install/Head Wise")WebElement frame;
 
-    public FeesConcessionInstallHeadWise(WebDriver d) throws IOException {
+    public FeesConcessionInstallHeadWise(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

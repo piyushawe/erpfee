@@ -13,7 +13,7 @@ public class FeesConcession extends GenericReports {
     @FindBy(linkText = "Fees Concession")WebElement link;
     @FindBy(id = "Fees Concession")WebElement frame;
 
-    public FeesConcession(WebDriver d) throws IOException {
+    public FeesConcession(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);
@@ -30,7 +30,6 @@ public class FeesConcession extends GenericReports {
         clear= readFile.getElement("concessionclear");
         values= readFile.getElement("concessionvalueslist");
         close= readFile.getElement("concessionclose");
-        message= readFile.getElement("concessionmessage");
     }
 
     public void validateConcession() throws IOException {
@@ -43,10 +42,12 @@ public class FeesConcession extends GenericReports {
         ehandler.selectValue(element, clear, values, close);
     }
 
+    @Override
     public void validateTillDate() throws IOException {
         verify.verifyValidationOnMultiSelect(readFile.getElement("tilldate"), clr, readFile.getElement("tilldatemessage"), readFile.readProperty(fileUI, "tilldate"));
     }
 
+    @Override
     public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {
         ehandler.selectDate(readFile.getElement("tilldate"), mm, yy, dd);
     }

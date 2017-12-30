@@ -1,17 +1,17 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("featurefiles/transactionreport/DailyFeeCollection.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("featurefiles/transactionreport/ChequeReportDateWise.feature");
 formatter.feature({
   "line": 1,
-  "name": "Daily Fee Collection",
+  "name": "Cheque Report Date Wise",
   "description": "As a user I would like to run the test cases of this page\r\nSo that I don\u0027t have to do it manually",
-  "id": "daily-fee-collection",
+  "id": "cheque-report-date-wise",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 1263003,
+  "duration": 1187643,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4776035548,
+  "duration": 4245920302,
   "status": "passed"
 });
 formatter.background({
@@ -43,107 +43,119 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "user open daily fee collection report",
+  "name": "user open cheque report date wise",
   "keyword": "When "
 });
 formatter.match({
   "location": "GenericTestSteps.for_url()"
 });
 formatter.result({
-  "duration": 1213911451,
+  "duration": 750603572,
   "status": "passed"
 });
 formatter.match({
   "location": "GenericTestSteps.user_enter_username_and_password()"
 });
 formatter.result({
-  "duration": 167816380,
+  "duration": 199074401,
   "status": "passed"
 });
 formatter.match({
   "location": "GenericTestSteps.click_sign_in_to_open_erp_home_page()"
 });
 formatter.result({
-  "duration": 732496688,
+  "duration": 1153609979,
   "status": "passed"
 });
 formatter.match({
   "location": "GenericTestSteps.user_click_fee_manager_logo()"
 });
 formatter.result({
-  "duration": 407994602,
+  "duration": 321149685,
   "status": "passed"
 });
 formatter.match({
-  "location": "TestSteps.user_open_daily_fee_collection_report()"
+  "location": "TestSteps.user_open_cheque_report_date_wise()"
 });
 formatter.result({
-  "duration": 1732199338,
+  "duration": 1850302204,
   "status": "passed"
 });
 formatter.scenario({
   "comments": [
     {
-      "line": 79,
-      "value": "#test cases on selection of radio buttons/ check box"
+      "line": 29,
+      "value": "#test cases of all filters selection"
     }
   ],
-  "line": 81,
-  "name": "To verify daily fee collection head wise with receipt no. range, settlement date and cheque clearance date",
+  "line": 31,
+  "name": "To verify cheque report date wise with filters",
   "description": "",
-  "id": "daily-fee-collection;to-verify-daily-fee-collection-head-wise-with-receipt-no.-range,-settlement-date-and-cheque-clearance-date",
+  "id": "cheque-report-date-wise;to-verify-cheque-report-date-wise-with-filters",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 80,
-      "name": "@verify_with_no_filters"
+      "line": 30,
+      "name": "@verify_with_filters"
     },
     {
-      "line": 80,
-      "name": "@scenario8"
+      "line": 30,
+      "name": "@scenario3"
     }
   ]
 });
 formatter.step({
-  "line": 82,
-  "name": "select from date as month \"April\" year \"2017\" and day \"1\" on daily fee collection",
+  "line": 32,
+  "name": "select entry mode on cheque report date wise",
   "keyword": "And "
 });
 formatter.step({
-  "line": 83,
-  "name": "click receipt no range on daily fee collection",
+  "line": 33,
+  "name": "select from date as month \"April\" year \"2017\" and day \"1\" on cheque report date wise",
   "keyword": "And "
 });
 formatter.step({
-  "line": 84,
-  "name": "enter value \"1\" in receipt from on daily fee collection",
+  "line": 34,
+  "name": "select to date as month \"March\" year \"2018\" and day \"31\" on cheque report date wise",
   "keyword": "And "
 });
 formatter.step({
-  "line": 85,
-  "name": "enter value \"100\" in receipt to on daily fee collection",
+  "line": 35,
+  "name": "select class on cheque report date wise",
   "keyword": "And "
 });
 formatter.step({
-  "line": 86,
-  "name": "select radio button \"1\" on daily fee collection",
+  "line": 36,
+  "name": "select school with index \"1\" on cheque report date wise",
   "keyword": "And "
 });
 formatter.step({
-  "line": 87,
-  "name": "select with settlement date on daily fee collection",
+  "line": 37,
+  "name": "select fee type with index \"1\" on cheque report date wise",
   "keyword": "And "
 });
 formatter.step({
-  "line": 88,
-  "name": "select with cheque clearance date on daily fee collection",
+  "line": 38,
+  "name": "select cheque bank on cheque report date wise",
   "keyword": "And "
 });
 formatter.step({
-  "line": 89,
-  "name": "click show on daily fee collection",
+  "line": 39,
+  "name": "select user with index \"1\" on cheque report date wise",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 40,
+  "name": "click show on cheque report date wise",
   "keyword": "Then "
+});
+formatter.match({
+  "location": "TestSteps.select_entry_mode_on_cheque_report_date_wise()"
+});
+formatter.result({
+  "duration": 381978976,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -160,85 +172,99 @@ formatter.match({
       "offset": 55
     }
   ],
-  "location": "TestSteps.select_from_date_as_month_year_and_day_on_daily_fee_collection(String,String,String)"
+  "location": "TestSteps.select_from_date_as_month_year_and_day_on_cheque_report_date_wise(String,String,String)"
 });
 formatter.result({
-  "duration": 2024996437,
+  "duration": 1936329751,
   "status": "passed"
 });
 formatter.match({
-  "location": "TestSteps.click_receipt_no_range_on_daily_fee_collection()"
+  "arguments": [
+    {
+      "val": "March",
+      "offset": 25
+    },
+    {
+      "val": "2018",
+      "offset": 38
+    },
+    {
+      "val": "31",
+      "offset": 53
+    }
+  ],
+  "location": "TestSteps.select_to_date_as_month_year_and_day_on_cheque_report_date_wise(String,String,String)"
 });
 formatter.result({
-  "duration": 138293717,
+  "duration": 2422884611,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TestSteps.select_class_on_cheque_report_date_wise()"
+});
+formatter.result({
+  "duration": 359802317,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "1",
-      "offset": 13
+      "offset": 26
     }
   ],
-  "location": "TestSteps.enter_value_in_receipt_from_on_daily_fee_collection(String)"
+  "location": "TestSteps.select_school_with_index_on_cheque_report_date_wise(int)"
 });
 formatter.result({
-  "duration": 129527179,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "100",
-      "offset": 13
-    }
-  ],
-  "location": "TestSteps.enter_value_in_receipt_to_on_daily_fee_collection(String)"
-});
-formatter.result({
-  "duration": 114536237,
+  "duration": 216022500,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "1",
-      "offset": 21
+      "offset": 28
     }
   ],
-  "location": "TestSteps.select_radio_button_on_daily_fee_collection(String)"
+  "location": "TestSteps.select_fee_type_with_index_on_cheque_report_date_wise(int)"
 });
 formatter.result({
-  "duration": 154819206,
+  "duration": 179976816,
   "status": "passed"
 });
 formatter.match({
-  "location": "TestSteps.select_with_settlement_date_on_daily_fee_collection()"
+  "location": "TestSteps.select_cheque_bank_on_cheque_report_date_wise()"
 });
 formatter.result({
-  "duration": 95666260,
+  "duration": 5501271071,
   "status": "passed"
 });
 formatter.match({
-  "location": "TestSteps.select_with_cheque_clearance_date_on_daily_fee_collection()"
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 24
+    }
+  ],
+  "location": "TestSteps.select_user_with_index_on_cheque_report_date_wise(int)"
 });
 formatter.result({
-  "duration": 98603102,
+  "duration": 197988515,
   "status": "passed"
 });
 formatter.match({
-  "location": "TestSteps.click_show_on_daily_fee_collection()"
+  "location": "TestSteps.click_show_on_cheque_report_date_wise()"
 });
 formatter.result({
-  "duration": 5385517133,
+  "duration": 1369863263,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2430115,
+  "duration": 99117,
   "status": "passed"
 });
 formatter.after({
-  "duration": 3965835,
+  "duration": 6164598,
   "status": "passed"
 });
 });

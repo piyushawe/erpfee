@@ -13,7 +13,7 @@ public class AmountWithoutStructureReport extends GenericReports {
     @FindBy(linkText = "Amount without Structure report")WebElement link;
     @FindBy(id = "Amount without Structure report")WebElement frame;
 
-    public AmountWithoutStructureReport(WebDriver d) throws IOException {
+    public AmountWithoutStructureReport(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);
@@ -29,6 +29,7 @@ public class AmountWithoutStructureReport extends GenericReports {
         ehandler.selectByIndex(readFile.getElement("year"), index);
     }
 
+    @Override
     public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {
         ehandler.selectDate(readFile.getElement("todate"), mm, yy, dd);
     }

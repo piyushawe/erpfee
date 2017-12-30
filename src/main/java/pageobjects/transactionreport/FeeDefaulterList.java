@@ -13,7 +13,7 @@ public class FeeDefaulterList extends GenericReports {
     @FindBy(linkText = "Fee Defaulter List")WebElement link;
     @FindBy(id = "Fee Defaulter List")WebElement frame;
 
-    public FeeDefaulterList(WebDriver d) throws IOException {
+    public FeeDefaulterList(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);
@@ -25,6 +25,7 @@ public class FeeDefaulterList extends GenericReports {
         ehandler.openFrame(new UIMap().getDefaulterReportsSubMenu(), link, frame);
     }
 
+    @Override
     public void selectClass(int index) throws IOException, InterruptedException {
         ehandler.selectByIndex(readFile.getElement("class1"), index);
     }
@@ -33,6 +34,7 @@ public class FeeDefaulterList extends GenericReports {
         ehandler.click(readFile.getElement("withfine"));
     }
 
+    @Override
     public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {
         ehandler.selectDate(readFile.getElement("tilldate"), mm, yy, dd);
     }

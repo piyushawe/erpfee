@@ -13,7 +13,7 @@ public class ChequeClearingStatusReport extends GenericReports {
     @FindBy(linkText = "Cheque Clearing Status Report")WebElement link;
     @FindBy(id = "Cheque Clearing Status Report")WebElement frame;
 
-    public ChequeClearingStatusReport(WebDriver d) throws IOException {
+    public ChequeClearingStatusReport(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

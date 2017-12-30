@@ -13,7 +13,7 @@ public class CancelledFeesReceiptReport extends GenericReports {
     @FindBy(linkText = "Cancelled Fees Receipt Report")WebElement link;
     @FindBy(id = "Cancelled Fees Receipt Report")WebElement frame;
 
-    public CancelledFeesReceiptReport(WebDriver d) throws IOException {
+    public CancelledFeesReceiptReport(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);
@@ -25,6 +25,7 @@ public class CancelledFeesReceiptReport extends GenericReports {
         ehandler.openFrame(new UIMap().getCancelledReceiptReportsSubmenu(), link, frame);
     }
 
+    @Override
     public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {
         ehandler.selectDate(readFile.getElement("todate"), mm, yy, dd);
     }

@@ -13,7 +13,7 @@ public class DefineLastResult extends BaseClass {
    @FindBy(linkText = "Define Last Result")private WebElement link;
    @FindBy(id = "Define Last Result")private WebElement frame;
 
-   public DefineLastResult(WebDriver d) throws IOException {
+   public DefineLastResult(WebDriver d) {
       page = this.getClass().getSimpleName();
       pack = gm.getPackage(this.getClass().getPackage().getName());
       file = gm.getFilePath(page, pack);

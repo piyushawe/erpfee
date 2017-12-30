@@ -14,7 +14,7 @@ public class TermMaster extends BaseClass{
   @FindBy(linkText = "Term Master")private WebElement link;
   @FindBy(id = "Term Master")private WebElement frame;
 
-  public TermMaster(WebDriver d) throws IOException {
+  public TermMaster(WebDriver d) {
       page = this.getClass().getSimpleName();
       pack = gm.getPackage(this.getClass().getPackage().getName());
       file = gm.getFilePath(page, pack);

@@ -13,7 +13,7 @@ public class DefineReligion extends BaseClass {
     @FindBy(linkText = "Define Religion") private WebElement link;
     @FindBy(id = "Define Religion") private WebElement frame;
 
-    public DefineReligion(WebDriver d) throws IOException {
+    public DefineReligion(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);

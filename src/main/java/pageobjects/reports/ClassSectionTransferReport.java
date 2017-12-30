@@ -13,7 +13,7 @@ public class ClassSectionTransferReport extends GenericReports {
     @FindBy(linkText = "Class Section Transfer Report")private WebElement link;
     @FindBy(id="Class Section Transfer Report")private WebElement frame;
 
-    public ClassSectionTransferReport(WebDriver d) throws IOException {
+    public ClassSectionTransferReport(WebDriver d) {
         page = this.getClass().getSimpleName();
         pack = gm.getPackage(this.getClass().getPackage().getName());
         file = gm.getFilePath(page, pack);
