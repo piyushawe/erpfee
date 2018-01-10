@@ -33,4 +33,8 @@ public class FeeDefaulterSlip extends GenericReports {
     public void selectToDate(String mm, String yy, String dd) throws IOException, InterruptedException {
         ehandler.selectDate(readFile.getElement("tilldate"), mm, yy, dd);
     }
+
+    public void selectSignatory(int sign) throws IOException, InterruptedException {
+        ehandler.selectByIndex(readFile.getElement("signatory"), sign);
+    }
 }

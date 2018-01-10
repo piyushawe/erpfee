@@ -8,7 +8,7 @@ import webdriver.DriverMethods;
 
 import java.io.IOException;
 
- public abstract class GenericReports extends GenericBaseClass {
+public abstract class GenericReports extends GenericBaseClass {
 
     @FindBy(id = "ContentPlaceHolder1_txtDateFrom_TextBox")
     protected WebElement fromdate;
@@ -218,11 +218,11 @@ import java.io.IOException;
         ehandler.enterText(receiptto, n);
     }
 
-    public void pressEnterInReceiptFrom() {
+    public void pressEnterInReceiptFrom() throws InterruptedException {
         ehandler.pressEnter(receiptfrom);
     }
 
-    public void pressEnterReceiptTo() {
+    public void pressEnterReceiptTo() throws InterruptedException {
         ehandler.pressEnter(receiptto);
     }
 

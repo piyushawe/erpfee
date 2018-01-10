@@ -48,7 +48,10 @@ Feature: Receipt Wise Daily Collection
     Then click show on receipt wise daily collection
 
   @verify_with_no_filters @scenario5
-  Scenario: To verify receipt wise daily collection with head
+  Scenario: To verify receipt wise daily collection with head and settlement date
     And select from date as month "April" year "2017" and day "1" on receipt wise daily collection
+    And click settlement date on receipt wise daily collection
+    And click show settlement date on receipt wise daily collection
     And select radio button "2" on receipt wise daily collection
+    And select head on receipt wise daily collection
     Then click show on receipt wise daily collection

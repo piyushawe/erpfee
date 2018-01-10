@@ -16,7 +16,7 @@ Feature: Opening Dues Report
     And select class with index "1" on opening dues report
     And select section with index "1" on opening dues report
     And select fee type with index "1" on opening dues report
-    And select installment with index "1" on opening dues report
+    #And select installment with index "1" on opening dues report
     And select user with index "1" on opening dues report
     Then click show on opening dues report
 

@@ -32,6 +32,7 @@ public class DayWiseTotalCollection extends GenericReports {
         close= readFile.getElement("monthclose");
         message= readFile.getElement("monthmessage");
     }
+
     public void validateMonth() throws IOException {
         getMonthElements();
         verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "month"));

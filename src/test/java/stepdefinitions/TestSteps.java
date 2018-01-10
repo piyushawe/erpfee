@@ -1,5 +1,7 @@
 package stepdefinitions;
 
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
@@ -2996,7 +2998,22 @@ public class TestSteps {
         new ReceiptWiseDailyCollection(driver).clickButton(arg1);
     }
 
-//fee collection with entry time concession
+    @When("^click settlement date on receipt wise daily collection$")
+    public void click_settlement_date_on_receipt_wise_daily_collection() throws Throwable {
+        new ReceiptWiseDailyCollection(driver).clickSettlementDate();
+    }
+
+    @When("^click show settlement date on receipt wise daily collection$")
+    public void click_show_settlement_date_on_receipt_wise_daily_collection() throws Throwable {
+        new ReceiptWiseDailyCollection(driver).clickShowSettlementDate();
+    }
+
+    @When("^select head on receipt wise daily collection$")
+    public void select_head_on_receipt_wise_daily_collection() throws Throwable {
+        new ReceiptWiseDailyCollection(driver).selectHead();
+    }
+
+    //fee collection with entry time concession
     @When("^user open fee collection with entry time concession$")
     public void user_open_fee_collection_with_entry_time_concession() throws Throwable {
         new FeeCollectionWithEntryTimeConcession(driver).openFeeCollectionWithEntryTimeConcession();
@@ -3867,58 +3884,63 @@ public class TestSteps {
     }
 
 //fee defaulter slip
-    @Then("^user open fee defaulter report slip$")
-    public void user_open_fee_defaulter_report_slip() throws Throwable {
+    @Then("^user open fee defaulter slip$")
+    public void user_open_fee_defaulter_slip() throws Throwable {
         new FeeDefaulterSlip(driver).openFeeDefaulterSlip();
     }
 
-    @Then("^select school with index \"([^\"]*)\" on fee defaulter report slip$")
-    public void select_school_with_index_on_fee_defaulter_report_slip(int arg1) throws Throwable {
+    @Then("^select school with index \"([^\"]*)\" on fee defaulter slip$")
+    public void select_school_with_index_on_fee_defaulter_slip(int arg1) throws Throwable {
         new FeeDefaulterSlip(driver).selectSchool(arg1);
     }
 
-    @Then("^select class with index \"([^\"]*)\" on fee defaulter report slip$")
-    public void select_class_with_index_on_fee_defaulter_report_slip(int arg1) throws Throwable {
+    @Then("^select class with index \"([^\"]*)\" on fee defaulter slip$")
+    public void select_class_with_index_on_fee_defaulter_slip(int arg1) throws Throwable {
         new FeeDefaulterSlip(driver).selectClass(arg1);
     }
 
-    @Then("^select section with index \"([^\"]*)\" on fee defaulter report slip$")
-    public void select_section_with_index_on_fee_defaulter_report_slip(int arg1) throws Throwable {
+    @Then("^select section with index \"([^\"]*)\" on fee defaulter slip$")
+    public void select_section_with_index_on_fee_defaulter_slip(int arg1) throws Throwable {
         new FeeDefaulterSlip(driver).selectSection(arg1);
     }
 
-    @Then("^select fee type with index \"([^\"]*)\" on fee defaulter report slip$")
-    public void select_fee_type_with_index_on_fee_defaulter_report_slip(int arg1) throws Throwable {
+    @Then("^select signatory with index \"([^\"]*)\" on fee defaulter slip$")
+    public void select_signatory_with_index_on_fee_defaulter_slip(int arg1) throws Throwable {
+        new FeeDefaulterSlip(driver).selectSignatory(arg1);
+    }
+
+    @Then("^select fee type with index \"([^\"]*)\" on fee defaulter slip$")
+    public void select_fee_type_with_index_on_fee_defaulter_slip(int arg1) throws Throwable {
         new FeeDefaulterSlip(driver).selectFeeType(arg1);
     }
 
-    @Then("^select installment on fee defaulter report slip$")
-    public void select_installment_on_fee_defaulter_report_slip() throws Throwable {
+    @Then("^select installment on fee defaulter slip$")
+    public void select_installment_on_fee_defaulter_slip() throws Throwable {
         new FeeDefaulterSlip(driver).selectInstallment();
     }
 
-    @Then("^select till date as month \"([^\"]*)\" year \"([^\"]*)\" and day \"([^\"]*)\" on fee defaulter report slip$")
-    public void select_till_date_as_month_year_and_day_on_fee_defaulter_report_slip(String arg1, String arg2, String arg3) throws Throwable {
+    @Then("^select till date as month \"([^\"]*)\" year \"([^\"]*)\" and day \"([^\"]*)\" on fee defaulter slip$")
+    public void select_till_date_as_month_year_and_day_on_fee_defaulter_slip(String arg1, String arg2, String arg3) throws Throwable {
         new FeeDefaulterSlip(driver).selectToDate(arg1, arg2, arg3);
     }
 
-    @Then("^click show on fee defaulter report slip$")
-    public void click_show_on_fee_defaulter_report_slip() throws Throwable {
+    @Then("^click show on fee defaulter slip$")
+    public void click_show_on_fee_defaulter_slip() throws Throwable {
         new FeeDefaulterSlip(driver).clickShow();
     }
 
-    @Then("^click date range on fee defaulter report slip$")
-    public void click_date_range_on_fee_defaulter_report_slip() throws Throwable {
+    @Then("^click date range on fee defaulter slip$")
+    public void click_date_range_on_fee_defaulter_slip() throws Throwable {
        new FeeDefaulterSlip(driver).clickDateRange();
     }
 
-    @Then("^select from date as month \"([^\"]*)\" year \"([^\"]*)\" and day \"([^\"]*)\" on fee defaulter report slip$")
-    public void select_from_date_as_month_year_and_day_on_fee_defaulter_report_slip(String arg1, String arg2, String arg3) throws Throwable {
+    @Then("^select from date as month \"([^\"]*)\" year \"([^\"]*)\" and day \"([^\"]*)\" on fee defaulter slip$")
+    public void select_from_date_as_month_year_and_day_on_fee_defaulter_slip(String arg1, String arg2, String arg3) throws Throwable {
         new FeeDefaulterSlip(driver).selectFromDate(arg1, arg2, arg3);
     }
 
-    @Then("^click with fine on fee defaulter report slip$")
-    public void click_with_fine_on_fee_defaulter_report_slip() throws Throwable {
+    @Then("^click with fine on fee defaulter slip$")
+    public void click_with_fine_on_fee_defaulter_slip() throws Throwable {
         new FeeDefaulterSlip(driver).clickWithFine();
     }
 
@@ -4006,6 +4028,11 @@ public class TestSteps {
     @Then("^select class on unpaid student report$")
     public void select_class_on_unpaid_student_report() throws Throwable {
         new UnpaidStudentReport(driver).selectClass();
+    }
+
+    @And("^select head on unpaid student report$")
+    public void selectHeadOnUnpaidStudentReport() throws Throwable {
+        new UnpaidStudentReport(driver).selectHead();
     }
 
 //fee defaulter list
@@ -4102,6 +4129,11 @@ public class TestSteps {
     @Then("^select select cheque clearance date on fee defaulter list$")
     public void select_select_cheque_clearance_date_on_fee_defaulter_list() throws Throwable {
         new FeeDefaulterList(driver).clickChequeClearanceDate();
+    }
+
+    @Then("^select head on fee defaulter list$")
+    public void select_head_on_fee_defaulter_list() throws Throwable {
+        new FeeDefaulterList(driver).selectHead();
     }
 
     @Then("^select class on fee defaulter list$")
@@ -4407,6 +4439,16 @@ public class TestSteps {
     @When("^select head on fees concession install head wise$")
     public void select_head_on_fees_concession_install_head_wise() throws Throwable {
         new FeesConcessionInstallHeadWise(driver).selectHead();
+    }
+
+    @When("^select student status with index \"([^\"]*)\" on fees concession install head wise$")
+    public void select_student_status_with_index_on_fees_concession_install_head_wise(int arg1) throws Throwable {
+        new FeesConcessionInstallHeadWise(driver).selectStudentStatus(arg1);
+    }
+
+    @When("^select head radio button \"([^\"]*)\" on fees concession install head wise$")
+    public void select_head_radio_button_on_fees_concession_install_head_wise(String arg1) throws Throwable {
+        new FeesConcessionInstallHeadWise(driver).clickHeadButton(arg1);
     }
 
     @When("^click show on fees concession install head wise$")

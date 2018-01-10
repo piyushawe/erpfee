@@ -1,17 +1,17 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("featurefiles/transactionreport/ChequeReportDateWise.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("featurefiles/transactionreport/FeesConcessionInstallHeadWise");
 formatter.feature({
   "line": 1,
-  "name": "Cheque Report Date Wise",
+  "name": "Fees Concession Install Head Wise",
   "description": "As a user I would like to run the test cases of this page\r\nSo that I don\u0027t have to do it manually",
-  "id": "cheque-report-date-wise",
+  "id": "fees-concession-install-head-wise",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 1187643,
+  "duration": 801432,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4245920302,
+  "duration": 4573914723,
   "status": "passed"
 });
 formatter.background({
@@ -43,228 +43,98 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "user open cheque report date wise",
+  "name": "user open fees concession install head wise",
   "keyword": "When "
 });
 formatter.match({
   "location": "GenericTestSteps.for_url()"
 });
 formatter.result({
-  "duration": 750603572,
+  "duration": 1496203975,
   "status": "passed"
 });
 formatter.match({
   "location": "GenericTestSteps.user_enter_username_and_password()"
 });
 formatter.result({
-  "duration": 199074401,
+  "duration": 139521006,
   "status": "passed"
 });
 formatter.match({
   "location": "GenericTestSteps.click_sign_in_to_open_erp_home_page()"
 });
 formatter.result({
-  "duration": 1153609979,
+  "duration": 686129861,
   "status": "passed"
 });
 formatter.match({
   "location": "GenericTestSteps.user_click_fee_manager_logo()"
 });
 formatter.result({
-  "duration": 321149685,
+  "duration": 390824615,
   "status": "passed"
 });
 formatter.match({
-  "location": "TestSteps.user_open_cheque_report_date_wise()"
+  "location": "TestSteps.user_open_fees_concession_install_head_wise()"
 });
 formatter.result({
-  "duration": 1850302204,
+  "duration": 1172109933,
   "status": "passed"
 });
 formatter.scenario({
-  "comments": [
-    {
-      "line": 29,
-      "value": "#test cases of all filters selection"
-    }
-  ],
-  "line": 31,
-  "name": "To verify cheque report date wise with filters",
+  "line": 45,
+  "name": "To verify fees concession install head wise consolidated and assigned",
   "description": "",
-  "id": "cheque-report-date-wise;to-verify-cheque-report-date-wise-with-filters",
+  "id": "fees-concession-install-head-wise;to-verify-fees-concession-install-head-wise-consolidated-and-assigned",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 30,
-      "name": "@verify_with_filters"
+      "line": 44,
+      "name": "@verify_with_no_filters"
     },
     {
-      "line": 30,
-      "name": "@scenario3"
+      "line": 44,
+      "name": "@scenario4"
     }
   ]
 });
 formatter.step({
-  "line": 32,
-  "name": "select entry mode on cheque report date wise",
+  "line": 46,
+  "name": "select radio button \"3\" on fees concession install head wise",
   "keyword": "And "
 });
 formatter.step({
-  "line": 33,
-  "name": "select from date as month \"April\" year \"2017\" and day \"1\" on cheque report date wise",
+  "line": 47,
+  "name": "click show on fees concession install head wise",
   "keyword": "And "
-});
-formatter.step({
-  "line": 34,
-  "name": "select to date as month \"March\" year \"2018\" and day \"31\" on cheque report date wise",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 35,
-  "name": "select class on cheque report date wise",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 36,
-  "name": "select school with index \"1\" on cheque report date wise",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 37,
-  "name": "select fee type with index \"1\" on cheque report date wise",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 38,
-  "name": "select cheque bank on cheque report date wise",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 39,
-  "name": "select user with index \"1\" on cheque report date wise",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 40,
-  "name": "click show on cheque report date wise",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TestSteps.select_entry_mode_on_cheque_report_date_wise()"
-});
-formatter.result({
-  "duration": 381978976,
-  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "April",
-      "offset": 27
-    },
-    {
-      "val": "2017",
-      "offset": 40
-    },
-    {
-      "val": "1",
-      "offset": 55
+      "val": "3",
+      "offset": 21
     }
   ],
-  "location": "TestSteps.select_from_date_as_month_year_and_day_on_cheque_report_date_wise(String,String,String)"
+  "location": "TestSteps.select_radio_button_on_fees_concession_install_head_wise(String)"
 });
 formatter.result({
-  "duration": 1936329751,
+  "duration": 43319553,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "March",
-      "offset": 25
-    },
-    {
-      "val": "2018",
-      "offset": 38
-    },
-    {
-      "val": "31",
-      "offset": 53
-    }
-  ],
-  "location": "TestSteps.select_to_date_as_month_year_and_day_on_cheque_report_date_wise(String,String,String)"
+  "location": "TestSteps.click_show_on_fees_concession_install_head_wise()"
 });
 formatter.result({
-  "duration": 2422884611,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TestSteps.select_class_on_cheque_report_date_wise()"
-});
-formatter.result({
-  "duration": 359802317,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 26
-    }
-  ],
-  "location": "TestSteps.select_school_with_index_on_cheque_report_date_wise(int)"
-});
-formatter.result({
-  "duration": 216022500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 28
-    }
-  ],
-  "location": "TestSteps.select_fee_type_with_index_on_cheque_report_date_wise(int)"
-});
-formatter.result({
-  "duration": 179976816,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TestSteps.select_cheque_bank_on_cheque_report_date_wise()"
-});
-formatter.result({
-  "duration": 5501271071,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 24
-    }
-  ],
-  "location": "TestSteps.select_user_with_index_on_cheque_report_date_wise(int)"
-});
-formatter.result({
-  "duration": 197988515,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TestSteps.click_show_on_cheque_report_date_wise()"
-});
-formatter.result({
-  "duration": 1369863263,
+  "duration": 4095176864,
   "status": "passed"
 });
 formatter.after({
-  "duration": 99117,
+  "duration": 333611230,
   "status": "passed"
 });
 formatter.after({
-  "duration": 6164598,
+  "duration": 3617441,
   "status": "passed"
 });
 });

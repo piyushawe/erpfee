@@ -17,18 +17,17 @@ public class BrowserFactory extends GenericBaseClass {
     LogManager lm;
 
     public WebDriver getBrowser(String browser) throws IOException {
-        char browserName = getBrowserName(browser);
 
-        switch (browserName) {
-            case 'c':
+        switch (browser) {
+            case "chrome":
                 System.setProperty(readFile.readProperty(fileConfig, "chromedriver"), readFile.readProperty(fileConfig, "chromedriverpath"));
                 driver = new ChromeDriver();
                 break;
-            case 'f':
+            case "firefox":
                 System.setProperty(readFile.readProperty(fileConfig, "firefoxdriver"), readFile.readProperty(fileConfig, "firefoxdriverpath"));
                 driver = new FirefoxDriver();
                 break;
-            case 'i':
+            case "ie":
                 System.setProperty(readFile.readProperty(fileConfig, "iedriver"), readFile.readProperty(fileConfig, "iedriverpath"));
                 driver = new InternetExplorerDriver();
                 break;
@@ -36,9 +35,5 @@ public class BrowserFactory extends GenericBaseClass {
                 lm.logger.info(page + ":" + readFile.readProperty(fileMsg, "browsernotdefined"));
         }
         return driver;
-    }
-
-    private char getBrowserName(String browser) throws IOException {
-        return readFile.readProperty(fileConfig, browser).charAt(0);
     }
 }

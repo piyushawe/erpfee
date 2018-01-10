@@ -52,4 +52,8 @@ public class ReceiptWiseDailyCollection extends GenericReports {
     public void clickAmalgamatedReport() throws IOException {
         ehandler.click(readFile.getElement("amalgamatedreport"));
     }
+
+    public void clickShowSettlementDate() throws IOException {
+        ehandler.click(readFile.getElement("showsettlementdate"));
+    }
 }

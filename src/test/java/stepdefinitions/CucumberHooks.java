@@ -28,10 +28,10 @@ public class CucumberHooks extends GenericBaseClass {
     @After
     public void afterScenario(Scenario scenario) throws IOException {
         //VerifyErrorUtility errorUtility = new VerifyErrorUtility();
-        if (scenario.isFailed()) {
+        //if (scenario.isFailed()) {
             //errorUtility.verifyPageError();
             utility.takeScreenshot();
-        }
+        //}
     }
 
     @After

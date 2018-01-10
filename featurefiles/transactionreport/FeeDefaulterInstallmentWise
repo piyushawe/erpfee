@@ -19,8 +19,8 @@ Feature: Fee Defaulter Installment Wise
     And select board with index "1" on fee defaulter installment wise
     And select fee type with index "1" on fee defaulter installment wise
     And select installment on fee defaulter installment wise
-    #And select route with index "1" on fee defaulter installment wise
-    #And select vehicle with index "1" on fee defaulter installment wise
+    And select route with index "1" on fee defaulter installment wise
+    And select vehicle with index "1" on fee defaulter installment wise
     And select till date as month "August" year "2017" and day "1" on fee defaulter installment wise
     And click show on fee defaulter installment wise
 

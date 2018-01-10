@@ -60,8 +60,14 @@ public class EventHandlingUtility {
         textfield.sendKeys(text);
     }
 
-    void pressEnter(WebElement textfield) {
+    public void pressEnter(WebElement textfield) throws InterruptedException {
         textfield.sendKeys(Keys.ENTER);
+        Thread.sleep(200);
+    }
+
+    public void pressDownArrow(WebElement textfield) throws InterruptedException {
+        textfield.sendKeys(Keys.ARROW_DOWN);
+        Thread.sleep(200);
     }
 
     public void enterText(WebElement textfield, int n) {
@@ -106,7 +112,7 @@ public class EventHandlingUtility {
 
     public void selectByIndex(WebElement element, int index) throws InterruptedException {
         new Select(element).selectByIndex(index);
-        Thread.sleep(100);
+        Thread.sleep(500);
     }
 
     public void selectDate(WebElement date, String mm, String yy, String dd) throws IOException, InterruptedException {

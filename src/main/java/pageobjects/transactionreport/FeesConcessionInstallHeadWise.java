@@ -50,6 +50,14 @@ public class FeesConcessionInstallHeadWise extends GenericReports {
         ehandler.selectValue(element, clear, values, close);
     }
 
+    public void clickHeadButton(String value) throws IOException {
+        ehandler.clickRadioButton(readFile.getElements("headbuttongroup"), value);
+    }
+
+    public void selectStudentStatus(int status) throws IOException, InterruptedException {
+        ehandler.selectByIndex(readFile.getElement("studentstatus"), status);
+    }
+
     public void clickPaidConcession() throws IOException {
         ehandler.click(readFile.getElement("paidconcession"));
     }

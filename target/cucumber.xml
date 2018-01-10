@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.094229">
-<testcase classname="Cheque Report Date Wise" name="To verify cheque report date wise with filters" time="21.094229">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="12.935231">
+<testcase classname="Fees Concession Install Head Wise" name="To verify fees concession install head wise consolidated and assigned" time="12.935231">
 <system-out><![CDATA[Given for url...............................................................passed
 When user enter username and password.......................................passed
 And click sign in to open erp home page.....................................passed
 Then user click fee manager logo............................................passed
-When user open cheque report date wise......................................passed
-And select entry mode on cheque report date wise............................passed
-And select from date as month "April" year "2017" and day "1" on cheque report date wise.passed
-And select to date as month "March" year "2018" and day "31" on cheque report date wise.passed
-And select class on cheque report date wise.................................passed
-And select school with index "1" on cheque report date wise.................passed
-And select fee type with index "1" on cheque report date wise...............passed
-And select cheque bank on cheque report date wise...........................passed
-And select user with index "1" on cheque report date wise...................passed
-Then click show on cheque report date wise..................................passed
+When user open fees concession install head wise............................passed
+And select radio button "3" on fees concession install head wise............passed
+And click show on fees concession install head wise.........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

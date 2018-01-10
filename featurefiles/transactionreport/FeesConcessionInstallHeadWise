@@ -18,27 +18,25 @@ Feature: Fees Concession Install Head Wise
     And select board with index "1" on fees concession install head wise
     And select fee type with index "1" on fees concession install head wise
     And select installment on fees concession install head wise
-    And select concession type on fees concession install head wise
+    #And select concession type on fees concession install head wise
     And select concession on fees concession install head wise
     And select head on fees concession install head wise
+    And select student status with index "1" on fees concession install head wise
     And click show on fees concession install head wise
 
 #test cases on selection of radio buttons
   @verify_with_no_filters @scenario2
-  Scenario: To verify fees concession install head wise headwise
-    And select radio button "2" on fees concession install head wise
+  Scenario: To verify fees concession install head wise with fee headwise and active students
+    And select head radio button "2" on fees concession install head wise
     And click paid concession on fees concession install head wise
     And click entry time on fees concession install head wise
     And click assigned on fees concession install head wise
     And click entry time concession date wise on fees concession install head wise
-    And click show on fees concession install head wise
-
-  @verify_with_no_filters @scenario3
-  Scenario: To verify fees concession install head wise installment wise and assigned
     And select radio button "1" on fees concession install head wise
     And click show on fees concession install head wise
 
-  @verify_with_no_filters @scenario4
-  Scenario: To verify fees concession install head wise consolidated and assigned
-    And select radio button "3" on fees concession install head wise
+  @verify_with_no_filters @scenario3
+  Scenario: To verify fees concession install head wise installment with consolidated and inactive students
+    And select head radio button "3" on fees concession install head wise
+    And select radio button "0" on fees concession install head wise
     And click show on fees concession install head wise

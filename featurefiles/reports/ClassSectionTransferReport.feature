@@ -17,3 +17,9 @@ Feature: Class Section Transfer Report
     And select old academic year with index "2" on class section transfer report
     #And select old financial year with index "2" on class section transfer report
     Then click show on class section transfer report
+
+#test cases on selection of radio buttons/ check box
+  @verify_with_no_filters @scenario2
+  Scenario: To verify class section transfer report without any filter
+    And select old academic year with index "2" on class section transfer report
+    Then click show on class section transfer report
