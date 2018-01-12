@@ -51,12 +51,12 @@ public class DailyFeeCollectionListWithHeadFineFilter extends GenericReports {
 
     public void validateFeeType() throws IOException {
         getFeeTypeElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "month"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "month"));
     }
 
     public void selectHeadFine() throws IOException {
         getHeadFineElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectShowCollection(int collection) throws IOException, InterruptedException {
@@ -65,11 +65,11 @@ public class DailyFeeCollectionListWithHeadFineFilter extends GenericReports {
 
     public void selectFeeType() throws IOException {
         getFeeTypeElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectStatus() throws IOException {
         getStatusElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 }

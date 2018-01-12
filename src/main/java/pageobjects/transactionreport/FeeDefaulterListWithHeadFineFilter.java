@@ -10,8 +10,10 @@ import utilities.GenericReports;
 import java.io.IOException;
 
 public class FeeDefaulterListWithHeadFineFilter extends GenericReports {
-    @FindBy(linkText = "Fee Defaulter List With Head Fine Filter")WebElement link;
-    @FindBy(id = "Fee Defaulter List With Head Fine Filter")WebElement frame;
+    @FindBy(linkText = "Fee Defaulter List With Head Fine Filter")
+    WebElement link;
+    @FindBy(id = "Fee Defaulter List With Head Fine Filter")
+    WebElement frame;
 
     public FeeDefaulterListWithHeadFineFilter(WebDriver d) {
         page = this.getClass().getSimpleName();
@@ -26,10 +28,10 @@ public class FeeDefaulterListWithHeadFineFilter extends GenericReports {
     }
 
     private void getStatusElements() throws IOException {
-        element= readFile.getElement("status");
-        clear= readFile.getElement("statusclear");
-        values= readFile.getElement("statusvalueslist");
-        close= readFile.getElement("statusclose");
+        element = readFile.getElement("status");
+        clear = readFile.getElement("statusclear");
+        values = readFile.getElement("statusvalueslist");
+        close = readFile.getElement("statusclose");
     }
 
     @Override
@@ -65,6 +67,6 @@ public class FeeDefaulterListWithHeadFineFilter extends GenericReports {
 
     public void selectStatus() throws IOException {
         getStatusElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 }

@@ -35,11 +35,11 @@ public class PTADailyFeeCollectionDateFeeGroupWise extends GenericReports {
 
     public void validateFeeGroup() throws IOException {
         getFeeGroupElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "month"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "month"));
     }
 
     public void selectFeeGroup() throws IOException {
         getFeeGroupElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 }

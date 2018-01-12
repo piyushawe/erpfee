@@ -35,6 +35,6 @@ public class SurnameWiseStudentDetails extends GenericReports {
 
     public void selectStudentDetails() throws IOException {
         getStudentDetailsElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 }

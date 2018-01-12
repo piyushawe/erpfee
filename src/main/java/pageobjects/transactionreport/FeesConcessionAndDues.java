@@ -37,12 +37,12 @@ public class FeesConcessionAndDues extends GenericReports {
 
     public void validateFeeType() throws IOException {
         getFeeTypeElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "feetype"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "feetype"));
     }
 
     public void selectFeeType() throws IOException {
         getFeeTypeElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectShowBy(int index) throws IOException, InterruptedException {

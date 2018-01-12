@@ -40,6 +40,6 @@ public class DateWiseAdmissionReport extends GenericReports {
 
     public void selectOtherDetails() throws IOException {
         getOtherDetailsElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 }

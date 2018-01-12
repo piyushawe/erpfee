@@ -8,6 +8,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.picocontainer.annotations.Inject;
+import supportclasses.GenericBaseClass;
 import webdriver.DriverMethods;
 
 import java.io.File;
@@ -18,6 +20,9 @@ import java.util.List;
 import static webdriver.AppDriver.getCurrentDriver;
 
 public class EventHandlingUtility {
+    @Inject
+    GenericBaseClass baseClass;
+
     private File fileUI = new File("configuration\\UIMap.properties");
     private ReadFile readFile = new ReadFile();
     private DriverMethods dm = new DriverMethods();
@@ -127,15 +132,15 @@ public class EventHandlingUtility {
     }
 
     //select 1st value in multiselect list
-    public void selectValue(WebElement element, WebElement clear, WebElement values, WebElement close) throws IOException {
-        click(element);
-        click(clear);
-        List<WebElement> options = readFile.getElements(fileUI, values, "tablelist");
+    public void selectValue() throws IOException {
+        click(baseClass.element);
+        click(baseClass.clear);
+        List<WebElement> options = readFile.getElements(fileUI, baseClass.values, "tablelist");
         if (options.isEmpty())
             System.out.println("No Value Present");
         else
             click(options.get(0));
-        click(close);
+        click(baseClass.close);
     }
 
     void selectValue(WebElement element, WebElement clear, WebElement values, WebElement close, WebElement div) throws IOException {

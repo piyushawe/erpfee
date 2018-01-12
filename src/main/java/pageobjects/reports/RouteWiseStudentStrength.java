@@ -36,7 +36,7 @@ public class RouteWiseStudentStrength extends GenericReports {
 
     public void selectMonth() throws IOException {
         getMonthElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     private void getRouteElements() throws IOException {
@@ -48,7 +48,7 @@ public class RouteWiseStudentStrength extends GenericReports {
 
     public void selectRoute() throws IOException {
         getRouteElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     private void getBusStopElements() throws IOException {
@@ -60,7 +60,7 @@ public class RouteWiseStudentStrength extends GenericReports {
 
     public void selectBusStop() throws IOException {
         getBusStopElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void clickStudentWise() throws IOException {

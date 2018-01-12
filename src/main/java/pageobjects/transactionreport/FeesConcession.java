@@ -10,8 +10,10 @@ import utilities.GenericReports;
 import java.io.IOException;
 
 public class FeesConcession extends GenericReports {
-    @FindBy(linkText = "Fees Concession")WebElement link;
-    @FindBy(id = "Fees Concession")WebElement frame;
+    @FindBy(linkText = "Fees Concession")
+    WebElement link;
+    @FindBy(id = "Fees Concession")
+    WebElement frame;
 
     public FeesConcession(WebDriver d) {
         page = this.getClass().getSimpleName();
@@ -26,20 +28,20 @@ public class FeesConcession extends GenericReports {
     }
 
     public void getConcessionElements() throws IOException {
-        element= readFile.getElement("concession");
-        clear= readFile.getElement("concessionclear");
-        values= readFile.getElement("concessionvalueslist");
-        close= readFile.getElement("concessionclose");
+        element = readFile.getElement("concession");
+        clear = readFile.getElement("concessionclear");
+        values = readFile.getElement("concessionvalueslist");
+        close = readFile.getElement("concessionclose");
     }
 
     public void validateConcession() throws IOException {
         getConcessionElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "concession"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "concession"));
     }
 
     public void selectConcession() throws IOException {
         getConcessionElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     @Override

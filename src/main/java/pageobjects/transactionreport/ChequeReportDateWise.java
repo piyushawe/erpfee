@@ -35,11 +35,11 @@ public class ChequeReportDateWise extends GenericReports {
 
     public void validateChequeBank() throws IOException {
         getChequeBankElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "chequebank"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "chequebank"));
     }
 
     public void selectChequeBank() throws IOException {
         getChequeBankElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 }

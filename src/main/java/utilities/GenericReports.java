@@ -3,6 +3,7 @@ package utilities;
 import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.picocontainer.annotations.Inject;
 import supportclasses.GenericBaseClass;
 import webdriver.DriverMethods;
 
@@ -27,11 +28,6 @@ public abstract class GenericReports extends GenericBaseClass {
     @FindBy(className = "datepick-close")
     private WebElement cls;
 
-    protected WebElement element;
-    protected WebElement clear;
-    protected WebElement values;
-    protected WebElement close;
-    protected WebElement message;
 
     private static final String INSTALLMENT = "installment";
 
@@ -77,27 +73,27 @@ public abstract class GenericReports extends GenericBaseClass {
 
     public void validateClass() throws IOException {
         getClassElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "cls"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "cls"));
     }
 
     public void validateEntryMode() throws IOException {
         getEntryModeElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "entrymode"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "entrymode"));
     }
 
     public void validatePayMode() throws IOException {
         getPayModeElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "paymode"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "paymode"));
     }
 
     public void validateHead() throws IOException {
         getHeadElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "head"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "head"));
     }
 
     public void validateInstallment() throws IOException {
         getInstallmentElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, INSTALLMENT));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, INSTALLMENT));
     }
 
     public void selectSchool(int index) throws IOException, InterruptedException {
@@ -110,7 +106,7 @@ public abstract class GenericReports extends GenericBaseClass {
 
     public void selectClass() throws IOException {
         getClassElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectClass(int index) throws IOException, InterruptedException {
@@ -127,7 +123,7 @@ public abstract class GenericReports extends GenericBaseClass {
 
     public void selectInstallment() throws IOException {
         getInstallmentElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectInstallment(int index) throws IOException, InterruptedException {
@@ -140,17 +136,17 @@ public abstract class GenericReports extends GenericBaseClass {
 
     public void selectEntryMode() throws IOException {
         getEntryModeElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectPayMode() throws IOException {
         getPayModeElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectHead() throws IOException {
         getHeadElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectFeeType(int index) throws IOException, InterruptedException {

@@ -50,21 +50,21 @@ public class MonthWiseCollectionReport extends GenericReports {
 
     public void validateMonth() throws IOException {
         getMonthElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "month"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "month"));
     }
 
     public void selectMonth() throws IOException {
         getMonthElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void validateBankName() throws IOException {
         getBankNameElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "bankname"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "bankname"));
     }
 
     public void selectBankName() throws IOException {
         getBankNameElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 }

@@ -42,12 +42,12 @@ public class FeesConcessionInstallHeadWise extends GenericReports {
 
     public void selectConcessionType() throws IOException {
         getConcessionTypeElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectConcession() throws IOException {
         getConcessionElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void clickHeadButton(String value) throws IOException {

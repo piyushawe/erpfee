@@ -37,11 +37,11 @@ public class DailyFeeCollectionDateFeeGroupWise extends GenericReports {
 
     public void validateFeeGroup() throws IOException {
         getFeeGroupElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "feegroup"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "feegroup"));
     }
 
     public void selectFeeGroup() throws IOException {
         getFeeGroupElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 }

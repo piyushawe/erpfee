@@ -34,7 +34,7 @@ public class TotalConcessionReportInstallHeadWise extends GenericReports {
 
     public void selectConcession() throws IOException {
         getConcessionElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectStudentStatus(int status) throws IOException, InterruptedException {

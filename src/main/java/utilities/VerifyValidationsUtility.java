@@ -2,8 +2,13 @@ package utilities;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
+import org.picocontainer.annotations.Inject;
+import supportclasses.GenericBaseClass;
 
 public class VerifyValidationsUtility {
+    @Inject
+    GenericBaseClass baseClass;
+
     private EventHandlingUtility ehandler = new EventHandlingUtility();
 
     public void validateBlankField(WebElement we, String expected, WebElement msgid) {
@@ -22,23 +27,23 @@ public class VerifyValidationsUtility {
         System.out.println("Page Refreshed");
     }
 
-    public void verifyValidationOnMultiSelect(WebElement element, WebElement clear, WebElement close, WebElement msgid, String exp) {
-        ehandler.click(element);
-        ehandler.click(clear);
-        ehandler.click(close);
-        Assert.assertTrue(msgid.isDisplayed());
-        verifyValidationMessage(exp, msgid);
-    }
-
-    public void verifyValidationOnMultiSelect(WebElement element, WebElement clear, WebElement msgid, String exp) {
-        ehandler.click(element);
-        ehandler.click(clear);
-        Assert.assertTrue(msgid.isDisplayed());
-        verifyValidationMessage(exp, msgid);
+    public void verifyValidationOnMultiSelect(String exp) {
+        ehandler.click(baseClass.element);
+        ehandler.click(baseClass.clear);
+        ehandler.click(baseClass.close);
+        Assert.assertTrue(baseClass.message.isDisplayed());
+        verifyValidationMessage(exp, baseClass.message);
     }
 
     void verifyMessageImage(WebElement imgicon, String url, String img) {
         Assert.assertEquals(url + img, imgicon.getAttribute("src"));
         System.out.println(img);
+    }
+
+    public void verifyValidationOnMultiSelect(WebElement tilldate, WebElement clr, WebElement tilldatemessage, String tilldate1) {
+        ehandler.click(tilldate);
+        ehandler.click(clr);
+        Assert.assertTrue(tilldatemessage.isDisplayed());
+        verifyValidationMessage(tilldate1, tilldatemessage);
     }
 }

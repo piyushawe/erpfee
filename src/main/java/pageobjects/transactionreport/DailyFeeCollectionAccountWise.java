@@ -44,16 +44,16 @@ public class DailyFeeCollectionAccountWise extends GenericReports {
 
     public void validateBankName() throws IOException {
         getBankNameElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "bankname"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "bankname"));
     }
 
     public void selectBankName() throws IOException {
         getBankNameElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectChequeDetails() throws IOException {
         getChequeDetailsElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 }

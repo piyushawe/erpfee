@@ -40,6 +40,6 @@ public class SelfTransportReport extends GenericReports {
 
     public void selectAdditionalField() throws IOException {
         getAdditionalFieldElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 }

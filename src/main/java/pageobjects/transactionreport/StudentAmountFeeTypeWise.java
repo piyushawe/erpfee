@@ -35,6 +35,6 @@ public class StudentAmountFeeTypeWise extends GenericReports {
 
     public void selectConcession() throws IOException {
         getConcession();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 }

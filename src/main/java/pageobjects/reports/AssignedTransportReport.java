@@ -36,7 +36,7 @@ public class AssignedTransportReport extends GenericReports {
 
     public void selectMonth() throws IOException {
         getMonthElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void searchStudent() throws IOException, InterruptedException {

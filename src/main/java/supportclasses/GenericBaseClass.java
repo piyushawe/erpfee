@@ -1,6 +1,7 @@
 package supportclasses;
 
 import automationFramework.supportMethods.ReadFile;
+import org.openqa.selenium.WebElement;
 import utilities.EventHandlingUtility;
 import utilities.GetterMethods;
 import utilities.VerifyValidationsUtility;
@@ -24,4 +25,10 @@ public abstract class GenericBaseClass {
     protected File fileConfig = new File("configuration\\GenericConfig.properties");
     protected File fileUI = new File("configuration\\UIMap.properties");
     protected File fileMsg = new File("configuration\\MessageBundle.properties");
+
+    public static WebElement element;
+    public static WebElement clear;
+    public static WebElement values;
+    public static WebElement close;
+    public static WebElement message;
 }
