@@ -143,20 +143,6 @@ public class EventHandlingUtility {
         click(baseClass.close);
     }
 
-    void selectValue(WebElement element, WebElement clear, WebElement values, WebElement close, WebElement div) throws IOException {
-        click(element);
-        click(clear);
-        if (!div.getAttribute("style").contains("block")) {
-            click(element);
-        }
-        List<WebElement> options = readFile.getElements(fileUI, values, "tablelist");
-        if (options.isEmpty())
-            System.out.println("No Value Present");
-        else
-            click(options.get(0));
-        click(close);
-    }
-
     public void getList(List<WebElement> elements) {
         HashMap<String, Integer> radioList = new HashMap<String, Integer>();
         for (WebElement emt : elements) {
