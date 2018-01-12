@@ -2,45 +2,48 @@ package utilities;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
+import org.picocontainer.annotations.Inject;
+import supportclasses.GenericBaseClass;
 
 public class VerifyValidationsUtility {
-    EventHandlingUtility ehandler= new EventHandlingUtility();
+    @Inject
+    GenericBaseClass baseClass;
 
-    public void validateBlankField(WebElement we, String expected, WebElement msgid){
-       if(we.getAttribute("value").equals(""))
-          Assert.assertEquals(expected, msgid.getText());
-       System.out.println(msgid.getText());
+    private EventHandlingUtility ehandler = new EventHandlingUtility();
+
+    public void validateBlankField(WebElement we, String expected, WebElement msgid) {
+        if (we.getAttribute("value").equals(""))
+            Assert.assertEquals(expected, msgid.getText());
+        System.out.println(msgid.getText());
     }
 
-    public void verifyValidationMessage(String expected, WebElement msgid){
-       Assert.assertEquals(expected, msgid.getText());
-       System.out.println(msgid.getText());
+    public void verifyValidationMessage(String expected, WebElement msgid) {
+        Assert.assertEquals(expected, msgid.getText());
+        System.out.println(msgid.getText());
     }
 
-    public void verifyCancel(WebElement we){
-       Assert.assertEquals("", we.getAttribute("value"));
-       System.out.println("Page Refreshed");
+    public void verifyCancel(WebElement we) {
+        Assert.assertEquals("", we.getAttribute("value"));
+        System.out.println("Page Refreshed");
     }
 
-    public void verifyValidationOnMultiSelect(WebElement element, WebElement clear, WebElement close, WebElement msgid, String exp){
-       ehandler.click(element);
-       ehandler.click(clear);
-       ehandler.click(close);
-       Assert.assertTrue(msgid.isDisplayed());
-       verifyValidationMessage(exp, msgid);
+    public void verifyValidationOnMultiSelect(String exp) {
+        ehandler.click(baseClass.element);
+        ehandler.click(baseClass.clear);
+        ehandler.click(baseClass.close);
+        Assert.assertTrue(baseClass.message.isDisplayed());
+        verifyValidationMessage(exp, baseClass.message);
     }
 
-    public void verifyValidationOnMultiSelect(WebElement element, WebElement clear,  WebElement msgid, String exp) {
-        ehandler.click(element);
-        //Thread.sleep(5000);
-        ehandler.click(clear);
-        //Thread.sleep(2000);
-        //ehandler.click(close);
-        Assert.assertTrue(msgid.isDisplayed());
-        verifyValidationMessage(exp, msgid);
-    }
-    void verifyMessageImage(WebElement imgicon,String url, String img){
-        Assert.assertEquals(url+img, imgicon.getAttribute("src"));
+    void verifyMessageImage(WebElement imgicon, String url, String img) {
+        Assert.assertEquals(url + img, imgicon.getAttribute("src"));
         System.out.println(img);
+    }
+
+    public void verifyValidationOnMultiSelect(WebElement tilldate, WebElement clr, WebElement tilldatemessage, String tilldate1) {
+        ehandler.click(tilldate);
+        ehandler.click(clr);
+        Assert.assertTrue(tilldatemessage.isDisplayed());
+        verifyValidationMessage(tilldate1, tilldatemessage);
     }
 }

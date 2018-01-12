@@ -7,23 +7,24 @@ Feature: Fee Defaulter Report Slip
     When user enter username and password
     And click sign in to open erp home page
     Then user click fee manager logo
-    And user open fee defaulter report slip
+    And user open fee defaulter slip
 
 #test cases of all filters selection
   @verify_with_filters @scenario1
-  Scenario: To verify fee defaulter report slip with filters
-    And select school with index "1" on fee defaulter report slip
-    And select class with index "1" on fee defaulter report slip
-    And select section with index "1" on fee defaulter report slip
-    And select fee type with index "1" on fee defaulter report slip
-    And select installment on fee defaulter report slip
-    And select till date as month "April" year "2017" and day "1" on fee defaulter report slip
-    And click show on fee defaulter report slip
+  Scenario: To verify fee defaulter slip with filters
+    And select school with index "1" on fee defaulter slip
+    And select class with index "1" on fee defaulter slip
+    And select section with index "1" on fee defaulter slip
+    And select signatory with index "1" on fee defaulter slip
+    And select fee type with index "1" on fee defaulter slip
+    And select installment on fee defaulter slip
+    And select till date as month "April" year "2017" and day "1" on fee defaulter slip
+    And click show on fee defaulter slip
 
 #test cases on selection of radio buttons
   @verify_with_no_filters @scenario2
   Scenario: To verify fee defaulter report slip with date range and fine
-    And click date range on fee defaulter report slip
-    And select from date as month "April" year "2017" and day "1" on fee defaulter report slip
-    And click with fine on fee defaulter report slip
-    And click show on fee defaulter report slip
+    And click date range on fee defaulter slip
+    And select from date as month "April" year "2017" and day "1" on fee defaulter slip
+    And click with fine on fee defaulter slip
+    And click show on fee defaulter slip

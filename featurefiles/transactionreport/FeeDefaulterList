@@ -41,4 +41,5 @@ Feature: Fee Defaulter List
     And select radio button "2" on fee defaulter list
     And select class on fee defaulter list
     And select radio button "2" head or headwise on fee defaulter list
+    And select head on fee defaulter list
     And click show on fee defaulter list

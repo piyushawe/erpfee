@@ -31,10 +31,17 @@ Feature: Reconcile Report
   @verify_with_no_filters @scenario3
   Scenario: To verify fee reconcile report with summary and format1
     And select radio button "1" on reconcile report
-    And click format on reconcile report
+    And click format one on reconcile report
     And click show on reconcile report
 
   @verify_with_no_filters @scenario4
-  Scenario: To verify fee reconcile report with consolidated
+  Scenario: To verify fee reconcile report with consolidated and format2
     And select radio button "2" on reconcile report
+    And click format two on reconcile report
+    And click show on reconcile report
+
+  @verify_with_no_filters @scenario5
+  Scenario: To verify fee reconcile report with summary and format3
+    And select radio button "1" on reconcile report
+    And click format three on reconcile report
     And click show on reconcile report

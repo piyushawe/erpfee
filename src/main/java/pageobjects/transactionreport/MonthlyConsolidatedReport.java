@@ -1,5 +1,6 @@
 package pageobjects.transactionreport;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,8 +21,8 @@ public class MonthlyConsolidatedReport extends GenericReports {
     }
 
     public void openMonthlyConsolidatedReport() throws IOException {
-        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
-        ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
+        ehandler.moveToElement(new UIMap().getTransactionReportMenu());
+        ehandler.openFrame(new UIMap().getCollectionsSubMenu(), link, frame);
     }
 
     private void getMonthElements() throws IOException {
@@ -50,32 +51,32 @@ public class MonthlyConsolidatedReport extends GenericReports {
 
     public void validateMonth() throws IOException {
         getMonthElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "month"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "month"));
     }
 
     public void validateBankName() throws IOException {
         getBankNameElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "bankname"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "bankname"));
     }
 
     public void validateChequeBank() throws IOException {
         getChequeBankElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "chequebank"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "chequebank"));
     }
 
     public void selectMonth() throws IOException {
         getMonthElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectBankName() throws IOException {
         getBankNameElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectChequebank() throws IOException {
         getChequeBankElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void getCollectionList() throws IOException {

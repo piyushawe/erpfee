@@ -57,7 +57,7 @@ Feature: Daily Fee Collection Date Wise With Remark
     Then verify alert message for invalid receipt range on daily fee collection date wise with remark
 
 #test cases of all filters selection
-  @verify_with_filters @scenario7
+  @verify_with_filters @scenario6
   Scenario: To verify daily fee collection date wise with remark with filters
     And select school with index "1" on daily fee collection date wise with remark
     And select wing with index "1" on daily fee collection date wise with remark
@@ -77,7 +77,7 @@ Feature: Daily Fee Collection Date Wise With Remark
     Then click show on daily fee collection date wise with remark
 
 #test cases on selection of radio buttons/ check box
-  @verify_with_no_filters @scenario8
+  @verify_with_no_filters @scenario7
   Scenario: To verify daily fee collection date wise with remark for all students and receipt range
     And select from date as month "April" year "2017" and day "1" on daily fee collection date wise with remark
     And click receipt no range on daily fee collection date wise with remark
@@ -85,7 +85,7 @@ Feature: Daily Fee Collection Date Wise With Remark
     And enter value "100" in receipt to on daily fee collection date wise with remark
     Then click show on daily fee collection date wise with remark
 
-  @verify_with_no_filters @scenario9
+  @verify_with_no_filters @scenario8
   Scenario: To verify daily fee collection date wise with remark for active students with settlement date and cheque clearance date
     And select from date as month "April" year "2017" and day "1" on daily fee collection date wise with remark
     And click settlement date on daily fee collection date wise with remark
@@ -93,7 +93,7 @@ Feature: Daily Fee Collection Date Wise With Remark
     And select radio button "2" on daily fee collection date wise with remark
     Then click show on daily fee collection date wise with remark
 
-  @verify_with_no_filters @scenario10
+  @verify_with_no_filters @scenario9
   Scenario: To verify daily fee collection date wise with remark for inactive students
     And select from date as month "April" year "2017" and day "1" on daily fee collection date wise with remark
     And select radio button "3" on daily fee collection date wise with remark

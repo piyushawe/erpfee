@@ -9,6 +9,10 @@ public class GetterMethods {
     }
 
     public File getFilePath(String page, String pack) {
-        return new File("configuration\\" + pack + "\\" + page + ".properties");
+        return new File("configuration" + File.separator + pack + File.separator + page + ".properties");
+    }
+
+    public File getFilePath(String page) {
+        return new File("configuration" + File.separator + page + ".properties");
     }
 }

@@ -1,5 +1,6 @@
 package pageobjects.transactionreport;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,8 +24,8 @@ public class DailyFeeCollectionDateWiseWithRemark extends GenericReports {
     }
 
     public void openDailyFeeCollectionDateWiseWithRemark() throws IOException {
-        ehandler.moveToElement(readFile.getElement(fileUI, "transactionreportmenu"));
-        ehandler.openFrame(readFile.getElement(fileUI, "collectionsubmenu"), link, frame);
+        ehandler.moveToElement(new UIMap().getTransactionReportMenu());
+        ehandler.openFrame(new UIMap().getCollectionsSubMenu(), link, frame);
     }
 
     private void getBankNameElements() throws IOException {
@@ -51,22 +52,22 @@ public class DailyFeeCollectionDateWiseWithRemark extends GenericReports {
 
     public void validateBankName() throws IOException {
         getBankNameElements();
-        verify.verifyValidationOnMultiSelect(element, clear, close, message, readFile.readProperty(fileUI, "bankname"));
+        verify.verifyValidationOnMultiSelect(readFile.readProperty(fileUI, "bankname"));
     }
 
     public void selectBankName() throws IOException {
         getBankNameElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectChequeDetails() throws IOException {
         getChequeDetailsElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectOtherDetails() throws IOException {
         getOtherDetailsElements();
-        ehandler.selectValue(element, clear, values, close);
+        ehandler.selectValue();
     }
 
     public void selectNewOld(int newold) throws IOException, InterruptedException {

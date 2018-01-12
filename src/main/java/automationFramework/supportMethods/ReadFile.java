@@ -11,133 +11,77 @@ import java.util.List;
 import java.util.Properties;
 
 import static supportclasses.GenericBaseClass.file;
-import static webdriver.AppDriver.driver;
+import static webdriver.AppDriver.getCurrentDriver;
 
-public class ReadFile {
-  private Properties properties = new Properties();
+public class ReadFile implements GetLocators {
+    private Properties properties = new Properties();
 
-  private FileInputStream readFile(File file) throws FileNotFoundException {
-    return new FileInputStream(file);
-  }
-
-  public String readProperty(File file, String key) throws IOException {
-    String value=null;
-    if (file.exists()){
-      properties.load(readFile(file));
-      value= properties.getProperty(key);
+    private FileInputStream readFile(File file) throws FileNotFoundException {
+        return new FileInputStream(file);
     }
-    return value;
-  }
 
-  public WebElement getElement(File file, String element) throws IOException {
+    public String readProperty(File file, String key) throws IOException {
+        String value = null;
+        if (file.exists()) {
+            properties.load(readFile(file));
+            value = properties.getProperty(key);
+        }
+        return value;
+    }
 
-    String locator= readProperty(file, element+"type");
-    String value= readProperty(file, element);
-    WebElement webelement=null;
+    public WebElement getElement(String element) throws IOException {
 
-    if (locator.equalsIgnoreCase("id"))
-       webelement= driver.findElement(By.id(value));
-    if (locator.equalsIgnoreCase("name"))
-       webelement= driver.findElement(By.name(value));
-    if (locator.equalsIgnoreCase("xpath"))
-       webelement= driver.findElement(By.xpath(value));
-    if (locator.equalsIgnoreCase("linktext"))
-       webelement= driver.findElement(By.linkText(value));
-    if (locator.equalsIgnoreCase("tagname"))
-       webelement= driver.findElement(By.tagName(value));
-    if (locator.equalsIgnoreCase("cssSelector"))
-       webelement= driver.findElement(By.cssSelector(value));
-    if (locator.equalsIgnoreCase("classname"))
-       webelement= driver.findElement(By.className(value));
+        String locator = readProperty(file, element + "type");
+        String value = readProperty(file, element);
+        WebElement webelement = null;
 
-    return webelement;
-  }
+        if (locator.equalsIgnoreCase(ID))
+            webelement = getCurrentDriver().findElement(By.id(value));
+        if (locator.equalsIgnoreCase(NAME))
+            webelement = getCurrentDriver().findElement(By.name(value));
+        if (locator.equalsIgnoreCase(XPATH))
+            webelement = getCurrentDriver().findElement(By.xpath(value));
+        if (locator.equalsIgnoreCase(LINKTEXT))
+            webelement = getCurrentDriver().findElement(By.linkText(value));
+        if (locator.equalsIgnoreCase(TAGNAME))
+            webelement = getCurrentDriver().findElement(By.tagName(value));
+        if (locator.equalsIgnoreCase(CSSSELECTOR))
+            webelement = getCurrentDriver().findElement(By.cssSelector(value));
+        if (locator.equalsIgnoreCase(CLASSNAME))
+            webelement = getCurrentDriver().findElement(By.className(value));
 
-  public WebElement getElement(String element) throws IOException {
+        return webelement;
+    }
 
-    String locator= readProperty(file, element+"type");
-    String value= readProperty(file, element);
-    WebElement webelement=null;
+    public List<WebElement> getElements(String element) throws IOException {
 
-    if (locator.equalsIgnoreCase("id"))
-      webelement= driver.findElement(By.id(value));
-    if (locator.equalsIgnoreCase("name"))
-      webelement= driver.findElement(By.name(value));
-    if (locator.equalsIgnoreCase("xpath"))
-      webelement= driver.findElement(By.xpath(value));
-    if (locator.equalsIgnoreCase("linktext"))
-      webelement= driver.findElement(By.linkText(value));
-    if (locator.equalsIgnoreCase("tagname"))
-      webelement= driver.findElement(By.tagName(value));
-    if (locator.equalsIgnoreCase("cssSelector"))
-      webelement= driver.findElement(By.cssSelector(value));
-    if (locator.equalsIgnoreCase("classname"))
-      webelement= driver.findElement(By.className(value));
+        String locator = readProperty(file, element + "type");
+        String value = readProperty(file, element);
+        List<WebElement> webelement = null;
 
-    return webelement;
-  }
+        if (locator.equals(ID))
+            webelement = getCurrentDriver().findElements(By.id(value));
+        if (locator.equals(NAME))
+            webelement = getCurrentDriver().findElements(By.name(value));
+        if (locator.equals(XPATH))
+            webelement = getCurrentDriver().findElements(By.xpath(value));
+        if (locator.equalsIgnoreCase(LINKTEXT))
+            webelement = getCurrentDriver().findElements(By.linkText(value));
+        if (locator.equalsIgnoreCase(TAGNAME))
+            webelement = getCurrentDriver().findElements(By.tagName(value));
+        if (locator.equalsIgnoreCase(CSSSELECTOR))
+            webelement = getCurrentDriver().findElements(By.cssSelector(value));
+        if (locator.equalsIgnoreCase(CLASSNAME))
+            webelement = getCurrentDriver().findElements(By.className(value));
 
-  public List<WebElement> getElements(String element) throws IOException {
+        return webelement;
+    }
 
-    String locator= readProperty(file, element+"type");
-    String value= readProperty(file, element);
-    List<WebElement>webelement= null;
-
-    if (locator.equals("id"))
-      webelement= driver.findElements(By.id(value));
-    if (locator.equals("name"))
-      webelement= driver.findElements(By.name(value));
-    if (locator.equals("xpath"))
-      webelement= driver.findElements(By.xpath(value));
-    if (locator.equalsIgnoreCase("linktext"))
-      webelement= driver.findElements(By.linkText(value));
-    if (locator.equalsIgnoreCase("tagname"))
-      webelement= driver.findElements(By.tagName(value));
-    if (locator.equalsIgnoreCase("cssSelector"))
-      webelement= driver.findElements(By.cssSelector(value));
-    if (locator.equalsIgnoreCase("classname"))
-      webelement= driver.findElements(By.className(value));
-
-    return webelement;
-  }
-
-  public List<WebElement> getElements(File file,String element) throws IOException {
-
-    String locator= readProperty(file, element+"type");
-    String value= readProperty(file, element);
-    List<WebElement>webelement= null;
-
-    if (locator.equals("id"))
-      webelement= driver.findElements(By.id(value));
-    if (locator.equals("name"))
-      webelement= driver.findElements(By.name(value));
-    if (locator.equals("xpath"))
-      webelement= driver.findElements(By.xpath(value));
-    if (locator.equalsIgnoreCase("linktext"))
-      webelement= driver.findElements(By.linkText(value));
-    if (locator.equalsIgnoreCase("tagname"))
-      webelement= driver.findElements(By.tagName(value));
-    if (locator.equalsIgnoreCase("cssSelector"))
-      webelement= driver.findElements(By.cssSelector(value));
-    if (locator.equalsIgnoreCase("classname"))
-      webelement= driver.findElements(By.className(value));
-
-    return webelement;
-  }
-
-//get all elements of a list or a table
-  public List<WebElement> getElements(File file, WebElement ele, String element) throws IOException {
-    String locator= readProperty(file, element+"type");
-    String value= readProperty(file, element);
-    List<WebElement>webelement= null;
-    webelement= ele.findElements(By.tagName(value));
-    return webelement;
-  }
-
-  String getFileName(){
-    String fname= this.getClass().getName();
-    //String fnm[]= fname.split("\\.");
-    System.out.println(fname);
-    return fname;
-  }
- }
+    //get all elements of a list or a table
+    public List<WebElement> getElements(File file, WebElement ele, String element) throws IOException {
+        String value = readProperty(file, element);
+        List<WebElement> webelement = null;
+        webelement = ele.findElements(By.tagName(value));
+        return webelement;
+    }
+}

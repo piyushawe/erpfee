@@ -3,7 +3,7 @@ Feature: Daily Fee Collection
   So that I don't have to do it manually
 
   Background: Steps to open fee manager landing page
-  Given for url
+    Given for url
     When user enter username and password
     And click sign in to open erp home page
     Then user click fee manager logo

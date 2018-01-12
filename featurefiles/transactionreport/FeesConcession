@@ -9,13 +9,13 @@ Feature: Fees Concession
     Then user click fee manager logo
     When user open fees concession
 
-#validation messege verification test cases
+#validation message verification test cases
   @validation @scenario1
   Scenario: To test client side validations on mandatory fields
     And verify validation when no class is selected on fees concession
     And verify validation when no head is selected on fees concession
     And verify validation when no installment is selected on fees concession
-    And verify validation when no concession is selected on fees concession
+    #And verify validation when no concession is selected on fees concession
     Then verify validation when till date is not selected on fees concession
 
 #test cases of all filters selection

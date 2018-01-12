@@ -38,4 +38,5 @@ Feature: Unpaid Student Report
     And select radio button "2" on unpaid student report
     And select class on unpaid student report
     And select radio button "2" head or headwise on unpaid student report
+    And select head on unpaid student report
     And click show on unpaid student report

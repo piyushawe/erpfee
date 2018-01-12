@@ -6,13 +6,13 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features= {"featurefiles/reports/ClassSectionTransferReport"}
+        features= {"featurefiles/reports/ClassSectionTransferReport.feature"}
         ,glue= {"stepdefinitions"}
         ,monochrome=true
         ,plugin= {"pretty","html:target/cucumber_html_report",
         "json:target/cucumber.json",
         "junit:target/cucumber.xml"}
-        ,tags= {"@scenario1"}
+        ,tags= {"@scenario2"}
 )
 public class ClassSectionTransferReportRunner {
 }

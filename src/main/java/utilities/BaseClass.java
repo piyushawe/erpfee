@@ -1,11 +1,11 @@
 package utilities;
 
+import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import supportclasses.GenericBaseClass;
 
-import java.io.File;
 import java.io.IOException;
 
 public abstract class BaseClass extends GenericBaseClass {
@@ -16,33 +16,32 @@ public abstract class BaseClass extends GenericBaseClass {
     @FindBy(xpath = "//input[@value='Delete']") private WebElement delete;
     @FindBy(xpath = "//input[@value='Cancel']") private WebElement cancel;
     @FindAll({@FindBy(id = "example"), @FindBy(id = "example1")}) private WebElement table;
-    protected File f1;
 
     public void clickSave(){
         ehandler.click(save);
     }
 
-    public void clickView() throws IOException {
+    public void clickView() {
         ehandler.click(view);
     }
 
     public void selectRecord() throws IOException {
-        ehandler.selectRecord(table, readFile.getElement(fileUI, "select"));
+        ehandler.selectRecord(table, new UIMap().getSelect());
     }
 
-    public void clickModify() throws IOException {
+    public void clickModify() {
         ehandler.click(modify);
     }
 
     public void clickYes() throws IOException {
-        ehandler.click(readFile.getElement(fileUI,"yes"));
+        ehandler.click(new UIMap().getYes());
     }
 
     public void clickNo() throws IOException {
-        ehandler.click(readFile.getElement(fileUI,"no"));
+        ehandler.click(new UIMap().getNo());
     }
 
-    public void clickDelete() throws IOException {
+    public void clickDelete() {
         ehandler.click(delete);
     }
 
@@ -56,41 +55,41 @@ public abstract class BaseClass extends GenericBaseClass {
 
     public void verifyModifyMessage() throws IOException {
         dm.switchToParentWindow();
-        verify.verifyValidationMessage(readFile.readProperty(f1, "modifymessage"),readFile.getElement(fileUI, "servermessage"));
+        verify.verifyValidationMessage(readFile.readProperty(file, "modifymessage"), new UIMap().getServerMessage());
     }
 
     public void verifyDuplicateValue() throws IOException {
         dm.switchToParentWindow();
-        verify.verifyValidationMessage(readFile.readProperty(f1, "duplicatevaluemessage"), readFile.getElement(fileUI, "servermessage"));
+        verify.verifyValidationMessage(readFile.readProperty(file, "duplicatevaluemessage"), new UIMap().getServerMessage());
     }
 
     public void verifySaveMessage() throws IOException {
         dm.switchToParentWindow();
-        verify.verifyValidationMessage(readFile.readProperty(f1, "savemessage"),readFile.getElement(fileUI, "servermessage"));
+        verify.verifyValidationMessage(readFile.readProperty(file, "savemessage"),new UIMap().getServerMessage());
     }
 
     public void verifyDeleteMessage() throws IOException {
         dm.switchToParentWindow();
-        verify.verifyValidationMessage(readFile.readProperty(f1, "deletemessage"), readFile.getElement(fileUI, "servermessage"));
+        verify.verifyValidationMessage(readFile.readProperty(file, "deletemessage"), new UIMap().getServerMessage());
     }
 
     public void validateNumericValue() throws IOException {
-        verify.verifyValidationMessage(readFile.readProperty(f1,"numbervalidationmessage"), readFile.getElement(f1,"numbervalidation"));
+        verify.verifyValidationMessage(readFile.readProperty(file,"numbervalidationmessage"), readFile.getElement("numbervalidation"));
     }
 
     public void validateLength() throws IOException {
-        verify.verifyValidationMessage(readFile.readProperty(f1,"characterlengthvalidationmessage"), readFile.getElement(f1,"lengthvalidation"));
+        verify.verifyValidationMessage(readFile.readProperty(file,"characterlengthvalidationmessage"), readFile.getElement("lengthvalidation"));
     }
 
     public void verifySuccessMessageImage() throws IOException {
-        verify.verifyMessageImage(readFile.getElement(fileUI, "messageimage"), readFile.readProperty(fileUI, "url"), readFile.readProperty(fileUI, "successimage"));
+        verify.verifyMessageImage(new UIMap().getMessageImage(), readFile.readProperty(fileUI, "url"), readFile.readProperty(fileUI, "successimage"));
     }
 
     public void verifyWarningMessageImage() throws IOException {
-        verify.verifyMessageImage(readFile.getElement(fileUI, "messageimage"), readFile.readProperty(fileUI, "url"), readFile.readProperty(fileUI, "warningimage"));
+        verify.verifyMessageImage(new UIMap().getMessageImage(), readFile.readProperty(fileUI, "url"), readFile.readProperty(fileUI, "warningimage"));
     }
 
     public void verifyErrorMessageImage() throws IOException {
-        verify.verifyMessageImage(readFile.getElement(fileUI, "messageimage"), readFile.readProperty(fileUI, "url"), readFile.readProperty(fileUI, "errorimage"));
+        verify.verifyMessageImage(new UIMap().getMessageImage(), readFile.readProperty(fileUI, "url"), readFile.readProperty(fileUI, "errorimage"));
     }
 }

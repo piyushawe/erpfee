@@ -48,7 +48,8 @@ Feature: Monthly Consolidated Report
 
 #test cases on selection of radio buttons/ check box
   @verify_with_no_filters @scenario4
-  Scenario: To verify monthly consolidated report headwise and cheque clearing date
+  Scenario: To verify monthly consolidated report headwise with settlement date and cheque clearing date
+    And click settlement date on monthly consolidated report
     And click cheque clearing date on monthly consolidated report
     And select radio button "1" on monthly consolidated report
     Then click show on monthly consolidated report
