@@ -95,7 +95,7 @@ public class EventHandlingUtility {
     }
 
     //click particular cell of table
-    private void selectValueFromTable(WebElement table, String value) throws IOException {
+    private void selectValueFromTable(String value) throws IOException {
         List<WebElement> cells = new UIMap().getCell();
         for (WebElement cell : cells) {
             if (cell.getText().equals(value)) {
@@ -122,7 +122,7 @@ public class EventHandlingUtility {
         dm.waitUntil(new UIMap().getYearPicker(), 20);
         selectByVisibleText(new UIMap().getYearPicker(), yy);
         dm.waitUntil(new UIMap().getDayPicker(), 200);
-        selectValueFromTable(new UIMap().getDayPicker(), dd);
+        selectValueFromTable(dd);
         Thread.sleep(500);
     }
 

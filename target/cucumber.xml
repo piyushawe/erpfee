@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="12.935231">
-<testcase classname="Fees Concession Install Head Wise" name="To verify fees concession install head wise consolidated and assigned" time="12.935231">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="53.158845">
+<testcase classname="Daily Fee Collection" name="To verify daily fee collection head wise with receipt no. range, settlement date and cheque clearance date" time="53.158845">
 <system-out><![CDATA[Given for url...............................................................passed
 When user enter username and password.......................................passed
 And click sign in to open erp home page.....................................passed
 Then user click fee manager logo............................................passed
-When user open fees concession install head wise............................passed
-And select radio button "3" on fees concession install head wise............passed
-And click show on fees concession install head wise.........................passed
+When user open daily fee collection report..................................passed
+And select from date as month "April" year "2017" and day "1" on daily fee collection.passed
+And click receipt no range on daily fee collection..........................passed
+And enter value "1" in receipt from on daily fee collection.................passed
+And enter value "100" in receipt to on daily fee collection.................passed
+And select radio button "1" on daily fee collection.........................passed
+And select with settlement date on daily fee collection.....................passed
+And select with cheque clearance date on daily fee collection...............passed
+Then click show on daily fee collection.....................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

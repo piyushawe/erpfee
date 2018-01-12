@@ -1,17 +1,17 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("featurefiles/transactionreport/FeesConcessionInstallHeadWise");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("featurefiles/transactionreport/DailyFeeCollection.feature");
 formatter.feature({
   "line": 1,
-  "name": "Fees Concession Install Head Wise",
+  "name": "Daily Fee Collection",
   "description": "As a user I would like to run the test cases of this page\r\nSo that I don\u0027t have to do it manually",
-  "id": "fees-concession-install-head-wise",
+  "id": "daily-fee-collection",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 801432,
+  "duration": 863306,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4573914723,
+  "duration": 5649377475,
   "status": "passed"
 });
 formatter.background({
@@ -43,98 +43,202 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "user open fees concession install head wise",
+  "name": "user open daily fee collection report",
   "keyword": "When "
 });
 formatter.match({
   "location": "GenericTestSteps.for_url()"
 });
 formatter.result({
-  "duration": 1496203975,
+  "duration": 8231077496,
   "status": "passed"
 });
 formatter.match({
   "location": "GenericTestSteps.user_enter_username_and_password()"
 });
 formatter.result({
-  "duration": 139521006,
+  "duration": 132598721,
   "status": "passed"
 });
 formatter.match({
   "location": "GenericTestSteps.click_sign_in_to_open_erp_home_page()"
 });
 formatter.result({
-  "duration": 686129861,
+  "duration": 7286233493,
   "status": "passed"
 });
 formatter.match({
   "location": "GenericTestSteps.user_click_fee_manager_logo()"
 });
 formatter.result({
-  "duration": 390824615,
+  "duration": 2994422233,
   "status": "passed"
 });
 formatter.match({
-  "location": "TestSteps.user_open_fees_concession_install_head_wise()"
+  "location": "TestSteps.user_open_daily_fee_collection_report()"
 });
 formatter.result({
-  "duration": 1172109933,
+  "duration": 9164370089,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 45,
-  "name": "To verify fees concession install head wise consolidated and assigned",
+  "comments": [
+    {
+      "line": 79,
+      "value": "#test cases on selection of radio buttons/ check box"
+    }
+  ],
+  "line": 81,
+  "name": "To verify daily fee collection head wise with receipt no. range, settlement date and cheque clearance date",
   "description": "",
-  "id": "fees-concession-install-head-wise;to-verify-fees-concession-install-head-wise-consolidated-and-assigned",
+  "id": "daily-fee-collection;to-verify-daily-fee-collection-head-wise-with-receipt-no.-range,-settlement-date-and-cheque-clearance-date",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 44,
+      "line": 80,
       "name": "@verify_with_no_filters"
     },
     {
-      "line": 44,
-      "name": "@scenario4"
+      "line": 80,
+      "name": "@scenario8"
     }
   ]
 });
 formatter.step({
-  "line": 46,
-  "name": "select radio button \"3\" on fees concession install head wise",
+  "line": 82,
+  "name": "select from date as month \"April\" year \"2017\" and day \"1\" on daily fee collection",
   "keyword": "And "
 });
 formatter.step({
-  "line": 47,
-  "name": "click show on fees concession install head wise",
+  "line": 83,
+  "name": "click receipt no range on daily fee collection",
   "keyword": "And "
+});
+formatter.step({
+  "line": 84,
+  "name": "enter value \"1\" in receipt from on daily fee collection",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 85,
+  "name": "enter value \"100\" in receipt to on daily fee collection",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 86,
+  "name": "select radio button \"1\" on daily fee collection",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 87,
+  "name": "select with settlement date on daily fee collection",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 88,
+  "name": "select with cheque clearance date on daily fee collection",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 89,
+  "name": "click show on daily fee collection",
+  "keyword": "Then "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "3",
-      "offset": 21
+      "val": "April",
+      "offset": 27
+    },
+    {
+      "val": "2017",
+      "offset": 40
+    },
+    {
+      "val": "1",
+      "offset": 55
     }
   ],
-  "location": "TestSteps.select_radio_button_on_fees_concession_install_head_wise(String)"
+  "location": "TestSteps.select_from_date_as_month_year_and_day_on_daily_fee_collection(String,String,String)"
 });
 formatter.result({
-  "duration": 43319553,
+  "duration": 2056778800,
   "status": "passed"
 });
 formatter.match({
-  "location": "TestSteps.click_show_on_fees_concession_install_head_wise()"
+  "location": "TestSteps.click_receipt_no_range_on_daily_fee_collection()"
 });
 formatter.result({
-  "duration": 4095176864,
+  "duration": 121242023,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 13
+    }
+  ],
+  "location": "TestSteps.enter_value_in_receipt_from_on_daily_fee_collection(String)"
+});
+formatter.result({
+  "duration": 409917053,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "100",
+      "offset": 13
+    }
+  ],
+  "location": "TestSteps.enter_value_in_receipt_to_on_daily_fee_collection(String)"
+});
+formatter.result({
+  "duration": 310652389,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 21
+    }
+  ],
+  "location": "TestSteps.select_radio_button_on_daily_fee_collection(String)"
+});
+formatter.result({
+  "duration": 192897607,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TestSteps.select_with_settlement_date_on_daily_fee_collection()"
+});
+formatter.result({
+  "duration": 77165611,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TestSteps.select_with_cheque_clearance_date_on_daily_fee_collection()"
+});
+formatter.result({
+  "duration": 82303514,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TestSteps.click_show_on_daily_fee_collection()"
+});
+formatter.result({
+  "duration": 16087461944,
   "status": "passed"
 });
 formatter.after({
-  "duration": 333611230,
+  "duration": 357723394,
   "status": "passed"
 });
 formatter.after({
-  "duration": 3617441,
+  "duration": 3759664,
   "status": "passed"
 });
 });

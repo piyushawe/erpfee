@@ -140,4 +140,8 @@ public class UIMap extends GenericBaseClass {
     public WebElement getStudentStrengthSubMenu() throws IOException {
         return readFile.getElement("studentstrengthsubmenu");
     }
+
+    public WebElement getTableList() throws IOException {
+        return readFile.getElement("tablelist");
+    }
 }
