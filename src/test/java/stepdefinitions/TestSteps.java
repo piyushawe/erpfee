@@ -1278,9 +1278,6 @@ public class TestSteps {
     @When("^select entry mode on daily fee collection$")
     public void select_entry_mode_on_daily_fee_collection() throws Throwable {
         new DailyFeeCollection(driver).selectEntryMode();
-        new DailyFeeCollection(driver).selectEntryMode();
-        //driver.findElement(By.xpath("//*[@id=\"MainLeftPanel\"]/div/div/div[5]/div/div/button")).click();
-
     }
 
     @When("^select fee type on daily fee collection$")
