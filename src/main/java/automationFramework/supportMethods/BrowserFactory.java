@@ -14,7 +14,7 @@ import static webdriver.AppDriver.driver;
 
 public class BrowserFactory extends GenericBaseClass {
     @Inject
-    LogManager lm;
+    LogManager lm = new LogManager();
 
     public WebDriver getBrowser(String browser) throws IOException {
 

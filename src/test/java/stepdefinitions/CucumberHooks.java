@@ -13,6 +13,7 @@ import static webdriver.AppDriver.getCurrentDriver;
 
 public class CucumberHooks extends GenericBaseClass {
     GenericUtility utility = new GenericUtility();
+
     @Before
     public void getScenario(Scenario sc) {
         scenario = sc.getSourceTagNames();
@@ -29,8 +30,8 @@ public class CucumberHooks extends GenericBaseClass {
     public void afterScenario(Scenario scenario) throws IOException {
         //VerifyErrorUtility errorUtility = new VerifyErrorUtility();
         //if (scenario.isFailed()) {
-            //errorUtility.verifyPageError();
-            utility.takeScreenshot();
+        //errorUtility.verifyPageError();
+        utility.takeScreenshot();
         //}
     }
 
