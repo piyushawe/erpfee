@@ -3,7 +3,6 @@ package utilities;
 import automationFramework.supportMethods.UIMap;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.picocontainer.annotations.Inject;
 import supportclasses.GenericBaseClass;
 import webdriver.DriverMethods;
 
@@ -27,7 +26,6 @@ public abstract class GenericReports extends GenericBaseClass {
     protected WebElement clr;
     @FindBy(className = "datepick-close")
     private WebElement cls;
-
 
     private static final String INSTALLMENT = "installment";
 
