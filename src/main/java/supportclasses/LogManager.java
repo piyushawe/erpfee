@@ -8,5 +8,6 @@ public class LogManager {
 
     public LogManager() {
         logger = Logger.getLogger(Log.class.getName());
+        System.out.println(Logger.getLogger(Log.class.getName()));
     }
 }
