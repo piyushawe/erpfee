@@ -27,7 +27,6 @@ public abstract class GenericReports extends GenericBaseClass {
     @FindBy(className = "datepick-close")
     private WebElement cls;
 
-
     private static final String INSTALLMENT = "installment";
 
     private void getClassElements() throws IOException {
